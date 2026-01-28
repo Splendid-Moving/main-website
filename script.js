@@ -243,9 +243,9 @@ function throttle(func, limit) {
 function initScrollToTop() {
     const scrollBtn = document.getElementById('scroll-top');
     if (!scrollBtn) return;
-    
+
     const scrollThreshold = 400;
-    
+
     function updateButton() {
         if (window.scrollY > scrollThreshold) {
             scrollBtn.classList.add('visible');
@@ -253,11 +253,11 @@ function initScrollToTop() {
             scrollBtn.classList.remove('visible');
         }
     }
-    
+
     window.addEventListener('scroll', updateButton, { passive: true });
     updateButton();
-    
-    scrollBtn.addEventListener('click', function() {
+
+    scrollBtn.addEventListener('click', function () {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
@@ -277,12 +277,12 @@ function initQuoteModal() {
     const formView = document.getElementById('quote-form-view');
     const successView = document.getElementById('quote-success-view');
     const form = document.getElementById('quote-form');
-    
+
     if (!modal) return;
-    
+
     // Get all quote buttons
     const quoteButtons = document.querySelectorAll('a[href="#quote"], .mobile-cta__btn--quote');
-    
+
     function openModal(e) {
         if (e) e.preventDefault();
         modal.classList.add('active');
@@ -291,72 +291,72 @@ function initQuoteModal() {
         formView.style.display = 'block';
         successView.style.display = 'none';
     }
-    
+
     function closeModal() {
         modal.classList.remove('active');
         document.body.style.overflow = '';
     }
-    
+
     function showSuccess() {
         formView.style.display = 'none';
         successView.style.display = 'block';
     }
-    
+
     // Event listeners
     quoteButtons.forEach(btn => {
         btn.addEventListener('click', openModal);
     });
-    
+
     modalOverlay.addEventListener('click', closeModal);
     modalClose.addEventListener('click', closeModal);
     if (modalDone) {
         modalDone.addEventListener('click', closeModal);
     }
-    
+
     // Close on escape key
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && modal.classList.contains('active')) {
             closeModal();
         }
     });
-    
+
     // Form submission
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function (e) {
         e.preventDefault();
-        
+
         // Validate addresses were selected from dropdown
         const addressFromFull = document.getElementById('address-from-full').value;
         const addressToFull = document.getElementById('address-to-full').value;
         const addressFromInput = document.getElementById('address-from');
         const addressToInput = document.getElementById('address-to');
-        
+
         let isValid = true;
-        
+
         if (!addressFromFull) {
             addressFromInput.classList.add('error');
             addressFromInput.classList.remove('selected');
             isValid = false;
         }
-        
+
         if (!addressToFull) {
             addressToInput.classList.add('error');
             addressToInput.classList.remove('selected');
             isValid = false;
         }
-        
+
         if (!isValid) {
             alert('Please select addresses from the dropdown suggestions to ensure we have the complete address including zip code.');
             return;
         }
-        
+
         // Collect form data (for future use)
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
         console.log('Quote form submitted:', data);
-        
+
         // Show success screen
         showSuccess();
-        
+
         // Reset form
         form.reset();
         addressFromInput.classList.remove('selected');
@@ -374,56 +374,98 @@ function initQuoteModal() {
 function initAddressAutocomplete() {
     const addressFromInput = document.getElementById('address-from');
     const addressToInput = document.getElementById('address-to');
-    
+
     if (!addressFromInput || !addressToInput) return;
-    
+
     const options = {
         types: ['address'],
         componentRestrictions: { country: 'us' }
     };
-    
+
+    // Helper function to format address as "Street, City, State ZIP"
+    function formatAddress(place) {
+        const components = place.address_components || [];
+        let streetNumber = '';
+        let streetName = '';
+        let city = '';
+        let state = '';
+        let zip = '';
+
+        components.forEach(comp => {
+            const types = comp.types;
+            if (types.includes('street_number')) {
+                streetNumber = comp.long_name;
+            } else if (types.includes('route')) {
+                streetName = comp.long_name;
+            } else if (types.includes('locality')) {
+                city = comp.long_name;
+            } else if (types.includes('sublocality_level_1') && !city) {
+                city = comp.long_name;
+            } else if (types.includes('administrative_area_level_1')) {
+                state = comp.short_name;
+            } else if (types.includes('postal_code')) {
+                zip = comp.long_name;
+            }
+        });
+
+        // Build formatted address: "123 Main St, Los Angeles, CA 90001"
+        const street = streetNumber ? `${streetNumber} ${streetName}` : streetName;
+        let formatted = street;
+        if (city) formatted += `, ${city}`;
+        if (state) formatted += `, ${state}`;
+        if (zip) formatted += ` ${zip}`;
+
+        return formatted || place.formatted_address;
+    }
+
     // Setup autocomplete for "Moving From" address
     const autocompleteFrom = new google.maps.places.Autocomplete(addressFromInput, options);
-    autocompleteFrom.addListener('place_changed', function() {
+    autocompleteFrom.setFields(['address_components', 'formatted_address']);
+    autocompleteFrom.addListener('place_changed', function () {
         const place = autocompleteFrom.getPlace();
-        if (place.formatted_address) {
-            document.getElementById('address-from-full').value = place.formatted_address;
+        if (place.address_components) {
+            const formatted = formatAddress(place);
+            addressFromInput.value = formatted;
+            document.getElementById('address-from-full').value = formatted;
             addressFromInput.classList.add('selected');
             addressFromInput.classList.remove('error');
         }
     });
-    
+
     // Setup autocomplete for "Moving To" address
     const autocompleteTo = new google.maps.places.Autocomplete(addressToInput, options);
-    autocompleteTo.addListener('place_changed', function() {
+    autocompleteTo.setFields(['address_components', 'formatted_address']);
+    autocompleteTo.addListener('place_changed', function () {
         const place = autocompleteTo.getPlace();
-        if (place.formatted_address) {
-            document.getElementById('address-to-full').value = place.formatted_address;
+        if (place.address_components) {
+            const formatted = formatAddress(place);
+            addressToInput.value = formatted;
+            document.getElementById('address-to-full').value = formatted;
             addressToInput.classList.add('selected');
             addressToInput.classList.remove('error');
         }
     });
-    
+
     // Clear validation when user starts typing again
-    addressFromInput.addEventListener('input', function() {
+    addressFromInput.addEventListener('input', function () {
         if (this.classList.contains('selected')) {
             document.getElementById('address-from-full').value = '';
             this.classList.remove('selected');
         }
         this.classList.remove('error');
     });
-    
-    addressToInput.addEventListener('input', function() {
+
+    addressToInput.addEventListener('input', function () {
         if (this.classList.contains('selected')) {
             document.getElementById('address-to-full').value = '';
             this.classList.remove('selected');
         }
         this.classList.remove('error');
     });
-    
+
     // Prevent form submission on enter in address fields (let them select from dropdown)
     [addressFromInput, addressToInput].forEach(input => {
-        input.addEventListener('keydown', function(e) {
+        input.addEventListener('keydown', function (e) {
             if (e.key === 'Enter') {
                 e.preventDefault();
             }
@@ -435,6 +477,6 @@ function initAddressAutocomplete() {
 window.initAddressAutocomplete = initAddressAutocomplete;
 
 // Add quote modal to initialization
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     initQuoteModal();
 });
