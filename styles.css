@@ -401,10 +401,98 @@ h4 {
     background: var(--gray-800);
 }
 
+/* Mobile Menu Active State */
+.nav__menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100vh;
+    background: var(--white);
+    flex-direction: column;
+    padding: calc(80px + var(--space-xl)) var(--space-xl) var(--space-xl);
+    box-shadow: var(--shadow-2xl);
+    transition: right var(--transition-base);
+    z-index: var(--z-modal);
+}
+
+.nav__menu.active {
+    right: 0;
+}
+
+.nav__menu .nav__link {
+    color: var(--gray-800);
+    font-size: 1.125rem;
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.nav__menu .nav__link:hover {
+    color: var(--secondary);
+}
+
+/* Mobile menu overlay */
+.nav__menu::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-base);
+    z-index: -1;
+}
+
+.nav__menu.active::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hamburger animation */
+.nav__toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav__toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav__toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 /* Desktop Navigation */
 @media (min-width: 1024px) {
     .nav__menu {
+        position: static;
+        width: auto;
+        height: auto;
+        max-width: none;
+        background: transparent;
+        flex-direction: row;
+        padding: 0;
+        box-shadow: none;
         display: flex;
+    }
+
+    .nav__menu .nav__link {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.9375rem;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .header.scrolled .nav__menu .nav__link {
+        color: var(--gray-700);
+    }
+
+    .nav__menu::before {
+        display: none;
     }
 
     .nav__phone {
@@ -1618,6 +1706,7 @@ h4 {
 [data-aos-delay="300"] {
     transition-delay: 300ms;
 }
+
 /* ===================================
    Scroll to Top Button
    =================================== */
@@ -1911,7 +2000,7 @@ h4 {
         grid-template-columns: 1.5fr 1fr;
         align-items: start;
     }
-    
+
     .service-details__sidebar {
         position: sticky;
         top: 100px;
