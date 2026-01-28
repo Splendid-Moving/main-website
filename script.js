@@ -264,3 +264,177 @@ function initScrollToTop() {
         });
     });
 }
+
+/* ===================================
+   Quote Modal
+   =================================== */
+
+function initQuoteModal() {
+    const modal = document.getElementById('quote-modal');
+    const modalOverlay = document.getElementById('modal-overlay');
+    const modalClose = document.getElementById('modal-close');
+    const modalDone = document.getElementById('modal-done');
+    const formView = document.getElementById('quote-form-view');
+    const successView = document.getElementById('quote-success-view');
+    const form = document.getElementById('quote-form');
+    
+    if (!modal) return;
+    
+    // Get all quote buttons
+    const quoteButtons = document.querySelectorAll('a[href="#quote"], .mobile-cta__btn--quote');
+    
+    function openModal(e) {
+        if (e) e.preventDefault();
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        // Reset to form view
+        formView.style.display = 'block';
+        successView.style.display = 'none';
+    }
+    
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    function showSuccess() {
+        formView.style.display = 'none';
+        successView.style.display = 'block';
+    }
+    
+    // Event listeners
+    quoteButtons.forEach(btn => {
+        btn.addEventListener('click', openModal);
+    });
+    
+    modalOverlay.addEventListener('click', closeModal);
+    modalClose.addEventListener('click', closeModal);
+    if (modalDone) {
+        modalDone.addEventListener('click', closeModal);
+    }
+    
+    // Close on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+    
+    // Form submission
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Validate addresses were selected from dropdown
+        const addressFromFull = document.getElementById('address-from-full').value;
+        const addressToFull = document.getElementById('address-to-full').value;
+        const addressFromInput = document.getElementById('address-from');
+        const addressToInput = document.getElementById('address-to');
+        
+        let isValid = true;
+        
+        if (!addressFromFull) {
+            addressFromInput.classList.add('error');
+            addressFromInput.classList.remove('selected');
+            isValid = false;
+        }
+        
+        if (!addressToFull) {
+            addressToInput.classList.add('error');
+            addressToInput.classList.remove('selected');
+            isValid = false;
+        }
+        
+        if (!isValid) {
+            alert('Please select addresses from the dropdown suggestions to ensure we have the complete address including zip code.');
+            return;
+        }
+        
+        // Collect form data (for future use)
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+        console.log('Quote form submitted:', data);
+        
+        // Show success screen
+        showSuccess();
+        
+        // Reset form
+        form.reset();
+        addressFromInput.classList.remove('selected');
+        addressToInput.classList.remove('selected');
+        document.getElementById('address-from-full').value = '';
+        document.getElementById('address-to-full').value = '';
+    });
+}
+
+/* ===================================
+   Google Places Address Autocomplete
+   =================================== */
+
+// This function is called by the Google Maps API callback
+function initAddressAutocomplete() {
+    const addressFromInput = document.getElementById('address-from');
+    const addressToInput = document.getElementById('address-to');
+    
+    if (!addressFromInput || !addressToInput) return;
+    
+    const options = {
+        types: ['address'],
+        componentRestrictions: { country: 'us' }
+    };
+    
+    // Setup autocomplete for "Moving From" address
+    const autocompleteFrom = new google.maps.places.Autocomplete(addressFromInput, options);
+    autocompleteFrom.addListener('place_changed', function() {
+        const place = autocompleteFrom.getPlace();
+        if (place.formatted_address) {
+            document.getElementById('address-from-full').value = place.formatted_address;
+            addressFromInput.classList.add('selected');
+            addressFromInput.classList.remove('error');
+        }
+    });
+    
+    // Setup autocomplete for "Moving To" address
+    const autocompleteTo = new google.maps.places.Autocomplete(addressToInput, options);
+    autocompleteTo.addListener('place_changed', function() {
+        const place = autocompleteTo.getPlace();
+        if (place.formatted_address) {
+            document.getElementById('address-to-full').value = place.formatted_address;
+            addressToInput.classList.add('selected');
+            addressToInput.classList.remove('error');
+        }
+    });
+    
+    // Clear validation when user starts typing again
+    addressFromInput.addEventListener('input', function() {
+        if (this.classList.contains('selected')) {
+            document.getElementById('address-from-full').value = '';
+            this.classList.remove('selected');
+        }
+        this.classList.remove('error');
+    });
+    
+    addressToInput.addEventListener('input', function() {
+        if (this.classList.contains('selected')) {
+            document.getElementById('address-to-full').value = '';
+            this.classList.remove('selected');
+        }
+        this.classList.remove('error');
+    });
+    
+    // Prevent form submission on enter in address fields (let them select from dropdown)
+    [addressFromInput, addressToInput].forEach(input => {
+        input.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+            }
+        });
+    });
+}
+
+// Make sure initAddressAutocomplete is available globally for Google Maps callback
+window.initAddressAutocomplete = initAddressAutocomplete;
+
+// Add quote modal to initialization
+document.addEventListener('DOMContentLoaded', function() {
+    initQuoteModal();
+});

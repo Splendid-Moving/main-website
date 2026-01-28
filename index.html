@@ -688,6 +688,121 @@
             <path d="M18 15l-6-6-6 6" />
         </svg>
     </button>
+    <!-- Quote Modal -->
+    <div class="modal" id="quote-modal">
+        <div class="modal__overlay" id="modal-overlay"></div>
+        <div class="modal__container">
+            <button class="modal__close" id="modal-close" aria-label="Close modal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+            </button>
+
+            <!-- Form View -->
+            <div class="modal__content" id="quote-form-view">
+                <div class="modal__header">
+                    <h2 class="modal__title">Get Your Free Quote</h2>
+                    <p class="modal__subtitle">Fill out the form below and we'll get back to you within the hour.</p>
+                </div>
+                <form class="quote-form" id="quote-form">
+                    <div class="quote-form__row">
+                        <div class="quote-form__field">
+                            <label for="first-name" class="quote-form__label">First Name <span
+                                    class="required">*</span></label>
+                            <input type="text" id="first-name" name="firstName" class="quote-form__input"
+                                placeholder="First Name" required>
+                        </div>
+                        <div class="quote-form__field">
+                            <label for="last-name" class="quote-form__label">Last Name <span
+                                    class="required">*</span></label>
+                            <input type="text" id="last-name" name="lastName" class="quote-form__input"
+                                placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="quote-form__row">
+                        <div class="quote-form__field">
+                            <label for="phone" class="quote-form__label">Phone <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" class="quote-form__input" placeholder="Phone"
+                                required>
+                        </div>
+                        <div class="quote-form__field">
+                            <label for="email" class="quote-form__label">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" class="quote-form__input" placeholder="Email"
+                                required>
+                        </div>
+                    </div>
+                    <div class="quote-form__field">
+                        <label for="move-size" class="quote-form__label">Move size <span
+                                class="required">*</span></label>
+                        <select id="move-size" name="moveSize" class="quote-form__select" required>
+                            <option value="" disabled selected>Choose one below</option>
+                            <option value="studio">Studio</option>
+                            <option value="1-bedroom">1 Bedroom</option>
+                            <option value="2-bedroom">2 Bedroom</option>
+                            <option value="3-bedroom">3 Bedroom</option>
+                            <option value="4-bedroom">4+ Bedroom</option>
+                            <option value="office-small">Small Office</option>
+                            <option value="office-medium">Medium Office</option>
+                            <option value="office-large">Large Office</option>
+                        </select>
+                    </div>
+                    <div class="quote-form__field">
+                        <label for="address-from" class="quote-form__label">Moving From <span
+                                class="required">*</span></label>
+                        <input type="text" id="address-from" name="addressFrom"
+                            class="quote-form__input quote-form__address" placeholder="Pick-up address" required
+                            autocomplete="off">
+                        <input type="hidden" id="address-from-full" name="addressFromFull">
+                        <p class="quote-form__hint">Please select an address from the dropdown</p>
+                    </div>
+                    <div class="quote-form__field">
+                        <label for="address-to" class="quote-form__label">Moving To <span
+                                class="required">*</span></label>
+                        <input type="text" id="address-to" name="addressTo"
+                            class="quote-form__input quote-form__address" placeholder="Drop-off address" required
+                            autocomplete="off">
+                        <input type="hidden" id="address-to-full" name="addressToFull">
+                        <p class="quote-form__hint">Please select an address from the dropdown</p>
+                    </div>
+                    <div class="quote-form__field">
+                        <label for="move-date" class="quote-form__label">When would you like to move?</label>
+                        <input type="date" id="move-date" name="moveDate" class="quote-form__input">
+                    </div>
+                    <div class="quote-form__field">
+                        <label for="additional-details" class="quote-form__label">Anything else we should know?</label>
+                        <textarea id="additional-details" name="additionalDetails" class="quote-form__textarea"
+                            placeholder="Additional details" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full btn--large quote-form__submit">
+                        Request Free Quote
+                    </button>
+                </form>
+            </div>
+
+            <!-- Success View -->
+            <div class="modal__content modal__success" id="quote-success-view" style="display: none;">
+                <div class="modal__success-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M9 12l2 2 4-4" />
+                    </svg>
+                </div>
+                <h2 class="modal__title">Quote Request Received!</h2>
+                <p class="modal__subtitle">Thank you for your request. We'll review your information and get back to you
+                    within the hour.</p>
+                <div class="modal__success-info">
+                    <p>In the meantime, feel free to call us:</p>
+                    <a href="tel:+13236452636" class="modal__success-phone">(323) 645-2636</a>
+                </div>
+                <button class="btn btn--outline btn--large" id="modal-done">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Places API -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNCfU2Hgb5O5S2CePvPmJRx4pvgPtGQqE&libraries=places&callback=initAddressAutocomplete"
+        async defer></script>
 
     <script src="script.js"></script>
 </body>
