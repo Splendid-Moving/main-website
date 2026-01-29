@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280" height="60">
+  <defs>
+    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#189BF6"/>
+      <stop offset="100%" stop-color="#0a6fc2"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- S Symbol with Arrows -->
+  <g transform="translate(5, 5)">
+    <!-- Top arrow (white/light) -->
+    <path d="M25 5 C35 5, 45 12, 45 25 L40 25 C40 15, 33 10, 25 10 C17 10, 10 17, 10 25 L5 25 C5 12, 15 5, 25 5 Z" fill="white"/>
+    <path d="M45 25 L50 18 L50 32 Z" fill="white"/>
+    
+    <!-- Bottom arrow (blue) -->
+    <path d="M25 45 C15 45, 5 38, 5 25 L10 25 C10 35, 17 40, 25 40 C33 40, 40 33, 40 25 L45 25 C45 38, 35 45, 25 45 Z" fill="url(#arrowGradient)"/>
+    <path d="M5 25 L0 32 L0 18 Z" fill="url(#arrowGradient)"/>
+  </g>
+  
+  <!-- SPLENDID Text -->
+  <text x="65" y="28" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#189BF6">SPLENDID</text>
+  
+  <!-- MOVING Text -->
+  <text x="65" y="48" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#189BF6">MOVING</text>
+</svg>

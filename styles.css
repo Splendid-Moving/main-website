@@ -333,7 +333,7 @@ h4 {
 }
 
 .nav__logo-img {
-    height: 40px;
+    height: 56px;
     width: auto;
 }
 
@@ -2006,6 +2006,7 @@ h4 {
         top: 100px;
     }
 }
+
 /* ===================================
    Quote Modal
    =================================== */
@@ -2246,7 +2247,7 @@ h4 {
     .quote-form__row {
         grid-template-columns: 1fr 1fr;
     }
-    
+
     .modal__content {
         padding: var(--space-3xl);
     }
