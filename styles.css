@@ -333,7 +333,7 @@ h4 {
 }
 
 .nav__logo-img {
-    height: clamp(120px, 12vw, 140px);
+    height: clamp(150px, 15vw, 160px);
     width: auto;
     transition: height var(--transition-base);
 }
