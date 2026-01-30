@@ -303,14 +303,14 @@ h4 {
 }
 
 .header.scrolled {
-    background: rgba(3, 36, 73, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
     box-shadow: var(--shadow-md);
-    padding: var(--space-md) 0;
+    padding: var(--space-sm) 0;
 }
 
 .header.scrolled .nav__link {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--gray-700);
 }
 
 .header.scrolled .nav__link:hover {
@@ -318,7 +318,7 @@ h4 {
 }
 
 .header.scrolled .nav__phone {
-    color: var(--white);
+    color: var(--gray-700);
 }
 
 .nav {
@@ -335,7 +335,14 @@ h4 {
 .nav__logo-img {
     height: clamp(150px, 15vw, 160px);
     width: auto;
-    transition: height var(--transition-base);
+    transition: all var(--transition-base);
+}
+
+.header.scrolled .nav__logo {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all var(--transition-base);
 }
 
 .nav__menu {
@@ -399,7 +406,7 @@ h4 {
 }
 
 .header.scrolled .nav__toggle span {
-    background: var(--white);
+    background: var(--gray-800);
 }
 
 /* Mobile Menu Active State */
@@ -489,7 +496,7 @@ h4 {
     }
 
     .header.scrolled .nav__menu .nav__link {
-        color: rgba(255, 255, 255, 0.9);
+        color: var(--gray-700);
     }
 
     .nav__menu::before {
