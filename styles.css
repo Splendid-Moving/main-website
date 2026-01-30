@@ -303,7 +303,7 @@ h4 {
 }
 
 .header.scrolled {
-    background: rgba(255, 255, 255, 0.95);
+    background: #ffe7e7;
     backdrop-filter: blur(12px);
     box-shadow: var(--shadow-md);
     padding: var(--space-sm) 0;
@@ -314,7 +314,7 @@ h4 {
 }
 
 .header.scrolled .nav__link:hover {
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .header.scrolled .nav__phone {
@@ -323,13 +323,17 @@ h4 {
 
 .nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: var(--space-xl);
+    align-items: center;
+    height: var(--header-height);
 }
 
 .nav__logo {
-    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    z-index: 101;
+    position: relative;
+    text-decoration: none;
 }
 
 .nav__logo-img {
@@ -338,12 +342,6 @@ h4 {
     transition: all var(--transition-base);
 }
 
-.header.scrolled .nav__logo {
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-10px);
-    transition: all var(--transition-base);
-}
 
 .nav__menu {
     display: none;
