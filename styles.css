@@ -897,13 +897,9 @@ h4 {
     opacity: 1;
 }
 
-.service-card--featured {
-    border: 2px solid var(--secondary);
-}
 
-.service-card--featured::before {
-    opacity: 1;
-}
+
+
 
 .service-card__badge {
     position: absolute;
@@ -1007,7 +1003,6 @@ h4 {
 }
 
 .pricing-card--featured {
-    border: 2px solid var(--secondary);
     box-shadow: var(--shadow-xl), var(--shadow-glow);
     transform: scale(1.02);
 }
@@ -1046,7 +1041,7 @@ h4 {
     align-items: baseline;
     justify-content: center;
     gap: var(--space-xs);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-xs);
 }
 
 .pricing-card__currency {
@@ -1066,6 +1061,15 @@ h4 {
 .pricing-card__period {
     font-size: 1rem;
     color: var(--gray-500);
+}
+
+.pricing-card__disclaimer {
+    display: block;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--gray-500);
+    margin-bottom: var(--space-xl);
+    font-style: italic;
 }
 
 .pricing-card__features {
