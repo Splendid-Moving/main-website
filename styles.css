@@ -303,14 +303,14 @@ h4 {
 }
 
 .header.scrolled {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(3, 36, 73, 0.95);
     backdrop-filter: blur(12px);
     box-shadow: var(--shadow-md);
     padding: var(--space-md) 0;
 }
 
 .header.scrolled .nav__link {
-    color: var(--gray-700);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .header.scrolled .nav__link:hover {
@@ -318,7 +318,7 @@ h4 {
 }
 
 .header.scrolled .nav__phone {
-    color: var(--gray-700);
+    color: var(--white);
 }
 
 .nav {
@@ -399,7 +399,7 @@ h4 {
 }
 
 .header.scrolled .nav__toggle span {
-    background: var(--gray-800);
+    background: var(--white);
 }
 
 /* Mobile Menu Active State */
@@ -489,7 +489,7 @@ h4 {
     }
 
     .header.scrolled .nav__menu .nav__link {
-        color: var(--gray-700);
+        color: rgba(255, 255, 255, 0.9);
     }
 
     .nav__menu::before {
