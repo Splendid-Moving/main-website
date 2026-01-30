@@ -10,8 +10,6 @@
     ### Logo:
         - in /Users/nikti/Desktop/Projects/splendid_moving/Splendid Moving website/logo.png
 
-## Business info:
-
 
 ## Website analyis report:
     Splendid Moving's site (splendidmoving.com) ranks mid-tier among LA moving competitors due to solid pricing visibility and testimonials, but it falls short in key areas like structure, design polish, and SEO depth that define top local business sites.

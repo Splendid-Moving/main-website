@@ -297,7 +297,7 @@ h4 {
     left: 0;
     right: 0;
     z-index: var(--z-sticky);
-    padding: var(--space-sm) 0;
+    padding: var(--space-md) 0;
     background: transparent;
     transition: all var(--transition-base);
 }
@@ -306,7 +306,7 @@ h4 {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
     box-shadow: var(--shadow-md);
-    padding: var(--space-sm) 0;
+    padding: var(--space-md) 0;
 }
 
 .header.scrolled .nav__link {
@@ -333,7 +333,7 @@ h4 {
 }
 
 .nav__logo-img {
-    height: clamp(64px, 8vw, 120px);
+    height: clamp(80px, 10vw, 120px);
     width: auto;
     transition: height var(--transition-base);
 }
