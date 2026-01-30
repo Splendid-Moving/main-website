@@ -339,9 +339,15 @@ h4 {
 }
 
 .nav__logo-img {
-    height: clamp(150px, 15vw, 160px);
+    height: clamp(80px, 12vw, 140px);
+    /* Adjusted default size: proper mobile start, good desktop finish */
     width: auto;
     transition: all var(--transition-base);
+}
+
+.header.scrolled .nav__logo-img {
+    height: 50px;
+    /* Significantly smaller on scroll for a sleek look */
 }
 
 
