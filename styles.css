@@ -302,7 +302,8 @@ h4 {
     transition: all var(--transition-base);
 }
 
-.header.scrolled {
+.header.scrolled,
+.header.header--solid {
     background: rgba(15, 23, 42, 0.85);
     /* Premium Dark Slate */
     backdrop-filter: blur(20px);
@@ -311,15 +312,18 @@ h4 {
     padding: var(--space-sm) 0;
 }
 
-.header.scrolled .nav__link {
+.header.scrolled .nav__link,
+.header.header--solid .nav__link {
     color: rgba(255, 255, 255, 0.9);
 }
 
-.header.scrolled .nav__link:hover {
+.header.scrolled .nav__link:hover,
+.header.header--solid .nav__link:hover {
     color: var(--secondary-light);
 }
 
-.header.scrolled .nav__phone {
+.header.scrolled .nav__phone,
+.header.header--solid .nav__phone {
     color: var(--white);
 }
 
@@ -345,7 +349,8 @@ h4 {
     transition: all var(--transition-base);
 }
 
-.header.scrolled .nav__logo-img {
+.header.scrolled .nav__logo-img,
+.header.header--solid .nav__logo-img {
     height: 50px;
     /* Significantly smaller on scroll for a sleek look */
 }
@@ -412,7 +417,8 @@ h4 {
     transition: all var(--transition-base);
 }
 
-.header.scrolled .nav__toggle span {
+.header.scrolled .nav__toggle span,
+.header.header--solid .nav__toggle span {
     background: var(--white);
 }
 
