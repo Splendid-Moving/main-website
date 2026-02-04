@@ -2221,6 +2221,10 @@ h4 {
     border: 1px solid var(--gray-200);
     border-radius: var(--radius-md);
     transition: all var(--transition-fast);
+    /* Allow horizontal scrolling to see full text on mobile */
+    overflow-x: auto;
+    text-overflow: clip;
+    white-space: nowrap;
 }
 
 .quote-form__input:focus,
@@ -2248,6 +2252,8 @@ h4 {
 .quote-form__textarea {
     resize: vertical;
     min-height: 100px;
+    white-space: normal;
+    overflow-x: hidden;
 }
 
 .quote-form__hint {
