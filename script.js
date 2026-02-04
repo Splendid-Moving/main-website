@@ -60,6 +60,20 @@ function initMobileNav() {
             document.body.style.overflow = '';
         });
     });
+
+    // Close menu when clicking outside of it
+    document.addEventListener('click', function (e) {
+        const isMenuOpen = menu.classList.contains('active');
+        const clickedInsideMenu = menu.contains(e.target);
+        const clickedOnToggle = toggle.contains(e.target);
+
+        if (isMenuOpen && !clickedInsideMenu && !clickedOnToggle) {
+            menu.classList.remove('active');
+            toggle.classList.remove('active');
+            toggle.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+    });
 }
 
 /* ===================================
