@@ -1384,6 +1384,7 @@ h4 {
 .faq__grid {
     max-width: 800px;
     margin: 0 auto;
+    margin-top: var(--space-2xl);
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
@@ -2031,6 +2032,54 @@ h4 {
         position: sticky;
         top: 100px;
     }
+}
+
+/* Service Details Process Steps */
+.service-details__process {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.service-details__step {
+    display: flex;
+    gap: var(--space-lg);
+    align-items: flex-start;
+}
+
+.service-details__step-num {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-accent);
+    color: var(--white);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.125rem;
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-md);
+}
+
+.service-details__step>div {
+    flex: 1;
+}
+
+.service-details__step strong {
+    display: block;
+    font-size: 1rem;
+    color: var(--gray-900);
+    margin-bottom: var(--space-xs);
+}
+
+.service-details__step p {
+    font-size: 0.9375rem;
+    color: var(--gray-600);
+    margin: 0;
+    line-height: 1.6;
 }
 
 /* ===================================
