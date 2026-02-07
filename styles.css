@@ -2227,10 +2227,21 @@ h4 {
     border: 1px solid var(--gray-200);
     border-radius: var(--radius-md);
     transition: all var(--transition-fast);
-    /* Allow horizontal scrolling to see full text on mobile */
-    overflow-x: auto;
+    transition: all var(--transition-fast);
     text-overflow: clip;
     white-space: nowrap;
+}
+
+.footer__social-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: transform var(--transition-fast);
+}
+
+.footer__social-link:hover .footer__social-icon {
+    transform: scale(1.1);
 }
 
 .quote-form__input:focus,
