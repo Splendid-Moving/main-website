@@ -8,7 +8,7 @@
     ### Fonts:
         - TBD
     ### Logo:
-        - in /Users/nikti/Desktop/Projects/splendid_moving/Splendid Moving website/logo.png
+        - /Users/nikti/Documents/Projects/splendid_moving/Splendid Moving website/Brand Logo.png
 
 
 ## Website analyis report:

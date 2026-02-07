@@ -450,6 +450,12 @@ h4 {
     border-bottom: 1px solid var(--gray-100);
 }
 
+/* Ensure mobile menu links are always dark regardless of header style */
+.header.header--solid .nav__menu .nav__link,
+.header.scrolled .nav__menu .nav__link {
+    color: var(--gray-800);
+}
+
 .nav__menu .nav__link:hover {
     color: var(--secondary);
 }
