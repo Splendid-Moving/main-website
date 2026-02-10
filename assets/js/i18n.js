@@ -105,11 +105,14 @@
 
         // Update toggle button state
         updateToggleUI(lang);
+
+        // Show/hide Korean language disclaimer banner
+        toggleDisclaimer(lang);
     }
 
     /**
-     * Set language, store preference, and apply translations.
-     */
+         * Set language, store preference, and apply translations.
+         */
     async function setLanguage(lang) {
         localStorage.setItem(STORAGE_KEY, lang);
         await applyLanguage(lang);
@@ -126,6 +129,65 @@
         document.querySelectorAll('.lang-toggle__btn').forEach(btn => {
             btn.classList.toggle('lang-toggle__btn--active', btn.dataset.lang === lang);
         });
+    }
+
+    /**
+     * Inject disclaimer banner CSS once.
+     */
+    function injectDisclaimerStyles() {
+        if (document.getElementById('i18n-disclaimer-styles')) return;
+        const style = document.createElement('style');
+        style.id = 'i18n-disclaimer-styles';
+        style.textContent = `
+            .lang-disclaimer {
+                display: none;
+                background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+                color: #4e342e;
+                text-align: center;
+                padding: 10px 20px;
+                font-size: 0.88rem;
+                font-weight: 500;
+                line-height: 1.5;
+                border-bottom: 2px solid #ffcc80;
+                position: relative;
+                z-index: 999;
+            }
+            .lang-disclaimer.active {
+                display: block;
+            }
+            .lang-disclaimer strong {
+                color: #bf360c;
+            }
+            @media (max-width: 768px) {
+                .lang-disclaimer {
+                    font-size: 0.8rem;
+                    padding: 8px 15px;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+
+    /**
+     * Show or hide the Korean language disclaimer banner.
+     */
+    function toggleDisclaimer(lang) {
+        let banner = document.getElementById('lang-disclaimer-banner');
+        if (!banner) {
+            injectDisclaimerStyles();
+            banner = document.createElement('div');
+            banner.id = 'lang-disclaimer-banner';
+            banner.className = 'lang-disclaimer';
+            banner.innerHTML = '<strong>⚠️ 안내:</strong> 저희 사무실 직원은 한국어 통화가 불가합니다. 문의는 <strong>영어</strong>로 부탁드립니다. 감사합니다.';
+            // Insert right after the header
+            const header = document.querySelector('header') || document.querySelector('.header');
+            if (header && header.nextSibling) {
+                header.parentNode.insertBefore(banner, header.nextSibling);
+            } else {
+                document.body.insertBefore(banner, document.body.firstChild);
+            }
+        }
+        banner.classList.toggle('active', lang === 'ko');
     }
 
     /**
