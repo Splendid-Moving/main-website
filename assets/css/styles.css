@@ -2384,3 +2384,87 @@ h4 {
 .pac-icon {
     margin-right: 8px;
 }
+
+/* ================================================
+   LANGUAGE TOGGLE
+   ================================================ */
+.lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    background: var(--gray-100);
+    border-radius: 100px;
+    padding: 3px;
+    gap: 2px;
+    margin-right: 0.75rem;
+    transition: background 0.2s ease;
+}
+
+.lang-toggle__btn {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--gray-500);
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1;
+    letter-spacing: 0.02em;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.lang-toggle__btn:hover {
+    color: var(--gray-800);
+}
+
+.lang-toggle__btn--active {
+    background: var(--primary);
+    color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.lang-toggle__btn--active:hover {
+    color: #fff;
+    background: var(--primary-dark, var(--primary));
+}
+
+/* Sticky header variant */
+.header--scrolled .lang-toggle {
+    background: var(--gray-100);
+}
+
+/* Mobile menu toggle */
+.lang-toggle--mobile {
+    display: none;
+    margin: 0;
+    justify-content: center;
+}
+
+/* Body transition for language switch */
+body {
+    transition: opacity 0.15s ease;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .nav__actions .lang-toggle {
+        display: none;
+    }
+
+    .lang-toggle--mobile {
+        display: inline-flex;
+        margin-top: 0.5rem;
+    }
+
+    .nav__item--lang {
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 0;
+        border-top: 1px solid var(--gray-100);
+    }
+}
