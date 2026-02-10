@@ -566,7 +566,7 @@ h4 {
     content: '';
     position: absolute;
     inset: 0;
-    background: url('images/hero-bg.png') center/cover no-repeat;
+    background: url('../images/hero-bg.png') center/cover no-repeat;
     opacity: 0.15;
     mix-blend-mode: luminosity;
 }
