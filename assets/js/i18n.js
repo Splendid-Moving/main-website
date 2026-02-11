@@ -10,7 +10,7 @@
 
     const STORAGE_KEY = 'splendid_lang';
     const DEFAULT_LANG = 'en';
-    let translations = null; // cached Korean translations
+    let translationsCache = {}; // cached translations by language code
 
     /**
      * Get the user's preferred language from localStorage.
@@ -34,17 +34,18 @@
     }
 
     /**
-     * Fetch Korean translations JSON (cached after first load).
+     * Fetch translations JSON for a given language.
      */
-    async function loadTranslations() {
-        if (translations) return translations;
+    async function loadTranslations(lang) {
+        if (translationsCache[lang]) return translationsCache[lang];
         try {
             const basePath = getBasePath();
-            const response = await fetch(basePath + 'translations/ko.json');
-            translations = await response.json();
-            return translations;
+            const response = await fetch(basePath + `translations/${lang}.json`);
+            const data = await response.json();
+            translationsCache[lang] = data;
+            return data;
         } catch (err) {
-            console.warn('[i18n] Could not load translations:', err);
+            console.warn(`[i18n] Could not load translations for ${lang}:`, err);
             return {};
         }
     }
@@ -72,7 +73,7 @@
                 }
             });
         } else {
-            const dict = await loadTranslations();
+            const dict = await loadTranslations(lang);
             elements.forEach(el => {
                 const key = el.getAttribute('data-i18n');
                 const value = dict[key];
@@ -101,7 +102,7 @@
         }
 
         // Update the <html> lang attribute
-        document.documentElement.lang = lang === 'ko' ? 'ko' : 'en';
+        document.documentElement.lang = lang;
 
         // Update toggle button state
         updateToggleUI(lang);
@@ -169,16 +170,27 @@
     }
 
     /**
-     * Show or hide the Korean language disclaimer banner.
+     * Show or hide the language disclaimer banner with language-specific text.
      */
     function toggleDisclaimer(lang) {
+        const DISCLAIMERS = {
+            'ko': '<strong>⚠️ 안내:</strong> 저희 사무실 직원은 한국어 통화가 불가합니다. 문의는 <strong>영어</strong>로 부탁드립니다. 감사합니다.',
+            'es': '<strong>⚠️ Aviso:</strong> Nuestro personal de oficina habla inglés. Por favor, realice sus consultas en inglés si es posible. Gracias.'
+        };
+
+        const text = DISCLAIMERS[lang];
         let banner = document.getElementById('lang-disclaimer-banner');
+
+        if (!text) {
+            if (banner) banner.classList.remove('active');
+            return;
+        }
+
         if (!banner) {
             injectDisclaimerStyles();
             banner = document.createElement('div');
             banner.id = 'lang-disclaimer-banner';
             banner.className = 'lang-disclaimer';
-            banner.innerHTML = '<strong>⚠️ 안내:</strong> 저희 사무실 직원은 한국어 통화가 불가합니다. 문의는 <strong>영어</strong>로 부탁드립니다. 감사합니다.';
             // Insert right after the header
             const header = document.querySelector('header') || document.querySelector('.header');
             if (header && header.nextSibling) {
@@ -187,7 +199,9 @@
                 document.body.insertBefore(banner, document.body.firstChild);
             }
         }
-        banner.classList.toggle('active', lang === 'ko');
+
+        banner.innerHTML = text;
+        banner.classList.add('active');
     }
 
     /**
@@ -203,6 +217,7 @@
 
         toggle.innerHTML = `
             <button class="lang-toggle__btn ${currentLang === 'en' ? 'lang-toggle__btn--active' : ''}" data-lang="en" aria-label="English">EN</button>
+            <button class="lang-toggle__btn ${currentLang === 'es' ? 'lang-toggle__btn--active' : ''}" data-lang="es" aria-label="Español">ES</button>
             <button class="lang-toggle__btn ${currentLang === 'ko' ? 'lang-toggle__btn--active' : ''}" data-lang="ko" aria-label="한국어">한</button>
         `;
 
