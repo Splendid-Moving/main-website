@@ -312,18 +312,21 @@ h4 {
     padding: var(--space-sm) 0;
 }
 
-/* Force white color on scroll with high specificity */
-body .header.scrolled .nav__link,
-body .header.header--solid .nav__link,
-body .header.scrolled .nav__link:visited,
-body .header.header--solid .nav__link:visited {
-    color: #ffffff !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-}
+/* Force white color on scroll with high specificity - DESKTOP ONLY */
+@media (min-width: 1024px) {
 
-body .header.scrolled .nav__link:hover,
-body .header.header--solid .nav__link:hover {
-    color: var(--secondary-light) !important;
+    body .header.scrolled .nav__link,
+    body .header.header--solid .nav__link,
+    body .header.scrolled .nav__link:visited,
+    body .header.header--solid .nav__link:visited {
+        color: #ffffff !important;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    body .header.scrolled .nav__link:hover,
+    body .header.header--solid .nav__link:hover {
+        color: var(--secondary-light) !important;
+    }
 }
 
 .header.scrolled .nav__phone,
@@ -457,6 +460,7 @@ body .header.header--solid .nav__link:hover {
 /* Ensure mobile menu links are always dark regardless of header style */
 .nav__menu.active .nav__link {
     color: var(--gray-800) !important;
+    text-shadow: none !important;
 }
 
 .nav__menu .nav__link:hover {
