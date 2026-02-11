@@ -24,11 +24,16 @@
      * Pages in the root get 'assets/...', pages in subfolders would get '../assets/...'
      */
     function getBasePath() {
-        // All pages are in root, so this is straightforward
+        // Check if we are in the root or a subdirectory
+        // If we are in pages/, the script src is "../scripts/i18n.js"
+        // If we are in root, the script src is "scripts/i18n.js"
+
         const scripts = document.querySelectorAll('script[src*="i18n.js"]');
         if (scripts.length > 0) {
             const src = scripts[0].getAttribute('src');
-            return src.replace('js/i18n.js', '');
+            if (src.includes('../')) {
+                return '../assets/';
+            }
         }
         return 'assets/';
     }
@@ -40,7 +45,7 @@
         if (translationsCache[lang]) return translationsCache[lang];
         try {
             const basePath = getBasePath();
-            const response = await fetch(basePath + `translations/${lang}.json`);
+            const response = await fetch(basePath + `data/translations/${lang}.json`);
             const data = await response.json();
             translationsCache[lang] = data;
             return data;
