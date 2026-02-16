@@ -19,8 +19,8 @@
 - **Phone:** (213) 724-0394 / (323) 645-2636
 - **Email:** info@splendidmoving.com
 - **Hours:** Open daily, 6:00 AM – 11:00 PM
-- **Google Rating:** 5.0 ⭐ (424 reviews)
-- **Yelp Rating:** 4.9 ⭐ (~360 reviews)
+- **Google Rating:** 4.9 ⭐ (430 reviews)
+- **Yelp Rating:** 4.9 ⭐ (363 reviews)
 
 ### Pricing & Packages
 *All rates require a **3-hour minimum charge**.*
