@@ -1,0 +1,17 @@
+{
+    "name": "splendid-moving-website",
+    "version": "1.0.0",
+    "description": "Splendid Moving Company Website with GoHighLevel Integration",
+    "private": true,
+    "scripts": {
+        "dev": "vercel dev",
+        "build": "echo 'Static site - no build needed'",
+        "start": "python3 -m http.server 8000"
+    },
+    "keywords": [
+        "moving",
+        "los-angeles"
+    ],
+    "author": "Splendid Moving",
+    "license": "UNLICENSED"
+}

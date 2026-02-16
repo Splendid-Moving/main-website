@@ -335,7 +335,7 @@ function initQuoteModal() {
     });
 
     // Form submission
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', async function (e) {
         e.preventDefault();
 
         // Validate addresses were selected from dropdown
@@ -363,22 +363,67 @@ function initQuoteModal() {
             return;
         }
 
-        // Collect form data (for future use)
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData.entries());
-        console.log('Quote form submitted:', data);
+        // Disable submit button and show loading state
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.textContent;
+        submitButton.disabled = true;
+        submitButton.textContent = 'Submitting...';
 
-        // Show success screen
-        showSuccess();
+        try {
+            // Collect form data
+            const formData = new FormData(form);
+            const data = {
+                firstName: formData.get('first-name'),
+                lastName: formData.get('last-name'),
+                phone: formData.get('phone'),
+                email: formData.get('email'),
+                moveSize: formData.get('move-size'),
+                addressFromFull: addressFromFull,
+                addressToFull: addressToFull,
+                moveDate: formData.get('move-date'),
+                additionalDetails: formData.get('additional-details')
+            };
 
-        // Reset form
-        form.reset();
-        addressFromInput.classList.remove('selected');
-        addressToInput.classList.remove('selected');
-        document.getElementById('address-from-full').value = '';
-        document.getElementById('address-to-full').value = '';
+            console.log('Submitting quote:', data);
+
+            // Submit to API endpoint
+            const response = await fetch('/api/submit-quote', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+
+            if (!response.ok) {
+                throw new Error(result.error || 'Failed to submit quote');
+            }
+
+            console.log('Quote submitted successfully:', result);
+
+            // Show success screen
+            showSuccess();
+
+            // Reset form
+            form.reset();
+            addressFromInput.classList.remove('selected');
+            addressToInput.classList.remove('selected');
+            document.getElementById('address-from-full').value = '';
+            document.getElementById('address-to-full').value = '';
+
+        } catch (error) {
+            console.error('Error submitting quote:', error);
+            alert('Sorry, there was an error submitting your quote. Please try again or call us at (323) 645-2636.');
+        } finally {
+            // Re-enable submit button
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+        }
     });
 }
+
 
 /* ===================================
    Google Places Address Autocomplete
