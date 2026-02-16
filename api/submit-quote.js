@@ -106,6 +106,50 @@ export default async function handler(req, res) {
 
         const responseData = await ghlResponse.json();
 
+        // Handle duplicate contact - update instead of failing
+        if (!ghlResponse.ok && responseData.message?.includes('duplicated contacts')) {
+            console.log('Duplicate contact detected, updating existing contact:', responseData.meta?.contactId);
+
+            const existingContactId = responseData.meta?.contactId;
+
+            if (!existingContactId) {
+                return res.status(400).json({
+                    error: 'Duplicate contact but no contact ID provided',
+                    details: responseData
+                });
+            }
+
+            // Update the existing contact
+            const updateResponse = await fetch(`https://services.leadconnectorhq.com/contacts/${existingContactId}`, {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `Bearer ${GHL_ACCESS_TOKEN}`,
+                    'Content-Type': 'application/json',
+                    'Version': '2021-07-28'
+                },
+                body: JSON.stringify(contactData)
+            });
+
+            const updateData = await updateResponse.json();
+
+            if (!updateResponse.ok) {
+                console.error('Failed to update existing contact:', updateData);
+                return res.status(updateResponse.status).json({
+                    error: 'Failed to update existing contact',
+                    details: updateData
+                });
+            }
+
+            // Success - contact updated
+            return res.status(200).json({
+                success: true,
+                message: 'Quote request updated successfully',
+                contactId: existingContactId,
+                updated: true
+            });
+        }
+
+        // Handle other errors
         if (!ghlResponse.ok) {
             console.error('GHL API Error:', responseData);
             return res.status(ghlResponse.status).json({
@@ -114,11 +158,12 @@ export default async function handler(req, res) {
             });
         }
 
-        // Success response
+        // Success - new contact created
         return res.status(200).json({
             success: true,
             message: 'Quote request submitted successfully',
-            contactId: responseData.contact?.id || responseData.id
+            contactId: responseData.contact?.id || responseData.id,
+            updated: false
         });
 
     } catch (error) {
