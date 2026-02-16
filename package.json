@@ -1,5 +1,6 @@
 {
     "name": "splendid-moving-website",
+    "type": "module",
     "version": "1.0.0",
     "description": "Splendid Moving Company Website with GoHighLevel Integration",
     "private": true,
