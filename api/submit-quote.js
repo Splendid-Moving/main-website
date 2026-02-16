@@ -67,7 +67,7 @@ export default async function handler(req, res) {
         if (moveSize) {
             contactData.tags.push(moveSize);
             contactData.customFields.push({
-                key: 'yS4Bj6LtQ3lLCuju7vl0',
+                id: 'yS4Bj6LtQ3lLCuju7vl0',
                 value: moveSize
             });
         }
@@ -75,28 +75,28 @@ export default async function handler(req, res) {
         // Add custom fields with correct GHL field IDs
         if (addressFromFull) {
             contactData.customFields.push({
-                key: 'KyE8Eopo3MXg4aXjGnqS',
+                id: 'KyE8Eopo3MXg4aXjGnqS',
                 value: addressFromFull
             });
         }
 
         if (addressToFull) {
             contactData.customFields.push({
-                key: 'DjfpJEtJnBnDBP6nvJ1l',
+                id: 'DjfpJEtJnBnDBP6nvJ1l',
                 value: addressToFull
             });
         }
 
         if (moveDate) {
             contactData.customFields.push({
-                key: 'VuatzebiX5qPrzGjl4d4',
+                id: 'VuatzebiX5qPrzGjl4d4',
                 value: moveDate
             });
         }
 
         if (additionalDetails) {
             contactData.customFields.push({
-                key: 'HZgxySrqsR4IICCBWZr5',
+                id: 'HZgxySrqsR4IICCBWZr5',
                 value: additionalDetails
             });
         }
