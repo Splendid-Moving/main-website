@@ -152,45 +152,10 @@ export default async function handler(req, res) {
         }
 
         // Success - new contact created
-        const contactId = responseData.contact?.id || responseData.id;
-
-        // Add internal note for team notification
-        try {
-            const noteText = `🆕 New Quote Request from Website
-
-Name: ${firstName} ${lastName}
-Phone: ${phone}
-Email: ${email}
-Move Size: ${moveSize || 'Not specified'}
-From: ${addressFromFull || 'Not specified'}
-To: ${addressToFull || 'Not specified'}
-Move Date: ${moveDate || 'Not specified'}
-${additionalDetails ? `\nAdditional Details: ${additionalDetails}` : ''}
-
-Source: Website Quote Form
-Action Required: Review and provide quote`;
-
-            await fetch(`https://services.leadconnectorhq.com/contacts/${contactId}/notes`, {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${GHL_ACCESS_TOKEN}`,
-                    'Content-Type': 'application/json',
-                    'Version': '2021-07-28'
-                },
-                body: JSON.stringify({
-                    body: noteText,
-                    userId: 'system' // Can be changed to a specific user ID if needed
-                })
-            });
-        } catch (noteError) {
-            console.error('Failed to add note:', noteError);
-            // Don't fail the whole request if note creation fails
-        }
-
         return res.status(200).json({
             success: true,
             message: 'Quote request submitted successfully',
-            contactId: contactId,
+            contactId: responseData.contact?.id || responseData.id,
             updated: false
         });
 
