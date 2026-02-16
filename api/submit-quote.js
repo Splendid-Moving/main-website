@@ -60,30 +60,45 @@ export default async function handler(req, res) {
             email,
             locationId: GHL_LOCATION_ID,
             tags: ['website-lead'], // Tag for workflow trigger
-            customField: {}
+            customFields: []
         };
 
         // Add Move Size as both tag and custom field
         if (moveSize) {
             contactData.tags.push(moveSize);
-            contactData.customField.yS4Bj6LtQ3lLCuju7vl0 = moveSize; // Move size field
+            contactData.customFields.push({
+                key: 'yS4Bj6LtQ3lLCuju7vl0',
+                value: moveSize
+            });
         }
 
         // Add custom fields with correct GHL field IDs
         if (addressFromFull) {
-            contactData.customField.KyE8Eopo3MXg4aXjGnqS = addressFromFull; // Moving From
+            contactData.customFields.push({
+                key: 'KyE8Eopo3MXg4aXjGnqS',
+                value: addressFromFull
+            });
         }
 
         if (addressToFull) {
-            contactData.customField.DjfpJEtJnBnDBP6nvJ1l = addressToFull; // Moving To
+            contactData.customFields.push({
+                key: 'DjfpJEtJnBnDBP6nvJ1l',
+                value: addressToFull
+            });
         }
 
         if (moveDate) {
-            contactData.customField.VuatzebiX5qPrzGjl4d4 = moveDate; // Moving Date
+            contactData.customFields.push({
+                key: 'VuatzebiX5qPrzGjl4d4',
+                value: moveDate
+            });
         }
 
         if (additionalDetails) {
-            contactData.customField.HZgxySrqsR4IICCBWZr5 = additionalDetails; // Additional details
+            contactData.customFields.push({
+                key: 'HZgxySrqsR4IICCBWZr5',
+                value: additionalDetails
+            });
         }
 
         // Make API request to GoHighLevel
