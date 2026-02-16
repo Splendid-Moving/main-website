@@ -883,12 +883,13 @@
         </div>
     </div>
 
-    <!-- Google Places API -->
+    <script src="scripts/script.js"></script>
+
+    <!-- Google Places API - must load AFTER script.js so callback is available -->
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8m3zbP2Eknf1agTJPLpHc4U6ACh8HpME&libraries=places&loading=async&callback=initAddressAutocomplete"
         async defer></script>
 
-    <script src="scripts/script.js"></script>
     <script src="scripts/i18n.js"></script>
 </body>
 

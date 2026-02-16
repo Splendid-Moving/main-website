@@ -1,12 +1,3 @@
-// Global function for Google Maps API callback
-// Must be defined before Maps API loads
-window.initAddressAutocomplete = function () {
-    // Implementation moved to bottom of file after DOM is ready
-    if (typeof _initAddressAutocompleteImpl === 'function') {
-        _initAddressAutocompleteImpl();
-    }
-};
-
 /* ===================================
    SPLENDID MOVING - Interactive Features
    =================================== */
@@ -439,7 +430,7 @@ function initQuoteModal() {
    =================================== */
 
 // This function is called by the Google Maps API callback
-function _initAddressAutocompleteImpl() {
+function initAddressAutocomplete() {
     const addressFromInput = document.getElementById('address-from');
     const addressToInput = document.getElementById('address-to');
 
