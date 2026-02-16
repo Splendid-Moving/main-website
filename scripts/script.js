@@ -373,15 +373,15 @@ function initQuoteModal() {
             // Collect form data
             const formData = new FormData(form);
             const data = {
-                firstName: formData.get('first-name'),
-                lastName: formData.get('last-name'),
+                firstName: formData.get('firstName'),
+                lastName: formData.get('lastName'),
                 phone: formData.get('phone'),
                 email: formData.get('email'),
-                moveSize: formData.get('move-size'),
+                moveSize: formData.get('moveSize'),
                 addressFromFull: addressFromFull,
                 addressToFull: addressToFull,
-                moveDate: formData.get('move-date'),
-                additionalDetails: formData.get('additional-details')
+                moveDate: formData.get('moveDate'),
+                additionalDetails: formData.get('additionalDetails')
             };
 
             console.log('Submitting quote:', data);
