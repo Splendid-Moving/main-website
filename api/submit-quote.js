@@ -59,8 +59,7 @@ export default async function handler(req, res) {
             phone,
             email,
             locationId: GHL_LOCATION_ID,
-            source: 'Website Quote Form',
-            tags: [],
+            tags: ['website-lead'], // Tag for workflow trigger
             customField: {}
         };
 
