@@ -60,37 +60,31 @@ export default async function handler(req, res) {
             email,
             locationId: GHL_LOCATION_ID,
             source: 'Website Quote Form',
-            tags: moveSize ? [moveSize] : [],
-            customFields: []
+            tags: [],
+            customField: {}
         };
 
-        // Add custom fields for addresses and move details
+        // Add Move Size as both tag and custom field
+        if (moveSize) {
+            contactData.tags.push(moveSize);
+            contactData.customField.yS4Bj6LtQ3lLCuju7vl0 = moveSize; // Move size field
+        }
+
+        // Add custom fields with correct GHL field IDs
         if (addressFromFull) {
-            contactData.customFields.push({
-                key: 'pickup_address',
-                value: addressFromFull
-            });
+            contactData.customField.KyE8Eopo3MXg4aXjGnqS = addressFromFull; // Moving From
         }
 
         if (addressToFull) {
-            contactData.customFields.push({
-                key: 'dropoff_address',
-                value: addressToFull
-            });
+            contactData.customField.DjfpJEtJnBnDBP6nvJ1l = addressToFull; // Moving To
         }
 
         if (moveDate) {
-            contactData.customFields.push({
-                key: 'preferred_move_date',
-                value: moveDate
-            });
+            contactData.customField.VuatzebiX5qPrzGjl4d4 = moveDate; // Moving Date
         }
 
         if (additionalDetails) {
-            contactData.customFields.push({
-                key: 'additional_notes',
-                value: additionalDetails
-            });
+            contactData.customField.HZgxySrqsR4IICCBWZr5 = additionalDetails; // Additional details
         }
 
         // Make API request to GoHighLevel
