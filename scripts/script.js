@@ -4,6 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize all modules
+    initUtmTracking();
     initStickyHeader();
     initMobileNav();
     initSmoothScroll();
@@ -12,6 +13,29 @@ document.addEventListener('DOMContentLoaded', function () {
     initScrollAnimations();
     initScrollToTop();
 });
+
+/* ===================================
+   UTM Tracking
+   =================================== */
+
+function initUtmTracking() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const utms = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+
+    let hasUtms = false;
+    const utmData = {};
+
+    utms.forEach(utm => {
+        if (urlParams.has(utm)) {
+            hasUtms = true;
+            utmData[utm] = urlParams.get(utm);
+        }
+    });
+
+    if (hasUtms) {
+        sessionStorage.setItem('splendid_utms', JSON.stringify(utmData));
+    }
+}
 
 /* ===================================
    Sticky Header
@@ -370,6 +394,17 @@ function initQuoteModal() {
         submitButton.textContent = 'Submitting...';
 
         try {
+            // Get UTMs from session storage
+            let utms = {};
+            try {
+                const storedUtms = sessionStorage.getItem('splendid_utms');
+                if (storedUtms) {
+                    utms = JSON.parse(storedUtms);
+                }
+            } catch (e) {
+                console.error('Error parsing UTMs', e);
+            }
+
             // Collect form data
             const formData = new FormData(form);
             const data = {
@@ -381,7 +416,8 @@ function initQuoteModal() {
                 addressFromFull: addressFromFull,
                 addressToFull: addressToFull,
                 moveDate: formData.get('moveDate'),
-                additionalDetails: formData.get('additionalDetails')
+                additionalDetails: formData.get('additionalDetails'),
+                ...utms
             };
 
             console.log('Submitting quote:', data);
