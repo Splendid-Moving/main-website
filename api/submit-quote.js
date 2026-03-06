@@ -1,5 +1,4 @@
 // Vercel Serverless Function: Submit Quote to GoHighLevel
-// This function handles form submissions from the quote modal
 
 export default async function handler(req, res) {
     // Only accept POST requests
@@ -18,7 +17,6 @@ export default async function handler(req, res) {
     }
 
     try {
-        // Extract form data from request body
         const {
             firstName,
             lastName,
@@ -28,7 +26,8 @@ export default async function handler(req, res) {
             addressFromFull,
             addressToFull,
             moveDate,
-            additionalDetails
+            additionalDetails,
+            utm_source
         } = req.body;
 
         // Validate required fields
@@ -62,6 +61,18 @@ export default async function handler(req, res) {
             tags: ['website-lead'], // Tag for workflow trigger
             customFields: []
         };
+
+        // Map utm_source to GHL source field
+        if (utm_source) {
+            const sourceLower = utm_source.toLowerCase();
+            if (sourceLower === 'yelp') {
+                contactData.source = 'Yelp';
+            } else if (sourceLower === 'lsa') {
+                contactData.source = 'Local Service Ads';
+            } else {
+                contactData.source = utm_source; // Fallback for other sources
+            }
+        }
 
         // Add Move Size as both tag and custom field
         if (moveSize) {
