@@ -62,16 +62,21 @@ export default async function handler(req, res) {
             customFields: []
         };
 
-        // Map utm_source to GHL source field
+        // Map utm_source to GHL Origin custom field (ID: i71w1J9MFtRcyAQYqElg)
         if (utm_source) {
             const sourceLower = utm_source.toLowerCase();
+            let originValue = utm_source; // Fallback
+
             if (sourceLower === 'yelp') {
-                contactData.source = 'Yelp';
+                originValue = 'Yelp';
             } else if (sourceLower === 'lsa') {
-                contactData.source = 'Local Service Ads';
-            } else {
-                contactData.source = utm_source; // Fallback for other sources
+                originValue = 'Local Service Ads';
             }
+
+            contactData.customFields.push({
+                id: 'i71w1J9MFtRcyAQYqElg',
+                value: originValue
+            });
         }
 
         // Add Move Size as both tag and custom field
