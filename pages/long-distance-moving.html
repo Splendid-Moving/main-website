@@ -35,28 +35,19 @@
     <link rel="stylesheet" href="../styles/styles.css">
 
     <!-- Sentry Error Monitoring -->
+    <script>
+      window.sentryOnLoad = function () {
+        Sentry.init({
+          tracesSampleRate: 1.0,
+          replaysSessionSampleRate: 0.1,
+          replaysOnErrorSampleRate: 1.0,
+        });
+      };
+    </script>
     <script
-      src="https://browser.sentry-cdn.com/10.42.0/bundle.tracing.replay.min.js"
-      integrity="sha384-oo2U4zsTxaHSPXJEnXtaQPeS4Z/qbTqoBL9xFgGxvjJHKQjIrB+VRlu97/iXBtzw"
+      src="https://js.sentry-cdn.com/d193da315f35a37e1176b4a6378feb26.min.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      Sentry.init({
-        dsn: "https://d193da315f35a37e1176b4a6378feb26@o4511453136945152.ingest.us.sentry.io/4511453142188032",
-        environment: "production",
-        integrations: [
-          Sentry.browserTracingIntegration(),
-          Sentry.replayIntegration({
-            maskAllText: true,
-            blockAllMedia: true,
-          }),
-        ],
-        tracesSampleRate: 1.0,
-        tracePropagationTargets: ["localhost", /^https:\/\/splendidmoving\.com/],
-        replaysSessionSampleRate: 0.1,
-        replaysOnErrorSampleRate: 1.0,
-      });
-    </script>
 
     <!-- Vercel Analytics -->
     <script defer src="/_vercel/insights/script.js"></script>
