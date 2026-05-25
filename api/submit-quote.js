@@ -1,4 +1,12 @@
 // Vercel Serverless Function: Submit Quote to GoHighLevel
+import * as Sentry from "@sentry/node";
+
+Sentry.init({
+    dsn: "https://d193da315f35a37e1176b4a6378feb26@o4511453136945152.ingest.us.sentry.io/4511453142188032",
+    environment: process.env.VERCEL_ENV ?? "production",
+    tracesSampleRate: 1.0,
+    sendDefaultPii: true,
+});
 
 export default async function handler(req, res) {
     // Only accept POST requests
@@ -191,6 +199,8 @@ export default async function handler(req, res) {
         });
 
     } catch (error) {
+        Sentry.captureException(error);
+        await Sentry.flush(2000);
         console.error('Server error:', error);
         return res.status(500).json({
             error: 'Internal server error',

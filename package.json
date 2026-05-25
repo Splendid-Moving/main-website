@@ -9,6 +9,9 @@
         "build": "echo 'Static site - no build needed'",
         "start": "python3 -m http.server 8000"
     },
+    "dependencies": {
+        "@sentry/node": "^8"
+    },
     "keywords": [
         "moving",
         "los-angeles"
