@@ -8,6 +8,10 @@ Sentry.init({
     sendDefaultPii: true,
 });
 
+function toProperCase(str) {
+    return str.trim().toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+}
+
 export default async function handler(req, res) {
     // Only accept POST requests
     if (req.method !== 'POST') {
@@ -26,8 +30,6 @@ export default async function handler(req, res) {
 
     try {
         const {
-            firstName,
-            lastName,
             phone,
             email,
             moveSize,
@@ -37,6 +39,9 @@ export default async function handler(req, res) {
             additionalDetails,
             utm_source
         } = req.body;
+
+        const firstName = toProperCase(req.body.firstName || '');
+        const lastName = toProperCase(req.body.lastName || '');
 
         // Validate required fields
         if (!firstName || !lastName || !phone || !email) {
