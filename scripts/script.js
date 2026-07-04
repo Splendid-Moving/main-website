@@ -446,6 +446,8 @@ function initQuoteModal() {
             form.reset();
             addressFromInput.classList.remove('selected');
             addressToInput.classList.remove('selected');
+            addressFromInput.value = '';
+            addressToInput.value = '';
             document.getElementById('address-from-full').value = '';
             document.getElementById('address-to-full').value = '';
 
@@ -467,19 +469,17 @@ function initQuoteModal() {
 
 // This function is called by the Google Maps API callback
 function initAddressAutocomplete() {
-    const addressFromInput = document.getElementById('address-from');
-    const addressToInput = document.getElementById('address-to');
+    const addressFromEl = document.getElementById('address-from');
+    const addressToEl = document.getElementById('address-to');
 
-    if (!addressFromInput || !addressToInput) return;
+    if (!addressFromEl || !addressToEl) return;
 
-    const options = {
-        types: ['address'],
-        componentRestrictions: { country: 'us' }
-    };
+    addressFromEl.includedRegionCodes = ['us'];
+    addressToEl.includedRegionCodes = ['us'];
 
     // Helper function to format address as "Street, City, State ZIP"
     function formatAddress(place) {
-        const components = place.address_components || [];
+        const components = place.addressComponents || [];
         let streetNumber = '';
         let streetName = '';
         let city = '';
@@ -489,17 +489,17 @@ function initAddressAutocomplete() {
         components.forEach(comp => {
             const types = comp.types;
             if (types.includes('street_number')) {
-                streetNumber = comp.long_name;
+                streetNumber = comp.longText;
             } else if (types.includes('route')) {
-                streetName = comp.long_name;
+                streetName = comp.longText;
             } else if (types.includes('locality')) {
-                city = comp.long_name;
+                city = comp.longText;
             } else if (types.includes('sublocality_level_1') && !city) {
-                city = comp.long_name;
+                city = comp.longText;
             } else if (types.includes('administrative_area_level_1')) {
-                state = comp.short_name;
+                state = comp.shortText;
             } else if (types.includes('postal_code')) {
-                zip = comp.long_name;
+                zip = comp.longText;
             }
         });
 
@@ -510,57 +510,40 @@ function initAddressAutocomplete() {
         if (state) formatted += `, ${state}`;
         if (zip) formatted += ` ${zip}`;
 
-        return formatted || place.formatted_address;
+        return formatted || place.formattedAddress;
     }
 
-    // Setup autocomplete for "Moving From" address
-    const autocompleteFrom = new google.maps.places.Autocomplete(addressFromInput, options);
-    autocompleteFrom.setFields(['address_components', 'formatted_address']);
-    autocompleteFrom.addListener('place_changed', function () {
-        const place = autocompleteFrom.getPlace();
-        if (place.address_components) {
-            const formatted = formatAddress(place);
-            addressFromInput.value = formatted;
-            document.getElementById('address-from-full').value = formatted;
-            addressFromInput.classList.add('selected');
-            addressFromInput.classList.remove('error');
-        }
-    });
+    function setupAutocomplete(element, hiddenInputId) {
+        const hiddenInput = document.getElementById(hiddenInputId);
 
-    // Setup autocomplete for "Moving To" address
-    const autocompleteTo = new google.maps.places.Autocomplete(addressToInput, options);
-    autocompleteTo.setFields(['address_components', 'formatted_address']);
-    autocompleteTo.addListener('place_changed', function () {
-        const place = autocompleteTo.getPlace();
-        if (place.address_components) {
-            const formatted = formatAddress(place);
-            addressToInput.value = formatted;
-            document.getElementById('address-to-full').value = formatted;
-            addressToInput.classList.add('selected');
-            addressToInput.classList.remove('error');
-        }
-    });
+        element.addEventListener('gmp-select', async ({ placePrediction }) => {
+            const place = placePrediction.toPlace();
+            await place.fetchFields({ fields: ['addressComponents', 'formattedAddress'] });
 
-    // Clear validation when user starts typing again
-    addressFromInput.addEventListener('input', function () {
-        if (this.classList.contains('selected')) {
-            document.getElementById('address-from-full').value = '';
-            this.classList.remove('selected');
-        }
-        this.classList.remove('error');
-    });
+            if (place.addressComponents) {
+                const formatted = formatAddress(place);
+                hiddenInput.value = formatted;
+                element.classList.add('selected');
+                element.classList.remove('error');
+            }
+        });
 
-    addressToInput.addEventListener('input', function () {
-        if (this.classList.contains('selected')) {
-            document.getElementById('address-to-full').value = '';
-            this.classList.remove('selected');
-        }
-        this.classList.remove('error');
-    });
+        // Clear validation when user starts typing again
+        element.addEventListener('input', function () {
+            if (element.classList.contains('selected')) {
+                hiddenInput.value = '';
+                element.classList.remove('selected');
+            }
+            element.classList.remove('error');
+        });
+    }
+
+    setupAutocomplete(addressFromEl, 'address-from-full');
+    setupAutocomplete(addressToEl, 'address-to-full');
 
     // Prevent form submission on enter in address fields (let them select from dropdown)
-    [addressFromInput, addressToInput].forEach(input => {
-        input.addEventListener('keydown', function (e) {
+    [addressFromEl, addressToEl].forEach(element => {
+        element.addEventListener('keydown', function (e) {
             if (e.key === 'Enter') {
                 e.preventDefault();
             }

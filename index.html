@@ -844,9 +844,9 @@
                     <div class="quote-form__field">
                         <label for="address-from" class="quote-form__label" data-i18n="modal.movingFrom">Moving From
                             <span class="required">*</span></label>
-                        <input type="text" id="address-from" name="addressFrom"
+                        <gmp-place-autocomplete id="address-from"
                             class="quote-form__input quote-form__address" placeholder="Pick-up address"
-                            data-i18n-placeholder="modal.pickupAddr" required autocomplete="off">
+                            data-i18n-placeholder="modal.pickupAddr"></gmp-place-autocomplete>
                         <input type="hidden" id="address-from-full" name="addressFromFull">
                         <p class="quote-form__hint" data-i18n="modal.selectAddr">Please select an address from the
                             dropdown</p>
@@ -854,9 +854,9 @@
                     <div class="quote-form__field">
                         <label for="address-to" class="quote-form__label" data-i18n="modal.movingTo">Moving To <span
                                 class="required">*</span></label>
-                        <input type="text" id="address-to" name="addressTo"
+                        <gmp-place-autocomplete id="address-to"
                             class="quote-form__input quote-form__address" placeholder="Drop-off address"
-                            data-i18n-placeholder="modal.dropoffAddr" required autocomplete="off">
+                            data-i18n-placeholder="modal.dropoffAddr"></gmp-place-autocomplete>
                         <input type="hidden" id="address-to-full" name="addressToFull">
                         <p class="quote-form__hint" data-i18n="modal.selectAddr">Please select an address from the
                             dropdown</p>
