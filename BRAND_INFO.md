@@ -24,9 +24,9 @@
 
 | Package | Hourly Rate | Best For |
 | :--- | :--- | :--- |
-| **2 Movers + Truck** | $110 - $120 / Hr | Studio or 1-bedroom apartment |
-| **3 Movers + Truck** | $135 - $145 / Hr | 2-bedroom apartment or small office |
-| **4 Movers + Truck** | $170 - $180 / Hr | 3+ bedrooms or medium-sized office |
+| **2 Movers + Truck** | $115 - $125 / Hr | Studio or 1-bedroom apartment |
+| **3 Movers + Truck** | $145 - $155 / Hr | 2-bedroom apartment or small office |
+| **4 Movers + Truck** | $180 - $190 / Hr | 3+ bedrooms or medium-sized office |
 
 ### Services Included
 - **Truck:** 26ft moving truck
