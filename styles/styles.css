@@ -1629,77 +1629,78 @@ h4 {
     color: var(--gray-500);
 }
 
-.footer__credit {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+/* Simple Flow signature badge — "Comet"
+   Spec: github.com/nik-ti/simple-flow-webpage/blob/main/SIGNATURE-BADGE.md */
+@property --sf-ang {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+.sf-comet {
+    /* --sf-bg must match the footer background */
+    --sf-bg: var(--gray-900);
+    --sf-fg: var(--gray-100);
+    --sf-mut: var(--gray-400);
+    --sf-rail: rgba(255, 255, 255, 0.16);
+    --sf-a: #7C6BFF;
+    --sf-hot: #FFD9C2;
+    --sf-b: #E06020;
+
+    display: inline-block;
     margin-top: var(--space-md);
-    padding: 0.4rem 0.85rem;
+    padding: 1px;
     border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.03);
-    font-size: 0.8125rem;
-    color: var(--gray-400);
     text-decoration: none;
-    transition: border-color var(--transition-fast), background var(--transition-fast),
-        transform var(--transition-fast), color var(--transition-fast);
+    background:
+        conic-gradient(from var(--sf-ang),
+            transparent 0 80%,
+            var(--sf-a) 90%,
+            var(--sf-hot) 95%,
+            var(--sf-b) 98%,
+            transparent 100%),
+        linear-gradient(var(--sf-rail), var(--sf-rail));
+    animation: sf-spin 3.6s linear infinite;
 }
 
-.footer__credit-dot {
-    width: 6px;
-    height: 6px;
-    flex-shrink: 0;
-    border-radius: 50%;
-    background: #ff8a3d;
-    box-shadow: 0 0 0 0 rgba(255, 138, 61, 0.55);
-    animation: footer-credit-pulse 2.4s ease-in-out infinite;
+.sf-comet__inner {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--sf-bg);
+    color: var(--sf-fg);
+    font: 600 12px/1 system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.01em;
 }
 
-.footer__credit-text strong {
-    background: linear-gradient(90deg, #ff8a3d, #ffc98a);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-weight: 700;
-    transition: filter var(--transition-fast);
+.sf-comet__lbl {
+    font: 400 10px/1 ui-monospace, "SF Mono", Menlo, monospace;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--sf-mut);
 }
 
-.footer__credit-arrow {
-    width: 13px;
-    height: 13px;
-    flex-shrink: 0;
-    transform: translateX(-2px);
-    opacity: 0.6;
-    transition: transform var(--transition-fast), opacity var(--transition-fast);
+.sf-comet:hover {
+    animation-duration: 1.2s;
 }
 
-.footer__credit:hover {
-    border-color: rgba(255, 138, 61, 0.4);
-    background: rgba(255, 138, 61, 0.08);
-    color: var(--gray-300);
-    transform: translateY(-1px);
+.sf-comet:focus-visible {
+    outline: 2px solid var(--sf-a);
+    outline-offset: 3px;
 }
 
-.footer__credit:hover .footer__credit-arrow {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-@keyframes footer-credit-pulse {
-
-    0%,
-    100% {
-        box-shadow: 0 0 0 0 rgba(255, 138, 61, 0.55);
-    }
-
-    50% {
-        box-shadow: 0 0 0 5px rgba(255, 138, 61, 0);
+@keyframes sf-spin {
+    to {
+        --sf-ang: 360deg;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .footer__credit-dot {
+    .sf-comet {
         animation: none;
+        background: linear-gradient(var(--sf-rail), var(--sf-rail));
     }
 }
 
