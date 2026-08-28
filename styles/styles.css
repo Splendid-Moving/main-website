@@ -2370,6 +2370,14 @@ h4 {
     border-color: #e53e3e;
 }
 
+/* Google's <gmp-place-autocomplete> widget defaults to `color-scheme: light dark`,
+   so every colour inside it (including the suggestions dropdown and the
+   full-screen mobile dialog) flips to dark whenever the visitor's phone or
+   computer is set to dark mode. This site is light-only, so pin it to light. */
+gmp-place-autocomplete {
+    color-scheme: light;
+}
+
 .quote-form__submit {
     margin-top: var(--space-md);
 }

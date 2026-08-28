@@ -2,6 +2,43 @@
    SPLENDID MOVING - Interactive Features
    =================================== */
 
+/* ---------------------------------------------------------------------------
+   Keep the Google address autocomplete as an inline dropdown on phones.
+
+   When <gmp-place-autocomplete> is created it checks, once,
+   window.matchMedia('only screen and (max-width: 450px)'). If that matches,
+   the widget moves the whole field into a native full-screen <dialog> the
+   moment suggestions appear - so on a phone the quote form appears to be
+   replaced by a separate search window.
+
+   Google exposes no option to switch that off, and the widget's internals live
+   in a closed shadow DOM, so this one media query is the only place to
+   intervene: hand the widget a stub that never matches. Everything else on the
+   page still gets the real matchMedia. If Google ever changes the query this
+   silently stops applying and the full-screen dialog returns - it degrades,
+   it does not break.
+   --------------------------------------------------------------------------- */
+(function keepAddressDropdownInline() {
+    const nativeMatchMedia = window.matchMedia.bind(window);
+    const GOOGLE_FULLSCREEN_QUERY = /max-width:\s*450px/;
+
+    window.matchMedia = function (query) {
+        if (typeof query === 'string' && GOOGLE_FULLSCREEN_QUERY.test(query)) {
+            return {
+                media: query,
+                matches: false,
+                onchange: null,
+                addEventListener: function () { },
+                removeEventListener: function () { },
+                addListener: function () { },
+                removeListener: function () { },
+                dispatchEvent: function () { return false; }
+            };
+        }
+        return nativeMatchMedia(query);
+    };
+})();
+
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize all modules
     initUtmTracking();
@@ -540,6 +577,28 @@ function initAddressAutocomplete() {
 
     setupAutocomplete(addressFromEl, 'address-from-full');
     setupAutocomplete(addressToEl, 'address-to-full');
+
+    // The inline dropdown renders directly below the field, inside
+    // .modal__content - which scrolls and clips anything past its edge. On a
+    // phone the keyboard also covers the bottom half of the screen, so when an
+    // address field is focused, scroll it up to the top of the modal to leave
+    // room for the suggestions underneath it.
+    [addressFromEl, addressToEl].forEach(element => {
+        element.addEventListener('focusin', function () {
+            if (window.innerWidth > 640) return;
+
+            const scroller = element.closest('.modal__content');
+            if (!scroller) return;
+
+            // Wait for the mobile keyboard to finish sliding in, otherwise we
+            // measure against a viewport that is about to change.
+            setTimeout(function () {
+                const offset = element.getBoundingClientRect().top
+                    - scroller.getBoundingClientRect().top;
+                scroller.scrollBy({ top: offset - 8, behavior: 'smooth' });
+            }, 300);
+        });
+    });
 
     // Prevent form submission on enter in address fields (let them select from dropdown)
     [addressFromEl, addressToEl].forEach(element => {
