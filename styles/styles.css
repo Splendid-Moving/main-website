@@ -614,6 +614,33 @@ h4 {
     letter-spacing: 1.5px;
 }
 
+.hero__badge--logos {
+    gap: var(--space-sm);
+    padding-left: 0.875rem;
+}
+
+.hero__badge-logo {
+    display: inline-flex;
+    align-items: center;
+    height: 16px;
+}
+
+.hero__badge-logo svg {
+    width: auto;
+    height: 100%;
+}
+
+.hero__badge-logo .brand-yelp {
+    height: 118%;
+}
+
+.hero__badge-sep {
+    width: 1px;
+    height: 14px;
+    margin: 0 0.125rem;
+    background: rgba(255, 255, 255, 0.25);
+}
+
 .hero__title {
     color: var(--white);
     margin-bottom: var(--space-lg);
