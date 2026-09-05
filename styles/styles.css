@@ -608,11 +608,6 @@ h4 {
     animation: fadeInUp 0.8s ease forwards;
 }
 
-.hero__badge-stars {
-    color: #fbbf24;
-    font-size: 0.8125rem;
-    letter-spacing: 1.5px;
-}
 
 .hero__badge--logos {
     gap: var(--space-sm);
