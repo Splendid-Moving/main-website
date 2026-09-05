@@ -608,8 +608,10 @@ h4 {
     animation: fadeInUp 0.8s ease forwards;
 }
 
-.hero__badge-icon {
-    font-size: 1rem;
+.hero__badge-stars {
+    color: #fbbf24;
+    font-size: 0.8125rem;
+    letter-spacing: 1.5px;
 }
 
 .hero__title {
@@ -865,6 +867,145 @@ h4 {
     .hero__scroll {
         display: flex;
     }
+}
+
+/* ===================================
+   Review Proof Bar (under the hero)
+   =================================== */
+
+.proof {
+    padding: var(--space-xl) 0;
+    background: var(--gray-50);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.proof__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-lg);
+}
+
+.proof__card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    min-width: 260px;
+    padding: var(--space-md) var(--space-lg);
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.proof__card:hover {
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.proof__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.proof__logo svg {
+    width: auto;
+    height: 100%;
+}
+
+.proof__body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    line-height: 1.2;
+}
+
+.proof__top {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.proof__score {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--gray-900);
+}
+
+.proof__stars {
+    color: #fbbf24;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.proof__count {
+    margin-top: 4px;
+    font-size: 0.8125rem;
+    color: var(--gray-500);
+}
+
+.proof__arrow {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    color: var(--gray-300);
+    transition: all var(--transition-base);
+}
+
+.proof__card:hover .proof__arrow {
+    color: var(--secondary);
+    transform: translateX(3px);
+}
+
+.proof__link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.proof__link svg {
+    width: 18px;
+    height: 18px;
+    transition: transform var(--transition-base);
+}
+
+.proof__link:hover svg {
+    transform: translateX(3px);
+}
+
+@media (max-width: 600px) {
+    .proof__container {
+        gap: var(--space-md);
+    }
+
+    .proof__card {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+
+
+
+/* Yelp's burst has more internal padding than the Google mark,
+   so nudge it up a little to make the two read the same size. */
+.proof__logo .brand-yelp,
+.rating-card__logo .brand-yelp,
+.testimonial-card__source .brand-yelp,
+.testimonials__cta-logo .brand-yelp {
+    height: 118%;
 }
 
 /* ===================================
@@ -1316,6 +1457,9 @@ h4 {
 }
 
 .testimonial-card__avatar {
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
     width: 48px;
     height: 48px;
     display: flex;
@@ -1385,6 +1529,134 @@ h4 {
     .testimonial-card {
         width: calc(33.333% - var(--space-lg));
     }
+}
+
+
+.rating-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    min-width: 280px;
+    padding: var(--space-lg);
+    text-align: left;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.rating-card:hover {
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.rating-card__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+}
+
+.rating-card__logo svg {
+    width: auto;
+    height: 100%;
+}
+
+.rating-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    line-height: 1.2;
+}
+
+.rating-card__top {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.rating-card__score {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--gray-900);
+}
+
+.rating-card__stars {
+    color: #fbbf24;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.rating-card__count {
+    margin-top: 4px;
+    font-size: 0.8125rem;
+    color: var(--gray-500);
+}
+
+.testimonial-card__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.testimonial-card__head .testimonial-card__stars {
+    margin-bottom: 0;
+}
+
+.testimonial-card__source {
+    display: flex;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.testimonial-card__source {
+    justify-content: flex-end;
+}
+
+.testimonial-card__source svg {
+    width: auto;
+    height: 100%;
+}
+
+.testimonials__cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+}
+
+.testimonials__cta-logo {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+}
+
+.testimonials__cta-logo {
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials__cta-logo svg {
+    width: auto;
+    height: 100%;
+}
+
+.testimonial-card__avatar img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* ===================================
@@ -1576,6 +1848,11 @@ h4 {
 
 .footer__social-link svg {
     width: 20px;
+    height: 20px;
+}
+
+.footer__social-link .footer__social-svg {
+    width: auto;
     height: 20px;
 }
 
