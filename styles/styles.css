@@ -2130,16 +2130,17 @@ h4 {
 .scroll-top {
     position: fixed;
     bottom: 100px;
-    right: var(--space-lg);
-    width: 48px;
-    height: 48px;
+    left: var(--space-lg);
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--gradient-accent);
+    background: var(--white);
+    border: 1px solid var(--gray-200);
     border-radius: var(--radius-full);
-    color: var(--white);
-    box-shadow: var(--shadow-lg), var(--shadow-glow);
+    color: var(--gray-700);
+    box-shadow: var(--shadow-lg);
     opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
@@ -2156,18 +2157,141 @@ h4 {
 
 .scroll-top:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-xl), 0 0 60px rgb(24 139 246 / 0.4);
+    color: var(--secondary);
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-xl);
 }
 
 .scroll-top svg {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
 }
 
 @media (min-width: 1024px) {
     .scroll-top {
+        bottom: calc(var(--space-xl) + 4.25rem);
+        right: calc(var(--space-lg) + 6px);
+        left: auto;
+    }
+}
+
+/* ===================================
+   Chat Button (support agent)
+   Bottom-right corner on every page; the scroll-top button
+   stacks above it on desktop and moves left on mobile.
+   =================================== */
+
+.chat-fab {
+    position: fixed;
+    bottom: 100px;
+    right: var(--space-lg);
+    z-index: var(--z-fixed);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    text-decoration: none;
+}
+
+.chat-fab__bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    background: var(--gradient-accent);
+    border-radius: var(--radius-full);
+    color: var(--white);
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.chat-fab__bubble svg {
+    width: 26px;
+    height: 26px;
+}
+
+.chat-fab:hover .chat-fab__bubble {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl), 0 0 60px rgb(24 139 246 / 0.4);
+}
+
+/* Label only shows on hover/focus, so the resting state stays a plain circle */
+.chat-fab__label {
+    order: -1;
+    padding: 0.5rem 0.875rem;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-md);
+    font-family: var(--font-display);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--gray-700);
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(8px);
+    pointer-events: none;
+    transition: opacity var(--transition-base), transform var(--transition-base);
+}
+
+.chat-fab:hover .chat-fab__label,
+.chat-fab:focus-visible .chat-fab__label {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (max-width: 1023px) {
+    /* No room for the label next to the phone-width CTA bar */
+    .chat-fab__label {
+        display: none;
+    }
+
+    .chat-fab__bubble {
+        width: 52px;
+        height: 52px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .chat-fab {
         bottom: var(--space-xl);
     }
+}
+
+/* ===================================
+   FAQ "still have a question" link
+   =================================== */
+
+.faq__ask {
+    margin-top: var(--space-2xl);
+    text-align: center;
+}
+
+.faq__ask p {
+    margin: 0 0 var(--space-sm);
+    color: var(--gray-600);
+}
+
+.faq__ask-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--secondary);
+    text-decoration: none;
+    transition: gap var(--transition-base);
+}
+
+.faq__ask-link:hover {
+    gap: 0.85rem;
+    text-decoration: underline;
+}
+
+.faq__ask-link svg {
+    width: 1.125rem;
+    height: 1.125rem;
 }
 
 /* ===================================
