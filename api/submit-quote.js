@@ -8,6 +8,13 @@ Sentry.init({
     sendDefaultPii: true,
 });
 
+// Send GHL rejections to Sentry so failed quotes are visible, not just logged
+async function reportGhlError(label, details) {
+    console.error(label + ':', details);
+    Sentry.captureMessage(label, { level: 'error', extra: { details } });
+    await Sentry.flush(2000);
+}
+
 function toProperCase(str) {
     return str.trim().toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
 }
@@ -156,7 +163,10 @@ export default async function handler(req, res) {
                 });
             }
 
-            // Update the existing contact
+            // GHL's update endpoint rejects locationId, and sending tags would
+            // replace the contact's existing tags, so both are left out here
+            const { locationId, tags, ...updateFields } = contactData;
+
             const updateResponse = await fetch(`https://services.leadconnectorhq.com/contacts/${existingContactId}`, {
                 method: 'PUT',
                 headers: {
@@ -164,13 +174,29 @@ export default async function handler(req, res) {
                     'Content-Type': 'application/json',
                     'Version': '2021-07-28'
                 },
-                body: JSON.stringify(contactData)
+                body: JSON.stringify(updateFields)
             });
 
             const updateData = await updateResponse.json();
 
+            // Add the new tags on top of whatever tags the contact already has
+            if (updateResponse.ok) {
+                const tagResponse = await fetch(`https://services.leadconnectorhq.com/contacts/${existingContactId}/tags`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${GHL_ACCESS_TOKEN}`,
+                        'Content-Type': 'application/json',
+                        'Version': '2021-07-28'
+                    },
+                    body: JSON.stringify({ tags })
+                });
+                if (!tagResponse.ok) {
+                    await reportGhlError('Failed to add tags to existing contact', await tagResponse.json());
+                }
+            }
+
             if (!updateResponse.ok) {
-                console.error('Failed to update existing contact:', updateData);
+                await reportGhlError('Failed to update existing contact', updateData);
                 return res.status(updateResponse.status).json({
                     error: 'Failed to update existing contact',
                     details: updateData
@@ -188,7 +214,7 @@ export default async function handler(req, res) {
 
         // Handle other errors
         if (!ghlResponse.ok) {
-            console.error('GHL API Error:', responseData);
+            await reportGhlError('GHL API Error', responseData);
             return res.status(ghlResponse.status).json({
                 error: 'Failed to create contact in CRM',
                 details: responseData
