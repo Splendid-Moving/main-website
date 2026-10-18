@@ -135,14 +135,14 @@ For local quotes, the optional line is exactly `Gas fee: $<fee>`. On failure, re
 - Live Gas Fee field: `2nEnIoqxsJhlJQx74RJm`, `contact.gas_fee`, NUMERICAL. Authorized test confirmed writing $30 and restoring the empty value; no calendar/job-note trigger fields were touched.
 - Every test must use only contact phone `8185054576`; mock CRM sends during automated/browser checks. No other real contact is authorized for testing.
 - Configuration is documented in `.env.example` and README: Routes key, optional private Blob, review/signing/cron secrets, task assignee, and the automatic-send switch (off by default).
-- Real authorized new-contact test delivered SMS `IPhnVxdkAuXTmTulZ5eZ` with the three-mover rate and $30 gas. Same-request retry returned the same message ID. Fresh returning-request production check remains next.
+- Real authorized new-contact test delivered SMS `IPhnVxdkAuXTmTulZ5eZ` with the three-mover rate and $30 gas. Same-request retry returned the same message ID. Live returning quote `C7lqy1wqFk0gOv9qlSey` also delivered; same contact updated to 4+ bedrooms, $30 gas, and flexible date. Production retry reused its message ID; exactly two quote texts exist. Long-distance inventory/manual-task flow verified with no SMS.
 
 ## Status
 
 _Updated: 2026-10-18_
-- Address-first `/quote` is live. Removing the Redis dependency and activating real automatic SMS is now explicitly authorized. Google mileage works with the website key; quote texts use GHL.
+- Address-first `/quote`, gas calculation, and automatic GHL SMS are live from `main` commit `1310e46`. `AUTO_QUOTES_ENABLED=true` and the existing operations task assignee are configured in production. Redis dependency removed.
 - Core changes pass 41 checks: phone-first contact lookup/update, new-request re-quotes even with identical details, same-request retry receipts in GHL notes, no-Redis gas/SMS, failures/DND/manual branches. Blank new dates clear old dates.
-- Real authorized test recreated deleted contact as `7QEmujHBzyoV5LNCtfxw` on `8185054576`; local-path SMS delivered with 3 movers and $30 gas. Retrying reused message ID. Production returning-request verification follows push/activation.
-- Next: set activation/assignee in existing project settings, push `main` (no Vercel CLI), verify live mileage, fresh returning quote, gas/contact update, delivery, and long-distance manual branch; close task Playwright sessions.
+- Recreated deleted test contact `7QEmujHBzyoV5LNCtfxw` on `8185054576`; new and returning quotes both delivered, with $30 gas. Same contact updated to 4+ bedrooms and old date cleared. Identical-request retry reused its message ID; exactly two quote messages exist.
+- Live checks passed: local round trip 29 miles / $30; long-distance circuit 768 miles requires inventory and creates assigned manual-pricing task without hourly SMS. Mobile confirmation/inventory reviewed, task Playwright session closed. Deploy only through `main` pushes; no Vercel CLI.
 - In-form private photo storage cannot be provisioned with the available Vercel project token (403). Long-distance form uses item lists and recommended photos by email until private storage is connected. This does not gate SMS or mileage. Photo-session metadata moved to private Blob files; no Redis remains.
 - Limits: GHL notes persist retry outcomes but do not provide an atomic lock across separate server instances; IP limits/cache are per worker. Physical phones/Safari remain untested. Preserve booking/calendar fields and test only the authorized phone.

@@ -58,10 +58,10 @@ Photos upload directly to private storage, with a maximum of ten images at 15 MB
 - Install: `npm ci`.
 - App/API development: `npm run dev` using the Vercel CLI and the intended project/environment.
 - Static-only preview: `npm start`, then open `/quote.html`. Python's simple server does not provide `/quote` clean URLs or API routes.
-- Automated checks: `npm test` — mocked network, no real messages.
+- Automated checks: `npm test` — 41 passing, mocked network, no real messages.
 - Build check: `npm run build` (static site; no frontend compilation).
 
-**Every test uses only phone `8185054576`.** Nikita deleted the previous test contact. The authorized new test contact is **Quote Form Test**, ID `7QEmujHBzyoV5LNCtfxw`. A real new-contact test delivered the three-mover quote with a $30 gas fee. Retrying the same request reused the original message ID with no second send. Production returning-contact verification is the next deployment check.
+**Every test uses only phone `8185054576`.** Nikita deleted the previous test contact. The authorized new test contact is **Quote Form Test**, ID `7QEmujHBzyoV5LNCtfxw`. A real new-contact test delivered the three-mover quote with a $30 gas fee. Retrying the same request reused the original message ID with no second send. The live returning request updated that same contact to 4+ bedrooms and a flexible date, stored $30 gas, and delivered the four-mover quote. A production retry reused the same message ID. Exactly two quote messages exist for the two genuine requests; long-distance inventory submission created an assigned manual-pricing task with no hourly SMS.
 
 Automated checks cover rates/rounding, long-distance/manual cases, Google outages, no-Redis routing/SMS, existing-contact updates, fresh repeat requests, same-request retries, uncertain sends, and CRM-note receipts. Prior responsive/translation/browser reviews remain valid; physical phones/Safari remain unverified.
 
