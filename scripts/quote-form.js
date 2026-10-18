@@ -219,9 +219,11 @@ function markup() {
     case "inventory":
       return (
         heading("inventoryTitle", "inventoryIntro") +
-        `<div class="inventory-modes" role="group" aria-label="${t("inventory")}"><button type="button" data-mode="photos" aria-pressed="${state.inventoryMode === "photos"}"><strong>${t("photos")}</strong><span class="recommended">${t("recommended")}</span><small>${t("photosWhy")}</small></button><button type="button" data-mode="list" aria-pressed="${state.inventoryMode === "list"}"><strong>${t("list")}</strong><small>${t("listWhy")}</small></button></div>` +
+        `<div class="inventory-modes" role="group" aria-label="${t("inventory")}"><button type="button" data-mode="photos" aria-pressed="${state.inventoryMode === "photos"}"><strong>${t(state.route.photoUploadsAvailable === false ? "emailPhotos" : "photos")}</strong><span class="recommended">${t("recommended")}</span><small>${t("photosWhy")}</small></button><button type="button" data-mode="list" aria-pressed="${state.inventoryMode === "list"}"><strong>${t("list")}</strong><small>${t("listWhy")}</small></button></div>` +
         (state.inventoryMode === "photos"
-          ? `<div class="photo-upload"><label for="inventory-photos" class="photo-picker"><svg aria-hidden="true" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4zM4 16l5-5 5 5 3-3 3 3"/><circle cx="16" cy="8" r="1.5"/></svg><span>${t("choosePhotos")}</span><input id="inventory-photos" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif,.heic,.heif" multiple></label><p class="wizard-hint">${t("photoHint")}</p><ul class="photo-files">${state.files.map((file) => `<li>${escape(file.name)}</li>`).join("")}</ul>${state.photoSession ? `<p class="upload-done">${t("uploaded")}</p>` : ""}<p class="photo-privacy">${t("photoPrivacy")}</p></div>`
+          ? state.route.photoUploadsAvailable === false
+            ? `<p class="wizard-intro">${t("photoEmailHint")}</p>`
+            : `<div class="photo-upload"><label for="inventory-photos" class="photo-picker"><svg aria-hidden="true" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4zM4 16l5-5 5 5 3-3 3 3"/><circle cx="16" cy="8" r="1.5"/></svg><span>${t("choosePhotos")}</span><input id="inventory-photos" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif,.heic,.heif" multiple></label><p class="wizard-hint">${t("photoHint")}</p><ul class="photo-files">${state.files.map((file) => `<li>${escape(file.name)}</li>`).join("")}</ul>${state.photoSession ? `<p class="upload-done">${t("uploaded")}</p>` : ""}<p class="photo-privacy">${t("photoPrivacy")}</p></div>`
           : textarea(
               "inventory",
               "inventoryLabel",
@@ -382,12 +384,16 @@ async function checkRoute(mode) {
       pickup: state.data.addressFromFull,
       dropoff: state.data.addressToFull,
     });
+    if (state.route.photoUploadsAvailable === false)
+      state.inventoryMode = "list";
   } catch {
     state.route = { classification: "unknown" };
   }
 }
 async function upload() {
   if (state.photoSession) return;
+  if (state.route.photoUploadsAvailable === false)
+    throw Error(t("photoEmailHint"));
   if (!state.files.length) throw Error(t("photoRequired"));
   const prepared = await request("/api/quote-photo-upload", {
     files: state.files.map((file) => ({

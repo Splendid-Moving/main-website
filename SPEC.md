@@ -19,7 +19,7 @@ CONSTRAINTS:
 - Long-distance moves never receive this hourly quote. Require photos or a written inventory for in-form submission; recommend photos more strongly because they help produce a more accurate price. Also offer contacting `info@splendidmoving.com` by email to supply inventory instead.
 - Mileage lookup failure → send the hourly SMS without the whole gas-fee line and notify the team, explicitly confirmed by the user even though distance classification is unavailable. Record classification as unknown rather than inventing mileage or labelling it local.
 - Respect the contact's messaging restrictions and record messaging failures for manual follow-up. A provider rejection cannot be treated as delivery.
-- Customer-facing sending remains disabled during local development. Live activation follows a separate review of the tested implementation and configuration.
+- Nikita explicitly requested finishing and activating the automation on 2026-10-18. No Redis requirement. A returning customer’s fresh submission updates the matching phone contact and sends a new eligible quote immediately, even if details match an earlier request.
 
 FORMAT:
 - A standalone, directly shareable `https://splendidmoving.com/quote` page using the same submission logic as the existing site form; accessible without opening a modal or visiting the homepage first.
@@ -38,7 +38,7 @@ FAILURE (any of these = not done):
 - Maps failure prevents an otherwise eligible quote from sending, or leaves a gas label, placeholder, zero-dollar fee, or guessed fee in the customer message.
 - Manual-pricing cases are only logged with no visible CRM follow-up; failures to create that follow-up are not surfaced.
 - New contacts work but returning contacts fail, lose existing tags, or send stale move details.
-- Concurrent/retried processing of the same submission creates duplicate quotes; sender timeouts trigger blind resends.
+- A retry of a completed submission sends another quote, a fresh request is blocked as a duplicate, or an uncertain SMS timeout triggers a blind resend. Separate-worker simultaneous races are a documented limitation of the CRM-only design.
 - A messaging failure makes the browser ask the customer to resubmit a lead already saved successfully, or is reported as a delivered quote.
 - Automatic sending runs without confirmed channel/move-size rules, bypasses a channel restriction, or exposes credentials/customer payloads in logs.
 - Current owner notifications stop working or an existing GHL workflow also sends the same quote.
@@ -100,21 +100,21 @@ For local quotes, the optional line is exactly `Gas fee: $<fee>`. On failure, re
 - [Google Routes Compute Routes](https://developers.google.com/maps/documentation/routes/reference/rest/v2/TopLevel/computeRoutes): one request with the base as origin/destination and pickup/drop-off as ordered stopovers. `DRIVE`, `TRAFFIC_UNAWARE`, no waypoint optimization; request only distance fields.
 - [GHL Send Message](https://marketplace.gohighlevel.com/docs/2021-07-28/ghl/conversations/send-a-new-message/): retain direct HTTP for this narrow integration. Verify payload/sender configuration before activation; use contact tasks/notes for manual pricing.
 - Native Node test runner and mocked HTTP for repeatable tests with no customer sends.
-- Durable Redis REST tracking is implemented, pending database connection: stable requests stay protected for 30 days; identical new submissions share results for ten minutes. In-memory flags or GHL tags alone cannot provide atomic protection.
+- GoHighLevel notes record each request ID, fingerprint, phase, outcome, and SMS message ID. Same-request replays reuse the result; new request IDs are never suppressed by matching contact/details. No extra database.
 - Reuse existing Sentry for operational failures; redact tokens and customer message/address payloads.
 - [Private Vercel Blob](https://vercel.com/docs/vercel-blob/private-storage), Apache-2.0 SDK 2.8.2, implements direct scoped uploads and password-protected staff review; connection remains pending. Sentry upgraded to maintained 11.8.0 (MIT); dependency audit reports zero vulnerabilities.
 
 ## Gotchas we're handling
 
-- The browser creates a stable request ID and retains it across retries; the server validates it and binds it to the submission payload. Concurrent retries share the recorded result. Review a short same-contact/same-move suppression window before activation.
-- The ledger must exist before automatic sending is enabled. If unavailable, preserve lead intake and flag manual follow-up rather than risk sending duplicates.
+- The browser keeps a stable request ID across retries. Same-worker simultaneous retries share one promise; persisted GHL notes handle later retries. GHL notes are not an atomic cross-worker lock: simultaneous requests on separate instances may overlap. Do not claim global exactly-once delivery.
+- Record the sending phase in GHL before calling its SMS endpoint; record accepted/failed/uncertain afterward. A CRM-note write failure saves the lead for manual handling. No Redis or file-storage gate for routing/SMS.
 - Set a short Maps timeout, catch all Maps failures, and validate all three legs. No fallback to the older Distance Matrix helper used for calendar notes.
 - Save/update the contact before quote delivery. A saved lead remains a successful form submission even if sending fails; return and record the separate quote outcome.
 - Track pending/accepted/failed/uncertain delivery by submission and channel. A timeout after a send may mean the message exists: reconcile in GHL before resending, since the send endpoint has no documented idempotency key.
 - An accepted/queued GHL message is not proof of handset or inbox delivery. Record message IDs and surface subsequent failure through available provider status reporting.
 - Check existing notification/quote workflows before activation to avoid double sends. Keep quote sending behind an explicit configuration switch.
 - Restrict a separate server-side Google key to Routes API and confirm billing/access; never reuse a browser referrer-restricted key by assumption.
-- Rate-limit/abuse protection must cover the public form before enabling automatic customer texts; choose a compatible host setting during setup.
+- Honeypot, origin checks, validation, and bounded per-worker IP limits cover the public form. Temporary mileage caches reduce repeat calls; neither requires a database.
 - Photo uploads use a separate direct-upload path with enforced size/type/count limits, draft ownership checks, and private storage; never accept arbitrary browser-supplied URLs. Proposed cap: 10 photos, 15 MB each; JPEG/PNG/WebP/HEIC/HEIF, with filenames/status if previews are unsupported. Confirm storage access/retention before implementation; no public photo URLs in CRM notes.
 
 ## Build sequence
@@ -130,19 +130,19 @@ For local quotes, the optional line is exactly `Gas fee: $<fee>`. On failure, re
 ## How to run and test
 
 - Existing API development command: `npm run dev` (Vercel CLI required). `npm start` serves static files only.
-- Tests: `npm test` — 37 passing, external services mocked. `npm run build` and `git diff --check` pass.
+- Tests: `npm test` — 41 passing, external services mocked. `npm run build` and `git diff --check` pass.
 - Existing credentials: `GHL_ACCESS_TOKEN`, `GHL_LOCATION_ID`.
 - Live Gas Fee field: `2nEnIoqxsJhlJQx74RJm`, `contact.gas_fee`, NUMERICAL. Authorized test confirmed writing $30 and restoring the empty value; no calendar/job-note trigger fields were touched.
 - Every test must use only contact phone `8185054576`; mock CRM sends during automated/browser checks. No other real contact is authorized for testing.
-- Configuration is documented in `.env.example` and README: Routes key, Redis REST, private Blob, review/signing/cron secrets, task assignee, and the automatic-send switch (off by default).
-- Live `/quote` and server JSON validation verified. One real browser submission using only `8185054576` saved successfully with `quoteStatus: disabled`; both review notes/tasks were verified in GHL. No SMS sent.
+- Configuration is documented in `.env.example` and README: Routes key, optional private Blob, review/signing/cron secrets, task assignee, and the automatic-send switch (off by default).
+- Real authorized new-contact test delivered SMS `IPhnVxdkAuXTmTulZ5eZ` with the three-mover rate and $30 gas. Same-request retry returned the same message ID. Fresh returning-request production check remains next.
 
 ## Status
 
 _Updated: 2026-10-18_
-- Live at `https://splendidmoving.com/quote`: centered `/quote` wizard, original Google full-address dropdowns, directional transitions, local/long-distance branching, photos/item-list/email options, gas calculation/field writes, and guarded SMS/CRM integration. Pushed `main` through the existing Git integration; Vercel reported successful deployment. Automatic SMS remains off pending durable duplicate protection and configuration.
-- Verified: the form posts to `api/submit-quote.js`; both create/update paths save contacts; `website-lead` is intended as a workflow trigger. Local rate sources agree.
-- Confirmed: SMS only; studio → 2 movers; retain 4+ Bedroom → 4 movers; progressive form; full base/pickup/drop-off/base circuit >250 miles means long-distance, no hourly quote. Require photos or item list, recommend photos, offer email alternative. Mileage failure → gas-free hourly SMS plus team notification.
-- Verified: 37 automated checks; browser local success/retry and long-distance photo/list flows; Back, translated screens, reduced motion, and screenshots at 360/390/768/1440px. Authorized gas-field round trip verified. Production form test saved phone `8185054576` as contact `6SYEnctIIyIycRfBPIdB`, gas empty; two review notes/tasks verified, no SMS sent. Task Playwright session closed.
-- Next: connect Redis/private Blob, configure task assignment/secrets, review existing GHL workflows, then activate and verify automatic SMS. Deploy the form by pushing `main`; do not use Vercel CLI for this project. Overall production contract is pending these external setup checks.
-- Watch out for: private Blob and real SMS delivery are not live-verified; physical phones/Safari remain untested. The form markup now lives only at `/quote`. Do not use another contact for tests or trigger booking/calendar workflows. Google corrected: shared workspace key has Routes disabled; existing website key succeeds with all three legs and is now configured in encrypted project env. Redis is still required for live route calls.
+- Address-first `/quote` is live. Removing the Redis dependency and activating real automatic SMS is now explicitly authorized. Google mileage works with the website key; quote texts use GHL.
+- Core changes pass 41 checks: phone-first contact lookup/update, new-request re-quotes even with identical details, same-request retry receipts in GHL notes, no-Redis gas/SMS, failures/DND/manual branches. Blank new dates clear old dates.
+- Real authorized test recreated deleted contact as `7QEmujHBzyoV5LNCtfxw` on `8185054576`; local-path SMS delivered with 3 movers and $30 gas. Retrying reused message ID. Production returning-request verification follows push/activation.
+- Next: set activation/assignee in existing project settings, push `main` (no Vercel CLI), verify live mileage, fresh returning quote, gas/contact update, delivery, and long-distance manual branch; close task Playwright sessions.
+- In-form private photo storage cannot be provisioned with the available Vercel project token (403). Long-distance form uses item lists and recommended photos by email until private storage is connected. This does not gate SMS or mileage. Photo-session metadata moved to private Blob files; no Redis remains.
+- Limits: GHL notes persist retry outcomes but do not provide an atomic lock across separate server instances; IP limits/cache are per worker. Physical phones/Safari remain untested. Preserve booking/calendar fields and test only the authorized phone.

@@ -2,7 +2,12 @@
 // They pin gas-field writes and the returning-customer fix against regressions.
 import test from "node:test";
 import assert from "node:assert/strict";
-import { saveContact } from "../lib/quote/crm.js";
+import {
+  saveContact,
+  findContact,
+  getRequest,
+  recordRequest,
+} from "../lib/quote/crm.js";
 import { GAS_FIELD_ID } from "../lib/quote/pricing.js";
 import { validateQuote } from "../lib/quote/http.js";
 import { validToken, preparePhotos } from "../lib/quote/photos.js";
@@ -25,6 +30,8 @@ test("new contacts receive the numerical gas field without booking triggers", as
   const requests = [];
   globalThis.fetch = async (url, options) => {
     requests.push({ url, ...options });
+    if (url.includes("/contacts/search/duplicate"))
+      return Response.json({ contact: null });
     return new Response(
       JSON.stringify({
         contact: { id: "authorized-test-contact", dnd: false },
@@ -33,7 +40,10 @@ test("new contacts receive the numerical gas field without booking triggers", as
   };
   try {
     await saveContact(input);
-    const body = JSON.parse(requests[0].body);
+    const body = JSON.parse(
+      requests.find((r) => r.url.endsWith("/contacts/") && r.method === "POST")
+        .body,
+    );
     assert.equal(body.phone, "8185054576");
     assert.deepEqual(
       body.customFields.find((f) => f.id === GAS_FIELD_ID),
@@ -49,6 +59,10 @@ test("returning contacts clear old gas and preserve tags/location update rules",
   const requests = [];
   globalThis.fetch = async (url, options) => {
     requests.push({ url, ...options });
+    if (url.includes("/contacts/search/duplicate"))
+      return Response.json({
+        contact: { id: "authorized-test-contact", phone: "+18185054576" },
+      });
     if (options.method === "POST" && url.endsWith("/contacts/"))
       return new Response(
         JSON.stringify({
@@ -66,10 +80,20 @@ test("returning contacts clear old gas and preserve tags/location update rules",
   try {
     await saveContact({
       ...input,
+      moveDate: "",
       gasFee: null,
       route: { classification: "unknown", totalMiles: null },
     });
+    assert.ok(
+      !requests.some(
+        (r) => r.method === "POST" && r.url.endsWith("/contacts/"),
+      ),
+    );
     const update = JSON.parse(requests.find((r) => r.method === "PUT").body);
+    assert.deepEqual(
+      update.customFields.find((f) => f.id === "VuatzebiX5qPrzGjl4d4"),
+      { id: "VuatzebiX5qPrzGjl4d4", value: "" },
+    );
     assert.ok(!("locationId" in update));
     assert.ok(!("tags" in update));
     assert.deepEqual(
@@ -86,9 +110,11 @@ test("returning contacts clear old gas and preserve tags/location update rules",
 test("messaging-preference lookup failure still returns the saved contact for manual follow-up", async () => {
   const original = globalThis.fetch;
   globalThis.fetch = async (url, options) =>
-    options.method === "POST"
-      ? new Response('{"contact":{"id":"authorized-test-contact"}}')
-      : new Response("{}", { status: 503 });
+    url.includes("/contacts/search/duplicate")
+      ? Response.json({ contact: null })
+      : options.method === "POST"
+        ? new Response('{"contact":{"id":"authorized-test-contact"}}')
+        : new Response("{}", { status: 503 });
   try {
     const contact = await saveContact(input);
     assert.equal(contact.id, "authorized-test-contact");
@@ -115,4 +141,46 @@ test("server validates required data and ignores client pricing/classification c
 test("unconfigured/invalid photo sessions fail safely without uploading", async () => {
   assert.equal(validToken("invalid", "invalid"), false);
   await assert.rejects(() => preparePhotos([]), /unavailable|photos/);
+});
+
+test("request receipts are kept in CRM notes per submission, not per customer", async () => {
+  const original = globalThis.fetch;
+  let notes = [];
+  const writes = [];
+  globalThis.fetch = async (url, options) => {
+    if (options.method === "GET") return Response.json({ notes });
+    const body = JSON.parse(options.body).body;
+    writes.push({ url, method: options.method, body });
+    if (options.method === "POST")
+      notes.push({ id: `note-${notes.length}`, body });
+    else notes.find((n) => url.endsWith(n.id)).body = body;
+    return Response.json({ note: notes.at(-1) });
+  };
+  try {
+    await recordRequest("authorized-test-contact", "first", {
+      phase: "sending",
+      fingerprint: "one",
+    });
+    await recordRequest("authorized-test-contact", "first", {
+      phase: "finished",
+      fingerprint: "one",
+      result: { quoteStatus: "accepted" },
+    });
+    await recordRequest("authorized-test-contact", "second", {
+      phase: "sending",
+      fingerprint: "one",
+    });
+    assert.equal(notes.length, 2);
+    assert.equal(
+      (await getRequest("authorized-test-contact", "first")).result.quoteStatus,
+      "accepted",
+    );
+    assert.equal(
+      (await getRequest("authorized-test-contact", "second")).phase,
+      "sending",
+    );
+    assert.ok(writes.some((w) => w.method === "PUT"));
+  } finally {
+    globalThis.fetch = original;
+  }
 });

@@ -35,19 +35,21 @@ The numerical GHL **Gas Fee** field is `2nEnIoqxsJhlJQx74RJm` (`contact.gas_fee`
 
 Returning contacts are updated without `locationId` or replacement tags; tags are added separately. Global/channel SMS restrictions are respected. A successful contact save remains successful when messaging fails, with a separate quote status and manual follow-up. An accepted message is not proof of delivery.
 
-Redis stores durable request records for 30 days. Identical new requests share a result for ten minutes; a stable request ID continues to prevent resends after a timeout or redeploy. Uncertain sends require checking the CRM conversation before resending. If tracking is unavailable, intake continues with manual follow-up and no automatic SMS.
+Each form submission has its own request ID. Its SMS status and message ID are recorded in the existing GoHighLevel contact notes. Retrying that same request reuses its result; a fresh submission always updates the contact and can send a new quote, even when the details are identical. There is no customer-wide cooldown and no Redis database.
+
+Concurrent calls within one server process share a pending request. GoHighLevel notes preserve completed/uncertain outcomes across restarts. Notes are not a distributed transaction lock: requests racing on separate server instances can still overlap. Uncertain sends are held for manual review rather than blindly retried. Mileage caching and basic IP limits are temporary per-process caches, so they do not block sending when a database is absent.
 
 ## Setup before live activation
 
 Copy the names from `.env.example` into the correct Vercel project's environment settings. Keep all real credentials out of git and never paste them into documentation.
 
-1. Existing CRM settings: `GHL_ACCESS_TOKEN`, `GHL_LOCATION_ID`. Confirm access to contacts, notes/tasks, and sending conversation messages.
-2. `GOOGLE_MAPS_API_KEY`: use a server-side key with **Routes API** enabled, correct restrictions, and billing. The browser Places key is separate. The shared workspace key returned `SERVICE_DISABLED`; the existing website key returned HTTP 200 with all three driving legs. The working website key is now saved in this project’s encrypted production/preview environment and ignored local `.env`. The next Git deployment picks it up. Live route checks still require Redis rate limiting.
-3. Connect an Upstash Redis database through `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN`. It provides atomic duplicate protection, route caching, and API rate limiting. Paid route lookups and automatic SMS do not run without this protection.
-4. `GHL_QUOTE_ASSIGNEE_ID`: select the team member who receives manual-review tasks. Without it, tasks are unassigned; existing `website-lead` tagging is preserved.
-5. For photos, connect a **private** Vercel Blob store and set `BLOB_READ_WRITE_TOKEN`, `QUOTE_SIGNING_SECRET`, and `QUOTE_PHOTO_REVIEW_PASSWORD`. Use separate long random secrets. Staff open the CRM's `/quote-photos?request=…` link and sign in with the review password; any username works. Photos never use public galleries.
-6. Set `QUOTE_SITE_URL` to the actual site origin and `CRON_SECRET` for the daily photo cleanup. Abandoned uploads expire after one day; submitted photos are deleted after 30 days. The configured daily cron performs deletion, so verify it after deployment.
-7. Leave `AUTO_QUOTES_ENABLED=false` while reviewing the form, workflows, configuration, and a test request. Set it to `true` only for live activation after that review.
+1. Existing CRM settings: `GHL_ACCESS_TOKEN`, `GHL_LOCATION_ID`. Contacts are looked up by normalized phone first; an existing record is updated, preserving tags and omitting `locationId` from the update. New records are created only when no matching phone exists. A blank new move date clears an old date.
+2. `GOOGLE_MAPS_API_KEY`: the working website key is configured in encrypted production/preview settings and ignored local `.env`. A direct full-circuit request returned 29 miles / $30. Mileage needs no database.
+3. `AUTO_QUOTES_ENABLED=true` activates the automatic GHL SMS quote. The production activation is authorized by Nikita. DND remains respected. Accepted quotes create a CRM follow-up note/task as well as retaining the existing `website-lead` tag.
+4. `GHL_QUOTE_ASSIGNEE_ID` routes review tasks to the existing operations user. Missing/failed mileage still sends the hourly quote without its entire gas line and creates a manual-gas task.
+5. Optional in-form photo uploads need a **private** Vercel Blob store and `BLOB_READ_WRITE_TOKEN`, `QUOTE_SIGNING_SECRET`, `QUOTE_PHOTO_REVIEW_PASSWORD`, `QUOTE_SITE_URL`, and `CRON_SECRET`. Photo manifests live with the private files, with no Redis. Staff use password-protected `/quote-photos?request=…` links.
+
+The available Vercel project token can deploy/configure the project but cannot create Blob storage (403). Until private uploads are connected, long-distance customers can submit a required item list or email photos to `info@splendidmoving.com` for the more accurate estimate. The form offers that working email path instead of an unavailable upload picker. Photo setup never blocks mileage or SMS.
 
 Photos upload directly to private storage, with a maximum of ten images at 15 MB each. Supported originals are JPEG, PNG, WebP, HEIC and HEIF. Staff may need to download HEIC files to view them. The server validates file ownership, size, type, and file signatures. If uploads fail, the customer can retry, supply an item list, or email the team.
 
@@ -59,9 +61,9 @@ Photos upload directly to private storage, with a maximum of ten images at 15 MB
 - Automated checks: `npm test` — mocked network, no real messages.
 - Build check: `npm run build` (static site; no frontend compilation).
 
-**Every test uses only phone `8185054576`.** The latest production form test saved **Quote Form Test** with contact ID `6SYEnctIIyIycRfBPIdB`, tagged `website-lead` and `2-bedroom`. No test SMS has been sent. Never create or test with another contact.
+**Every test uses only phone `8185054576`.** Nikita deleted the previous test contact. The authorized new test contact is **Quote Form Test**, ID `7QEmujHBzyoV5LNCtfxw`. A real new-contact test delivered the three-mover quote with a $30 gas fee. Retrying the same request reused the original message ID with no second send. Production returning-contact verification is the next deployment check.
 
-Verified locally: pricing/rounding boundaries, long-distance handling, Maps outages, numeric gas-field writes, returning-contact behavior, duplicate/uncertain sends, upload fallback, both browser submission branches, Back navigation, translations, and screenshots at 360/390/768/1440px. Physical phones/Safari and actual private-Blob uploads remain unverified. The site is live at `https://splendidmoving.com/quote`, deployed by pushing `main` through the existing Git integration. A real browser test on the authorized phone saved the contact, returned `quoteStatus: disabled`, and created both manual-review notes/tasks. Do not use Vercel CLI to deploy this project. Live automatic sending remains disabled until durable tracking and configuration are ready. Non-JSON server responses show a readable retry message instead of a parser error.
+Automated checks cover rates/rounding, long-distance/manual cases, Google outages, no-Redis routing/SMS, existing-contact updates, fresh repeat requests, same-request retries, uncertain sends, and CRM-note receipts. Prior responsive/translation/browser reviews remain valid; physical phones/Safari remain unverified.
 
 ## Files
 

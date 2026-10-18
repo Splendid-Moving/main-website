@@ -3,8 +3,14 @@
 import { accept, validateQuote, report } from "../lib/quote/http.js";
 import { calculateRoute } from "../lib/quote/routing.js";
 import { processQuote } from "../lib/quote/automation.js";
-import { saveContact, notify, sendSms } from "../lib/quote/crm.js";
-import { storeReady, claim, read, write, release } from "../lib/quote/store.js";
+import {
+  saveContact,
+  findContact,
+  getRequest,
+  recordRequest,
+  notify,
+  sendSms,
+} from "../lib/quote/crm.js";
 import { verifyPhotos, markPhotosSubmitted } from "../lib/quote/photos.js";
 export default async function handler(req, res) {
   try {
@@ -14,16 +20,10 @@ export default async function handler(req, res) {
     const input = validateQuote(req.body);
     const result = await processQuote(input, {
       enabled: process.env.AUTO_QUOTES_ENABLED === "true",
-      route:
-        storeReady() && req.quoteRateLimited !== false
-          ? calculateRoute
-          : async () => ({
-              status: "unavailable",
-              classification: "unknown",
-              gasFee: null,
-              totalMiles: null,
-              roundedMiles: null,
-            }),
+      route: calculateRoute,
+      findContact,
+      getRequest,
+      recordRequest,
       saveContact,
       notify,
       sendSms,
@@ -33,7 +33,6 @@ export default async function handler(req, res) {
         return photos;
       },
       report,
-      ...(storeReady() ? { claim, read, write, release } : {}),
     });
     return res.status(200).json(result);
   } catch (error) {

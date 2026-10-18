@@ -35,21 +35,13 @@ const route = (miles) => ({
 function setup(overrides = {}) {
   const calls = [];
   const records = new Map();
-  const fingerprints = new Map();
   const deps = {
     enabled: true,
     route: async () => route(45),
-    claim: async (key, fingerprint) => {
-      if (records.has(key)) return false;
-      const existing = fingerprints.get(fingerprint);
-      if (existing && records.has(existing)) return existing;
-      records.set(key, {});
-      fingerprints.set(fingerprint, key);
-      return true;
-    },
-    read: async (key) => records.get(key),
-    write: async (key, value) => records.set(key, value),
-    release: async (key) => records.delete(key),
+    findContact: async () => ({ id: "authorized-test-contact" }),
+    getRequest: async (contactId, requestId) => records.get(requestId),
+    recordRequest: async (contactId, requestId, value) =>
+      records.set(requestId, value),
     saveContact: async (data) => {
       calls.push(["save", data]);
       return { id: "authorized-test-contact", firstName: "Nikita", dnd: false };
@@ -197,7 +189,32 @@ test("concurrent and repeated submissions do not send a second quote", async () 
   ]);
   assert.ok(results.some((r) => r.status === "fulfilled"));
   await processQuote(input, deps);
-  await processQuote({ ...input, requestId: "another-browser-request" }, deps);
+  assert.equal(calls.filter((c) => c[0] === "sms").length, 1);
+});
+test("a returning customer can request a fresh quote immediately, even with identical details", async () => {
+  const { deps, calls } = setup();
+  const first = await processQuote(input, deps);
+  const second = await processQuote(
+    { ...input, requestId: "new-genuine-request" },
+    deps,
+  );
+  const updated = await processQuote(
+    { ...input, requestId: "new-updated-request", moveSize: "studio" },
+    deps,
+  );
+  assert.equal(first.contactId, second.contactId);
+  assert.equal(second.contactId, updated.contactId);
+  assert.equal(calls.filter((c) => c[0] === "save").length, 3);
+  assert.equal(calls.filter((c) => c[0] === "sms").length, 3);
+  assert.match(calls.filter((c) => c[0] === "sms").at(-1)[1], /2 movers/);
+});
+test("retry tracking works through the CRM without a separate database", async () => {
+  const { deps, calls } = setup();
+  const records = new Map();
+  deps.getRequest = async (contact, id) => records.get(id);
+  deps.recordRequest = async (contact, id, data) => records.set(id, data);
+  assert.equal((await processQuote(input, deps)).quoteStatus, "accepted");
+  assert.equal((await processQuote(input, deps)).quoteStatus, "accepted");
   assert.equal(calls.filter((c) => c[0] === "sms").length, 1);
 });
 test("an uncertain SMS timeout is recorded and is never retried blindly", async () => {
@@ -244,7 +261,10 @@ test("a failed CRM save can be retried safely before any SMS starts", async () =
   assert.equal(calls.filter((c) => c[0] === "sms").length, 1);
 });
 test("missing durable tracking saves the lead and flags manual handling without sending", async () => {
-  const { deps, calls } = setup({ claim: undefined });
+  const { deps, calls } = setup({
+    getRequest: undefined,
+    recordRequest: undefined,
+  });
   await processQuote(input, deps);
   assert.ok(calls.some((c) => c[0] === "save"));
   assert.ok(calls.some((c) => c[0] === "notify"));

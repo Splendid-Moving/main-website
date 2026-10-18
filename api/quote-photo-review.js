@@ -1,7 +1,7 @@
 // Staff-only review of a customer's private photo set. The CRM links here;
 // every request requires the configured review password, never a public gallery.
 import { timingSafeEqual, createHash } from "node:crypto";
-import { read } from "../lib/quote/store.js";
+import { read } from "../lib/quote/photo-store.js";
 import { photoUrl } from "../lib/quote/photos.js";
 export default async function handler(req, res) {
   res.setHeader("Cache-Control", "no-store");

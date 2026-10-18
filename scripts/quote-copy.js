@@ -45,6 +45,9 @@ export const copy = {
     inventoryIntro:
       "For your long-distance move, we’ll prepare a flat-price estimate.",
     photos: "Add photos",
+    emailPhotos: "Email photos",
+    photoEmailHint:
+      "For a more accurate price, email your photos using the link below. To submit this form, choose an item list.",
     recommended: "Recommended",
     photosWhy: "Photos help us give you a more accurate price.",
     list: "Write an item list",
@@ -157,6 +160,9 @@ export const copy = {
     inventoryIntro:
       "Para tu mudanza de larga distancia, prepararemos un precio fijo.",
     photos: "Añadir fotos",
+    emailPhotos: "Enviar fotos por email",
+    photoEmailHint:
+      "Para un precio más preciso, envía tus fotos al correo de abajo. Para enviar este formulario, elige una lista de artículos.",
     recommended: "Recomendado",
     photosWhy: "Las fotos nos ayudan a darte un precio más preciso.",
     list: "Escribir una lista",
@@ -270,6 +276,9 @@ export const copy = {
     inventoryTitle: "이사할 짐을 보여주세요.",
     inventoryIntro: "장거리 이사는 짐을 확인한 후 정액 견적을 준비해 드립니다.",
     photos: "사진 추가",
+    emailPhotos: "사진 이메일 보내기",
+    photoEmailHint:
+      "더 정확한 견적을 위해 아래 링크로 사진을 이메일로 보내 주세요. 이 양식을 제출하려면 물품 목록을 선택해 주세요.",
     recommended: "추천",
     photosWhy: "사진이 있으면 더 정확한 견적을 드릴 수 있습니다.",
     list: "물품 목록 작성",

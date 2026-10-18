@@ -1,7 +1,7 @@
 // Daily cleanup removes abandoned uploads after one day and submitted photo
 // sets after 30 days. Only the hosting cron's secret can invoke this endpoint.
 import { list, del } from "@vercel/blob";
-import { read } from "../lib/quote/store.js";
+import { read } from "../lib/quote/photo-store.js";
 import { photosReady } from "../lib/quote/photos.js";
 export default async function handler(req, res) {
   if (
