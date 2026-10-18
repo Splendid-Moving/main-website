@@ -59,9 +59,9 @@ Photos upload directly to private storage, with a maximum of ten images at 15 MB
 - Automated checks: `npm test` — mocked network, no real messages.
 - Build check: `npm run build` (static site; no frontend compilation).
 
-**Every test uses only phone `8185054576`.** The authorized CRM record is named **Quote Form Test**, tagged `quote-form-test`, and has ID `BXNlxcsZGnPPURx5go1k`. No test SMS has been sent. Never create or test with another contact.
+**Every test uses only phone `8185054576`.** The latest production form test saved **Quote Form Test** with contact ID `6SYEnctIIyIycRfBPIdB`, tagged `website-lead` and `2-bedroom`. No test SMS has been sent. Never create or test with another contact.
 
-Verified locally: pricing/rounding boundaries, long-distance handling, Maps outages, numeric gas-field writes, returning-contact behavior, duplicate/uncertain sends, upload fallback, both browser submission branches, Back navigation, translations, and screenshots at 360/390/768/1440px. Physical phones/Safari and actual private-Blob uploads remain unverified. Deploy by pushing `main` through the existing Git integration; do not use Vercel CLI to deploy this project. Live automatic sending remains disabled until durable tracking and configuration are ready. Non-JSON server responses show a readable retry message instead of a parser error.
+Verified locally: pricing/rounding boundaries, long-distance handling, Maps outages, numeric gas-field writes, returning-contact behavior, duplicate/uncertain sends, upload fallback, both browser submission branches, Back navigation, translations, and screenshots at 360/390/768/1440px. Physical phones/Safari and actual private-Blob uploads remain unverified. The site is live at `https://splendidmoving.com/quote`, deployed by pushing `main` through the existing Git integration. A real browser test on the authorized phone saved the contact, returned `quoteStatus: disabled`, and created both manual-review notes/tasks. Do not use Vercel CLI to deploy this project. Live automatic sending remains disabled until durable tracking and configuration are ready. Non-JSON server responses show a readable retry message instead of a parser error.
 
 ## Files
 
