@@ -19,3 +19,7 @@ npm-debug.log*
 
 # Dependencies
 node_modules/
+
+# Local browser review artifacts
+.playwright-cli/
+output/playwright/

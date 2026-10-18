@@ -114,6 +114,7 @@
 
         // Show/hide Korean language disclaimer banner
         toggleDisclaimer(lang);
+        window.dispatchEvent(new CustomEvent('splendid:language', { detail: lang }));
     }
 
     /**

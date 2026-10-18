@@ -1,21 +1,23 @@
 {
-    "name": "splendid-moving-website",
-    "type": "module",
-    "version": "1.0.0",
-    "description": "Splendid Moving Company Website with GoHighLevel Integration",
-    "private": true,
-    "scripts": {
-        "dev": "vercel dev",
-        "build": "echo 'Static site - no build needed'",
-        "start": "python3 -m http.server 8000"
-    },
-    "dependencies": {
-        "@sentry/node": "^8"
-    },
-    "keywords": [
-        "moving",
-        "los-angeles"
-    ],
-    "author": "Splendid Moving",
-    "license": "UNLICENSED"
+  "name": "splendid-moving-website",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Splendid Moving Company Website with GoHighLevel Integration",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site - no build needed'",
+    "start": "python3 -m http.server 8000",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "@sentry/node": "^11.8.0",
+    "@vercel/blob": "^2.8.2"
+  },
+  "keywords": [
+    "moving",
+    "los-angeles"
+  ],
+  "author": "Splendid Moving",
+  "license": "UNLICENSED"
 }

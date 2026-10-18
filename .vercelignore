@@ -1,0 +1,8 @@
+# Keep local credentials, test fixtures, and review artifacts out of uploads.
+.env*
+.git/
+.playwright-cli/
+output/
+tests/
+SPEC.md
+README.md

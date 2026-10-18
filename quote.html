@@ -1,0 +1,139 @@
+<!doctype html>
+<!-- Standalone quote-request page, available at /quote through Vercel clean URLs.
+     It shares the website's existing form submission and translation scripts. -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get a Free Moving Quote | Splendid Moving</title>
+    <meta
+      name="description"
+      content="Request your free moving quote from Splendid Moving. Tell us where you're moving and our Los Angeles team will follow up."
+    />
+    <link rel="canonical" href="https://splendidmoving.com/quote" />
+    <meta
+      property="og:title"
+      content="Get a Free Moving Quote | Splendid Moving"
+    />
+    <meta
+      property="og:description"
+      content="Tell us about your move. Get a free, no-obligation quote from Splendid Moving."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://splendidmoving.com/quote" />
+    <meta
+      property="og:image"
+      content="https://splendidmoving.com/assets/images/hero-bg.png"
+    />
+    <link rel="icon" href="/assets/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/quote-page.css" />
+    <script defer src="/_vercel/insights/script.js"></script>
+  </head>
+  <body class="quote-page">
+    <a class="quote-page__skip" href="#quote-form">Skip to quote form</a>
+    <header class="header quote-page__header" id="header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="/" class="nav__logo"
+          ><img
+            src="/assets/images/Brand Logo.png"
+            alt="Splendid Moving"
+            class="nav__logo-img"
+        /></a>
+        <div class="nav__actions">
+          <a href="tel:+13236452636" class="quote-page__phone"
+            >(323) 645-2636</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="quote-shell">
+      <p class="quote-brandline" data-i18n="quotePage.tagline">
+        A smoother move starts here.
+      </p>
+      <section class="quote-card" aria-label="Moving quote form">
+        <div class="wizard-topline">
+          <span id="quote-progress-label">Step 1 of 12</span>
+          <div
+            id="quote-progress"
+            role="progressbar"
+            aria-label="Form progress"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="0"
+          >
+            <span></span>
+          </div>
+        </div>
+        <form id="quote-form" novalidate tabindex="-1">
+          <div class="wizard-honeypot" aria-hidden="true">
+            <label
+              >Website<input name="website" tabindex="-1" autocomplete="off"
+            /></label>
+          </div>
+          <div
+            id="quote-step"
+            class="wizard-step"
+            aria-labelledby="step-title"
+          ></div>
+          <p
+            id="quote-message"
+            class="wizard-message"
+            role="status"
+            aria-live="polite"
+          ></p>
+          <div id="quote-wizard-controls" class="wizard-controls">
+            <button id="quote-back" class="wizard-back" type="button" hidden>
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path
+                  d="m12 5-5 5 5 5"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              ><span>Back</span>
+            </button>
+            <button id="quote-next" class="wizard-next" type="submit">
+              Continue
+            </button>
+          </div>
+        </form>
+      </section>
+      <p class="quote-support">
+        <span data-i18n="quotePage.help"
+          >Prefer to talk through your move?</span
+        >
+        <a href="tel:+13236452636">(323) 645-2636</a>
+      </p>
+    </main>
+    <footer class="quote-page__footer">
+      <a href="/" data-i18n="quotePage.home">Back to home</a
+      ><a href="mailto:info@splendidmoving.com">info@splendidmoving.com</a>
+    </footer>
+    <noscript
+      ><p class="container">
+        This form needs JavaScript. Call
+        <a href="tel:+13236452636">(323) 645-2636</a> or email
+        <a href="mailto:info@splendidmoving.com">info@splendidmoving.com</a> for
+        your quote.
+      </p></noscript
+    >
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/i18n.js"></script>
+    <script src="/scripts/quote-places.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8m3zbP2Eknf1agTJPLpHc4U6ACh8HpME&libraries=places&loading=async&callback=initQuotePlaces"
+      onerror="quotePlacesFailed()"
+      async
+      defer
+    ></script>
+    <script type="module" src="/scripts/quote-form.js"></script>
+  </body>
+</html>

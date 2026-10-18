@@ -1,241 +1,53 @@
-// Vercel Serverless Function: Submit Quote to GoHighLevel
-import * as Sentry from "@sentry/node";
-
-Sentry.init({
-    dsn: "https://d193da315f35a37e1176b4a6378feb26@o4511453136945152.ingest.us.sentry.io/4511453142188032",
-    environment: process.env.VERCEL_ENV ?? "production",
-    tracesSampleRate: 1.0,
-    sendDefaultPii: true,
-});
-
-// Send GHL rejections to Sentry so failed quotes are visible, not just logged
-async function reportGhlError(label, details) {
-    console.error(label + ':', details);
-    Sentry.captureMessage(label, { level: 'error', extra: { details } });
-    await Sentry.flush(2000);
-}
-
-function toProperCase(str) {
-    return str.trim().toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
-}
-
+// Saves the website request and, when explicitly enabled, sends its local SMS
+// quote. Routing failures omit gas; long-distance requests go to manual pricing.
+import { accept, validateQuote, report } from "../lib/quote/http.js";
+import { calculateRoute } from "../lib/quote/routing.js";
+import { processQuote } from "../lib/quote/automation.js";
+import { saveContact, notify, sendSms } from "../lib/quote/crm.js";
+import { storeReady, claim, read, write, release } from "../lib/quote/store.js";
+import { verifyPhotos, markPhotosSubmitted } from "../lib/quote/photos.js";
 export default async function handler(req, res) {
-    // Only accept POST requests
-    if (req.method !== 'POST') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
-
-    // CORS headers - adjust origin in production to your actual domain
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-
-    // Handle preflight OPTIONS request
-    if (req.method === 'OPTIONS') {
-        return res.status(200).end();
-    }
-
-    try {
-        const {
-            phone,
-            email,
-            moveSize,
-            addressFromFull,
-            addressToFull,
-            moveDate,
-            additionalDetails,
-            utm_source
-        } = req.body;
-
-        const firstName = toProperCase(req.body.firstName || '');
-        const lastName = toProperCase(req.body.lastName || '');
-
-        // Validate required fields
-        if (!firstName || !lastName || !phone || !email) {
-            return res.status(400).json({
-                error: 'Missing required fields',
-                details: 'firstName, lastName, phone, and email are required'
-            });
-        }
-
-        // Get GHL credentials from environment variables
-        const GHL_ACCESS_TOKEN = process.env.GHL_ACCESS_TOKEN;
-        const GHL_LOCATION_ID = process.env.GHL_LOCATION_ID;
-
-        if (!GHL_ACCESS_TOKEN || !GHL_LOCATION_ID) {
-            console.error('Missing GHL environment variables');
-            return res.status(500).json({
-                error: 'Server configuration error',
-                details: 'Missing API credentials'
-            });
-        }
-
-        // Prepare contact data for GoHighLevel API
-        const contactData = {
-            firstName,
-            lastName,
-            name: `${firstName} ${lastName}`,
-            phone,
-            email,
-            locationId: GHL_LOCATION_ID,
-            tags: ['website-lead'], // Tag for workflow trigger
-            customFields: []
-        };
-
-        // Map utm_source to GHL Origin custom field (ID: i71w1J9MFtRcyAQYqElg)
-        if (utm_source) {
-            const sourceLower = utm_source.toLowerCase();
-            let originValue = utm_source; // Fallback
-
-            if (sourceLower === 'yelp') {
-                originValue = 'Yelp';
-            } else if (sourceLower === 'lsa') {
-                originValue = 'Local Service Ads';
-            }
-
-            contactData.customFields.push({
-                id: 'i71w1J9MFtRcyAQYqElg',
-                value: originValue
-            });
-        }
-
-        // Add Move Size as both tag and custom field
-        if (moveSize) {
-            contactData.tags.push(moveSize);
-            contactData.customFields.push({
-                id: 'yS4Bj6LtQ3lLCuju7vl0',
-                value: moveSize
-            });
-        }
-
-        // Add custom fields with correct GHL field IDs
-        if (addressFromFull) {
-            contactData.customFields.push({
-                id: 'KyE8Eopo3MXg4aXjGnqS',
-                value: addressFromFull
-            });
-        }
-
-        if (addressToFull) {
-            contactData.customFields.push({
-                id: 'DjfpJEtJnBnDBP6nvJ1l',
-                value: addressToFull
-            });
-        }
-
-        if (moveDate) {
-            contactData.customFields.push({
-                id: 'VuatzebiX5qPrzGjl4d4',
-                value: moveDate
-            });
-        }
-
-        if (additionalDetails) {
-            contactData.customFields.push({
-                id: 'HZgxySrqsR4IICCBWZr5',
-                value: additionalDetails
-            });
-        }
-
-        // Make API request to GoHighLevel
-        const ghlResponse = await fetch('https://services.leadconnectorhq.com/contacts/', {
-            method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${GHL_ACCESS_TOKEN}`,
-                'Content-Type': 'application/json',
-                'Version': '2021-07-28' // GHL API version
-            },
-            body: JSON.stringify(contactData)
-        });
-
-        const responseData = await ghlResponse.json();
-
-        // Handle duplicate contact - update instead of failing
-        if (!ghlResponse.ok && responseData.message?.includes('duplicated contacts')) {
-            console.log('Duplicate contact detected, updating existing contact:', responseData.meta?.contactId);
-
-            const existingContactId = responseData.meta?.contactId;
-
-            if (!existingContactId) {
-                return res.status(400).json({
-                    error: 'Duplicate contact but no contact ID provided',
-                    details: responseData
-                });
-            }
-
-            // GHL's update endpoint rejects locationId, and sending tags would
-            // replace the contact's existing tags, so both are left out here
-            const { locationId, tags, ...updateFields } = contactData;
-
-            const updateResponse = await fetch(`https://services.leadconnectorhq.com/contacts/${existingContactId}`, {
-                method: 'PUT',
-                headers: {
-                    'Authorization': `Bearer ${GHL_ACCESS_TOKEN}`,
-                    'Content-Type': 'application/json',
-                    'Version': '2021-07-28'
-                },
-                body: JSON.stringify(updateFields)
-            });
-
-            const updateData = await updateResponse.json();
-
-            // Add the new tags on top of whatever tags the contact already has
-            if (updateResponse.ok) {
-                const tagResponse = await fetch(`https://services.leadconnectorhq.com/contacts/${existingContactId}/tags`, {
-                    method: 'POST',
-                    headers: {
-                        'Authorization': `Bearer ${GHL_ACCESS_TOKEN}`,
-                        'Content-Type': 'application/json',
-                        'Version': '2021-07-28'
-                    },
-                    body: JSON.stringify({ tags })
-                });
-                if (!tagResponse.ok) {
-                    await reportGhlError('Failed to add tags to existing contact', await tagResponse.json());
-                }
-            }
-
-            if (!updateResponse.ok) {
-                await reportGhlError('Failed to update existing contact', updateData);
-                return res.status(updateResponse.status).json({
-                    error: 'Failed to update existing contact',
-                    details: updateData
-                });
-            }
-
-            // Success - contact updated
-            return res.status(200).json({
-                success: true,
-                message: 'Quote request updated successfully',
-                contactId: existingContactId,
-                updated: true
-            });
-        }
-
-        // Handle other errors
-        if (!ghlResponse.ok) {
-            await reportGhlError('GHL API Error', responseData);
-            return res.status(ghlResponse.status).json({
-                error: 'Failed to create contact in CRM',
-                details: responseData
-            });
-        }
-
-        // Success - new contact created
-        return res.status(200).json({
-            success: true,
-            message: 'Quote request submitted successfully',
-            contactId: responseData.contact?.id || responseData.id,
-            updated: false
-        });
-
-    } catch (error) {
-        Sentry.captureException(error);
-        await Sentry.flush(2000);
-        console.error('Server error:', error);
-        return res.status(500).json({
-            error: 'Internal server error',
-            details: error.message
-        });
-    }
+  try {
+    if (!(await accept(req, res, 5))) return;
+    if (!process.env.GHL_ACCESS_TOKEN || !process.env.GHL_LOCATION_ID)
+      throw Error("CRM configuration unavailable");
+    const input = validateQuote(req.body);
+    const result = await processQuote(input, {
+      enabled: process.env.AUTO_QUOTES_ENABLED === "true",
+      route:
+        storeReady() && req.quoteRateLimited !== false
+          ? calculateRoute
+          : async () => ({
+              status: "unavailable",
+              classification: "unknown",
+              gasFee: null,
+              totalMiles: null,
+              roundedMiles: null,
+            }),
+      saveContact,
+      notify,
+      sendSms,
+      verifyPhotos: async (data) => {
+        const photos = await verifyPhotos(data);
+        if (photos.length) await markPhotosSubmitted(data);
+        return photos;
+      },
+      report,
+      ...(storeReady() ? { claim, read, write, release } : {}),
+    });
+    return res.status(200).json(result);
+  } catch (error) {
+    await report(error);
+    const status =
+      !error.provider && error.status && error.status < 500
+        ? error.status
+        : 503;
+    return res.status(status).json({
+      error:
+        status < 500
+          ? error.message
+          : "We could not save your request. Please try again or call (323) 645-2636.",
+      ...(error.needsInventory ? { needsInventory: true } : {}),
+    });
+  }
 }
