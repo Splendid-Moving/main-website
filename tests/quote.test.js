@@ -51,7 +51,11 @@ function setup(overrides = {}) {
       calls.push(["sms", message]);
       return { messageId: "mock-message" };
     },
-    verifyPhotos: async () => [],
+    verifyPhotos: async (input) => input.photos ?? [],
+    sendLongDistanceEmail: async (...args) => {
+      calls.push(["email", ...args]);
+      return { id: "office-email" };
+    },
     report: () => {},
     ...overrides,
   };
@@ -178,6 +182,8 @@ test("long-distance requires inventory, creates manual task, and never sends hou
     deps,
   );
   assert.equal(result.quoteStatus, "manual");
+  assert.equal(result.emailStatus, "accepted");
+  assert.ok(calls.some((c) => c[0] === "email"));
   assert.ok(calls.some((c) => c[0] === "notify"));
   assert.ok(!calls.some((c) => c[0] === "sms"));
 });
@@ -277,4 +283,44 @@ test("reusing an already submitted request ID cannot silently reuse a quote for 
     () => processQuote({ ...input, moveSize: "studio" }, deps),
     /already submitted/,
   );
+});
+
+test("a long-distance email failure preserves the saved lead and allows an idempotent retry", async () => {
+  let attempts = 0;
+  const { deps, calls } = setup({
+    route: async () => route(768),
+    sendLongDistanceEmail: async () => {
+      if (attempts++ === 0) throw Error("timeout");
+      return { id: "office-retry" };
+    },
+  });
+  const data = { ...input, inventory: "Sofa, bed, 20 boxes" };
+  await assert.rejects(
+    processQuote(data, deps),
+    (error) => error.leadSaved === true,
+  );
+  const result = await processQuote(data, deps);
+  assert.equal(result.emailStatus, "accepted");
+  await processQuote(data, deps);
+  assert.equal(attempts, 2);
+  assert.ok(!calls.some((c) => c[0] === "sms"));
+});
+test("long-distance photos are handed to the office email and never get the hourly SMS", async () => {
+  const { deps, calls } = setup({ route: async () => route(768) });
+  const result = await processQuote(
+    {
+      ...input,
+      photos: [
+        {
+          filename: "inventory-01.jpg",
+          content: "mock-validated-image",
+          size: 100,
+        },
+      ],
+    },
+    deps,
+  );
+  assert.equal(result.emailStatus, "accepted");
+  assert.equal(calls.find((c) => c[0] === "email")[4].length, 1);
+  assert.ok(!calls.some((c) => c[0] === "sms"));
 });

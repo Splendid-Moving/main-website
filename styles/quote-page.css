@@ -616,3 +616,114 @@
   align-self: flex-start;
   font-weight: 400;
 }
+/* Keep native mobile controls, long addresses and photo cards inside the form. */
+.quote-card,
+#quote-form,
+#quote-step,
+.wizard-field,
+.photo-upload {
+  min-inline-size: 0;
+  max-inline-size: 100%;
+}
+.quote-card *,
+.quote-card *::before,
+.quote-card *::after {
+  box-sizing: border-box;
+}
+.wizard-field input,
+.wizard-field textarea,
+.address-fields gmp-place-autocomplete {
+  display: block;
+  inline-size: 100%;
+  max-inline-size: 100%;
+  min-inline-size: 0;
+}
+.wizard-field input[type="date"] {
+  -webkit-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  min-height: 56px;
+}
+.wizard-field input[type="date"]::-webkit-date-and-time-value {
+  min-width: 0;
+  text-align: left;
+}
+.wizard-field input[type="date"]::-webkit-datetime-edit {
+  min-width: 0;
+  padding: 0;
+}
+.inventory-modes {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.inventory-modes button,
+.selected-address span,
+.review-row > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+.photo-tile {
+  min-width: 0;
+  position: relative;
+  margin: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f7f9fc;
+}
+.photo-tile img,
+.photo-format {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+.photo-format {
+  display: grid;
+  place-items: center;
+  color: #64748b;
+  font-size: 0.75rem;
+}
+.photo-tile figcaption {
+  padding: 8px;
+  font-size: 0.625rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #475569;
+}
+.photo-remove {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.94);
+  color: #032449;
+  cursor: pointer;
+}
+.photo-remove:focus-visible {
+  outline: 3px solid #188bf6;
+  outline-offset: -3px;
+}
+@media (max-width: 420px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .wizard-controls {
+    flex-wrap: wrap;
+  }
+  .wizard-next {
+    min-width: 0;
+    max-width: 100%;
+  }
+}

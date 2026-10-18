@@ -10,8 +10,12 @@ export async function readQuoteResponse(response, fallbackMessage) {
   if (!result || typeof result !== "object" || Array.isArray(result))
     throw Error(fallbackMessage);
   if (!response.ok)
-    throw Object.assign(Error(typeof result.error === "string" ? result.error : fallbackMessage), {
-      needsInventory: result.needsInventory,
-    });
+    throw Object.assign(
+      Error(typeof result.error === "string" ? result.error : fallbackMessage),
+      {
+        needsInventory: result.needsInventory,
+        leadSaved: result.leadSaved,
+      },
+    );
   return result;
 }

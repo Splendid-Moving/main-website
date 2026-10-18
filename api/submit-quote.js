@@ -11,7 +11,8 @@ import {
   notify,
   sendSms,
 } from "../lib/quote/crm.js";
-import { verifyPhotos, markPhotosSubmitted } from "../lib/quote/photos.js";
+import { verifyPhotos } from "../lib/quote/photos.js";
+import { sendLongDistanceEmail } from "../lib/quote/long-distance-email.js";
 export default async function handler(req, res) {
   try {
     if (!(await accept(req, res, 5))) return;
@@ -27,11 +28,8 @@ export default async function handler(req, res) {
       saveContact,
       notify,
       sendSms,
-      verifyPhotos: async (data) => {
-        const photos = await verifyPhotos(data);
-        if (photos.length) await markPhotosSubmitted(data);
-        return photos;
-      },
+      verifyPhotos,
+      sendLongDistanceEmail,
       report,
     });
     return res.status(200).json(result);
@@ -43,9 +41,10 @@ export default async function handler(req, res) {
         : 503;
     return res.status(status).json({
       error:
-        status < 500
+        error.leadSaved || status < 500
           ? error.message
           : "We could not save your request. Please try again or call (323) 645-2636.",
+      ...(error.leadSaved ? { leadSaved: true } : {}),
       ...(error.needsInventory ? { needsInventory: true } : {}),
     });
   }

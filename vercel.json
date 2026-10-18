@@ -10,18 +10,6 @@
       "permanent": true
     }
   ],
-  "rewrites": [
-    {
-      "source": "/quote-photos",
-      "destination": "/api/quote-photo-review"
-    }
-  ],
-  "crons": [
-    {
-      "path": "/api/quote-photo-cleanup",
-      "schedule": "0 10 * * *"
-    }
-  ],
   "functions": {
     "api/*.js": {
       "maxDuration": 60

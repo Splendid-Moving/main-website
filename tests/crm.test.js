@@ -10,7 +10,7 @@ import {
 } from "../lib/quote/crm.js";
 import { GAS_FIELD_ID } from "../lib/quote/pricing.js";
 import { validateQuote } from "../lib/quote/http.js";
-import { validToken, preparePhotos } from "../lib/quote/photos.js";
+import { validatePhotos } from "../lib/quote/photos.js";
 const input = {
   requestId: "12345678-1234-4234-8234-123456789012",
   firstName: "Nikita",
@@ -137,10 +137,6 @@ test("server validates required data and ignores client pricing/classification c
   assert.ok(!("classification" in data));
   assert.throws(() => validateQuote({ ...input, pickupZip: "9" }), /ZIP/);
   assert.throws(() => validateQuote({ ...input, email: "invalid" }), /email/);
-});
-test("unconfigured/invalid photo sessions fail safely without uploading", async () => {
-  assert.equal(validToken("invalid", "invalid"), false);
-  await assert.rejects(() => preparePhotos([]), /unavailable|photos/);
 });
 
 test("request receipts are kept in CRM notes per submission, not per customer", async () => {

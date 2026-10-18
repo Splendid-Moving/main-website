@@ -45,29 +45,34 @@ export const copy = {
     inventoryIntro:
       "For your long-distance move, we’ll prepare a flat-price estimate.",
     photos: "Add photos",
-    emailPhotos: "Email photos",
-    photoEmailHint:
-      "For a more accurate price, email your photos using the link below. To submit this form, choose an item list.",
+    addPhotos: "Add more photos",
+    restorePhotos:
+      "Your move details are saved. Please reattach your photos to continue.",
+    removePhoto: "Remove photo",
+    photoAlt: "Inventory photo",
+    emailRetry:
+      "Your move details are saved, but we couldn’t confirm the photo delivery. Your photos are still ready here. Please try sending again.",
+
     recommended: "Recommended",
     photosWhy: "Photos help us give you a more accurate price.",
     list: "Write an item list",
     listWhy: "Include furniture, large items and an approximate box count.",
     choosePhotos: "Choose photos",
-    photoHint: "Up to 10 photos · 15 MB each · JPG, PNG, WebP or HEIC",
+    photoHint:
+      "Up to 10 photos · 15 MB each. Upload copies are optimized for your quote.",
     photoPrivacy:
-      "Your photos are private and used to prepare your quote. Deleted after 30 days.",
+      "Your photos are submitted securely with this form and used to prepare your quote.",
     inventoryLabel: "What are you moving?",
     inventoryPlaceholder:
       "Living room: sofa, coffee table, TV…\nBedroom: queen bed, dresser…\nAbout 20 boxes",
-    emailAlternative: "Prefer email? Send your photos or item list to",
     photoRequired: "Add photos, or choose an item list to continue.",
     listRequired: "Please list the items you’re moving.",
     photoInvalid:
       "Choose up to 10 supported photos, no larger than 15 MB each.",
-    uploading: "Uploading photo",
-    uploaded: "Photos uploaded",
+    uploading: "Preparing photo",
+    uploaded: "Photos ready to attach",
     uploadError:
-      "We couldn’t upload your photos. Try again, write an item list, or email us.",
+      "We couldn’t prepare one of your photos. Choose another image and try again.",
     accessTitle: "Anything to know about access?",
     accessIntro:
       "Optional: stairs, elevators, parking, or a long walk to the door at either address.",
@@ -111,9 +116,6 @@ export const copy = {
     needHelp: "Need a hand?",
     required: "Please complete this step.",
     phoneInvalid: "Enter a valid 10-digit US phone number.",
-    photosAvailableLater: "You can also email your photos to our team.",
-    photoUploadUnavailable:
-      "Photo uploads are temporarily unavailable. Please write an item list or email your photos.",
     sizeRequired: "Choose a move size to continue.",
   },
   es: {
@@ -160,30 +162,35 @@ export const copy = {
     inventoryIntro:
       "Para tu mudanza de larga distancia, prepararemos un precio fijo.",
     photos: "Añadir fotos",
-    emailPhotos: "Enviar fotos por email",
-    photoEmailHint:
-      "Para un precio más preciso, envía tus fotos al correo de abajo. Para enviar este formulario, elige una lista de artículos.",
+    addPhotos: "Añadir más fotos",
+    restorePhotos:
+      "Los datos de tu mudanza están guardados. Vuelve a adjuntar las fotos para continuar.",
+    removePhoto: "Eliminar foto",
+    photoAlt: "Foto del inventario",
+    emailRetry:
+      "Los datos están guardados, pero no pudimos confirmar el envío de las fotos. Siguen listas aquí. Intenta enviarlas de nuevo.",
+
     recommended: "Recomendado",
     photosWhy: "Las fotos nos ayudan a darte un precio más preciso.",
     list: "Escribir una lista",
     listWhy:
       "Incluye muebles, objetos grandes y la cantidad aproximada de cajas.",
     choosePhotos: "Elegir fotos",
-    photoHint: "Hasta 10 fotos · 15 MB cada una · JPG, PNG, WebP o HEIC",
+    photoHint:
+      "Hasta 10 fotos · 15 MB cada una. Optimizamos las copias para tu presupuesto.",
     photoPrivacy:
-      "Tus fotos son privadas y se usan para preparar tu presupuesto. Se eliminan después de 30 días.",
+      "Tus fotos se envían de forma segura con este formulario para preparar tu presupuesto.",
     inventoryLabel: "¿Qué vas a mudar?",
     inventoryPlaceholder:
       "Sala: sofá, mesa de centro, televisor…\nDormitorio: cama, cómoda…\nUnas 20 cajas",
-    emailAlternative: "¿Prefieres el correo? Envía tus fotos o lista a",
     photoRequired: "Añade fotos o elige una lista para continuar.",
     listRequired: "Escribe la lista de objetos que vas a mudar.",
     photoInvalid:
       "Elige hasta 10 fotos compatibles de un máximo de 15 MB cada una.",
-    uploading: "Subiendo foto",
-    uploaded: "Fotos subidas",
+    uploading: "Preparando foto",
+    uploaded: "Fotos listas para adjuntar",
     uploadError:
-      "No pudimos subir las fotos. Inténtalo de nuevo, escribe una lista o envíanos un correo.",
+      "No pudimos preparar una de las fotos. Elige otra imagen e inténtalo de nuevo.",
     accessTitle: "¿Qué debemos saber del acceso?",
     accessIntro:
       "Opcional: escaleras, ascensor, estacionamiento o distancia hasta la puerta en ambas direcciones.",
@@ -228,10 +235,6 @@ export const copy = {
     needHelp: "¿Necesitas ayuda?",
     required: "Completa este paso.",
     phoneInvalid: "Introduce un número de teléfono de EE. UU. de 10 dígitos.",
-    photosAvailableLater:
-      "También puedes enviar las fotos por correo electrónico.",
-    photoUploadUnavailable:
-      "Las fotos no se pueden subir en este momento. Escribe una lista o envía las fotos por correo.",
     sizeRequired: "Elige un tamaño para continuar.",
   },
   ko: {
@@ -276,28 +279,32 @@ export const copy = {
     inventoryTitle: "이사할 짐을 보여주세요.",
     inventoryIntro: "장거리 이사는 짐을 확인한 후 정액 견적을 준비해 드립니다.",
     photos: "사진 추가",
-    emailPhotos: "사진 이메일 보내기",
-    photoEmailHint:
-      "더 정확한 견적을 위해 아래 링크로 사진을 이메일로 보내 주세요. 이 양식을 제출하려면 물품 목록을 선택해 주세요.",
+    addPhotos: "사진 더 추가",
+    restorePhotos:
+      "이사 정보는 저장되어 있습니다. 계속하려면 사진을 다시 첨부해 주세요.",
+    removePhoto: "사진 삭제",
+    photoAlt: "이사 물품 사진",
+    emailRetry:
+      "이사 정보는 저장되었지만 사진 전송을 확인하지 못했습니다. 사진은 여기에 준비되어 있습니다. 다시 전송해 주세요.",
+
     recommended: "추천",
     photosWhy: "사진이 있으면 더 정확한 견적을 드릴 수 있습니다.",
     list: "물품 목록 작성",
     listWhy: "가구, 큰 물건, 대략적인 박스 수를 알려주세요.",
     choosePhotos: "사진 선택",
-    photoHint: "최대 10장 · 장당 15 MB · JPG, PNG, WebP 또는 HEIC",
+    photoHint: "최대 10장 · 장당 15 MB. 견적용 사진 사본을 최적화합니다.",
     photoPrivacy:
-      "사진은 비공개로 보관되며 견적 준비에만 사용합니다. 30일 후 삭제됩니다.",
+      "사진은 이 양식과 함께 안전하게 전송되며 견적 준비에 사용됩니다.",
     inventoryLabel: "어떤 물건을 옮기시나요?",
     inventoryPlaceholder:
       "거실: 소파, 테이블, TV…\n침실: 침대, 서랍장…\n박스 약 20개",
-    emailAlternative: "이메일을 원하시나요? 사진이나 물품 목록을 보내주세요:",
     photoRequired: "사진을 추가하거나 물품 목록을 선택해 주세요.",
     listRequired: "이사할 물품 목록을 작성해 주세요.",
     photoInvalid: "지원되는 사진을 최대 10장, 장당 15 MB 이하로 선택해 주세요.",
-    uploading: "사진 업로드 중",
-    uploaded: "사진 업로드 완료",
+    uploading: "사진 준비 중",
+    uploaded: "사진 첨부 준비 완료",
     uploadError:
-      "사진을 업로드하지 못했습니다. 다시 시도하거나 물품 목록 또는 이메일을 이용해 주세요.",
+      "사진 한 장을 준비하지 못했습니다. 다른 이미지를 선택한 후 다시 시도해 주세요.",
     accessTitle: "출입 환경에 대해 알려주세요.",
     accessIntro:
       "선택 사항: 양쪽 주소의 계단, 엘리베이터, 주차, 현관까지의 거리 등.",
@@ -338,9 +345,6 @@ export const copy = {
     needHelp: "도움이 필요하신가요?",
     required: "이 단계를 입력해 주세요.",
     phoneInvalid: "미국 전화번호 10자리를 입력해 주세요.",
-    photosAvailableLater: "담당자에게 이메일로 사진을 보내실 수도 있습니다.",
-    photoUploadUnavailable:
-      "현재 사진 업로드를 사용할 수 없습니다. 물품 목록을 작성하거나 이메일로 사진을 보내주세요.",
     sizeRequired: "이사 규모를 선택해 주세요.",
   },
 };

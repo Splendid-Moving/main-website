@@ -47,30 +47,34 @@ Copy the names from `.env.example` into the correct Vercel project's environment
 2. `GOOGLE_MAPS_API_KEY`: the working website key is configured in encrypted production/preview settings and ignored local `.env`. A direct full-circuit request returned 29 miles / $30. Mileage needs no database.
 3. `AUTO_QUOTES_ENABLED=true` activates the automatic GHL SMS quote. The production activation is authorized by Nikita. DND remains respected. Accepted quotes create a CRM follow-up note/task as well as retaining the existing `website-lead` tag.
 4. `GHL_QUOTE_ASSIGNEE_ID` routes review tasks to the existing operations user. Missing/failed mileage still sends the hourly quote without its entire gas line and creates a manual-gas task.
-5. Optional in-form photo uploads need a **private** Vercel Blob store and `BLOB_READ_WRITE_TOKEN`, `QUOTE_SIGNING_SECRET`, `QUOTE_PHOTO_REVIEW_PASSWORD`, `QUOTE_SITE_URL`, and `CRON_SECRET`. Photo manifests live with the private files, with no Redis. Staff use password-protected `/quote-photos?request=…` links.
+5. `RESEND_API_KEY`, `RESEND_FROM`, and `LONG_DISTANCE_QUOTE_TO=info@splendidmoving.com` enable the long-distance office email. The existing Splendid sender is `reports@mail.splendidmoving.com`. The email follows the support-agent/fleet-report style, includes the full move details, sets Reply-To to the customer, and attaches the inventory photos. Resend idempotency keys and GHL receipts distinguish retries from fresh requests.
 
-The available Vercel project token can deploy/configure the project but cannot create Blob storage (403). Until private uploads are connected, long-distance customers can submit a required item list or email photos to `info@splendidmoving.com` for the more accurate estimate. The form offers that working email path instead of an unavailable upload picker. Photo setup never blocks mileage or SMS.
+## Photo attachments and mobile layout
 
-Photos upload directly to private storage, with a maximum of ten images at 15 MB each. Supported originals are JPEG, PNG, WebP, HEIC and HEIF. Staff may need to download HEIC files to view them. The server validates file ownership, size, type, and file signatures. If uploads fail, the customer can retry, supply an item list, or email the team.
+Customers attach photos **inside the quote form**; there is no separate-email workaround. The photo step supports previews, removing images, adding more, and EN/ES/KO copy. Up to ten originals at 15 MB each are accepted. The browser prepares clear JPEG copies up to 1600px, within a 2 MiB total byte budget, so a single request fits Vercel’s 4.5 MB cap. JPEG, PNG, WebP and HEIC/HEIF are supported. Ordinary files use native browser imaging; HEIC conversion loads the separately licensed decoder only when needed.
+
+Photos stay in browser memory until the final request, then become private Resend attachments to the office. The server checks count, total size, base64 and actual image signatures. No database, file-storage account, public URLs, or staff gallery are required. A failed email leaves the form and attachments ready to retry with the same ID. Reloading restores text answers and asks for photos to be reattached rather than pretending browser files survived.
+
+Native date fields and other controls are constrained to the card’s width. All 11 steps passed 132 layout checks across Chrome and WebKit at 320/360/390/430/768/1440px. Date screenshots were visually reviewed in WebKit iPhone emulation; a physical device remains a separate check.
 
 ## Run and verify
 
 - Install: `npm ci`.
 - App/API development: `npm run dev` using the Vercel CLI and the intended project/environment.
 - Static-only preview: `npm start`, then open `/quote.html`. Python's simple server does not provide `/quote` clean URLs or API routes.
-- Automated checks: `npm test` — 41 passing, mocked network, no real messages.
+- Automated checks: `npm test` — 47 passing, mocked network, no real messages.
 - Build check: `npm run build` (static site; no frontend compilation).
 
 **Every test uses only phone `8185054576`.** Nikita deleted the previous test contact. The authorized new test contact is **Quote Form Test**, ID `7QEmujHBzyoV5LNCtfxw`. A real new-contact test delivered the three-mover quote with a $30 gas fee. Retrying the same request reused the original message ID with no second send. The live returning request updated that same contact to 4+ bedrooms and a flexible date, stored $30 gas, and delivered the four-mover quote. A production retry reused the same message ID. Exactly two quote messages exist for the two genuine requests; long-distance inventory submission created an assigned manual-pricing task with no hourly SMS.
 
-Automated checks cover rates/rounding, long-distance/manual cases, Google outages, no-Redis routing/SMS, existing-contact updates, fresh repeat requests, same-request retries, uncertain sends, and CRM-note receipts. Prior responsive/translation/browser reviews remain valid; physical phones/Safari remain unverified.
+Automated checks cover rates/rounding, long-distance/manual cases, Google outages, no-Redis routing/SMS, existing-contact updates, fresh repeat requests, same-request retries, uncertain sends, and CRM-note receipts. Current browser checks include photo previews/add/remove, HEIC conversion, language changes, a failed-send retry preserving the exact photo payload, and ten-photo payload sizing. A mobile WebKit form test submitted two optimized photos through the real API and Resend accepted the email to the office, with no hourly SMS. Production deployment verification follows this increment.
 
 ## Files
 
 - `quote.html`, `styles/quote-page.css` — centered standalone form shell and design.
-- `scripts/quote-form.js`, `quote-copy.js`, `quote-places.js` — steps, languages, and Google address selection.
-- `lib/quote/` — fixed pricing, routing, CRM calls, durable tracking, validation, and private photos.
+- `scripts/quote-form.js`, `quote-copy.js`, `quote-places.js`, `quote-photos.js` — steps, languages, full-address selection, and photo preparation.
+- `lib/quote/` — pricing, routing, GHL receipts/contact updates, image validation, and Resend office emails.
 - `api/submit-quote.js`, `quote-route.js` — final intake and address-based route check.
-- `api/quote-photo-*.js` — upload URLs, protected review, and retention cleanup.
+- `assets/vendor/` — separately loaded HEIC decoder, license, and source reference.
 - `tests/` — meaningful business-rule and CRM contract checks.
 - `SPEC.md` — agreed behavior, limits, and current status.

@@ -16,7 +16,7 @@ CONSTRAINTS:
 - Rounded-mile tiers: 0–35 → $30; 36–55 → $50; 56–75 → $60; 76–120 → $70; 121–170 → $80; 171–250 → $100. Minimum is $30.
 - Our script classifies a move as long-distance when base → pickup → drop-off → base exceeds 250 miles; Google only supplies driving distances. Compare the unrounded total for this cutoff, then round local mileage once for the gas tiers.
 - For an established local move, Google error, timeout, missing key, empty route, or incomplete distance data → send the quote with the whole gas-fee line omitted and flag manual gas pricing; never invent a fee or send `???`.
-- Long-distance moves never receive this hourly quote. Require photos or a written inventory for in-form submission; recommend photos more strongly because they help produce a more accurate price. Also offer contacting `info@splendidmoving.com` by email to supply inventory instead.
+- Long-distance moves never receive this hourly quote. Require photos or a written inventory for in-form submission; recommend photos more strongly because they help produce a more accurate price. Photos must be attached directly in the quote form. Deliver long-distance requests to `info@splendidmoving.com` through the existing Resend account; do not require a separate customer email.
 - Mileage lookup failure → send the hourly SMS without the whole gas-fee line and notify the team, explicitly confirmed by the user even though distance classification is unavailable. Record classification as unknown rather than inventing mileage or labelling it local.
 - Respect the contact's messaging restrictions and record messaging failures for manual follow-up. A provider rejection cannot be treated as delivery.
 - Nikita explicitly requested finishing and activating the automation on 2026-10-18. No Redis requirement. A returning customer’s fresh submission updates the matching phone contact and sends a new eligible quote immediately, even if details match an earlier request.
@@ -26,7 +26,7 @@ FORMAT:
 - One local quote as SMS in the existing GHL conversation; no automatic hourly quote for long-distance requests.
 - One progressive form at `/quote`, linked by the homepage and all three service pages; accessible Back/Continue controls and preserved answers.
 - Preserve the site's English, Spanish, and Korean form support; any new questions and outcomes need matching translated strings.
-- Long-distance CRM record includes the inventory text and/or accessible photo attachments plus a manual flat-pricing task.
+- Long-distance requests save/update the GHL contact and reach `info@splendidmoving.com` via Resend, with photos attached, a written inventory if supplied, customer reply-to, and the complete move details. Keep CRM follow-up for manual flat pricing.
 - A GHL follow-up task/note for missing gas pricing, oversized trips, unsupported move sizes, or failed/uncertain message sends.
 - Small, plainly named modules for pricing, route distance, quote formatting, and delivery coordination; meaningful tests runnable with `npm test`.
 - Environment-variable template and README explain setup, dry run, activation, and manual recovery without exposing secrets.
@@ -50,7 +50,7 @@ FAILURE (any of these = not done):
 
 - Shared opening: full pickup and drop-off addresses together, selected from the original Google Places dropdowns → route check → move size → move date. No ZIP-only step or repeated address questions; manual full-address entry is available if Google suggestions fail.
 - Local continuation: first name → last name → phone → email → optional details → review and request quote. Keep all existing CRM fields and UTM tracking.
-- Long-distance continuation: photos (recommended: “Photos help us give you a more accurate price”) or written inventory → access details at both properties (optional) → first name → last name → phone → email → review and request flat-price estimate. Offer an email alternative; no automatic price or promise of an immediate flat quote.
+- Long-distance continuation: photos (recommended: “Photos help us give you a more accurate price”) or written inventory → access details at both properties (optional) → first name → last name → phone → email → review and request flat-price estimate. Attach photos in the form, with a thumbnail/removal review; no separate-email workaround and no automatic hourly quote.
 - One visible question per step; inventory may offer a choice between photos and text. Continue validates the current answer; Back preserves answers. Route/upload loading, retry, and error states are explicit.
 - Keep address autocomplete but permit manual address entry if Places fails; do not make a Google outage prevent lead intake. Unknown mileage continues through the standard questions, sends the gas-free hourly SMS, and notifies the team.
 - Address changes cancel/ignore stale route responses, clear classification/gas results, and recompute. Server validates the route result against the submitted addresses; never trust a client-supplied local flag or fee.
@@ -102,7 +102,7 @@ For local quotes, the optional line is exactly `Gas fee: $<fee>`. On failure, re
 - Native Node test runner and mocked HTTP for repeatable tests with no customer sends.
 - GoHighLevel notes record each request ID, fingerprint, phase, outcome, and SMS message ID. Same-request replays reuse the result; new request IDs are never suppressed by matching contact/details. No extra database.
 - Reuse existing Sentry for operational failures; redact tokens and customer message/address payloads.
-- [Private Vercel Blob](https://vercel.com/docs/vercel-blob/private-storage), Apache-2.0 SDK 2.8.2, implements direct scoped uploads and password-protected staff review; connection remains pending. Sentry upgraded to maintained 11.8.0 (MIT); dependency audit reports zero vulnerabilities.
+- Reuse Splendid support-agent email conventions: existing Resend account/sender, navy banner, compact detail rows, customer Reply-To, native attachments, and stable per-request idempotency keys. HEIC uses separately loaded `heic-to` 1.6.6 (LGPL-3.0; license/source provided), matching libheif 1.23.6.
 
 ## Gotchas we're handling
 
@@ -115,7 +115,7 @@ For local quotes, the optional line is exactly `Gas fee: $<fee>`. On failure, re
 - Check existing notification/quote workflows before activation to avoid double sends. Keep quote sending behind an explicit configuration switch.
 - Restrict a separate server-side Google key to Routes API and confirm billing/access; never reuse a browser referrer-restricted key by assumption.
 - Honeypot, origin checks, validation, and bounded per-worker IP limits cover the public form. Temporary mileage caches reduce repeat calls; neither requires a database.
-- Photo uploads use a separate direct-upload path with enforced size/type/count limits, draft ownership checks, and private storage; never accept arbitrary browser-supplied URLs. Proposed cap: 10 photos, 15 MB each; JPEG/PNG/WebP/HEIC/HEIF, with filenames/status if previews are unsupported. Confirm storage access/retention before implementation; no public photo URLs in CRM notes.
+- Keep photo files in the browser until final submission. Prepare clear copies up to 1600px, sequentially, with a 2 MiB total byte budget to fit Vercel’s 4.5 MB request cap. Allow 10 originals at 15 MB each. JPEG/PNG/WebP and HEIC/HEIF are converted to JPEG; validate bytes on the server, then attach directly to the office email. No storage account, public URLs, or photo-gallery password.
 
 ## Build sequence
 
@@ -130,19 +130,19 @@ For local quotes, the optional line is exactly `Gas fee: $<fee>`. On failure, re
 ## How to run and test
 
 - Existing API development command: `npm run dev` (Vercel CLI required). `npm start` serves static files only.
-- Tests: `npm test` — 41 passing, external services mocked. `npm run build` and `git diff --check` pass.
+- Tests: `npm test` — 47 passing, external services mocked. `npm run build` and `git diff --check` pass.
 - Existing credentials: `GHL_ACCESS_TOKEN`, `GHL_LOCATION_ID`.
 - Live Gas Fee field: `2nEnIoqxsJhlJQx74RJm`, `contact.gas_fee`, NUMERICAL. Authorized test confirmed writing $30 and restoring the empty value; no calendar/job-note trigger fields were touched.
 - Every test must use only contact phone `8185054576`; mock CRM sends during automated/browser checks. No other real contact is authorized for testing.
-- Configuration is documented in `.env.example` and README: Routes key, optional private Blob, review/signing/cron secrets, task assignee, and the automatic-send switch (off by default).
+- Configuration is documented in `.env.example` and README: Routes key, existing Resend sender/key, office recipient, task assignee, and the automatic-send switch (off by default).
 - Real authorized new-contact test delivered SMS `IPhnVxdkAuXTmTulZ5eZ` with the three-mover rate and $30 gas. Same-request retry returned the same message ID. Live returning quote `C7lqy1wqFk0gOv9qlSey` also delivered; same contact updated to 4+ bedrooms, $30 gas, and flexible date. Production retry reused its message ID; exactly two quote texts exist. Long-distance inventory/manual-task flow verified with no SMS.
 
 ## Status
 
 _Updated: 2026-10-18_
 - Address-first `/quote`, gas calculation, and automatic GHL SMS are live from `main` commit `1310e46`. `AUTO_QUOTES_ENABLED=true` and the existing operations task assignee are configured in production. Redis dependency removed.
-- Core changes pass 41 checks: phone-first contact lookup/update, new-request re-quotes even with identical details, same-request retry receipts in GHL notes, no-Redis gas/SMS, failures/DND/manual branches. Blank new dates clear old dates.
+- Core changes pass 47 checks: phone-first contact lookup/update, new-request re-quotes even with identical details, same-request retry receipts in GHL notes, no-Redis gas/SMS, failures/DND/manual branches. Blank new dates clear old dates.
 - Recreated deleted test contact `7QEmujHBzyoV5LNCtfxw` on `8185054576`; new and returning quotes both delivered, with $30 gas. Same contact updated to 4+ bedrooms and old date cleared. Identical-request retry reused its message ID; exactly two quote messages exist.
 - Live checks passed: local round trip 29 miles / $30; long-distance circuit 768 miles requires inventory and creates assigned manual-pricing task without hourly SMS. Mobile confirmation/inventory reviewed, task Playwright session closed. Deploy only through `main` pushes; no Vercel CLI.
-- In-form private photo storage cannot be provisioned with the available Vercel project token (403). Long-distance form uses item lists and recommended photos by email until private storage is connected. This does not gate SMS or mileage. Photo-session metadata moved to private Blob files; no Redis remains.
-- Limits: GHL notes persist retry outcomes but do not provide an atomic lock across separate server instances; IP limits/cache are per worker. Physical phones/Safari remain untested. Preserve booking/calendar fields and test only the authorized phone.
+- Current increment: finish direct in-form photo attachments and Resend office delivery; fix native mobile date/control overflow. 47 automated checks; Chrome and WebKit passed all 11 steps at 320/360/390/430/768/1440px (132 layout checks). Preview/add/remove, HEIC fallback, EN/ES/KO, ten-photo sizing (2.42 MB JSON), and failed-send retry passed. A real WebKit form test emailed two optimized photos to the office via Resend (accepted, no hourly SMS); production deployment verification is next.
+- Limits: GHL notes are not an atomic cross-worker lock; limits/cache are per worker. Photo copies are optimized for email, not original-resolution archives. Physical devices remain untested; mobile engine checks include WebKit. Preserve booking/calendar fields and test only the authorized phone.
