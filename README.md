@@ -59,6 +59,16 @@ Native date fields and other controls are constrained to the card’s width. All
 
 ## Run and verify
 
+### Website analytics
+
+All five public pages load `scripts/analytics.js`, which connects production visits to Google Analytics property `433959940`, web stream `7782345323` (`G-SRG0H6LFG5`). This is the existing `splendidmoving.com` property accessible through Treg. Vercel Analytics remains enabled alongside Google Analytics.
+
+The shared tag runs only on `splendidmoving.com` and `www.splendidmoving.com`; localhost and Vercel preview domains do not send Google Analytics events. Google handles standard page-view measurement. This setup does not add custom quote-submission or completed-call conversion events.
+
+To verify a deployment, open a production page and check that the Google tag loads and a `g/collect` request includes `tid=G-SRG0H6LFG5`. Treg can confirm recent events with `google-analytics/v1beta/properties/433959940:runRealtimeReport`. Standard reports take longer to process than realtime reports.
+
+### Development checks
+
 - Install: `npm ci`.
 - App/API development: `npm run dev` using the Vercel CLI and the intended project/environment.
 - Static-only preview: `npm start`, then open `/quote.html`. Python's simple server does not provide `/quote` clean URLs or API routes.
