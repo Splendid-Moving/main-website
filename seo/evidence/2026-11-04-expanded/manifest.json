@@ -1,0 +1,272 @@
+{
+  "description": "Unchanged paid SERP and read-only indexing responses for the first expanded post-release snapshot; no credentials or customer records.",
+  "capture_local_date": "2026-11-04",
+  "timezone": "America/Los_Angeles",
+  "files": [
+    {
+      "file": "charges.json",
+      "sha256": "01fb18de2dcfd0640152f9e21ca629b5b7be2cea0bcb185c690f72bae21e96b9",
+      "bytes": 12309
+    },
+    {
+      "file": "indexing/raw-1.json",
+      "sha256": "7fcced9b4918d046577d0101954e2fabeefec1a02d70293770d383e55ac6ab30",
+      "bytes": 1304
+    },
+    {
+      "file": "indexing/raw-10.json",
+      "sha256": "0c02695ff16c0f0af0b2a7758370c557f36d08cd799202c53362f7f5a58a83b4",
+      "bytes": 672
+    },
+    {
+      "file": "indexing/raw-11.json",
+      "sha256": "a2c24cf92347defbd620e60a1cd3bc1e4a64a7e0f12ea04dfb48d221a5966471",
+      "bytes": 672
+    },
+    {
+      "file": "indexing/raw-12.json",
+      "sha256": "85fccc9a0d1cd56476169afcb8abe05611abc1d8258b9a5f4d98475738caf0ae",
+      "bytes": 672
+    },
+    {
+      "file": "indexing/raw-13.json",
+      "sha256": "519081d9909ca0701e1294077bd687b6870584d303550260d58575d1d729a581",
+      "bytes": 672
+    },
+    {
+      "file": "indexing/raw-14.json",
+      "sha256": "c1425577984e3662c12418fa7b1f3d21d0b6133e703483705fc1965c235f9778",
+      "bytes": 563
+    },
+    {
+      "file": "indexing/raw-15.json",
+      "sha256": "6635732d3ff2ba123c368f5399442f5ed3961188c927b951f45c841c038172e7",
+      "bytes": 672
+    },
+    {
+      "file": "indexing/raw-16.json",
+      "sha256": "771bdec236382a557e3d9ac9b0b3ba69df7038b0b0e33eca2e29c38130192427",
+      "bytes": 672
+    },
+    {
+      "file": "indexing/raw-17.json",
+      "sha256": "b894e302353166a0473a8c07c4b4a24eb8eb9dc5ce3fe49e17cf5018c7d8ee8e",
+      "bytes": 563
+    },
+    {
+      "file": "indexing/raw-18.json",
+      "sha256": "02be20667cb098a387c3af9b77de572d419bcb4ba2b46e9adc96575a416f41b9",
+      "bytes": 672
+    },
+    {
+      "file": "indexing/raw-2.json",
+      "sha256": "a2cfa6e01ad6b3dcc443b8fd3fb9f17038a6a124a8df56cf8468f8318b33f586",
+      "bytes": 864
+    },
+    {
+      "file": "indexing/raw-3.json",
+      "sha256": "a84aa5051dc27a95e8b44f0dc94e5c461042ee76fae41120767f162f1ab1fdb2",
+      "bytes": 902
+    },
+    {
+      "file": "indexing/raw-4.json",
+      "sha256": "c0456b3ab9b0f070f3d729b41e77321e9bae9b121011def4a62058eda3f9b56f",
+      "bytes": 873
+    },
+    {
+      "file": "indexing/raw-5.json",
+      "sha256": "2c254f8f80768d8d652f67ad2516783fcaca1b7126733eb8a0dc9b2a06123c30",
+      "bytes": 773
+    },
+    {
+      "file": "indexing/raw-6.json",
+      "sha256": "108fdc63eb9ae7b8c26b78e551e164ec3de7983acc5b6f1eef295b623a61f956",
+      "bytes": 672
+    },
+    {
+      "file": "indexing/raw-7.json",
+      "sha256": "5a5fe44444f7173bb175da329ee566c89e1cb0cfea1e3fb6825da5eb7c6496cf",
+      "bytes": 672
+    },
+    {
+      "file": "indexing/raw-8.json",
+      "sha256": "cfb27ee15ebc3c7f590a1aaa1c4d1abe17a046a5f65478897a1ef32c8762a4e3",
+      "bytes": 672
+    },
+    {
+      "file": "indexing/raw-9.json",
+      "sha256": "24701736c16b359a8228551e6fd8e117a2a24650fe8edeeeaeba9f03083d3b60",
+      "bytes": 672
+    },
+    {
+      "file": "raw-1.json",
+      "sha256": "081fa66ee017e952bb9336f1b62bd524de71483e4802e57b4c8287f008327339",
+      "bytes": 29210
+    },
+    {
+      "file": "raw-10.json",
+      "sha256": "4565c2b1def4bcc0238398624b268ed4b580cd4bcee7640ba9acf22a29a8c08b",
+      "bytes": 31057
+    },
+    {
+      "file": "raw-11.json",
+      "sha256": "9be298e8d274f563464ad60f61c4567362d1693dd476385c0a0a5fe4c2fa7fcc",
+      "bytes": 30572
+    },
+    {
+      "file": "raw-12-retry-1.json",
+      "sha256": "a252f9dd0ccdef84ccb86a74286efbe855cc6c22290aa015c23ce663e2459e19",
+      "bytes": 31899
+    },
+    {
+      "file": "raw-12.json",
+      "sha256": "9cca9bb1385090dc519c464f833d8693fef39e27e79c15d43085fc7988e6efee",
+      "bytes": 770
+    },
+    {
+      "file": "raw-13.json",
+      "sha256": "5fabb0ddd51d5237631fec405b0f8ef29896e51a8e9a3e682149873e455b68fe",
+      "bytes": 29381
+    },
+    {
+      "file": "raw-14.json",
+      "sha256": "49ee8b69a457188c5340ba6018bfdc83b7eae2b061aa26a71b6f48b86cf2886c",
+      "bytes": 29847
+    },
+    {
+      "file": "raw-15.json",
+      "sha256": "d537ab8c64543acc796bc20daef87cb2ebe05fb083e694fafef8688c0b45577f",
+      "bytes": 28763
+    },
+    {
+      "file": "raw-16-retry-1.json",
+      "sha256": "91b84b674cb282552144edf9565da725d288ac8cd9b46c4656727598fdebdbbe",
+      "bytes": 28972
+    },
+    {
+      "file": "raw-16.json",
+      "sha256": "241393fb856e1e9d28d98252e24b96fac93e9c1dd4f6efafa6a6a1e92f012415",
+      "bytes": 778
+    },
+    {
+      "file": "raw-17-retry-1.json",
+      "sha256": "a0cc1adaafe21df2573a92d5cef812de8a0d33e7c03c358ae637eda0a909601f",
+      "bytes": 17685
+    },
+    {
+      "file": "raw-17.json",
+      "sha256": "b431c7919b85c1ebddbcae6ad0aafd2bd9a28070614ef444d404fdef602febce",
+      "bytes": 782
+    },
+    {
+      "file": "raw-18-retry-1.json",
+      "sha256": "ddc263590068a2325309fab4d20ea4ba52baa8c15343fc0459f17797ca38879b",
+      "bytes": 30481
+    },
+    {
+      "file": "raw-18.json",
+      "sha256": "f9ece3dfe2114ead094eb83cabac6f0627f2c64432b6af88b624eb4d66c3806c",
+      "bytes": 792
+    },
+    {
+      "file": "raw-19.json",
+      "sha256": "6a2d173f69f261feab51fb5a031c4863d3c7f35af4727103f3e5887de1e95f07",
+      "bytes": 27330
+    },
+    {
+      "file": "raw-2.json",
+      "sha256": "4e3fa3cc5df9ae29fbd09ddd0dff796fe1eac0592fbc3581548ee8ee39a610bb",
+      "bytes": 30217
+    },
+    {
+      "file": "raw-20-retry-1.json",
+      "sha256": "8ff86f3c336a0d1de3415340783db0064631319ea8d053fd822fa328f2564d39",
+      "bytes": 30263
+    },
+    {
+      "file": "raw-20.json",
+      "sha256": "cd63d4e5d695afab27396f2b6362f9c6f8347a248ac494b79d760fa0b08a3b67",
+      "bytes": 775
+    },
+    {
+      "file": "raw-21.json",
+      "sha256": "6d5016f7b6b485f8d1fbca18cd2804a41e7180321376f1e16d5fa0600980b65a",
+      "bytes": 28506
+    },
+    {
+      "file": "raw-22.json",
+      "sha256": "14d9f94f778e3babafaa9c51334b54260d06816091723ac1bb320e45ef777e51",
+      "bytes": 28094
+    },
+    {
+      "file": "raw-23.json",
+      "sha256": "e26481a643e753605b2c1b0f45317d271711443abeb7e1a22ee2bc983ae6a1d3",
+      "bytes": 26882
+    },
+    {
+      "file": "raw-24-retry-1.json",
+      "sha256": "905f14416c4913f3aa794c1282e4a50c4136a9401c05d1c8088dbdf879901bcb",
+      "bytes": 31439
+    },
+    {
+      "file": "raw-24.json",
+      "sha256": "d61bfd39254b07c338561bade725cd0f0f1143aed1619fd902d63492d2ec17f8",
+      "bytes": 777
+    },
+    {
+      "file": "raw-25.json",
+      "sha256": "a16503041afbd619e1db26c92fca85dfd7716aee0b087d3b368adec48222a89e",
+      "bytes": 29977
+    },
+    {
+      "file": "raw-26.json",
+      "sha256": "7827bb4b91a4d0086763ebde809f4332410bc649a479d81ecc61b023a6f43609",
+      "bytes": 30219
+    },
+    {
+      "file": "raw-27.json",
+      "sha256": "67fa8839a28f4afbc6d35f71126327e111243bcb634cc75f0b2752240e9acca4",
+      "bytes": 31112
+    },
+    {
+      "file": "raw-28.json",
+      "sha256": "858aa9dfe7cc476b9a68a726a1d4e4cd3e9bffc28b78a456b11d72c3e5a948a7",
+      "bytes": 30536
+    },
+    {
+      "file": "raw-3.json",
+      "sha256": "d5ec29c981668e7108154a3e6affbf5dcb5017ac5e8f9971fece90fb9b56d595",
+      "bytes": 27714
+    },
+    {
+      "file": "raw-4.json",
+      "sha256": "e0d7ad20bd5e5c4f447795fd77825c39ef07a8e6a167dc25493656b40ece41f0",
+      "bytes": 27826
+    },
+    {
+      "file": "raw-5.json",
+      "sha256": "3abe3d1434316f30b2d17be434af882e59d045e18dc029ce38551a159ebdc01e",
+      "bytes": 28717
+    },
+    {
+      "file": "raw-6.json",
+      "sha256": "d4c0a86bb8d877be8a38e7ce29ae1fb1752e0dd60e6101383c018e3c0553f3c9",
+      "bytes": 27690
+    },
+    {
+      "file": "raw-7.json",
+      "sha256": "ddca4ad7c6213ba5f9bc1b012831d5ecadc82a64bdb01a1937397d7f54f2cd19",
+      "bytes": 27301
+    },
+    {
+      "file": "raw-8.json",
+      "sha256": "e5839c0d2baa479f676cff2e477100261e3462e7b98b1a10ccb77138125dbc3b",
+      "bytes": 28879
+    },
+    {
+      "file": "raw-9.json",
+      "sha256": "0ab0282effca73a52917f6d478fb6d0891118c2436579d082f13788654fb8747",
+      "bytes": 30191
+    }
+  ]
+}

@@ -103,12 +103,13 @@ The original observations are preserved in `seo/baselines/2026-11-04-rankings.js
 
 - Preview rankings at no cost: `npm run seo:ranks`. Add `-- --include-long-tail` to preview all 28 distinct targets from the content catalog (currently estimated at $0.28); this also requires fresh spending authorization before live collection. The first observed long-tail ranks establish their own baseline, with no invented earlier positions.
 - After fresh spending authorization, repeat the six-query panel: `npm run seo:ranks -- --live --budget 0.06`. This was the November 4 rate-card estimate; the per-call hard ceiling stops a higher reservation. Raw evidence is saved before parsing; failed/uncertain calls are not retried automatically.
-- Compare: `npm run seo:compare -- --baseline seo/baselines/2026-11-04-rankings.json --current seo/snapshots/RUN/rankings.json --output seo/snapshots/RUN/comparison.md`.
+- If any result domains remain unresolved, enrich the saved response at no Treg cost: `npm run seo:resolve -- seo/snapshots/RUN/rankings.json seo/snapshots/RUN/resolved-rankings.json`. This follows Google redirect headers without fetching external destination pages and preserves failures as unknown.
+- Compare: `npm run seo:compare -- --baseline seo/baselines/2026-11-04-rankings.json --current seo/snapshots/RUN/resolved-rankings.json --output seo/snapshots/RUN/comparison.md` (use `rankings.json` directly if all domains were already known).
 - Preview first-party exports: `npm run seo:metrics`. Fetch connected Search Console and GA4 reports with `npm run seo:metrics -- --live`; this uses team tools, not paid catalog endpoints.
 
 All commands use the existing Treg CLI login in team `splendidmoving`; do not copy a token into this repository. Raw exports stay in ignored `seo/snapshots/` and are excluded from the web build. Do not publish those exports. Comparisons reject changed providers, location, language, device or depth and flag unresolved result domains. Brand and Maps require their separate audit settings if refreshed.
 
-Check the fixed rank panel weekly and compare first-party performance across complete 28-day periods. No recurring paid job is installed. Search Console's empty responses mean data is unavailable; they do not prove zero traffic. GA4's tag began on November 4, so earlier periods cannot establish a fair before/after comparison. Track organic clicks/impressions and quote outcomes alongside ranks; page views alone are not booked moves. `seo/changes.json` records the release for later attribution. No additional paid calls were made for this rollout.
+Check the fixed rank panel weekly and compare first-party performance across complete 28-day periods. No recurring paid job is installed. Search Console's empty responses mean data is unavailable; they do not prove zero traffic. GA4's tag began on November 4, so earlier periods cannot establish a fair before/after comparison. Track organic clicks/impressions and quote outcomes alongside ranks; page views alone are not booked moves. `seo/changes.json` records the release for later attribution. The initial content release used no additional paid calls; the later expanded snapshot and its separate approved spend are recorded below.
 
 ### November 4 production verification
 
@@ -123,3 +124,11 @@ Google accepted the sitemap (204), then reported that it had downloaded all 18 s
 Fuel wording: the old local-page claim “No fuel surcharges” has been removed. The English, Spanish and Korean copy now states that a gas fee applies based on the route. The existing Gas Fee CRM field, calculation and quote handling are unchanged.
 
 The first live Lighthouse homepage runs, recorded after release `2e91b9e`, scored mobile/desktop performance 73/97, accessibility 89/89, best practices 100/100 and SEO checks 100/100. These are starting lab measurements, not pre-release improvement claims or field Core Web Vitals. Full JSON and HTML reports, settings, timestamps and hashes are stored under `seo/evidence/2026-11-04-after/`; a compact summary is `seo/milestones/2026-11-04-performance-start.json`.
+
+### Expanded ranking snapshot, November 4
+
+The separately authorized 28-query panel is complete. Actual cost was **$0.276 of the approved $0.28**: 27 complete responses, one partial response and six zero-cost provider errors followed by inspected retries. No successful query was purchased twice. The saved snapshot covers 1,327 organic rows with zero unresolved domains; Splendid's website was absent from those examined rows. This is an initial measurement for the additional targets and establishes no ranking gain.
+
+Start at `seo/2026-11-04-expanded-snapshot.md`. The permanent comparison baseline is `seo/baselines/2026-11-04-expanded-post-release.json`, with a CSV alongside it. Exact call IDs/charges and raw-response hashes live under `seo/evidence/2026-11-04-expanded/`. This evidence is excluded from the public web build. The original before-work files remain unchanged.
+
+Read-only Search Console inspections recorded five indexed pages, eleven discovered/not indexed and two unknown to Google; see `seo/milestones/2026-11-04-indexing-start.json`. Raw inspection responses were saved, and the reads cost $0. All 61 mocked/offline tests pass, including redirect-resolution and partial-response comparison checks. Provider partial results retain their actual examined rows and are flagged as incomplete for ranking movement. No recurring paid collection is installed.

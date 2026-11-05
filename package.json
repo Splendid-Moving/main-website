@@ -12,6 +12,7 @@
     "seo:validate": "node scripts/validate-site.js",
     "seo:compare": "node scripts/seo/compare.js",
     "seo:ranks": "node scripts/seo/collect-rankings.js",
+    "seo:resolve": "node scripts/seo/resolve-snapshot.js",
     "seo:metrics": "node scripts/seo/collect-metrics.js"
   },
   "dependencies": {

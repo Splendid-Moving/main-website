@@ -1,0 +1,313 @@
+{
+  "description": "Charges come from Treg response metadata, not provider body estimates. The six internal search-engine errors were free; one partial response cost $0.006.",
+  "authorized_budget_micro": 280000,
+  "charged_micro": 276000,
+  "calls": [
+    {
+      "query": "local movers los angeles",
+      "call_id": "04cd977c75e04b9bb24a5c856eb622d8",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-1.json",
+      "response_saved_at_utc": "2026-11-05T01:07:07.699193+00:00"
+    },
+    {
+      "query": "studio apartment movers los angeles",
+      "call_id": "8982d5d5180544759d86d9d56aa31eff",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-10.json",
+      "response_saved_at_utc": "2026-11-05T01:09:09.168236+00:00"
+    },
+    {
+      "query": "packing help for apartment move los angeles",
+      "call_id": "d4f6787eb28142e8a76c718660713037",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-11.json",
+      "response_saved_at_utc": "2026-11-05T01:09:22.135684+00:00"
+    },
+    {
+      "query": "small office movers los angeles",
+      "call_id": "c3d0d445a356426cb3b005f056948ece",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-12-retry-1.json",
+      "response_saved_at_utc": "2026-11-05T01:11:26.431058+00:00"
+    },
+    {
+      "query": "small office movers los angeles",
+      "call_id": "bd196c5ee8be467eb0d60d40940e46e1",
+      "provider_status_code": 40101,
+      "outcome": "failed",
+      "charged_micro": 0,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-12.json",
+      "response_saved_at_utc": "2026-11-05T01:09:40.018588+00:00"
+    },
+    {
+      "query": "small office relocation los angeles checklist",
+      "call_id": "8216fc9d07b04d59aa7896e62cabb9d5",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-13.json",
+      "response_saved_at_utc": "2026-11-05T01:11:41.462255+00:00"
+    },
+    {
+      "query": "apartment moving checklist los angeles",
+      "call_id": "5745a988d43b40e5bb0b852681c37424",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-14.json",
+      "response_saved_at_utc": "2026-11-05T01:11:53.977782+00:00"
+    },
+    {
+      "query": "how much do movers cost los angeles",
+      "call_id": "63bb8ff07d7444a994cab937e59a5b5a",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-15.json",
+      "response_saved_at_utc": "2026-11-05T01:12:07.646740+00:00"
+    },
+    {
+      "query": "two movers and a truck cost los angeles",
+      "call_id": "8b22f1ebb97f4285b11c1106f7a285cc",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-16-retry-1.json",
+      "response_saved_at_utc": "2026-11-05T01:15:49.575612+00:00"
+    },
+    {
+      "query": "two movers and a truck cost los angeles",
+      "call_id": "987e5ca940f0476c8899052699b971ae",
+      "provider_status_code": 40101,
+      "outcome": "failed",
+      "charged_micro": 0,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-16.json",
+      "response_saved_at_utc": "2026-11-05T01:12:26.136001+00:00"
+    },
+    {
+      "query": "moving coi elevator reservation los angeles",
+      "call_id": "8ff683977f974d6db8973e5d6ac634bb",
+      "provider_status_code": 40106,
+      "outcome": "partial",
+      "charged_micro": 6000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-17-retry-1.json",
+      "response_saved_at_utc": "2026-11-05T01:16:10.948746+00:00"
+    },
+    {
+      "query": "moving coi elevator reservation los angeles",
+      "call_id": "2a90ce350268430ea7c9c011d21af6c5",
+      "provider_status_code": 40101,
+      "outcome": "failed",
+      "charged_micro": 0,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-17.json",
+      "response_saved_at_utc": "2026-11-05T01:12:43.118068+00:00"
+    },
+    {
+      "query": "apartment moving certificate of insurance los angeles",
+      "call_id": "cd8926b036214be2b0eeb544b755b937",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-18-retry-1.json",
+      "response_saved_at_utc": "2026-11-05T01:16:19.594458+00:00"
+    },
+    {
+      "query": "apartment moving certificate of insurance los angeles",
+      "call_id": "943faf04551a4da89e64ee20413fab97",
+      "provider_status_code": 40101,
+      "outcome": "failed",
+      "charged_micro": 0,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-18.json",
+      "response_saved_at_utc": "2026-11-05T01:12:58.435047+00:00"
+    },
+    {
+      "query": "moving apartment without elevator los angeles",
+      "call_id": "6521e7eb7c1e456aa3c137ee440320d5",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-19.json",
+      "response_saved_at_utc": "2026-11-05T01:13:08.020610+00:00"
+    },
+    {
+      "query": "movers los angeles",
+      "call_id": "f89b955ffe9c40caa5ecdde6dcd874c6",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-2.json",
+      "response_saved_at_utc": "2026-11-05T01:07:20.859554+00:00"
+    },
+    {
+      "query": "walk up apartment movers los angeles",
+      "call_id": "1b9abfefa30041b0b869df3d45541efb",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-20-retry-1.json",
+      "response_saved_at_utc": "2026-11-05T01:16:32.965302+00:00"
+    },
+    {
+      "query": "walk up apartment movers los angeles",
+      "call_id": "903bc1391847419cbd367a65566900e7",
+      "provider_status_code": 40101,
+      "outcome": "failed",
+      "charged_micro": 0,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-20.json",
+      "response_saved_at_utc": "2026-11-05T01:13:25.785612+00:00"
+    },
+    {
+      "query": "how to pack kitchen for apartment move",
+      "call_id": "48e45e1d1f29403ca4b860e2ab14a6c0",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-21.json",
+      "response_saved_at_utc": "2026-11-05T01:13:39.090760+00:00"
+    },
+    {
+      "query": "packing dishes and glasses for moving",
+      "call_id": "acfd20a6c6d040588217b597fac7d9bf",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-22.json",
+      "response_saved_at_utc": "2026-11-05T01:13:53.492214+00:00"
+    },
+    {
+      "query": "small office moving checklist los angeles",
+      "call_id": "cf606f35b40d43109f29f54e945145a7",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-23.json",
+      "response_saved_at_utc": "2026-11-05T01:14:01.521088+00:00"
+    },
+    {
+      "query": "office relocation planning los angeles",
+      "call_id": "d62ee6314e6f43d4ba750aa176ff929d",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-24-retry-1.json",
+      "response_saved_at_utc": "2026-11-05T01:16:59.313319+00:00"
+    },
+    {
+      "query": "office relocation planning los angeles",
+      "call_id": "092a19416b114838b7923683d481674c",
+      "provider_status_code": 40101,
+      "outcome": "failed",
+      "charged_micro": 0,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-24.json",
+      "response_saved_at_utc": "2026-11-05T01:14:17.214205+00:00"
+    },
+    {
+      "query": "long distance moving inventory checklist",
+      "call_id": "240fbce7615b4631a35cf13f2f72e577",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-25.json",
+      "response_saved_at_utc": "2026-11-05T01:14:28.907132+00:00"
+    },
+    {
+      "query": "photos for long distance moving quote",
+      "call_id": "88d476ea41f249399c5e3644192f113c",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-26.json",
+      "response_saved_at_utc": "2026-11-05T01:14:37.806467+00:00"
+    },
+    {
+      "query": "moving truck parking los angeles apartment",
+      "call_id": "f13e8896076e44138d5dd92d1677c7d8",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-27.json",
+      "response_saved_at_utc": "2026-11-05T01:14:55.841085+00:00"
+    },
+    {
+      "query": "moving day loading zone los angeles",
+      "call_id": "8f738d516e5d4e09bb7097e2981252fe",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-28.json",
+      "response_saved_at_utc": "2026-11-05T01:15:07.419535+00:00"
+    },
+    {
+      "query": "long distance movers los angeles",
+      "call_id": "851c317e6376460e8672ea11c92eacb0",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-3.json",
+      "response_saved_at_utc": "2026-11-05T01:07:30.647955+00:00"
+    },
+    {
+      "query": "commercial movers los angeles",
+      "call_id": "99242c1a75214a2ba0deac4953ca2871",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-4.json",
+      "response_saved_at_utc": "2026-11-05T01:07:49.952431+00:00"
+    },
+    {
+      "query": "office movers los angeles",
+      "call_id": "3284ab6edc3743bb8a6c0718728a7134",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-5.json",
+      "response_saved_at_utc": "2026-11-05T01:08:04.456208+00:00"
+    },
+    {
+      "query": "packing services los angeles",
+      "call_id": "f14a966fb9264024bd67c36dba633ff1",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-6.json",
+      "response_saved_at_utc": "2026-11-05T01:08:15.220415+00:00"
+    },
+    {
+      "query": "apartment movers los angeles",
+      "call_id": "86b286de66ed4425ac691f9cf29d4a36",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-7.json",
+      "response_saved_at_utc": "2026-11-05T01:08:30.278880+00:00"
+    },
+    {
+      "query": "apartment movers los angeles with stairs",
+      "call_id": "fcf30fd5909343b3bededc46178bb1b6",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-8.json",
+      "response_saved_at_utc": "2026-11-05T01:08:43.226187+00:00"
+    },
+    {
+      "query": "small moves los angeles",
+      "call_id": "fcbeb8df80a145bc94ebbe43145ba95e",
+      "provider_status_code": 20000,
+      "outcome": "complete",
+      "charged_micro": 10000,
+      "response_file": "seo/evidence/2026-11-04-expanded/raw-9.json",
+      "response_saved_at_utc": "2026-11-05T01:08:54.360195+00:00"
+    }
+  ]
+}

@@ -1,0 +1,2401 @@
+{
+  "description": "First expanded post-release keyword snapshot for later portfolio comparisons. Preserve the pre-release baseline unchanged; absent ranks have no numerical position.",
+  "schema_version": 1,
+  "domain": "splendidmoving.com",
+  "captured_date": "2026-11-04",
+  "timezone": "America/Los_Angeles",
+  "capture_window_utc": {
+    "first_response_saved": "2026-11-05T01:07:07.699193+00:00",
+    "last_response_saved": "2026-11-05T01:16:59.313319+00:00"
+  },
+  "phase": "after first SEO release",
+  "site_commit": "d9ecde8",
+  "search_settings": {
+    "provider": "DataForSEO",
+    "endpoint": "dataforseo.google.serp.organic",
+    "location_code": 1013962,
+    "location": "Los Angeles, California, US (1013962)",
+    "language": "en",
+    "device": "desktop",
+    "os": "windows",
+    "requested_depth": 50
+  },
+  "authorized_budget_usd": 0.28,
+  "charged_usd": 0.276,
+  "charges_file": "seo/evidence/2026-11-04-expanded/charges.json",
+  "summary": {
+    "target_queries": 28,
+    "complete_provider_responses": 27,
+    "partial_provider_responses": 1,
+    "organic_rows_examined": 1327,
+    "unresolved_domains": 0,
+    "queries_with_site_observed": 0,
+    "redirect_resolution_records": 92,
+    "paid_request_attempts": 34,
+    "zero_cost_provider_errors": 6
+  },
+  "notes": [
+    "Twenty-seven complete provider panels examined 43\u201350 organic results each. One partial panel examined 29.",
+    "All examined publisher domains were identified, with no unresolved domains.",
+    "Splendidmoving.com was not found in the examined organic rows. This is not an exact rank below 50.",
+    "Brand, Maps and backlinks were not refreshed in this panel. Their original dated observations remain separate.",
+    "The partial query cannot establish full-depth ranking movement; first obtain a complete comparable measurement."
+  ],
+  "rankings": [
+    {
+      "query": "local movers los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-1.json",
+      "organic_rows_examined": 48,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:07:06 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 5,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 4,
+          "original": "https://google.com/goto?url=CAEShAEBxCJF15YIwT7a45g_q641HtPSLq1Pb5zWES4546x48lyfY8gJCdQKENA2x2oG-uFBq21fqCL5lDekol-2-XK33XlBZxy2PbcjZyEsk1OmNOXvV1NkxhOBraEt1RSm3IiKZcVRVWOaVa4lCxvrbxDZ-kf2QGEFA860AGBZ49vbAD4ob4Y",
+          "url": "https://www.facebook.com/groups/165229190198046/posts/5206703496050565/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShAEBxCJF15YIwT7a45g_q641HtPSLq1Pb5zWES4546x48lyfY8gJCdQKENA2x2oG-uFBq21fqCL5lDekol-2-XK33XlBZxy2PbcjZyEsk1OmNOXvV1NkxhOBraEt1RSm3IiKZcVRVWOaVa4lCxvrbxDZ-kf2QGEFA860AGBZ49vbAD4ob4Y",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShAEBxCJF15YIwT7a45g_q641HtPSLq1Pb5zWES4546x48lyfY8gJCdQKENA2x2oG-uFBq21fqCL5lDekol-2-XK33XlBZxy2PbcjZyEsk1OmNOXvV1NkxhOBraEt1RSm3IiKZcVRVWOaVa4lCxvrbxDZ-kf2QGEFA860AGBZ49vbAD4ob4Y"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShAEBxCJF15YIwT7a45g_q641HtPSLq1Pb5zWES4546x48lyfY8gJCdQKENA2x2oG-uFBq21fqCL5lDekol-2-XK33XlBZxy2PbcjZyEsk1OmNOXvV1NkxhOBraEt1RSm3IiKZcVRVWOaVa4lCxvrbxDZ-kf2QGEFA860AGBZ49vbAD4ob4Y",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/165229190198046/posts/5206703496050565/"
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "original": "https://google.com/goto?url=CAEShAEBxCJF12Iv_xNQ1R-PEFLd_0zI_hBqXYrnNIS9pNhaRPUD6k0yI09uzMmKEcrotuscrjB-j_896KjRHBF787u4ERls46Ejb3jOJCOVoiQTEwKhVCyHZ--HYaP_s49DbbtzfMonG6eB8QkMhJkT_DQ86zQl8_ED3ZYiJ2lPfz6vd_SLZtY",
+          "url": "https://www.facebook.com/groups/165229190198046/posts/5206703496050565/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShAEBxCJF12Iv_xNQ1R-PEFLd_0zI_hBqXYrnNIS9pNhaRPUD6k0yI09uzMmKEcrotuscrjB-j_896KjRHBF787u4ERls46Ejb3jOJCOVoiQTEwKhVCyHZ--HYaP_s49DbbtzfMonG6eB8QkMhJkT_DQ86zQl8_ED3ZYiJ2lPfz6vd_SLZtY",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShAEBxCJF12Iv_xNQ1R-PEFLd_0zI_hBqXYrnNIS9pNhaRPUD6k0yI09uzMmKEcrotuscrjB-j_896KjRHBF787u4ERls46Ejb3jOJCOVoiQTEwKhVCyHZ--HYaP_s49DbbtzfMonG6eB8QkMhJkT_DQ86zQl8_ED3ZYiJ2lPfz6vd_SLZtY"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShAEBxCJF12Iv_xNQ1R-PEFLd_0zI_hBqXYrnNIS9pNhaRPUD6k0yI09uzMmKEcrotuscrjB-j_896KjRHBF787u4ERls46Ejb3jOJCOVoiQTEwKhVCyHZ--HYaP_s49DbbtzfMonG6eB8QkMhJkT_DQ86zQl8_ED3ZYiJ2lPfz6vd_SLZtY",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/165229190198046/posts/5206703496050565/"
+            }
+          ]
+        },
+        {
+          "rank": 12,
+          "original": "https://google.com/goto?url=CAESgwEBxCJF16a_vNNXt1sYDSQ65SQzHx6U3xeDtvGa767RfOLumuxPuvOMzMPHxgl-_zIH6XqjbhcR7TEhjJXInPNVcTUL4CrBEm0l31d3G1MtKasCWHo2eoDZEktR7e-8o8WE0YZNQAuKJqGtolXrFyECDw4Qjju1gzulwPSJI9tzHgroPw",
+          "url": "https://www.facebook.com/groups/elsereno90032/posts/26049391828092788/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESgwEBxCJF16a_vNNXt1sYDSQ65SQzHx6U3xeDtvGa767RfOLumuxPuvOMzMPHxgl-_zIH6XqjbhcR7TEhjJXInPNVcTUL4CrBEm0l31d3G1MtKasCWHo2eoDZEktR7e-8o8WE0YZNQAuKJqGtolXrFyECDw4Qjju1gzulwPSJI9tzHgroPw",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESgwEBxCJF16a_vNNXt1sYDSQ65SQzHx6U3xeDtvGa767RfOLumuxPuvOMzMPHxgl-_zIH6XqjbhcR7TEhjJXInPNVcTUL4CrBEm0l31d3G1MtKasCWHo2eoDZEktR7e-8o8WE0YZNQAuKJqGtolXrFyECDw4Qjju1gzulwPSJI9tzHgroPw"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESgwEBxCJF16a_vNNXt1sYDSQ65SQzHx6U3xeDtvGa767RfOLumuxPuvOMzMPHxgl-_zIH6XqjbhcR7TEhjJXInPNVcTUL4CrBEm0l31d3G1MtKasCWHo2eoDZEktR7e-8o8WE0YZNQAuKJqGtolXrFyECDw4Qjju1gzulwPSJI9tzHgroPw",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/elsereno90032/posts/26049391828092788/"
+            }
+          ]
+        },
+        {
+          "rank": 14,
+          "original": "https://google.com/goto?url=CAEShQEBxCJF18DlOT7C0hZZfbXtioJSi5qnneWx37FhMjc9E9zLvO2bJSe5HXYFt7zFHiKNM6S9uhf8RHXPrfplGLPxhuRtPl7J06MiEqc1SqMX_DcJ4Zcuj70Ho-k70c1jENEAz7ZYs59VnAi-iIWWmQNuVtuqCe8EL3WaHd4fTM4-XyEwoPTg",
+          "url": "https://www.facebook.com/groups/2529796983945275/posts/4603037359954550/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShQEBxCJF18DlOT7C0hZZfbXtioJSi5qnneWx37FhMjc9E9zLvO2bJSe5HXYFt7zFHiKNM6S9uhf8RHXPrfplGLPxhuRtPl7J06MiEqc1SqMX_DcJ4Zcuj70Ho-k70c1jENEAz7ZYs59VnAi-iIWWmQNuVtuqCe8EL3WaHd4fTM4-XyEwoPTg",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShQEBxCJF18DlOT7C0hZZfbXtioJSi5qnneWx37FhMjc9E9zLvO2bJSe5HXYFt7zFHiKNM6S9uhf8RHXPrfplGLPxhuRtPl7J06MiEqc1SqMX_DcJ4Zcuj70Ho-k70c1jENEAz7ZYs59VnAi-iIWWmQNuVtuqCe8EL3WaHd4fTM4-XyEwoPTg"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShQEBxCJF18DlOT7C0hZZfbXtioJSi5qnneWx37FhMjc9E9zLvO2bJSe5HXYFt7zFHiKNM6S9uhf8RHXPrfplGLPxhuRtPl7J06MiEqc1SqMX_DcJ4Zcuj70Ho-k70c1jENEAz7ZYs59VnAi-iIWWmQNuVtuqCe8EL3WaHd4fTM4-XyEwoPTg",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/2529796983945275/posts/4603037359954550/"
+            }
+          ]
+        },
+        {
+          "rank": 18,
+          "original": "https://google.com/goto?url=CAESZAHEIkXXga5QCpt31q6d_txJNRyuoO6ZIi8PY1pwjF4LX6mTYHZzsfr7Bf5QsjG1RuHEjnfpgNtixiM7MhiWRxd_fuluUAqAzRtYkJkSgFc8VQX88NCMwUz2ELQvnQMX_TlyTUQ",
+          "url": "https://www.facebook.com/CheapMoversLA/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESZAHEIkXXga5QCpt31q6d_txJNRyuoO6ZIi8PY1pwjF4LX6mTYHZzsfr7Bf5QsjG1RuHEjnfpgNtixiM7MhiWRxd_fuluUAqAzRtYkJkSgFc8VQX88NCMwUz2ELQvnQMX_TlyTUQ",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESZAHEIkXXga5QCpt31q6d_txJNRyuoO6ZIi8PY1pwjF4LX6mTYHZzsfr7Bf5QsjG1RuHEjnfpgNtixiM7MhiWRxd_fuluUAqAzRtYkJkSgFc8VQX88NCMwUz2ELQvnQMX_TlyTUQ"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESZAHEIkXXga5QCpt31q6d_txJNRyuoO6ZIi8PY1pwjF4LX6mTYHZzsfr7Bf5QsjG1RuHEjnfpgNtixiM7MhiWRxd_fuluUAqAzRtYkJkSgFc8VQX88NCMwUz2ELQvnQMX_TlyTUQ",
+              "status": 302,
+              "location": "https://www.facebook.com/CheapMoversLA/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "movers los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-2.json",
+      "organic_rows_examined": 49,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:07:18 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 3,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 9,
+          "original": "https://google.com/goto?url=CAEScQHEIkXXD0MZd1ENefYiZDosWPJNL5fJaZFnFzxfnWDJV-gfOgLvGrAzRml08tcA1h1nOl3ytdQYsxgQQyqme3cgpyjfVfbkThtdgJi5Yof-hy1oDTAEU_74G043xTedeZNVnHEwmCos9BhGecwJreC3",
+          "url": "https://www.facebook.com/AffordableLosAngelesMovers/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEScQHEIkXXD0MZd1ENefYiZDosWPJNL5fJaZFnFzxfnWDJV-gfOgLvGrAzRml08tcA1h1nOl3ytdQYsxgQQyqme3cgpyjfVfbkThtdgJi5Yof-hy1oDTAEU_74G043xTedeZNVnHEwmCos9BhGecwJreC3",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEScQHEIkXXD0MZd1ENefYiZDosWPJNL5fJaZFnFzxfnWDJV-gfOgLvGrAzRml08tcA1h1nOl3ytdQYsxgQQyqme3cgpyjfVfbkThtdgJi5Yof-hy1oDTAEU_74G043xTedeZNVnHEwmCos9BhGecwJreC3"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEScQHEIkXXD0MZd1ENefYiZDosWPJNL5fJaZFnFzxfnWDJV-gfOgLvGrAzRml08tcA1h1nOl3ytdQYsxgQQyqme3cgpyjfVfbkThtdgJi5Yof-hy1oDTAEU_74G043xTedeZNVnHEwmCos9BhGecwJreC3",
+              "status": 302,
+              "location": "https://www.facebook.com/AffordableLosAngelesMovers/"
+            }
+          ]
+        },
+        {
+          "rank": 13,
+          "original": "https://google.com/goto?url=CAEShAEBxCJF18EK6IoLZRrpfb5nrSMd6hn64dPi4g91C1TVczg4f-Vkl6k4reh87y2uX1LlrbTegkJmAFo359eLpiuy-pbSMe-3jPpgJ26yRe_OZpk2WjvCTrCRkegyKRt9dP9EEv54yoY6YQxLulcDNSsCs4PmFuv_A8EtNGsR536IHR7mNSA",
+          "url": "https://www.facebook.com/groups/165229190198046/posts/5206703496050565/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShAEBxCJF18EK6IoLZRrpfb5nrSMd6hn64dPi4g91C1TVczg4f-Vkl6k4reh87y2uX1LlrbTegkJmAFo359eLpiuy-pbSMe-3jPpgJ26yRe_OZpk2WjvCTrCRkegyKRt9dP9EEv54yoY6YQxLulcDNSsCs4PmFuv_A8EtNGsR536IHR7mNSA",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShAEBxCJF18EK6IoLZRrpfb5nrSMd6hn64dPi4g91C1TVczg4f-Vkl6k4reh87y2uX1LlrbTegkJmAFo359eLpiuy-pbSMe-3jPpgJ26yRe_OZpk2WjvCTrCRkegyKRt9dP9EEv54yoY6YQxLulcDNSsCs4PmFuv_A8EtNGsR536IHR7mNSA"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShAEBxCJF18EK6IoLZRrpfb5nrSMd6hn64dPi4g91C1TVczg4f-Vkl6k4reh87y2uX1LlrbTegkJmAFo359eLpiuy-pbSMe-3jPpgJ26yRe_OZpk2WjvCTrCRkegyKRt9dP9EEv54yoY6YQxLulcDNSsCs4PmFuv_A8EtNGsR536IHR7mNSA",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/165229190198046/posts/5206703496050565/"
+            }
+          ]
+        },
+        {
+          "rank": 42,
+          "original": "https://google.com/goto?url=CAESaAHEIkXXqZwAmEgXfktQYNaW0c0A1HifAXULlDC7vuaugVLeG1jWtIELgmTjKuDAc8ecUQFhSdGpxt18zpRIDWSbmUIyuq14rl8IhcK8d-jmeDSL9kaO7sScwI3vpEYH3tSFQeGcK4Mg",
+          "url": "https://www.instagram.com/reel/DV49U6PERg0/",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESaAHEIkXXqZwAmEgXfktQYNaW0c0A1HifAXULlDC7vuaugVLeG1jWtIELgmTjKuDAc8ecUQFhSdGpxt18zpRIDWSbmUIyuq14rl8IhcK8d-jmeDSL9kaO7sScwI3vpEYH3tSFQeGcK4Mg",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESaAHEIkXXqZwAmEgXfktQYNaW0c0A1HifAXULlDC7vuaugVLeG1jWtIELgmTjKuDAc8ecUQFhSdGpxt18zpRIDWSbmUIyuq14rl8IhcK8d-jmeDSL9kaO7sScwI3vpEYH3tSFQeGcK4Mg"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESaAHEIkXXqZwAmEgXfktQYNaW0c0A1HifAXULlDC7vuaugVLeG1jWtIELgmTjKuDAc8ecUQFhSdGpxt18zpRIDWSbmUIyuq14rl8IhcK8d-jmeDSL9kaO7sScwI3vpEYH3tSFQeGcK4Mg",
+              "status": 302,
+              "location": "https://www.instagram.com/reel/DV49U6PERg0/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "long distance movers los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-3.json",
+      "organic_rows_examined": 48,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:07:29 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 0,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": []
+    },
+    {
+      "query": "commercial movers los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-4.json",
+      "organic_rows_examined": 49,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:07:48 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 0,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": []
+    },
+    {
+      "query": "office movers los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-5.json",
+      "organic_rows_examined": 49,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:08:03 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 0,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": []
+    },
+    {
+      "query": "packing services los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-6.json",
+      "organic_rows_examined": 49,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:08:13 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 2,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 22,
+          "original": "https://google.com/goto?url=CAESbgHrOzAVsEFgfsxC-sCjzzBLK-R_EKQvtdnKMGVGW9TOVVFNnMkvMmSrK0khECHk2Rg73fGjeIclsh4PCYAn5OQp6-61CoF25ZEL3abKFUCoI1LDUOZKj59J8tBp5rpVT9dAgfuwFKAG44cTQAWG",
+          "url": "https://www.instagram.com/reel/C8h9vNBP2ro/?hl=en",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESbgHrOzAVsEFgfsxC-sCjzzBLK-R_EKQvtdnKMGVGW9TOVVFNnMkvMmSrK0khECHk2Rg73fGjeIclsh4PCYAn5OQp6-61CoF25ZEL3abKFUCoI1LDUOZKj59J8tBp5rpVT9dAgfuwFKAG44cTQAWG",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESbgHrOzAVsEFgfsxC-sCjzzBLK-R_EKQvtdnKMGVGW9TOVVFNnMkvMmSrK0khECHk2Rg73fGjeIclsh4PCYAn5OQp6-61CoF25ZEL3abKFUCoI1LDUOZKj59J8tBp5rpVT9dAgfuwFKAG44cTQAWG"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESbgHrOzAVsEFgfsxC-sCjzzBLK-R_EKQvtdnKMGVGW9TOVVFNnMkvMmSrK0khECHk2Rg73fGjeIclsh4PCYAn5OQp6-61CoF25ZEL3abKFUCoI1LDUOZKj59J8tBp5rpVT9dAgfuwFKAG44cTQAWG",
+              "status": 302,
+              "location": "https://www.instagram.com/reel/C8h9vNBP2ro/?hl=en"
+            }
+          ]
+        },
+        {
+          "rank": 38,
+          "original": "https://google.com/goto?url=CAESaAHrOzAVGVcO-OD0znKeE-IjhDly5eXm4tCIn7en8TJ9g4Dgqy_51bb-K8Xj2wk6eUkWEpXMfC63G3ngF6rOi6apdBfrCedAwC2dbHA8M5HHhpEvKfampSLet_8i5LY6ng7Q9uzj8kD8",
+          "url": "https://www.youtube.com/watch?v=V3rY9qxe7HQ",
+          "domain": "youtube.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESaAHrOzAVGVcO-OD0znKeE-IjhDly5eXm4tCIn7en8TJ9g4Dgqy_51bb-K8Xj2wk6eUkWEpXMfC63G3ngF6rOi6apdBfrCedAwC2dbHA8M5HHhpEvKfampSLet_8i5LY6ng7Q9uzj8kD8",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESaAHrOzAVGVcO-OD0znKeE-IjhDly5eXm4tCIn7en8TJ9g4Dgqy_51bb-K8Xj2wk6eUkWEpXMfC63G3ngF6rOi6apdBfrCedAwC2dbHA8M5HHhpEvKfampSLet_8i5LY6ng7Q9uzj8kD8"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESaAHrOzAVGVcO-OD0znKeE-IjhDly5eXm4tCIn7en8TJ9g4Dgqy_51bb-K8Xj2wk6eUkWEpXMfC63G3ngF6rOi6apdBfrCedAwC2dbHA8M5HHhpEvKfampSLet_8i5LY6ng7Q9uzj8kD8",
+              "status": 302,
+              "location": "https://www.youtube.com/watch?v=V3rY9qxe7HQ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "apartment movers los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-7.json",
+      "organic_rows_examined": 49,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:08:28 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 3,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 3,
+          "original": "https://google.com/goto?url=CAESlgEB6zswFcShbSlRyZvFMKlpq-KlUYeUW6TucICS9hpRbt5X33ULbnbTkv7z1jk0-eKyzN5s2m6E0NjthcYTqlGqA98Hem7USk446VNCwf0izQb_RksV8NSv5tUc2UwjKcDjhNNgPUzG-rl830lkVFJCqZ-pmYdpvyoeK4mRF0MFeZ6Jxl43OlUX_Used8NmHYACCxvDu4E",
+          "url": "https://www.reddit.com/r/AskLosAngeles/comments/1jva0oj/recommendations_for_movers_in_la/",
+          "domain": "reddit.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESlgEB6zswFcShbSlRyZvFMKlpq-KlUYeUW6TucICS9hpRbt5X33ULbnbTkv7z1jk0-eKyzN5s2m6E0NjthcYTqlGqA98Hem7USk446VNCwf0izQb_RksV8NSv5tUc2UwjKcDjhNNgPUzG-rl830lkVFJCqZ-pmYdpvyoeK4mRF0MFeZ6Jxl43OlUX_Used8NmHYACCxvDu4E",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESlgEB6zswFcShbSlRyZvFMKlpq-KlUYeUW6TucICS9hpRbt5X33ULbnbTkv7z1jk0-eKyzN5s2m6E0NjthcYTqlGqA98Hem7USk446VNCwf0izQb_RksV8NSv5tUc2UwjKcDjhNNgPUzG-rl830lkVFJCqZ-pmYdpvyoeK4mRF0MFeZ6Jxl43OlUX_Used8NmHYACCxvDu4E"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESlgEB6zswFcShbSlRyZvFMKlpq-KlUYeUW6TucICS9hpRbt5X33ULbnbTkv7z1jk0-eKyzN5s2m6E0NjthcYTqlGqA98Hem7USk446VNCwf0izQb_RksV8NSv5tUc2UwjKcDjhNNgPUzG-rl830lkVFJCqZ-pmYdpvyoeK4mRF0MFeZ6Jxl43OlUX_Used8NmHYACCxvDu4E",
+              "status": 302,
+              "location": "https://www.reddit.com/r/AskLosAngeles/comments/1jva0oj/recommendations_for_movers_in_la/"
+            }
+          ]
+        },
+        {
+          "rank": 16,
+          "original": "https://google.com/goto?url=CAEShAEBxCJF19yC910iXhPD1qKXYr-qM3jJeA3B7C-22Y1h86KpxI_6AXBGSdJHrnSdp1GhzmYqAIgtCSPLtL_wu1He9S_RcyXmjO5BAABGCDSdyeLhIEQ5xKX6a0ZOiCiBJb5X2j0iWU7Q8uTLBqSVFTrscQhhAVy2ULR-tBuwy1yPPU2CBNM",
+          "url": "https://www.facebook.com/groups/438555653633498/posts/2391147678374276/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShAEBxCJF19yC910iXhPD1qKXYr-qM3jJeA3B7C-22Y1h86KpxI_6AXBGSdJHrnSdp1GhzmYqAIgtCSPLtL_wu1He9S_RcyXmjO5BAABGCDSdyeLhIEQ5xKX6a0ZOiCiBJb5X2j0iWU7Q8uTLBqSVFTrscQhhAVy2ULR-tBuwy1yPPU2CBNM",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShAEBxCJF19yC910iXhPD1qKXYr-qM3jJeA3B7C-22Y1h86KpxI_6AXBGSdJHrnSdp1GhzmYqAIgtCSPLtL_wu1He9S_RcyXmjO5BAABGCDSdyeLhIEQ5xKX6a0ZOiCiBJb5X2j0iWU7Q8uTLBqSVFTrscQhhAVy2ULR-tBuwy1yPPU2CBNM"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShAEBxCJF19yC910iXhPD1qKXYr-qM3jJeA3B7C-22Y1h86KpxI_6AXBGSdJHrnSdp1GhzmYqAIgtCSPLtL_wu1He9S_RcyXmjO5BAABGCDSdyeLhIEQ5xKX6a0ZOiCiBJb5X2j0iWU7Q8uTLBqSVFTrscQhhAVy2ULR-tBuwy1yPPU2CBNM",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/438555653633498/posts/2391147678374276/"
+            }
+          ]
+        },
+        {
+          "rank": 44,
+          "original": "https://google.com/goto?url=CAESaAHEIkXXg0zIVKR6Eq9k3o5-mlGSwbBaTMd1UkTd81e0uQrI_R9c-aeBwVED5kWHDIhITwSB6tbf3efYMI6cx8g3JdJ_kVtMzprGQQspUSDlnPqcL6bW3tjC7_paI_ZuBcCo0255xh4H",
+          "url": "https://www.youtube.com/watch?v=V3rY9qxe7HQ",
+          "domain": "youtube.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESaAHEIkXXg0zIVKR6Eq9k3o5-mlGSwbBaTMd1UkTd81e0uQrI_R9c-aeBwVED5kWHDIhITwSB6tbf3efYMI6cx8g3JdJ_kVtMzprGQQspUSDlnPqcL6bW3tjC7_paI_ZuBcCo0255xh4H",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESaAHEIkXXg0zIVKR6Eq9k3o5-mlGSwbBaTMd1UkTd81e0uQrI_R9c-aeBwVED5kWHDIhITwSB6tbf3efYMI6cx8g3JdJ_kVtMzprGQQspUSDlnPqcL6bW3tjC7_paI_ZuBcCo0255xh4H"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESaAHEIkXXg0zIVKR6Eq9k3o5-mlGSwbBaTMd1UkTd81e0uQrI_R9c-aeBwVED5kWHDIhITwSB6tbf3efYMI6cx8g3JdJ_kVtMzprGQQspUSDlnPqcL6bW3tjC7_paI_ZuBcCo0255xh4H",
+              "status": 302,
+              "location": "https://www.youtube.com/watch?v=V3rY9qxe7HQ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "apartment movers los angeles with stairs",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-8.json",
+      "organic_rows_examined": 47,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:08:41 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 5,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 8,
+          "original": "https://google.com/goto?url=CAESpAEB6zswFfp9Hh8B1RbQF8M9fusG7h-brCtj6wnRf5ywaUII4OdYuX6m2zE7-gpnWGTFcRac2pDyTfporQ4Z7CFxiy04TGyUVFS7NQNRBqxx71JLSXlRdw-ZXP_GpPS6V8vwFfOb5N908FzWBmK6h1IhoS-WDiw0n1JTgmqm3mY-UestQbAUma6klI-fYlIYVTaGNJvKJUVtrIR6PDDSESFo6qp9Kw",
+          "url": "https://www.reddit.com/r/AskLosAngeles/comments/1pqe1ds/movers_recommendations_for_moving_from_upstairs/",
+          "domain": "reddit.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESpAEB6zswFfp9Hh8B1RbQF8M9fusG7h-brCtj6wnRf5ywaUII4OdYuX6m2zE7-gpnWGTFcRac2pDyTfporQ4Z7CFxiy04TGyUVFS7NQNRBqxx71JLSXlRdw-ZXP_GpPS6V8vwFfOb5N908FzWBmK6h1IhoS-WDiw0n1JTgmqm3mY-UestQbAUma6klI-fYlIYVTaGNJvKJUVtrIR6PDDSESFo6qp9Kw",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESpAEB6zswFfp9Hh8B1RbQF8M9fusG7h-brCtj6wnRf5ywaUII4OdYuX6m2zE7-gpnWGTFcRac2pDyTfporQ4Z7CFxiy04TGyUVFS7NQNRBqxx71JLSXlRdw-ZXP_GpPS6V8vwFfOb5N908FzWBmK6h1IhoS-WDiw0n1JTgmqm3mY-UestQbAUma6klI-fYlIYVTaGNJvKJUVtrIR6PDDSESFo6qp9Kw"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESpAEB6zswFfp9Hh8B1RbQF8M9fusG7h-brCtj6wnRf5ywaUII4OdYuX6m2zE7-gpnWGTFcRac2pDyTfporQ4Z7CFxiy04TGyUVFS7NQNRBqxx71JLSXlRdw-ZXP_GpPS6V8vwFfOb5N908FzWBmK6h1IhoS-WDiw0n1JTgmqm3mY-UestQbAUma6klI-fYlIYVTaGNJvKJUVtrIR6PDDSESFo6qp9Kw",
+              "status": 302,
+              "location": "https://www.reddit.com/r/AskLosAngeles/comments/1pqe1ds/movers_recommendations_for_moving_from_upstairs/"
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "original": "https://google.com/goto?url=CAESzAEB6zswFTNjgJp6Z9SGEuT39rxP6j-dqdYe47tqnOnILRJyRxLn6zezpTJ0L4PfCS9mSLhwWgE5aHaToahdU0KHR3UhfB0d9lhWsDhixOGVg3LyooOAaSvkO7IX1XacOb-1uX9cfNBUWdh523Z8vN_7ZDoTQjdiBL83N6oXs3xUPEZ8Rcr-5vLU0V0Hua5gfSSkDm2mRMU342Z5214gkHxDMPsibz2kDu-r6W4hvVz1At9-tUR4kP35NNVfsR4yRfz1gpuJJbMsL5cQDko",
+          "url": "https://www.facebook.com/jana.hickey.7/posts/has-anyone-use-la-house-movers-and-levelingthis-is-who-i-think-im-going-with-to/10166327009335087/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESzAEB6zswFTNjgJp6Z9SGEuT39rxP6j-dqdYe47tqnOnILRJyRxLn6zezpTJ0L4PfCS9mSLhwWgE5aHaToahdU0KHR3UhfB0d9lhWsDhixOGVg3LyooOAaSvkO7IX1XacOb-1uX9cfNBUWdh523Z8vN_7ZDoTQjdiBL83N6oXs3xUPEZ8Rcr-5vLU0V0Hua5gfSSkDm2mRMU342Z5214gkHxDMPsibz2kDu-r6W4hvVz1At9-tUR4kP35NNVfsR4yRfz1gpuJJbMsL5cQDko",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESzAEB6zswFTNjgJp6Z9SGEuT39rxP6j-dqdYe47tqnOnILRJyRxLn6zezpTJ0L4PfCS9mSLhwWgE5aHaToahdU0KHR3UhfB0d9lhWsDhixOGVg3LyooOAaSvkO7IX1XacOb-1uX9cfNBUWdh523Z8vN_7ZDoTQjdiBL83N6oXs3xUPEZ8Rcr-5vLU0V0Hua5gfSSkDm2mRMU342Z5214gkHxDMPsibz2kDu-r6W4hvVz1At9-tUR4kP35NNVfsR4yRfz1gpuJJbMsL5cQDko"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESzAEB6zswFTNjgJp6Z9SGEuT39rxP6j-dqdYe47tqnOnILRJyRxLn6zezpTJ0L4PfCS9mSLhwWgE5aHaToahdU0KHR3UhfB0d9lhWsDhixOGVg3LyooOAaSvkO7IX1XacOb-1uX9cfNBUWdh523Z8vN_7ZDoTQjdiBL83N6oXs3xUPEZ8Rcr-5vLU0V0Hua5gfSSkDm2mRMU342Z5214gkHxDMPsibz2kDu-r6W4hvVz1At9-tUR4kP35NNVfsR4yRfz1gpuJJbMsL5cQDko",
+              "status": 302,
+              "location": "https://www.facebook.com/jana.hickey.7/posts/has-anyone-use-la-house-movers-and-levelingthis-is-who-i-think-im-going-with-to/10166327009335087/"
+            }
+          ]
+        },
+        {
+          "rank": 15,
+          "original": "https://google.com/goto?url=CAESZwHrOzAVzYn7zXn0XAgtlBMfsY1Y4itRGtAOqpRWOYldVt8w6lcYCiprVDzNE_Kx-1JmVagpAgX70pqEsebgWjqpTe2IooDqNyUeoLjn5OSVdvLy_VkZmNt6JZI1RkHN_1ZSeO1JVUk",
+          "url": "https://www.instagram.com/studiocitymovers/",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESZwHrOzAVzYn7zXn0XAgtlBMfsY1Y4itRGtAOqpRWOYldVt8w6lcYCiprVDzNE_Kx-1JmVagpAgX70pqEsebgWjqpTe2IooDqNyUeoLjn5OSVdvLy_VkZmNt6JZI1RkHN_1ZSeO1JVUk",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESZwHrOzAVzYn7zXn0XAgtlBMfsY1Y4itRGtAOqpRWOYldVt8w6lcYCiprVDzNE_Kx-1JmVagpAgX70pqEsebgWjqpTe2IooDqNyUeoLjn5OSVdvLy_VkZmNt6JZI1RkHN_1ZSeO1JVUk"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESZwHrOzAVzYn7zXn0XAgtlBMfsY1Y4itRGtAOqpRWOYldVt8w6lcYCiprVDzNE_Kx-1JmVagpAgX70pqEsebgWjqpTe2IooDqNyUeoLjn5OSVdvLy_VkZmNt6JZI1RkHN_1ZSeO1JVUk",
+              "status": 302,
+              "location": "https://www.instagram.com/studiocitymovers/"
+            }
+          ]
+        },
+        {
+          "rank": 26,
+          "original": "https://google.com/goto?url=CAESogEB6zswFW4wuV_31mItou-Hil4Ee70LGow3rBlEtkQs8jmi0-KMRXF3J_BNeMhfFT8iI08Fq8A5a2N6TWO2b3Fw-Z71JjUmRRQVvwqj2hJoCg2gdrDeq7q53VnxSmkhgMnlJTYTeC7WUt-L6ac53RBsNYUf0gAaMl2ixNSdbHlAF9OHMeKPY8nQtAQw7xJ_oO8WpFrrhyZqzMP2A7mx5EXC-tU",
+          "url": "https://www.reddit.com/r/AskLosAngeles/comments/1b3rk2t/where_to_find_workers_to_move_heavy_furniture/",
+          "domain": "reddit.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESogEB6zswFW4wuV_31mItou-Hil4Ee70LGow3rBlEtkQs8jmi0-KMRXF3J_BNeMhfFT8iI08Fq8A5a2N6TWO2b3Fw-Z71JjUmRRQVvwqj2hJoCg2gdrDeq7q53VnxSmkhgMnlJTYTeC7WUt-L6ac53RBsNYUf0gAaMl2ixNSdbHlAF9OHMeKPY8nQtAQw7xJ_oO8WpFrrhyZqzMP2A7mx5EXC-tU",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESogEB6zswFW4wuV_31mItou-Hil4Ee70LGow3rBlEtkQs8jmi0-KMRXF3J_BNeMhfFT8iI08Fq8A5a2N6TWO2b3Fw-Z71JjUmRRQVvwqj2hJoCg2gdrDeq7q53VnxSmkhgMnlJTYTeC7WUt-L6ac53RBsNYUf0gAaMl2ixNSdbHlAF9OHMeKPY8nQtAQw7xJ_oO8WpFrrhyZqzMP2A7mx5EXC-tU"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESogEB6zswFW4wuV_31mItou-Hil4Ee70LGow3rBlEtkQs8jmi0-KMRXF3J_BNeMhfFT8iI08Fq8A5a2N6TWO2b3Fw-Z71JjUmRRQVvwqj2hJoCg2gdrDeq7q53VnxSmkhgMnlJTYTeC7WUt-L6ac53RBsNYUf0gAaMl2ixNSdbHlAF9OHMeKPY8nQtAQw7xJ_oO8WpFrrhyZqzMP2A7mx5EXC-tU",
+              "status": 302,
+              "location": "https://www.reddit.com/r/AskLosAngeles/comments/1b3rk2t/where_to_find_workers_to_move_heavy_furniture/"
+            }
+          ]
+        },
+        {
+          "rank": 27,
+          "original": "https://google.com/goto?url=CAESZAHrOzAVsvrtzes0gB4fc6vuO5cspb7qF2uWFGhVvQjwmycDEOlBf_V0NMkC4OPXejzYoTv0cY7LOV5N-xNtslBkh5ln1BEk2VYwDNv0w7W3nAcR7S9tDM42ZPhRI_aYyROoiYw",
+          "url": "https://www.facebook.com/FlatRateMovers/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESZAHrOzAVsvrtzes0gB4fc6vuO5cspb7qF2uWFGhVvQjwmycDEOlBf_V0NMkC4OPXejzYoTv0cY7LOV5N-xNtslBkh5ln1BEk2VYwDNv0w7W3nAcR7S9tDM42ZPhRI_aYyROoiYw",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESZAHrOzAVsvrtzes0gB4fc6vuO5cspb7qF2uWFGhVvQjwmycDEOlBf_V0NMkC4OPXejzYoTv0cY7LOV5N-xNtslBkh5ln1BEk2VYwDNv0w7W3nAcR7S9tDM42ZPhRI_aYyROoiYw"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESZAHrOzAVsvrtzes0gB4fc6vuO5cspb7qF2uWFGhVvQjwmycDEOlBf_V0NMkC4OPXejzYoTv0cY7LOV5N-xNtslBkh5ln1BEk2VYwDNv0w7W3nAcR7S9tDM42ZPhRI_aYyROoiYw",
+              "status": 302,
+              "location": "https://www.facebook.com/FlatRateMovers/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "small moves los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-9.json",
+      "organic_rows_examined": 48,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:08:52 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 3,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 4,
+          "original": "https://google.com/goto?url=CAEShAEBxCJF1z0AMz4a3SLG47SqO4P5T-SxwiuZ282EIxrMLRKnJcZds9GcpByKYzBGbzBfMNYCjfN4H8B-1CFpBj3JYD67Bu8iavjl2eNiV5EORGjB5kjpEWf5O1AhOdVHbvJ1xKGYsxgd1_f-bGGOem8wiZWEYoxzYoPb2OqhypDvcrakfL4",
+          "url": "https://www.facebook.com/groups/199822671210405/posts/1391518115374182/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShAEBxCJF1z0AMz4a3SLG47SqO4P5T-SxwiuZ282EIxrMLRKnJcZds9GcpByKYzBGbzBfMNYCjfN4H8B-1CFpBj3JYD67Bu8iavjl2eNiV5EORGjB5kjpEWf5O1AhOdVHbvJ1xKGYsxgd1_f-bGGOem8wiZWEYoxzYoPb2OqhypDvcrakfL4",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShAEBxCJF1z0AMz4a3SLG47SqO4P5T-SxwiuZ282EIxrMLRKnJcZds9GcpByKYzBGbzBfMNYCjfN4H8B-1CFpBj3JYD67Bu8iavjl2eNiV5EORGjB5kjpEWf5O1AhOdVHbvJ1xKGYsxgd1_f-bGGOem8wiZWEYoxzYoPb2OqhypDvcrakfL4"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShAEBxCJF1z0AMz4a3SLG47SqO4P5T-SxwiuZ282EIxrMLRKnJcZds9GcpByKYzBGbzBfMNYCjfN4H8B-1CFpBj3JYD67Bu8iavjl2eNiV5EORGjB5kjpEWf5O1AhOdVHbvJ1xKGYsxgd1_f-bGGOem8wiZWEYoxzYoPb2OqhypDvcrakfL4",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/199822671210405/posts/1391518115374182/"
+            }
+          ]
+        },
+        {
+          "rank": 14,
+          "original": "https://google.com/goto?url=CAESZAHEIkXXI0lssQJu0bZ8NyaG32TLAnGwVq2H11HasZhWnr2eo5rgkhbco2IlE1W7SRexsHXaGxv79J1syJccAatWYTt56sCXY7IMEEcZEkP3OzH1wWGHtXyoV68b1satlY55aiY",
+          "url": "https://www.facebook.com/CheapMoversLA/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESZAHEIkXXI0lssQJu0bZ8NyaG32TLAnGwVq2H11HasZhWnr2eo5rgkhbco2IlE1W7SRexsHXaGxv79J1syJccAatWYTt56sCXY7IMEEcZEkP3OzH1wWGHtXyoV68b1satlY55aiY",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESZAHEIkXXI0lssQJu0bZ8NyaG32TLAnGwVq2H11HasZhWnr2eo5rgkhbco2IlE1W7SRexsHXaGxv79J1syJccAatWYTt56sCXY7IMEEcZEkP3OzH1wWGHtXyoV68b1satlY55aiY"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESZAHEIkXXI0lssQJu0bZ8NyaG32TLAnGwVq2H11HasZhWnr2eo5rgkhbco2IlE1W7SRexsHXaGxv79J1syJccAatWYTt56sCXY7IMEEcZEkP3OzH1wWGHtXyoV68b1satlY55aiY",
+              "status": 302,
+              "location": "https://www.facebook.com/CheapMoversLA/"
+            }
+          ]
+        },
+        {
+          "rank": 18,
+          "original": "https://google.com/goto?url=CAESZwHEIkXXaI_um8OFvHTmvvFtFvbmxj0Yl2pyxeTXrpIB0Z35rF3AWDWvasPnGid1Yy8VQoBmHHDuzvEEuDHOBO89SaYWxpCk2vBKkhhKKYNwEpRc4fY6onkPNE3TIit8CAOHzxB9SM8",
+          "url": "https://www.instagram.com/jamessmallmoves/",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESZwHEIkXXaI_um8OFvHTmvvFtFvbmxj0Yl2pyxeTXrpIB0Z35rF3AWDWvasPnGid1Yy8VQoBmHHDuzvEEuDHOBO89SaYWxpCk2vBKkhhKKYNwEpRc4fY6onkPNE3TIit8CAOHzxB9SM8",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESZwHEIkXXaI_um8OFvHTmvvFtFvbmxj0Yl2pyxeTXrpIB0Z35rF3AWDWvasPnGid1Yy8VQoBmHHDuzvEEuDHOBO89SaYWxpCk2vBKkhhKKYNwEpRc4fY6onkPNE3TIit8CAOHzxB9SM8"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESZwHEIkXXaI_um8OFvHTmvvFtFvbmxj0Yl2pyxeTXrpIB0Z35rF3AWDWvasPnGid1Yy8VQoBmHHDuzvEEuDHOBO89SaYWxpCk2vBKkhhKKYNwEpRc4fY6onkPNE3TIit8CAOHzxB9SM8",
+              "status": 302,
+              "location": "https://www.instagram.com/jamessmallmoves/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "studio apartment movers los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-10.json",
+      "organic_rows_examined": 49,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:09:07 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 4,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 1,
+          "original": "https://google.com/goto?url=CAESpwEB6zswFYouMZStJGWH3qtv3XvpFrdjnrnNyHN6FVcbESiW2mN7gP5Vx988a9Mts2nZvgWGWC8iNzqlyV3LmBQlyjMEYrKVWMETJouVWQ39vOw0YDGmmHhOQZwMxJJxG6Y9g4RTRz-i73yBWWiPEThOUdbq1q7GljFgFzOHDwDFCgLCH-jGw9uhAYgz1hQkqU2VYkC-2uEmNStUkJheTdcLJN0iAWQ5MQ",
+          "url": "https://www.reddit.com/r/AskLosAngeles/comments/1oumjsr/recommendations_for_moving_company_with_apartment/",
+          "domain": "reddit.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESpwEB6zswFYouMZStJGWH3qtv3XvpFrdjnrnNyHN6FVcbESiW2mN7gP5Vx988a9Mts2nZvgWGWC8iNzqlyV3LmBQlyjMEYrKVWMETJouVWQ39vOw0YDGmmHhOQZwMxJJxG6Y9g4RTRz-i73yBWWiPEThOUdbq1q7GljFgFzOHDwDFCgLCH-jGw9uhAYgz1hQkqU2VYkC-2uEmNStUkJheTdcLJN0iAWQ5MQ",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESpwEB6zswFYouMZStJGWH3qtv3XvpFrdjnrnNyHN6FVcbESiW2mN7gP5Vx988a9Mts2nZvgWGWC8iNzqlyV3LmBQlyjMEYrKVWMETJouVWQ39vOw0YDGmmHhOQZwMxJJxG6Y9g4RTRz-i73yBWWiPEThOUdbq1q7GljFgFzOHDwDFCgLCH-jGw9uhAYgz1hQkqU2VYkC-2uEmNStUkJheTdcLJN0iAWQ5MQ"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESpwEB6zswFYouMZStJGWH3qtv3XvpFrdjnrnNyHN6FVcbESiW2mN7gP5Vx988a9Mts2nZvgWGWC8iNzqlyV3LmBQlyjMEYrKVWMETJouVWQ39vOw0YDGmmHhOQZwMxJJxG6Y9g4RTRz-i73yBWWiPEThOUdbq1q7GljFgFzOHDwDFCgLCH-jGw9uhAYgz1hQkqU2VYkC-2uEmNStUkJheTdcLJN0iAWQ5MQ",
+              "status": 302,
+              "location": "https://www.reddit.com/r/AskLosAngeles/comments/1oumjsr/recommendations_for_moving_company_with_apartment/"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "original": "https://google.com/goto?url=CAEShgEB6zswFYo3WPUajrsHR86XXsFv3h6o5fsEe4yaD4m19Np51rp2HEfv9U3SaSc3tBr9Q82TML17BjnX61zUxH60xV022LMMsfRtBaTfqBeYSUbwAizGfHLq05R5w3g8c2ZqdkbBECk4sHkhPqbvQkkCjfuF4NMgLkLYx0Qsjc4YYDrP1tH39A",
+          "url": "https://www.facebook.com/groups/studiocityliving/posts/27515503894812951/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShgEB6zswFYo3WPUajrsHR86XXsFv3h6o5fsEe4yaD4m19Np51rp2HEfv9U3SaSc3tBr9Q82TML17BjnX61zUxH60xV022LMMsfRtBaTfqBeYSUbwAizGfHLq05R5w3g8c2ZqdkbBECk4sHkhPqbvQkkCjfuF4NMgLkLYx0Qsjc4YYDrP1tH39A",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShgEB6zswFYo3WPUajrsHR86XXsFv3h6o5fsEe4yaD4m19Np51rp2HEfv9U3SaSc3tBr9Q82TML17BjnX61zUxH60xV022LMMsfRtBaTfqBeYSUbwAizGfHLq05R5w3g8c2ZqdkbBECk4sHkhPqbvQkkCjfuF4NMgLkLYx0Qsjc4YYDrP1tH39A"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShgEB6zswFYo3WPUajrsHR86XXsFv3h6o5fsEe4yaD4m19Np51rp2HEfv9U3SaSc3tBr9Q82TML17BjnX61zUxH60xV022LMMsfRtBaTfqBeYSUbwAizGfHLq05R5w3g8c2ZqdkbBECk4sHkhPqbvQkkCjfuF4NMgLkLYx0Qsjc4YYDrP1tH39A",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/studiocityliving/posts/27515503894812951/"
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "original": "https://google.com/goto?url=CAEShAEB6zswFXiN1TneF4RDugQCzPR2w9MmZENn-YvIs5cdG4COUJu9eY0NNsOcKKvsSY9HKDd8IbOyEv4v-bXgpU2dxXJbcBiNuqnyiwK0MZWWUXViQNLE4slBUj_PZEpwzhSrheR5LTmY0zOvYG0bXUYYtPNVghl5nnzlbVSQu5TMGQ140bo",
+          "url": "https://www.facebook.com/groups/438555653633498/posts/2391147678374276/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShAEB6zswFXiN1TneF4RDugQCzPR2w9MmZENn-YvIs5cdG4COUJu9eY0NNsOcKKvsSY9HKDd8IbOyEv4v-bXgpU2dxXJbcBiNuqnyiwK0MZWWUXViQNLE4slBUj_PZEpwzhSrheR5LTmY0zOvYG0bXUYYtPNVghl5nnzlbVSQu5TMGQ140bo",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShAEB6zswFXiN1TneF4RDugQCzPR2w9MmZENn-YvIs5cdG4COUJu9eY0NNsOcKKvsSY9HKDd8IbOyEv4v-bXgpU2dxXJbcBiNuqnyiwK0MZWWUXViQNLE4slBUj_PZEpwzhSrheR5LTmY0zOvYG0bXUYYtPNVghl5nnzlbVSQu5TMGQ140bo"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShAEB6zswFXiN1TneF4RDugQCzPR2w9MmZENn-YvIs5cdG4COUJu9eY0NNsOcKKvsSY9HKDd8IbOyEv4v-bXgpU2dxXJbcBiNuqnyiwK0MZWWUXViQNLE4slBUj_PZEpwzhSrheR5LTmY0zOvYG0bXUYYtPNVghl5nnzlbVSQu5TMGQ140bo",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/438555653633498/posts/2391147678374276/"
+            }
+          ]
+        },
+        {
+          "rank": 28,
+          "original": "https://google.com/goto?url=CAES0QEB6zswFc8yNo2Ra0r-H-tMYhPKFWucDp0EwybAocQdJuBHDXpiznAZUihaajdRF4VuKhYTSHHbg6uZc_eLKOEO3c1dlF5bm5rtFGpkSpfkLE7iVOoODOyy4rA_82hq0OYzqFH1HN3Hh2Ms4wvI_TrfO2YkfbiCS814EYo-6QrFtZ_Frpx_-j9qW9XCfEMRmWsr76l3kSdutdRYd39makHh8Or-USiBteO1VQK1a7JnwwVC2MGAxGSP4BS89E4CfofqK6VMZaVt1HLv5YRpkOuebg",
+          "url": "https://www.facebook.com/Themovingmoversllc/posts/studio-apartment-load-15-u-haul-in-los-angeles-ca-tmm-themovingmovers-brand-movi/801291182669043/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAES0QEB6zswFc8yNo2Ra0r-H-tMYhPKFWucDp0EwybAocQdJuBHDXpiznAZUihaajdRF4VuKhYTSHHbg6uZc_eLKOEO3c1dlF5bm5rtFGpkSpfkLE7iVOoODOyy4rA_82hq0OYzqFH1HN3Hh2Ms4wvI_TrfO2YkfbiCS814EYo-6QrFtZ_Frpx_-j9qW9XCfEMRmWsr76l3kSdutdRYd39makHh8Or-USiBteO1VQK1a7JnwwVC2MGAxGSP4BS89E4CfofqK6VMZaVt1HLv5YRpkOuebg",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAES0QEB6zswFc8yNo2Ra0r-H-tMYhPKFWucDp0EwybAocQdJuBHDXpiznAZUihaajdRF4VuKhYTSHHbg6uZc_eLKOEO3c1dlF5bm5rtFGpkSpfkLE7iVOoODOyy4rA_82hq0OYzqFH1HN3Hh2Ms4wvI_TrfO2YkfbiCS814EYo-6QrFtZ_Frpx_-j9qW9XCfEMRmWsr76l3kSdutdRYd39makHh8Or-USiBteO1VQK1a7JnwwVC2MGAxGSP4BS89E4CfofqK6VMZaVt1HLv5YRpkOuebg"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAES0QEB6zswFc8yNo2Ra0r-H-tMYhPKFWucDp0EwybAocQdJuBHDXpiznAZUihaajdRF4VuKhYTSHHbg6uZc_eLKOEO3c1dlF5bm5rtFGpkSpfkLE7iVOoODOyy4rA_82hq0OYzqFH1HN3Hh2Ms4wvI_TrfO2YkfbiCS814EYo-6QrFtZ_Frpx_-j9qW9XCfEMRmWsr76l3kSdutdRYd39makHh8Or-USiBteO1VQK1a7JnwwVC2MGAxGSP4BS89E4CfofqK6VMZaVt1HLv5YRpkOuebg",
+              "status": 302,
+              "location": "https://www.facebook.com/Themovingmoversllc/posts/studio-apartment-load-15-u-haul-in-los-angeles-ca-tmm-themovingmovers-brand-movi/801291182669043/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "packing help for apartment move los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-11.json",
+      "organic_rows_examined": 50,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:09:20 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 1,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 19,
+          "original": "https://google.com/goto?url=CAESbgHEIkXXNYtUoPWsrOunzMXc9UR0ujOZuigcdY1LSXoYDGCbM7O7sPIZfmGw8Xm5bEUfpujZ1YpV--OmrpfDA77Q5BlaSd51_FiyHDxanr6GiVd7nHFZPM0ii5vMLwtXzjPa5zQei2W4hEPh31jY",
+          "url": "https://www.instagram.com/reel/C8h9vNBP2ro/?hl=en",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESbgHEIkXXNYtUoPWsrOunzMXc9UR0ujOZuigcdY1LSXoYDGCbM7O7sPIZfmGw8Xm5bEUfpujZ1YpV--OmrpfDA77Q5BlaSd51_FiyHDxanr6GiVd7nHFZPM0ii5vMLwtXzjPa5zQei2W4hEPh31jY",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESbgHEIkXXNYtUoPWsrOunzMXc9UR0ujOZuigcdY1LSXoYDGCbM7O7sPIZfmGw8Xm5bEUfpujZ1YpV--OmrpfDA77Q5BlaSd51_FiyHDxanr6GiVd7nHFZPM0ii5vMLwtXzjPa5zQei2W4hEPh31jY"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESbgHEIkXXNYtUoPWsrOunzMXc9UR0ujOZuigcdY1LSXoYDGCbM7O7sPIZfmGw8Xm5bEUfpujZ1YpV--OmrpfDA77Q5BlaSd51_FiyHDxanr6GiVd7nHFZPM0ii5vMLwtXzjPa5zQei2W4hEPh31jY",
+              "status": 302,
+              "location": "https://www.instagram.com/reel/C8h9vNBP2ro/?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "small office movers los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-12-retry-1.json",
+      "organic_rows_examined": 50,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:11:24 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 1,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 3,
+          "original": "https://google.com/goto?url=CAESmgEB6zswFa55HQs3JqbQgpFEnGjrEXj-hiU8pLiYlnTrdxrQ91gAGtisMevMuiN_mPRMT0Ra--3HO8g-9GMqPkIzLgEkUkUNyHToRPcLNHHNLpZ3CVSM4GJKe1nOL4x0v2tzOxe286PQOPgOmfPN2iHD2nUGbgQgdtaPz3H24QfWuDwPCLWXkdR39U6rsxQOaunYC8A2ciNe46rp",
+          "url": "https://www.reddit.com/r/AskLosAngeles/comments/1c6effk/best_moving_company_for_smaller_unit/",
+          "domain": "reddit.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESmgEB6zswFa55HQs3JqbQgpFEnGjrEXj-hiU8pLiYlnTrdxrQ91gAGtisMevMuiN_mPRMT0Ra--3HO8g-9GMqPkIzLgEkUkUNyHToRPcLNHHNLpZ3CVSM4GJKe1nOL4x0v2tzOxe286PQOPgOmfPN2iHD2nUGbgQgdtaPz3H24QfWuDwPCLWXkdR39U6rsxQOaunYC8A2ciNe46rp",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESmgEB6zswFa55HQs3JqbQgpFEnGjrEXj-hiU8pLiYlnTrdxrQ91gAGtisMevMuiN_mPRMT0Ra--3HO8g-9GMqPkIzLgEkUkUNyHToRPcLNHHNLpZ3CVSM4GJKe1nOL4x0v2tzOxe286PQOPgOmfPN2iHD2nUGbgQgdtaPz3H24QfWuDwPCLWXkdR39U6rsxQOaunYC8A2ciNe46rp"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESmgEB6zswFa55HQs3JqbQgpFEnGjrEXj-hiU8pLiYlnTrdxrQ91gAGtisMevMuiN_mPRMT0Ra--3HO8g-9GMqPkIzLgEkUkUNyHToRPcLNHHNLpZ3CVSM4GJKe1nOL4x0v2tzOxe286PQOPgOmfPN2iHD2nUGbgQgdtaPz3H24QfWuDwPCLWXkdR39U6rsxQOaunYC8A2ciNe46rp",
+              "status": 302,
+              "location": "https://www.reddit.com/r/AskLosAngeles/comments/1c6effk/best_moving_company_for_smaller_unit/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "small office relocation los angeles checklist",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-13.json",
+      "organic_rows_examined": 49,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:11:39 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 0,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": []
+    },
+    {
+      "query": "apartment moving checklist los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-14.json",
+      "organic_rows_examined": 49,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:11:52 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 0,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": []
+    },
+    {
+      "query": "how much do movers cost los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-15.json",
+      "organic_rows_examined": 48,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:12:06 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 4,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 6,
+          "original": "https://google.com/goto?url=CAESqgEBxCJF13zZovVx072gci4vI-oIuVpFsj53R92vriLun1ga4yU1bSyN1bbCfDck5-Z329o086qdEUweA6cMJXKtYha0BNjA22kMW5oyAhqPdv5LkuEzONL9WNqaQhIuZiSQb0AA_XwFgqbyIfgLu_bn3ql18xspBP2Do84TqfwRQhnYTuCjbLzoJu-d9cGKKCsfH3umPwhUQfWZQYpWG-JLrjKf85x82_Hrhw",
+          "url": "https://www.quora.com/How-much-does-it-cost-to-move-a-two-bedroom-apartment-from-San-Francisco-to-Los-Angeles",
+          "domain": "quora.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESqgEBxCJF13zZovVx072gci4vI-oIuVpFsj53R92vriLun1ga4yU1bSyN1bbCfDck5-Z329o086qdEUweA6cMJXKtYha0BNjA22kMW5oyAhqPdv5LkuEzONL9WNqaQhIuZiSQb0AA_XwFgqbyIfgLu_bn3ql18xspBP2Do84TqfwRQhnYTuCjbLzoJu-d9cGKKCsfH3umPwhUQfWZQYpWG-JLrjKf85x82_Hrhw",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESqgEBxCJF13zZovVx072gci4vI-oIuVpFsj53R92vriLun1ga4yU1bSyN1bbCfDck5-Z329o086qdEUweA6cMJXKtYha0BNjA22kMW5oyAhqPdv5LkuEzONL9WNqaQhIuZiSQb0AA_XwFgqbyIfgLu_bn3ql18xspBP2Do84TqfwRQhnYTuCjbLzoJu-d9cGKKCsfH3umPwhUQfWZQYpWG-JLrjKf85x82_Hrhw"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESqgEBxCJF13zZovVx072gci4vI-oIuVpFsj53R92vriLun1ga4yU1bSyN1bbCfDck5-Z329o086qdEUweA6cMJXKtYha0BNjA22kMW5oyAhqPdv5LkuEzONL9WNqaQhIuZiSQb0AA_XwFgqbyIfgLu_bn3ql18xspBP2Do84TqfwRQhnYTuCjbLzoJu-d9cGKKCsfH3umPwhUQfWZQYpWG-JLrjKf85x82_Hrhw",
+              "status": 302,
+              "location": "https://www.quora.com/How-much-does-it-cost-to-move-a-two-bedroom-apartment-from-San-Francisco-to-Los-Angeles"
+            }
+          ]
+        },
+        {
+          "rank": 16,
+          "original": "https://google.com/goto?url=CAEShAEBxCJF15TDOcaiLCPls_XOwJ7uUcMpBMMOqz9qQ_0RBSvIphiOTn5LP3dc90RrhBJVvev3pbvaslgscajGIAzy2K7hzPRc8zlU-aAZHZfQlN2V0aSrhZw77Hc4onODGVYf0By28R6z9jmN5qiyMUTphWAe3cU58uQZ86AI7LF3E2larKU",
+          "url": "https://www.facebook.com/groups/805297347075015/posts/2175308120073924/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShAEBxCJF15TDOcaiLCPls_XOwJ7uUcMpBMMOqz9qQ_0RBSvIphiOTn5LP3dc90RrhBJVvev3pbvaslgscajGIAzy2K7hzPRc8zlU-aAZHZfQlN2V0aSrhZw77Hc4onODGVYf0By28R6z9jmN5qiyMUTphWAe3cU58uQZ86AI7LF3E2larKU",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShAEBxCJF15TDOcaiLCPls_XOwJ7uUcMpBMMOqz9qQ_0RBSvIphiOTn5LP3dc90RrhBJVvev3pbvaslgscajGIAzy2K7hzPRc8zlU-aAZHZfQlN2V0aSrhZw77Hc4onODGVYf0By28R6z9jmN5qiyMUTphWAe3cU58uQZ86AI7LF3E2larKU"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShAEBxCJF15TDOcaiLCPls_XOwJ7uUcMpBMMOqz9qQ_0RBSvIphiOTn5LP3dc90RrhBJVvev3pbvaslgscajGIAzy2K7hzPRc8zlU-aAZHZfQlN2V0aSrhZw77Hc4onODGVYf0By28R6z9jmN5qiyMUTphWAe3cU58uQZ86AI7LF3E2larKU",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/805297347075015/posts/2175308120073924/"
+            }
+          ]
+        },
+        {
+          "rank": 39,
+          "original": "https://google.com/goto?url=CAES0AEB6zswFY9W_bixNbPApB6kwWV0umizazfChK9QbVbPg2NymtBzplYa6ZdxIYnd-w7t-Ux2duKno3S05bq0GPGDucEJNldZ-TVO9QXMPhrviw2ghifhUSGSEEvnQpKLoYAOXiXjyrc8TY-b1oITj1Dg_I1u7UPiFMZ8Muofrw0lCqcxB05vwsf-7jGdnxgKdtRiDzBasqhR32z6zfW5NUqso77SyJLplwcn1H1reqoxylA4-LGvjTQ7Bi6RVy_1QRgGwFXRfgl6jvmPAErIvYEo",
+          "url": "https://www.facebook.com/61580361609663/posts/2-movers-from-99hour-why-do-it-yourselfla-movers-since-1998-licensed-and-insured/122142901599012053/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAES0AEB6zswFY9W_bixNbPApB6kwWV0umizazfChK9QbVbPg2NymtBzplYa6ZdxIYnd-w7t-Ux2duKno3S05bq0GPGDucEJNldZ-TVO9QXMPhrviw2ghifhUSGSEEvnQpKLoYAOXiXjyrc8TY-b1oITj1Dg_I1u7UPiFMZ8Muofrw0lCqcxB05vwsf-7jGdnxgKdtRiDzBasqhR32z6zfW5NUqso77SyJLplwcn1H1reqoxylA4-LGvjTQ7Bi6RVy_1QRgGwFXRfgl6jvmPAErIvYEo",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAES0AEB6zswFY9W_bixNbPApB6kwWV0umizazfChK9QbVbPg2NymtBzplYa6ZdxIYnd-w7t-Ux2duKno3S05bq0GPGDucEJNldZ-TVO9QXMPhrviw2ghifhUSGSEEvnQpKLoYAOXiXjyrc8TY-b1oITj1Dg_I1u7UPiFMZ8Muofrw0lCqcxB05vwsf-7jGdnxgKdtRiDzBasqhR32z6zfW5NUqso77SyJLplwcn1H1reqoxylA4-LGvjTQ7Bi6RVy_1QRgGwFXRfgl6jvmPAErIvYEo"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAES0AEB6zswFY9W_bixNbPApB6kwWV0umizazfChK9QbVbPg2NymtBzplYa6ZdxIYnd-w7t-Ux2duKno3S05bq0GPGDucEJNldZ-TVO9QXMPhrviw2ghifhUSGSEEvnQpKLoYAOXiXjyrc8TY-b1oITj1Dg_I1u7UPiFMZ8Muofrw0lCqcxB05vwsf-7jGdnxgKdtRiDzBasqhR32z6zfW5NUqso77SyJLplwcn1H1reqoxylA4-LGvjTQ7Bi6RVy_1QRgGwFXRfgl6jvmPAErIvYEo",
+              "status": 302,
+              "location": "https://www.facebook.com/61580361609663/posts/2-movers-from-99hour-why-do-it-yourselfla-movers-since-1998-licensed-and-insured/122142901599012053/"
+            }
+          ]
+        },
+        {
+          "rank": 46,
+          "original": "https://google.com/goto?url=CAEShAEB6zswFYvWJvAIwdIwH4xCLuIq2YXxtr5SdZetjcSFlt4L_t8FMTf2IsXTy40eaQTq-XtibpvIv7lbZdBvMwFOQRoz7P1-eFPpz-vr5DRFqxkCsWNs1Yz6ZPq2zRuzYnIJoXR1BYBBg9trM5n9e-VKMKbaaK5DH1bGTo1SmfV6qR1lKHw",
+          "url": "https://www.facebook.com/groups/709439503547011/posts/1865560357934914/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShAEB6zswFYvWJvAIwdIwH4xCLuIq2YXxtr5SdZetjcSFlt4L_t8FMTf2IsXTy40eaQTq-XtibpvIv7lbZdBvMwFOQRoz7P1-eFPpz-vr5DRFqxkCsWNs1Yz6ZPq2zRuzYnIJoXR1BYBBg9trM5n9e-VKMKbaaK5DH1bGTo1SmfV6qR1lKHw",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShAEB6zswFYvWJvAIwdIwH4xCLuIq2YXxtr5SdZetjcSFlt4L_t8FMTf2IsXTy40eaQTq-XtibpvIv7lbZdBvMwFOQRoz7P1-eFPpz-vr5DRFqxkCsWNs1Yz6ZPq2zRuzYnIJoXR1BYBBg9trM5n9e-VKMKbaaK5DH1bGTo1SmfV6qR1lKHw"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShAEB6zswFYvWJvAIwdIwH4xCLuIq2YXxtr5SdZetjcSFlt4L_t8FMTf2IsXTy40eaQTq-XtibpvIv7lbZdBvMwFOQRoz7P1-eFPpz-vr5DRFqxkCsWNs1Yz6ZPq2zRuzYnIJoXR1BYBBg9trM5n9e-VKMKbaaK5DH1bGTo1SmfV6qR1lKHw",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/709439503547011/posts/1865560357934914/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "two movers and a truck cost los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-16-retry-1.json",
+      "organic_rows_examined": 48,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:15:47 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 6,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 5,
+          "original": "https://google.com/goto?url=CAESlwEB6zswFa-pOujrOE8uevFHz3eQMP3Law9gA59m8xD9IrDvl5oCXCceTWOW5TQBYgakb0y8Np8alaJorlhbT6gzRa8jZE-wVm9Ulpy8uMYWaNZAbyTNz1uAKiCcHGpWk0kLW5fegPEtcit7--zIMuhB-2onTZaOJdzRb-gKEKeZecTgQPgQKOwP1NUMk-KHz2wMCTnIgGwg",
+          "url": "https://www.reddit.com/r/AskLosAngeles/comments/1wufrlw/is_this_a_normal_price_for_movers/",
+          "domain": "reddit.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESlwEB6zswFa-pOujrOE8uevFHz3eQMP3Law9gA59m8xD9IrDvl5oCXCceTWOW5TQBYgakb0y8Np8alaJorlhbT6gzRa8jZE-wVm9Ulpy8uMYWaNZAbyTNz1uAKiCcHGpWk0kLW5fegPEtcit7--zIMuhB-2onTZaOJdzRb-gKEKeZecTgQPgQKOwP1NUMk-KHz2wMCTnIgGwg",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESlwEB6zswFa-pOujrOE8uevFHz3eQMP3Law9gA59m8xD9IrDvl5oCXCceTWOW5TQBYgakb0y8Np8alaJorlhbT6gzRa8jZE-wVm9Ulpy8uMYWaNZAbyTNz1uAKiCcHGpWk0kLW5fegPEtcit7--zIMuhB-2onTZaOJdzRb-gKEKeZecTgQPgQKOwP1NUMk-KHz2wMCTnIgGwg"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESlwEB6zswFa-pOujrOE8uevFHz3eQMP3Law9gA59m8xD9IrDvl5oCXCceTWOW5TQBYgakb0y8Np8alaJorlhbT6gzRa8jZE-wVm9Ulpy8uMYWaNZAbyTNz1uAKiCcHGpWk0kLW5fegPEtcit7--zIMuhB-2onTZaOJdzRb-gKEKeZecTgQPgQKOwP1NUMk-KHz2wMCTnIgGwg",
+              "status": 302,
+              "location": "https://www.reddit.com/r/AskLosAngeles/comments/1wufrlw/is_this_a_normal_price_for_movers/"
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "original": "https://google.com/goto?url=CAEShAEB6zswFWdzuKktaoCHASD9yPFPOJlt8dLmmxklexLl3h8yyvI5Xt6gU1WeaqKaY4T5JZ54AP-BpGOEPaNi5NL4_0sBLv6wzkMTc-d9VsZkBD9DVLUj4qqbO0XQciNAJMTHMWLo5Aegx4iPInQCoL9zPvlKzzv09Y1d4nuXD4ONOMo2DI4",
+          "url": "https://www.facebook.com/groups/movingsyndicate/posts/2280043252504651/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShAEB6zswFWdzuKktaoCHASD9yPFPOJlt8dLmmxklexLl3h8yyvI5Xt6gU1WeaqKaY4T5JZ54AP-BpGOEPaNi5NL4_0sBLv6wzkMTc-d9VsZkBD9DVLUj4qqbO0XQciNAJMTHMWLo5Aegx4iPInQCoL9zPvlKzzv09Y1d4nuXD4ONOMo2DI4",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShAEB6zswFWdzuKktaoCHASD9yPFPOJlt8dLmmxklexLl3h8yyvI5Xt6gU1WeaqKaY4T5JZ54AP-BpGOEPaNi5NL4_0sBLv6wzkMTc-d9VsZkBD9DVLUj4qqbO0XQciNAJMTHMWLo5Aegx4iPInQCoL9zPvlKzzv09Y1d4nuXD4ONOMo2DI4"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShAEB6zswFWdzuKktaoCHASD9yPFPOJlt8dLmmxklexLl3h8yyvI5Xt6gU1WeaqKaY4T5JZ54AP-BpGOEPaNi5NL4_0sBLv6wzkMTc-d9VsZkBD9DVLUj4qqbO0XQciNAJMTHMWLo5Aegx4iPInQCoL9zPvlKzzv09Y1d4nuXD4ONOMo2DI4",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/movingsyndicate/posts/2280043252504651/"
+            }
+          ]
+        },
+        {
+          "rank": 16,
+          "original": "https://google.com/goto?url=CAEShQEB6zswFf59KnawLoLVX7RTT1CIhYBAXTjcXLEGQM-4tsgcqMTuYBI_mD5DXLvWcOSFuxwIzEDA8znTU3T2SgbaBA5TJKPXsnCPspDHKAcRENrjiTFdSaR8X69PvA8eGpuMxtkqUhUYx_FQLUaNxi7-P7_Q_IFNGrKn0x04b79oIoqZoR_H",
+          "url": "https://www.facebook.com/groups/2837564343225702/posts/4363954963919958/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShQEB6zswFf59KnawLoLVX7RTT1CIhYBAXTjcXLEGQM-4tsgcqMTuYBI_mD5DXLvWcOSFuxwIzEDA8znTU3T2SgbaBA5TJKPXsnCPspDHKAcRENrjiTFdSaR8X69PvA8eGpuMxtkqUhUYx_FQLUaNxi7-P7_Q_IFNGrKn0x04b79oIoqZoR_H",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShQEB6zswFf59KnawLoLVX7RTT1CIhYBAXTjcXLEGQM-4tsgcqMTuYBI_mD5DXLvWcOSFuxwIzEDA8znTU3T2SgbaBA5TJKPXsnCPspDHKAcRENrjiTFdSaR8X69PvA8eGpuMxtkqUhUYx_FQLUaNxi7-P7_Q_IFNGrKn0x04b79oIoqZoR_H"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShQEB6zswFf59KnawLoLVX7RTT1CIhYBAXTjcXLEGQM-4tsgcqMTuYBI_mD5DXLvWcOSFuxwIzEDA8znTU3T2SgbaBA5TJKPXsnCPspDHKAcRENrjiTFdSaR8X69PvA8eGpuMxtkqUhUYx_FQLUaNxi7-P7_Q_IFNGrKn0x04b79oIoqZoR_H",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/2837564343225702/posts/4363954963919958/"
+            }
+          ]
+        },
+        {
+          "rank": 29,
+          "original": "https://google.com/goto?url=CAESzwEB6zswFTBSetj7Kz0OrY7zHdZR4sAbq1OUp42xAhGoh0j0rqtPBUEaZ477yr5JhmNZAsp8AI1_51XkUF-Cqkrqs_g73sTwR8izd3r99e8fIzPeYanet3cXVuCieVeeep4zx8r_brHiWaR2GdHgZfE3Tp5L19LuHfvkKSxS_rNkpHz6gQpWN00uA71iKSZvOoA9oun3yj8DHv7Wcnxwj1BMsaRqEyFGxscllHI1a6SSu7A3-G5sMwldDVLYI-uZBftYd8fw0XuQiY3xhQDy4wA",
+          "url": "https://www.facebook.com/100092493586102/posts/155hrthats-our-price-for-two-movers-and-a-truckno-bait-and-switch-no-last-minute/1010080342085076/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESzwEB6zswFTBSetj7Kz0OrY7zHdZR4sAbq1OUp42xAhGoh0j0rqtPBUEaZ477yr5JhmNZAsp8AI1_51XkUF-Cqkrqs_g73sTwR8izd3r99e8fIzPeYanet3cXVuCieVeeep4zx8r_brHiWaR2GdHgZfE3Tp5L19LuHfvkKSxS_rNkpHz6gQpWN00uA71iKSZvOoA9oun3yj8DHv7Wcnxwj1BMsaRqEyFGxscllHI1a6SSu7A3-G5sMwldDVLYI-uZBftYd8fw0XuQiY3xhQDy4wA",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESzwEB6zswFTBSetj7Kz0OrY7zHdZR4sAbq1OUp42xAhGoh0j0rqtPBUEaZ477yr5JhmNZAsp8AI1_51XkUF-Cqkrqs_g73sTwR8izd3r99e8fIzPeYanet3cXVuCieVeeep4zx8r_brHiWaR2GdHgZfE3Tp5L19LuHfvkKSxS_rNkpHz6gQpWN00uA71iKSZvOoA9oun3yj8DHv7Wcnxwj1BMsaRqEyFGxscllHI1a6SSu7A3-G5sMwldDVLYI-uZBftYd8fw0XuQiY3xhQDy4wA"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESzwEB6zswFTBSetj7Kz0OrY7zHdZR4sAbq1OUp42xAhGoh0j0rqtPBUEaZ477yr5JhmNZAsp8AI1_51XkUF-Cqkrqs_g73sTwR8izd3r99e8fIzPeYanet3cXVuCieVeeep4zx8r_brHiWaR2GdHgZfE3Tp5L19LuHfvkKSxS_rNkpHz6gQpWN00uA71iKSZvOoA9oun3yj8DHv7Wcnxwj1BMsaRqEyFGxscllHI1a6SSu7A3-G5sMwldDVLYI-uZBftYd8fw0XuQiY3xhQDy4wA",
+              "status": 302,
+              "location": "https://www.facebook.com/100092493586102/posts/155hrthats-our-price-for-two-movers-and-a-truckno-bait-and-switch-no-last-minute/1010080342085076/"
+            }
+          ]
+        },
+        {
+          "rank": 40,
+          "original": "https://google.com/goto?url=CAES0AEB6zswFfoIcQ7oGYUH5wSBhna9xrwirD5F38YGYLaTu9_NF_kzy-KHCHkA7V5tjLO4wDq6NCock00DJzTs_5x_vT-2uvitZedBw3P_0q_RyPQnjtl4Smzv2RzlzjEQkHY9XFqy28iDbI8eEd8Xxi_HbENI0Q3b6NL8A8buYFL40hXXUzwFAFodUJTpiaEN2mLiy_vbDt5lHS2cG0KDvDF9RKhM2cIdRN1CooPyFENONU_6dSd2YnB2DFPW9bQqijMFewYZo6BdTXxTCTtdej7R",
+          "url": "https://www.facebook.com/61580361609663/posts/2-movers-from-99hour-why-do-it-yourselfla-movers-since-1998-licensed-and-insured/122142901599012053/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAES0AEB6zswFfoIcQ7oGYUH5wSBhna9xrwirD5F38YGYLaTu9_NF_kzy-KHCHkA7V5tjLO4wDq6NCock00DJzTs_5x_vT-2uvitZedBw3P_0q_RyPQnjtl4Smzv2RzlzjEQkHY9XFqy28iDbI8eEd8Xxi_HbENI0Q3b6NL8A8buYFL40hXXUzwFAFodUJTpiaEN2mLiy_vbDt5lHS2cG0KDvDF9RKhM2cIdRN1CooPyFENONU_6dSd2YnB2DFPW9bQqijMFewYZo6BdTXxTCTtdej7R",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAES0AEB6zswFfoIcQ7oGYUH5wSBhna9xrwirD5F38YGYLaTu9_NF_kzy-KHCHkA7V5tjLO4wDq6NCock00DJzTs_5x_vT-2uvitZedBw3P_0q_RyPQnjtl4Smzv2RzlzjEQkHY9XFqy28iDbI8eEd8Xxi_HbENI0Q3b6NL8A8buYFL40hXXUzwFAFodUJTpiaEN2mLiy_vbDt5lHS2cG0KDvDF9RKhM2cIdRN1CooPyFENONU_6dSd2YnB2DFPW9bQqijMFewYZo6BdTXxTCTtdej7R"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAES0AEB6zswFfoIcQ7oGYUH5wSBhna9xrwirD5F38YGYLaTu9_NF_kzy-KHCHkA7V5tjLO4wDq6NCock00DJzTs_5x_vT-2uvitZedBw3P_0q_RyPQnjtl4Smzv2RzlzjEQkHY9XFqy28iDbI8eEd8Xxi_HbENI0Q3b6NL8A8buYFL40hXXUzwFAFodUJTpiaEN2mLiy_vbDt5lHS2cG0KDvDF9RKhM2cIdRN1CooPyFENONU_6dSd2YnB2DFPW9bQqijMFewYZo6BdTXxTCTtdej7R",
+              "status": 302,
+              "location": "https://www.facebook.com/61580361609663/posts/2-movers-from-99hour-why-do-it-yourselfla-movers-since-1998-licensed-and-insured/122142901599012053/"
+            }
+          ]
+        },
+        {
+          "rank": 46,
+          "original": "https://google.com/goto?url=CAESuQEB6zswFbbIHxN3WRYp15mpCmR5gGw_If_d7odk__bHnlbiR28X0A3aUF6InOouujiihzgg0c-r4iFnT_GT41G-jbCyBqKkobIKNMgz_DwLrJd7aWQLv4YYCCsR9-RDLE0txtg5J42UsU439PUCDon4DdnAxTpNDOmkwkmOtJhHKddl6ecL9cuqX8Kd73YYI5Y7eaI-NmCGSjsxDbh4Kd6o8x6IKYzqq-yZ7X_igCnF5KbPAm26VupoAA",
+          "url": "https://www.facebook.com/2Movers/posts/two-movers-moving-cost-calculatoryou-have-to-check-them-out-2movers/1423758379902363/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESuQEB6zswFbbIHxN3WRYp15mpCmR5gGw_If_d7odk__bHnlbiR28X0A3aUF6InOouujiihzgg0c-r4iFnT_GT41G-jbCyBqKkobIKNMgz_DwLrJd7aWQLv4YYCCsR9-RDLE0txtg5J42UsU439PUCDon4DdnAxTpNDOmkwkmOtJhHKddl6ecL9cuqX8Kd73YYI5Y7eaI-NmCGSjsxDbh4Kd6o8x6IKYzqq-yZ7X_igCnF5KbPAm26VupoAA",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESuQEB6zswFbbIHxN3WRYp15mpCmR5gGw_If_d7odk__bHnlbiR28X0A3aUF6InOouujiihzgg0c-r4iFnT_GT41G-jbCyBqKkobIKNMgz_DwLrJd7aWQLv4YYCCsR9-RDLE0txtg5J42UsU439PUCDon4DdnAxTpNDOmkwkmOtJhHKddl6ecL9cuqX8Kd73YYI5Y7eaI-NmCGSjsxDbh4Kd6o8x6IKYzqq-yZ7X_igCnF5KbPAm26VupoAA"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESuQEB6zswFbbIHxN3WRYp15mpCmR5gGw_If_d7odk__bHnlbiR28X0A3aUF6InOouujiihzgg0c-r4iFnT_GT41G-jbCyBqKkobIKNMgz_DwLrJd7aWQLv4YYCCsR9-RDLE0txtg5J42UsU439PUCDon4DdnAxTpNDOmkwkmOtJhHKddl6ecL9cuqX8Kd73YYI5Y7eaI-NmCGSjsxDbh4Kd6o8x6IKYzqq-yZ7X_igCnF5KbPAm26VupoAA",
+              "status": 302,
+              "location": "https://www.facebook.com/2Movers/posts/two-movers-moving-cost-calculatoryou-have-to-check-them-out-2movers/1423758379902363/"
+            }
+          ]
+        }
+      ],
+      "previous_domain_resolution": [
+        {
+          "rank": 5,
+          "original": "https://google.com/goto?url=CAESlwEB6zswFa-pOujrOE8uevFHz3eQMP3Law9gA59m8xD9IrDvl5oCXCceTWOW5TQBYgakb0y8Np8alaJorlhbT6gzRa8jZE-wVm9Ulpy8uMYWaNZAbyTNz1uAKiCcHGpWk0kLW5fegPEtcit7--zIMuhB-2onTZaOJdzRb-gKEKeZecTgQPgQKOwP1NUMk-KHz2wMCTnIgGwg",
+          "url": null,
+          "domain": null,
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESlwEB6zswFa-pOujrOE8uevFHz3eQMP3Law9gA59m8xD9IrDvl5oCXCceTWOW5TQBYgakb0y8Np8alaJorlhbT6gzRa8jZE-wVm9Ulpy8uMYWaNZAbyTNz1uAKiCcHGpWk0kLW5fegPEtcit7--zIMuhB-2onTZaOJdzRb-gKEKeZecTgQPgQKOwP1NUMk-KHz2wMCTnIgGwg",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESlwEB6zswFa-pOujrOE8uevFHz3eQMP3Law9gA59m8xD9IrDvl5oCXCceTWOW5TQBYgakb0y8Np8alaJorlhbT6gzRa8jZE-wVm9Ulpy8uMYWaNZAbyTNz1uAKiCcHGpWk0kLW5fegPEtcit7--zIMuhB-2onTZaOJdzRb-gKEKeZecTgQPgQKOwP1NUMk-KHz2wMCTnIgGwg"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESlwEB6zswFa-pOujrOE8uevFHz3eQMP3Law9gA59m8xD9IrDvl5oCXCceTWOW5TQBYgakb0y8Np8alaJorlhbT6gzRa8jZE-wVm9Ulpy8uMYWaNZAbyTNz1uAKiCcHGpWk0kLW5fegPEtcit7--zIMuhB-2onTZaOJdzRb-gKEKeZecTgQPgQKOwP1NUMk-KHz2wMCTnIgGwg",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "note": "No external destination established"
+        },
+        {
+          "rank": 9,
+          "original": "https://google.com/goto?url=CAEShAEB6zswFWdzuKktaoCHASD9yPFPOJlt8dLmmxklexLl3h8yyvI5Xt6gU1WeaqKaY4T5JZ54AP-BpGOEPaNi5NL4_0sBLv6wzkMTc-d9VsZkBD9DVLUj4qqbO0XQciNAJMTHMWLo5Aegx4iPInQCoL9zPvlKzzv09Y1d4nuXD4ONOMo2DI4",
+          "url": null,
+          "domain": null,
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShAEB6zswFWdzuKktaoCHASD9yPFPOJlt8dLmmxklexLl3h8yyvI5Xt6gU1WeaqKaY4T5JZ54AP-BpGOEPaNi5NL4_0sBLv6wzkMTc-d9VsZkBD9DVLUj4qqbO0XQciNAJMTHMWLo5Aegx4iPInQCoL9zPvlKzzv09Y1d4nuXD4ONOMo2DI4",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShAEB6zswFWdzuKktaoCHASD9yPFPOJlt8dLmmxklexLl3h8yyvI5Xt6gU1WeaqKaY4T5JZ54AP-BpGOEPaNi5NL4_0sBLv6wzkMTc-d9VsZkBD9DVLUj4qqbO0XQciNAJMTHMWLo5Aegx4iPInQCoL9zPvlKzzv09Y1d4nuXD4ONOMo2DI4"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShAEB6zswFWdzuKktaoCHASD9yPFPOJlt8dLmmxklexLl3h8yyvI5Xt6gU1WeaqKaY4T5JZ54AP-BpGOEPaNi5NL4_0sBLv6wzkMTc-d9VsZkBD9DVLUj4qqbO0XQciNAJMTHMWLo5Aegx4iPInQCoL9zPvlKzzv09Y1d4nuXD4ONOMo2DI4",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "note": "No external destination established"
+        },
+        {
+          "rank": 16,
+          "original": "https://google.com/goto?url=CAEShQEB6zswFf59KnawLoLVX7RTT1CIhYBAXTjcXLEGQM-4tsgcqMTuYBI_mD5DXLvWcOSFuxwIzEDA8znTU3T2SgbaBA5TJKPXsnCPspDHKAcRENrjiTFdSaR8X69PvA8eGpuMxtkqUhUYx_FQLUaNxi7-P7_Q_IFNGrKn0x04b79oIoqZoR_H",
+          "url": null,
+          "domain": null,
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShQEB6zswFf59KnawLoLVX7RTT1CIhYBAXTjcXLEGQM-4tsgcqMTuYBI_mD5DXLvWcOSFuxwIzEDA8znTU3T2SgbaBA5TJKPXsnCPspDHKAcRENrjiTFdSaR8X69PvA8eGpuMxtkqUhUYx_FQLUaNxi7-P7_Q_IFNGrKn0x04b79oIoqZoR_H",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShQEB6zswFf59KnawLoLVX7RTT1CIhYBAXTjcXLEGQM-4tsgcqMTuYBI_mD5DXLvWcOSFuxwIzEDA8znTU3T2SgbaBA5TJKPXsnCPspDHKAcRENrjiTFdSaR8X69PvA8eGpuMxtkqUhUYx_FQLUaNxi7-P7_Q_IFNGrKn0x04b79oIoqZoR_H"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShQEB6zswFf59KnawLoLVX7RTT1CIhYBAXTjcXLEGQM-4tsgcqMTuYBI_mD5DXLvWcOSFuxwIzEDA8znTU3T2SgbaBA5TJKPXsnCPspDHKAcRENrjiTFdSaR8X69PvA8eGpuMxtkqUhUYx_FQLUaNxi7-P7_Q_IFNGrKn0x04b79oIoqZoR_H",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "note": "No external destination established"
+        },
+        {
+          "rank": 29,
+          "original": "https://google.com/goto?url=CAESzwEB6zswFTBSetj7Kz0OrY7zHdZR4sAbq1OUp42xAhGoh0j0rqtPBUEaZ477yr5JhmNZAsp8AI1_51XkUF-Cqkrqs_g73sTwR8izd3r99e8fIzPeYanet3cXVuCieVeeep4zx8r_brHiWaR2GdHgZfE3Tp5L19LuHfvkKSxS_rNkpHz6gQpWN00uA71iKSZvOoA9oun3yj8DHv7Wcnxwj1BMsaRqEyFGxscllHI1a6SSu7A3-G5sMwldDVLYI-uZBftYd8fw0XuQiY3xhQDy4wA",
+          "url": null,
+          "domain": null,
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESzwEB6zswFTBSetj7Kz0OrY7zHdZR4sAbq1OUp42xAhGoh0j0rqtPBUEaZ477yr5JhmNZAsp8AI1_51XkUF-Cqkrqs_g73sTwR8izd3r99e8fIzPeYanet3cXVuCieVeeep4zx8r_brHiWaR2GdHgZfE3Tp5L19LuHfvkKSxS_rNkpHz6gQpWN00uA71iKSZvOoA9oun3yj8DHv7Wcnxwj1BMsaRqEyFGxscllHI1a6SSu7A3-G5sMwldDVLYI-uZBftYd8fw0XuQiY3xhQDy4wA",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESzwEB6zswFTBSetj7Kz0OrY7zHdZR4sAbq1OUp42xAhGoh0j0rqtPBUEaZ477yr5JhmNZAsp8AI1_51XkUF-Cqkrqs_g73sTwR8izd3r99e8fIzPeYanet3cXVuCieVeeep4zx8r_brHiWaR2GdHgZfE3Tp5L19LuHfvkKSxS_rNkpHz6gQpWN00uA71iKSZvOoA9oun3yj8DHv7Wcnxwj1BMsaRqEyFGxscllHI1a6SSu7A3-G5sMwldDVLYI-uZBftYd8fw0XuQiY3xhQDy4wA"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESzwEB6zswFTBSetj7Kz0OrY7zHdZR4sAbq1OUp42xAhGoh0j0rqtPBUEaZ477yr5JhmNZAsp8AI1_51XkUF-Cqkrqs_g73sTwR8izd3r99e8fIzPeYanet3cXVuCieVeeep4zx8r_brHiWaR2GdHgZfE3Tp5L19LuHfvkKSxS_rNkpHz6gQpWN00uA71iKSZvOoA9oun3yj8DHv7Wcnxwj1BMsaRqEyFGxscllHI1a6SSu7A3-G5sMwldDVLYI-uZBftYd8fw0XuQiY3xhQDy4wA",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "note": "No external destination established"
+        },
+        {
+          "rank": 40,
+          "original": "https://google.com/goto?url=CAES0AEB6zswFfoIcQ7oGYUH5wSBhna9xrwirD5F38YGYLaTu9_NF_kzy-KHCHkA7V5tjLO4wDq6NCock00DJzTs_5x_vT-2uvitZedBw3P_0q_RyPQnjtl4Smzv2RzlzjEQkHY9XFqy28iDbI8eEd8Xxi_HbENI0Q3b6NL8A8buYFL40hXXUzwFAFodUJTpiaEN2mLiy_vbDt5lHS2cG0KDvDF9RKhM2cIdRN1CooPyFENONU_6dSd2YnB2DFPW9bQqijMFewYZo6BdTXxTCTtdej7R",
+          "url": null,
+          "domain": null,
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAES0AEB6zswFfoIcQ7oGYUH5wSBhna9xrwirD5F38YGYLaTu9_NF_kzy-KHCHkA7V5tjLO4wDq6NCock00DJzTs_5x_vT-2uvitZedBw3P_0q_RyPQnjtl4Smzv2RzlzjEQkHY9XFqy28iDbI8eEd8Xxi_HbENI0Q3b6NL8A8buYFL40hXXUzwFAFodUJTpiaEN2mLiy_vbDt5lHS2cG0KDvDF9RKhM2cIdRN1CooPyFENONU_6dSd2YnB2DFPW9bQqijMFewYZo6BdTXxTCTtdej7R",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAES0AEB6zswFfoIcQ7oGYUH5wSBhna9xrwirD5F38YGYLaTu9_NF_kzy-KHCHkA7V5tjLO4wDq6NCock00DJzTs_5x_vT-2uvitZedBw3P_0q_RyPQnjtl4Smzv2RzlzjEQkHY9XFqy28iDbI8eEd8Xxi_HbENI0Q3b6NL8A8buYFL40hXXUzwFAFodUJTpiaEN2mLiy_vbDt5lHS2cG0KDvDF9RKhM2cIdRN1CooPyFENONU_6dSd2YnB2DFPW9bQqijMFewYZo6BdTXxTCTtdej7R"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAES0AEB6zswFfoIcQ7oGYUH5wSBhna9xrwirD5F38YGYLaTu9_NF_kzy-KHCHkA7V5tjLO4wDq6NCock00DJzTs_5x_vT-2uvitZedBw3P_0q_RyPQnjtl4Smzv2RzlzjEQkHY9XFqy28iDbI8eEd8Xxi_HbENI0Q3b6NL8A8buYFL40hXXUzwFAFodUJTpiaEN2mLiy_vbDt5lHS2cG0KDvDF9RKhM2cIdRN1CooPyFENONU_6dSd2YnB2DFPW9bQqijMFewYZo6BdTXxTCTtdej7R",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "note": "No external destination established"
+        },
+        {
+          "rank": 46,
+          "original": "https://google.com/goto?url=CAESuQEB6zswFbbIHxN3WRYp15mpCmR5gGw_If_d7odk__bHnlbiR28X0A3aUF6InOouujiihzgg0c-r4iFnT_GT41G-jbCyBqKkobIKNMgz_DwLrJd7aWQLv4YYCCsR9-RDLE0txtg5J42UsU439PUCDon4DdnAxTpNDOmkwkmOtJhHKddl6ecL9cuqX8Kd73YYI5Y7eaI-NmCGSjsxDbh4Kd6o8x6IKYzqq-yZ7X_igCnF5KbPAm26VupoAA",
+          "url": null,
+          "domain": null,
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESuQEB6zswFbbIHxN3WRYp15mpCmR5gGw_If_d7odk__bHnlbiR28X0A3aUF6InOouujiihzgg0c-r4iFnT_GT41G-jbCyBqKkobIKNMgz_DwLrJd7aWQLv4YYCCsR9-RDLE0txtg5J42UsU439PUCDon4DdnAxTpNDOmkwkmOtJhHKddl6ecL9cuqX8Kd73YYI5Y7eaI-NmCGSjsxDbh4Kd6o8x6IKYzqq-yZ7X_igCnF5KbPAm26VupoAA",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESuQEB6zswFbbIHxN3WRYp15mpCmR5gGw_If_d7odk__bHnlbiR28X0A3aUF6InOouujiihzgg0c-r4iFnT_GT41G-jbCyBqKkobIKNMgz_DwLrJd7aWQLv4YYCCsR9-RDLE0txtg5J42UsU439PUCDon4DdnAxTpNDOmkwkmOtJhHKddl6ecL9cuqX8Kd73YYI5Y7eaI-NmCGSjsxDbh4Kd6o8x6IKYzqq-yZ7X_igCnF5KbPAm26VupoAA"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESuQEB6zswFbbIHxN3WRYp15mpCmR5gGw_If_d7odk__bHnlbiR28X0A3aUF6InOouujiihzgg0c-r4iFnT_GT41G-jbCyBqKkobIKNMgz_DwLrJd7aWQLv4YYCCsR9-RDLE0txtg5J42UsU439PUCDon4DdnAxTpNDOmkwkmOtJhHKddl6ecL9cuqX8Kd73YYI5Y7eaI-NmCGSjsxDbh4Kd6o8x6IKYzqq-yZ7X_igCnF5KbPAm26VupoAA",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "note": "No external destination established"
+        }
+      ]
+    },
+    {
+      "query": "moving coi elevator reservation los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-17-retry-1.json",
+      "provider_status_code": 40106,
+      "partial_results": true,
+      "organic_rows_examined": 29,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:16:09 +00:00",
+      "raw_unresolved_domains": 6,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 2,
+          "original": "https://google.com/goto?url=CAESzgEBxCJF10M0FRsYZSGWsMChBASMDgO2r7SLsec0eUn0xnsbcKaABaSTDsNLh_gKzUlP5jcfxQAf9AJozWnMdCbOKygrokKcLODvcV3C9daQjv04eRC_10zoqAy328jHc7Ci1hlzaQl2DcjYR8kXkXu-DttsV289NeIM5oKC1qyZaGNVwEpSed2Kpop1etd-sNNLUCWzBHQTvgbKW02uqnaxR47AbWcyH1dqxu3KLI-bSYQVUZRurqiijqt-Vnqq2YSWgSx0lSI8xLT6Q2nzDw",
+          "url": "https://www.facebook.com/NorthStarMoving/posts/hiring-movers-in-los-angeles-dont-skip-this-stepbefore-booking-los-angeles-mover/1728348645428959/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESzgEBxCJF10M0FRsYZSGWsMChBASMDgO2r7SLsec0eUn0xnsbcKaABaSTDsNLh_gKzUlP5jcfxQAf9AJozWnMdCbOKygrokKcLODvcV3C9daQjv04eRC_10zoqAy328jHc7Ci1hlzaQl2DcjYR8kXkXu-DttsV289NeIM5oKC1qyZaGNVwEpSed2Kpop1etd-sNNLUCWzBHQTvgbKW02uqnaxR47AbWcyH1dqxu3KLI-bSYQVUZRurqiijqt-Vnqq2YSWgSx0lSI8xLT6Q2nzDw",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESzgEBxCJF10M0FRsYZSGWsMChBASMDgO2r7SLsec0eUn0xnsbcKaABaSTDsNLh_gKzUlP5jcfxQAf9AJozWnMdCbOKygrokKcLODvcV3C9daQjv04eRC_10zoqAy328jHc7Ci1hlzaQl2DcjYR8kXkXu-DttsV289NeIM5oKC1qyZaGNVwEpSed2Kpop1etd-sNNLUCWzBHQTvgbKW02uqnaxR47AbWcyH1dqxu3KLI-bSYQVUZRurqiijqt-Vnqq2YSWgSx0lSI8xLT6Q2nzDw"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESzgEBxCJF10M0FRsYZSGWsMChBASMDgO2r7SLsec0eUn0xnsbcKaABaSTDsNLh_gKzUlP5jcfxQAf9AJozWnMdCbOKygrokKcLODvcV3C9daQjv04eRC_10zoqAy328jHc7Ci1hlzaQl2DcjYR8kXkXu-DttsV289NeIM5oKC1qyZaGNVwEpSed2Kpop1etd-sNNLUCWzBHQTvgbKW02uqnaxR47AbWcyH1dqxu3KLI-bSYQVUZRurqiijqt-Vnqq2YSWgSx0lSI8xLT6Q2nzDw",
+              "status": 302,
+              "location": "https://www.facebook.com/NorthStarMoving/posts/hiring-movers-in-los-angeles-dont-skip-this-stepbefore-booking-los-angeles-mover/1728348645428959/"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "original": "https://google.com/goto?url=CAESrQEBxCJF1_UDF0cRdd3Rgs_HA_pKzgxmeXEIhbLVLpxNOmjI0gt6U__pA8ZP7g1YQWrtef2pNHVZsE4YMbP9vQOzyJjK_tMPXG2A7hIQV37Ryq9dB-Jq5zXdnd-AJ3yCYtiktuwK5TTnVu_0TiVTbslA-LCywycuFDUg63Y5M9-zvyGwiUjeBBCuoNWfAkKtAqRN2ExWCH4uCZnEGz_2Bu6TaoSJ7nlg8JyhLdwnMw",
+          "url": "https://www.reddit.com/r/SpeedOfLightMovingLLC/comments/1wwugn5/do_you_need_to_reserve_an_elevator_before_moving/",
+          "domain": "reddit.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESrQEBxCJF1_UDF0cRdd3Rgs_HA_pKzgxmeXEIhbLVLpxNOmjI0gt6U__pA8ZP7g1YQWrtef2pNHVZsE4YMbP9vQOzyJjK_tMPXG2A7hIQV37Ryq9dB-Jq5zXdnd-AJ3yCYtiktuwK5TTnVu_0TiVTbslA-LCywycuFDUg63Y5M9-zvyGwiUjeBBCuoNWfAkKtAqRN2ExWCH4uCZnEGz_2Bu6TaoSJ7nlg8JyhLdwnMw",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESrQEBxCJF1_UDF0cRdd3Rgs_HA_pKzgxmeXEIhbLVLpxNOmjI0gt6U__pA8ZP7g1YQWrtef2pNHVZsE4YMbP9vQOzyJjK_tMPXG2A7hIQV37Ryq9dB-Jq5zXdnd-AJ3yCYtiktuwK5TTnVu_0TiVTbslA-LCywycuFDUg63Y5M9-zvyGwiUjeBBCuoNWfAkKtAqRN2ExWCH4uCZnEGz_2Bu6TaoSJ7nlg8JyhLdwnMw"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESrQEBxCJF1_UDF0cRdd3Rgs_HA_pKzgxmeXEIhbLVLpxNOmjI0gt6U__pA8ZP7g1YQWrtef2pNHVZsE4YMbP9vQOzyJjK_tMPXG2A7hIQV37Ryq9dB-Jq5zXdnd-AJ3yCYtiktuwK5TTnVu_0TiVTbslA-LCywycuFDUg63Y5M9-zvyGwiUjeBBCuoNWfAkKtAqRN2ExWCH4uCZnEGz_2Bu6TaoSJ7nlg8JyhLdwnMw",
+              "status": 302,
+              "location": "https://www.reddit.com/r/SpeedOfLightMovingLLC/comments/1wwugn5/do_you_need_to_reserve_an_elevator_before_moving/"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "original": "https://google.com/goto?url=CAESwAEBxCJF11IbV-bH8CTL0jW8FisUZmd3_A2JKNpugawzwZaVHYn4TE7zu9JLMs1YZ0YwHSuV2wWtGmO3IaD8qDsnA5pUfgt3phALxirBn36S8QdY96-rAO1nF2yZ3AJ9w07OskSeZB9fSLj6M02Y9Y3ffxEEDIAqf-sOqZIuXQ8-uPj3glpAv1iat6F2LAf0J73w0yoc4nhh9pS-iFh77Y1Nl1nq7jOcC-D__fYYszahE51q4q9-CEblTsRVcd2E-fI",
+          "url": "https://www.linkedin.com/posts/the-relocation-ecosystem_an-elevator-reservation-is-only-useful-if-activity-7517942346387214336-oNjr",
+          "domain": "linkedin.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESwAEBxCJF11IbV-bH8CTL0jW8FisUZmd3_A2JKNpugawzwZaVHYn4TE7zu9JLMs1YZ0YwHSuV2wWtGmO3IaD8qDsnA5pUfgt3phALxirBn36S8QdY96-rAO1nF2yZ3AJ9w07OskSeZB9fSLj6M02Y9Y3ffxEEDIAqf-sOqZIuXQ8-uPj3glpAv1iat6F2LAf0J73w0yoc4nhh9pS-iFh77Y1Nl1nq7jOcC-D__fYYszahE51q4q9-CEblTsRVcd2E-fI",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESwAEBxCJF11IbV-bH8CTL0jW8FisUZmd3_A2JKNpugawzwZaVHYn4TE7zu9JLMs1YZ0YwHSuV2wWtGmO3IaD8qDsnA5pUfgt3phALxirBn36S8QdY96-rAO1nF2yZ3AJ9w07OskSeZB9fSLj6M02Y9Y3ffxEEDIAqf-sOqZIuXQ8-uPj3glpAv1iat6F2LAf0J73w0yoc4nhh9pS-iFh77Y1Nl1nq7jOcC-D__fYYszahE51q4q9-CEblTsRVcd2E-fI"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESwAEBxCJF11IbV-bH8CTL0jW8FisUZmd3_A2JKNpugawzwZaVHYn4TE7zu9JLMs1YZ0YwHSuV2wWtGmO3IaD8qDsnA5pUfgt3phALxirBn36S8QdY96-rAO1nF2yZ3AJ9w07OskSeZB9fSLj6M02Y9Y3ffxEEDIAqf-sOqZIuXQ8-uPj3glpAv1iat6F2LAf0J73w0yoc4nhh9pS-iFh77Y1Nl1nq7jOcC-D__fYYszahE51q4q9-CEblTsRVcd2E-fI",
+              "status": 302,
+              "location": "https://www.linkedin.com/posts/the-relocation-ecosystem_an-elevator-reservation-is-only-useful-if-activity-7517942346387214336-oNjr"
+            }
+          ]
+        },
+        {
+          "rank": 11,
+          "original": "https://google.com/goto?url=CAESZwHEIkXXSY8O2jFJCIZx441_T-jmuzzQQL80tqy7NUkLO8rbqtcpj_F1FNOkNEJ_4f_C2HYh5awjjvTsYyG76gDw7kkNH3atUVJN-9JBid2jqaNmR81_ZIeWPUEumuP8p-X-vJPmk1g",
+          "url": "https://www.youtube.com/watch?v=TbFmd0VW0-U",
+          "domain": "youtube.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESZwHEIkXXSY8O2jFJCIZx441_T-jmuzzQQL80tqy7NUkLO8rbqtcpj_F1FNOkNEJ_4f_C2HYh5awjjvTsYyG76gDw7kkNH3atUVJN-9JBid2jqaNmR81_ZIeWPUEumuP8p-X-vJPmk1g",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESZwHEIkXXSY8O2jFJCIZx441_T-jmuzzQQL80tqy7NUkLO8rbqtcpj_F1FNOkNEJ_4f_C2HYh5awjjvTsYyG76gDw7kkNH3atUVJN-9JBid2jqaNmR81_ZIeWPUEumuP8p-X-vJPmk1g"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESZwHEIkXXSY8O2jFJCIZx441_T-jmuzzQQL80tqy7NUkLO8rbqtcpj_F1FNOkNEJ_4f_C2HYh5awjjvTsYyG76gDw7kkNH3atUVJN-9JBid2jqaNmR81_ZIeWPUEumuP8p-X-vJPmk1g",
+              "status": 302,
+              "location": "https://www.youtube.com/watch?v=TbFmd0VW0-U"
+            }
+          ]
+        },
+        {
+          "rank": 15,
+          "original": "https://google.com/goto?url=CAESZwHEIkXX8det5SK0SNL9c95D4E9jSszpYOQOmPVTNvyGw8Mi7R7Jezn3dpjA5cktKXst0X_5wGm9k3MAclgrX9b4ovzr-QNgQPLUWYZY3vNoZPDeHNJRIhv_NYdVEY7pKMyZ1vpAqwE",
+          "url": "https://www.instagram.com/reel/DewivgWDw9z/",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESZwHEIkXX8det5SK0SNL9c95D4E9jSszpYOQOmPVTNvyGw8Mi7R7Jezn3dpjA5cktKXst0X_5wGm9k3MAclgrX9b4ovzr-QNgQPLUWYZY3vNoZPDeHNJRIhv_NYdVEY7pKMyZ1vpAqwE",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESZwHEIkXX8det5SK0SNL9c95D4E9jSszpYOQOmPVTNvyGw8Mi7R7Jezn3dpjA5cktKXst0X_5wGm9k3MAclgrX9b4ovzr-QNgQPLUWYZY3vNoZPDeHNJRIhv_NYdVEY7pKMyZ1vpAqwE"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESZwHEIkXX8det5SK0SNL9c95D4E9jSszpYOQOmPVTNvyGw8Mi7R7Jezn3dpjA5cktKXst0X_5wGm9k3MAclgrX9b4ovzr-QNgQPLUWYZY3vNoZPDeHNJRIhv_NYdVEY7pKMyZ1vpAqwE",
+              "status": 302,
+              "location": "https://www.instagram.com/reel/DewivgWDw9z/"
+            }
+          ]
+        },
+        {
+          "rank": 21,
+          "original": "https://google.com/goto?url=CAESZAHEIkXXO0YBCPtQ4hB_Ij0l-Dh6AiT7fPHNcNxfRTHPn60fFj00PzUuCLPebeqClqpcxpz6l8JUfEuzA4HHzlEUI92SLlMbnmdLuR65ni7_2a5_enxcX6CY64_4ZPkumcllpS0",
+          "url": "https://www.instagram.com/p/De9lQtHjrgj/",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESZAHEIkXXO0YBCPtQ4hB_Ij0l-Dh6AiT7fPHNcNxfRTHPn60fFj00PzUuCLPebeqClqpcxpz6l8JUfEuzA4HHzlEUI92SLlMbnmdLuR65ni7_2a5_enxcX6CY64_4ZPkumcllpS0",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESZAHEIkXXO0YBCPtQ4hB_Ij0l-Dh6AiT7fPHNcNxfRTHPn60fFj00PzUuCLPebeqClqpcxpz6l8JUfEuzA4HHzlEUI92SLlMbnmdLuR65ni7_2a5_enxcX6CY64_4ZPkumcllpS0"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESZAHEIkXXO0YBCPtQ4hB_Ij0l-Dh6AiT7fPHNcNxfRTHPn60fFj00PzUuCLPebeqClqpcxpz6l8JUfEuzA4HHzlEUI92SLlMbnmdLuR65ni7_2a5_enxcX6CY64_4ZPkumcllpS0",
+              "status": 302,
+              "location": "https://www.instagram.com/p/De9lQtHjrgj/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "apartment moving certificate of insurance los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-18-retry-1.json",
+      "organic_rows_examined": 49,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:16:18 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 3,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 17,
+          "original": "https://google.com/goto?url=CAESzwEB6zswFfn_Cp8g0RJNROU6VjbR-Q2RmRU_2t6xKOQt-XWH_iF2n94CTdq0OppEh09QdeutAzJ1vN4YT7zwLBnWPurQyw7rsneLJOBw8mzzkYsN1SPIZf3vV71NmNKkKePVc3aUKaHtMNC5fbKYJC16GpWCBlFTINmlwuZn1FIUAFoWXAJs5aJnbKYhEIYcdSUs2YpitSI8PCGH5zbk3dgCq0fxncgyIXo1ga9oXxcOMFDa1DlBuKyHrRJe-srVVv6w8xYstCT5Lf710hM_WI0",
+          "url": "https://www.facebook.com/61579006836440/posts/moving-into-an-apartment-or-condo-your-building-can-stop-the-truck-at-the-door-w/122178145430966894/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESzwEB6zswFfn_Cp8g0RJNROU6VjbR-Q2RmRU_2t6xKOQt-XWH_iF2n94CTdq0OppEh09QdeutAzJ1vN4YT7zwLBnWPurQyw7rsneLJOBw8mzzkYsN1SPIZf3vV71NmNKkKePVc3aUKaHtMNC5fbKYJC16GpWCBlFTINmlwuZn1FIUAFoWXAJs5aJnbKYhEIYcdSUs2YpitSI8PCGH5zbk3dgCq0fxncgyIXo1ga9oXxcOMFDa1DlBuKyHrRJe-srVVv6w8xYstCT5Lf710hM_WI0",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESzwEB6zswFfn_Cp8g0RJNROU6VjbR-Q2RmRU_2t6xKOQt-XWH_iF2n94CTdq0OppEh09QdeutAzJ1vN4YT7zwLBnWPurQyw7rsneLJOBw8mzzkYsN1SPIZf3vV71NmNKkKePVc3aUKaHtMNC5fbKYJC16GpWCBlFTINmlwuZn1FIUAFoWXAJs5aJnbKYhEIYcdSUs2YpitSI8PCGH5zbk3dgCq0fxncgyIXo1ga9oXxcOMFDa1DlBuKyHrRJe-srVVv6w8xYstCT5Lf710hM_WI0"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESzwEB6zswFfn_Cp8g0RJNROU6VjbR-Q2RmRU_2t6xKOQt-XWH_iF2n94CTdq0OppEh09QdeutAzJ1vN4YT7zwLBnWPurQyw7rsneLJOBw8mzzkYsN1SPIZf3vV71NmNKkKePVc3aUKaHtMNC5fbKYJC16GpWCBlFTINmlwuZn1FIUAFoWXAJs5aJnbKYhEIYcdSUs2YpitSI8PCGH5zbk3dgCq0fxncgyIXo1ga9oXxcOMFDa1DlBuKyHrRJe-srVVv6w8xYstCT5Lf710hM_WI0",
+              "status": 302,
+              "location": "https://www.facebook.com/61579006836440/posts/moving-into-an-apartment-or-condo-your-building-can-stop-the-truck-at-the-door-w/122178145430966894/"
+            }
+          ]
+        },
+        {
+          "rank": 22,
+          "original": "https://google.com/goto?url=CAES0gEB6zswFRylA59shNRtzMUK9q2k7lOyyJKB0wK2nOXDv_L99lMCaoaPBrCUSnxx78HSbSaOZbdgv6d12azfAYaVFAtLq76GmXD4HIKVjJKVyEu6MgWI8yFjxjoaYEPnvx1qpIRaX1XuBVOqkqt0tymotR_HRTRSU-9aALgov-Yp0GnqZnqJjtGkm6oixn_JP8LiquNcNmdDBWyHouIGzUGsa1Milw75NwsLF7lLHksNvVRpCYI9K00_WYoTIgubIb1jLkawTVsfcHWcK5qu8tKIvHM",
+          "url": "https://www.facebook.com/MovingAheadServices/posts/apartment-move-call-your-building-before-you-call-anyone-else-most-want-a-certif/1735100971957069/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAES0gEB6zswFRylA59shNRtzMUK9q2k7lOyyJKB0wK2nOXDv_L99lMCaoaPBrCUSnxx78HSbSaOZbdgv6d12azfAYaVFAtLq76GmXD4HIKVjJKVyEu6MgWI8yFjxjoaYEPnvx1qpIRaX1XuBVOqkqt0tymotR_HRTRSU-9aALgov-Yp0GnqZnqJjtGkm6oixn_JP8LiquNcNmdDBWyHouIGzUGsa1Milw75NwsLF7lLHksNvVRpCYI9K00_WYoTIgubIb1jLkawTVsfcHWcK5qu8tKIvHM",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAES0gEB6zswFRylA59shNRtzMUK9q2k7lOyyJKB0wK2nOXDv_L99lMCaoaPBrCUSnxx78HSbSaOZbdgv6d12azfAYaVFAtLq76GmXD4HIKVjJKVyEu6MgWI8yFjxjoaYEPnvx1qpIRaX1XuBVOqkqt0tymotR_HRTRSU-9aALgov-Yp0GnqZnqJjtGkm6oixn_JP8LiquNcNmdDBWyHouIGzUGsa1Milw75NwsLF7lLHksNvVRpCYI9K00_WYoTIgubIb1jLkawTVsfcHWcK5qu8tKIvHM"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAES0gEB6zswFRylA59shNRtzMUK9q2k7lOyyJKB0wK2nOXDv_L99lMCaoaPBrCUSnxx78HSbSaOZbdgv6d12azfAYaVFAtLq76GmXD4HIKVjJKVyEu6MgWI8yFjxjoaYEPnvx1qpIRaX1XuBVOqkqt0tymotR_HRTRSU-9aALgov-Yp0GnqZnqJjtGkm6oixn_JP8LiquNcNmdDBWyHouIGzUGsa1Milw75NwsLF7lLHksNvVRpCYI9K00_WYoTIgubIb1jLkawTVsfcHWcK5qu8tKIvHM",
+              "status": 302,
+              "location": "https://www.facebook.com/MovingAheadServices/posts/apartment-move-call-your-building-before-you-call-anyone-else-most-want-a-certif/1735100971957069/"
+            }
+          ]
+        },
+        {
+          "rank": 27,
+          "original": "https://google.com/goto?url=CAESZgHrOzAVz1OSfcd_JSMUt7s1t3Ky0j-GUh_JO7yIXAh5yLCTj0pyeIX8vbFeFnakG91lb839QwGphD9vPjH9zx1q4sSTmRf7G0h5vwHz71iuGVW-A7ZmxnY66qCHXHlTpBa7ZJT5zA",
+          "url": "https://www.youtube.com/shorts/Gj2PH1jCrSw",
+          "domain": "youtube.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESZgHrOzAVz1OSfcd_JSMUt7s1t3Ky0j-GUh_JO7yIXAh5yLCTj0pyeIX8vbFeFnakG91lb839QwGphD9vPjH9zx1q4sSTmRf7G0h5vwHz71iuGVW-A7ZmxnY66qCHXHlTpBa7ZJT5zA",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESZgHrOzAVz1OSfcd_JSMUt7s1t3Ky0j-GUh_JO7yIXAh5yLCTj0pyeIX8vbFeFnakG91lb839QwGphD9vPjH9zx1q4sSTmRf7G0h5vwHz71iuGVW-A7ZmxnY66qCHXHlTpBa7ZJT5zA"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESZgHrOzAVz1OSfcd_JSMUt7s1t3Ky0j-GUh_JO7yIXAh5yLCTj0pyeIX8vbFeFnakG91lb839QwGphD9vPjH9zx1q4sSTmRf7G0h5vwHz71iuGVW-A7ZmxnY66qCHXHlTpBa7ZJT5zA",
+              "status": 302,
+              "location": "https://www.youtube.com/shorts/Gj2PH1jCrSw"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "moving apartment without elevator los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-19.json",
+      "organic_rows_examined": 43,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:13:06 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 10,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 3,
+          "original": "https://google.com/goto?url=CAEShQEB6zswFQtioqamRc3nfyDXdkueAoJe389O5zkXdZMTSB_qf_LQIVYBBgnA4EKrZPIIjLg-8s_bMIO9niRBBTGDt621YPPHkFlMr3qLwCHf3mLC3z-qFv1g-4CZ-Q_GH85gITAHcllEw58PlvFactgrgmjuxFhXNrqX9hYdcFyVczvO1gKz",
+          "url": "https://www.facebook.com/groups/1830390163936384/posts/4094795557495822/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShQEB6zswFQtioqamRc3nfyDXdkueAoJe389O5zkXdZMTSB_qf_LQIVYBBgnA4EKrZPIIjLg-8s_bMIO9niRBBTGDt621YPPHkFlMr3qLwCHf3mLC3z-qFv1g-4CZ-Q_GH85gITAHcllEw58PlvFactgrgmjuxFhXNrqX9hYdcFyVczvO1gKz",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShQEB6zswFQtioqamRc3nfyDXdkueAoJe389O5zkXdZMTSB_qf_LQIVYBBgnA4EKrZPIIjLg-8s_bMIO9niRBBTGDt621YPPHkFlMr3qLwCHf3mLC3z-qFv1g-4CZ-Q_GH85gITAHcllEw58PlvFactgrgmjuxFhXNrqX9hYdcFyVczvO1gKz"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShQEB6zswFQtioqamRc3nfyDXdkueAoJe389O5zkXdZMTSB_qf_LQIVYBBgnA4EKrZPIIjLg-8s_bMIO9niRBBTGDt621YPPHkFlMr3qLwCHf3mLC3z-qFv1g-4CZ-Q_GH85gITAHcllEw58PlvFactgrgmjuxFhXNrqX9hYdcFyVczvO1gKz",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/1830390163936384/posts/4094795557495822/"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "original": "https://google.com/goto?url=CAESpgEB6zswFUrS9ItvJabuMYU6w-cJAcJHL6GqOezqK2PE_5_8nSEIKgdEMXvhj76fy2lJQ3sLghWJsTd5uiBzX6GlavWbsl2SG3qOe8p3vYiv6YibpVUEFJZED5yhqfS6twMkc_UpLQ370UIkoKOF6I7raBsL1569GYM-T9KnECmP3vPgl6CNb--bzpcVD6YKvrETSMxGtryItgoaMxqgzEFxKsmnGt6P",
+          "url": "https://www.reddit.com/r/Apartmentliving/comments/1qb0ou8/how_can_i_get_a_couch_to_the_3rd_floor_with_no/",
+          "domain": "reddit.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESpgEB6zswFUrS9ItvJabuMYU6w-cJAcJHL6GqOezqK2PE_5_8nSEIKgdEMXvhj76fy2lJQ3sLghWJsTd5uiBzX6GlavWbsl2SG3qOe8p3vYiv6YibpVUEFJZED5yhqfS6twMkc_UpLQ370UIkoKOF6I7raBsL1569GYM-T9KnECmP3vPgl6CNb--bzpcVD6YKvrETSMxGtryItgoaMxqgzEFxKsmnGt6P",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESpgEB6zswFUrS9ItvJabuMYU6w-cJAcJHL6GqOezqK2PE_5_8nSEIKgdEMXvhj76fy2lJQ3sLghWJsTd5uiBzX6GlavWbsl2SG3qOe8p3vYiv6YibpVUEFJZED5yhqfS6twMkc_UpLQ370UIkoKOF6I7raBsL1569GYM-T9KnECmP3vPgl6CNb--bzpcVD6YKvrETSMxGtryItgoaMxqgzEFxKsmnGt6P"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESpgEB6zswFUrS9ItvJabuMYU6w-cJAcJHL6GqOezqK2PE_5_8nSEIKgdEMXvhj76fy2lJQ3sLghWJsTd5uiBzX6GlavWbsl2SG3qOe8p3vYiv6YibpVUEFJZED5yhqfS6twMkc_UpLQ370UIkoKOF6I7raBsL1569GYM-T9KnECmP3vPgl6CNb--bzpcVD6YKvrETSMxGtryItgoaMxqgzEFxKsmnGt6P",
+              "status": 302,
+              "location": "https://www.reddit.com/r/Apartmentliving/comments/1qb0ou8/how_can_i_get_a_couch_to_the_3rd_floor_with_no/"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "original": "https://google.com/goto?url=CAEShAEB6zswFdC0n9Y3cIo1M1YwaPTINZdzv7Vlqdr7SYFQGZIwfmFb9RIHFg1AgzTikhIgSCUFpKI8j5N7pftrCNA7CwslBNpoka-CUsg36e656Jy5mWE3fYFnwoVGn1pFH9k0wSrSzvC41E_rKwWlZ7fGUietf3Uv_rOc8xMIs48OsTsJObs",
+          "url": "https://www.facebook.com/groups/438555653633498/posts/2391147678374276/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShAEB6zswFdC0n9Y3cIo1M1YwaPTINZdzv7Vlqdr7SYFQGZIwfmFb9RIHFg1AgzTikhIgSCUFpKI8j5N7pftrCNA7CwslBNpoka-CUsg36e656Jy5mWE3fYFnwoVGn1pFH9k0wSrSzvC41E_rKwWlZ7fGUietf3Uv_rOc8xMIs48OsTsJObs",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShAEB6zswFdC0n9Y3cIo1M1YwaPTINZdzv7Vlqdr7SYFQGZIwfmFb9RIHFg1AgzTikhIgSCUFpKI8j5N7pftrCNA7CwslBNpoka-CUsg36e656Jy5mWE3fYFnwoVGn1pFH9k0wSrSzvC41E_rKwWlZ7fGUietf3Uv_rOc8xMIs48OsTsJObs"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShAEB6zswFdC0n9Y3cIo1M1YwaPTINZdzv7Vlqdr7SYFQGZIwfmFb9RIHFg1AgzTikhIgSCUFpKI8j5N7pftrCNA7CwslBNpoka-CUsg36e656Jy5mWE3fYFnwoVGn1pFH9k0wSrSzvC41E_rKwWlZ7fGUietf3Uv_rOc8xMIs48OsTsJObs",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/438555653633498/posts/2391147678374276/"
+            }
+          ]
+        },
+        {
+          "rank": 12,
+          "original": "https://google.com/goto?url=CAESngEB6zswFQYUPjMKWuAMS0Y0fVSgWx-of4oETYnM4YOCKuQjuYRvMONx85p4fwQHjz7Tpd5XlbSdgnQ6chQrV7v3zq_BurflS_ihMAkRz415HD42g4_xX3-rNKbFhj1RZptqV4EMc73ot7QTdCTJWipM3gaD3TbLSztcd6OY8DTt2inoNMZJdDGOPtKa_GayeNgJXUuWm0c8aluhYX6qqw",
+          "url": "https://www.reddit.com/r/socialchecks/comments/1qktgu8/friend_asks_for_help_moving_to_a_4thfloor/",
+          "domain": "reddit.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESngEB6zswFQYUPjMKWuAMS0Y0fVSgWx-of4oETYnM4YOCKuQjuYRvMONx85p4fwQHjz7Tpd5XlbSdgnQ6chQrV7v3zq_BurflS_ihMAkRz415HD42g4_xX3-rNKbFhj1RZptqV4EMc73ot7QTdCTJWipM3gaD3TbLSztcd6OY8DTt2inoNMZJdDGOPtKa_GayeNgJXUuWm0c8aluhYX6qqw",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESngEB6zswFQYUPjMKWuAMS0Y0fVSgWx-of4oETYnM4YOCKuQjuYRvMONx85p4fwQHjz7Tpd5XlbSdgnQ6chQrV7v3zq_BurflS_ihMAkRz415HD42g4_xX3-rNKbFhj1RZptqV4EMc73ot7QTdCTJWipM3gaD3TbLSztcd6OY8DTt2inoNMZJdDGOPtKa_GayeNgJXUuWm0c8aluhYX6qqw"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESngEB6zswFQYUPjMKWuAMS0Y0fVSgWx-of4oETYnM4YOCKuQjuYRvMONx85p4fwQHjz7Tpd5XlbSdgnQ6chQrV7v3zq_BurflS_ihMAkRz415HD42g4_xX3-rNKbFhj1RZptqV4EMc73ot7QTdCTJWipM3gaD3TbLSztcd6OY8DTt2inoNMZJdDGOPtKa_GayeNgJXUuWm0c8aluhYX6qqw",
+              "status": 302,
+              "location": "https://www.reddit.com/r/socialchecks/comments/1qktgu8/friend_asks_for_help_moving_to_a_4thfloor/"
+            }
+          ]
+        },
+        {
+          "rank": 23,
+          "original": "https://google.com/goto?url=CAESzQEB6zswFQZND7UcFuD99GJwxtTkY_OZmXFI8vxB8hkg8Cb-OjOhbdgOL2KW3IjhTVqPRYb7PuLI-ExSE_yCQYgCkzox_LAoTRXLcGbV4IhccvVkf8dhG5qU_YyMUFOCvX9rH6dPrjFKXV7lW0TBIisYVYJafhwve-9MtQChnlJXsf2CW6cKr7Q0j5JGHcdhZRIDT2lU8DfBCShXWzeugmsVxr4_n4G_DnBV4TnSHU0hZ1Z4dSWpS9-nkj2nKwZO8_sbgjgIvVsgStbfjqVO",
+          "url": "https://www.facebook.com/jana.hickey.7/posts/has-anyone-use-la-house-movers-and-levelingthis-is-who-i-think-im-going-with-to/10166327009335087/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESzQEB6zswFQZND7UcFuD99GJwxtTkY_OZmXFI8vxB8hkg8Cb-OjOhbdgOL2KW3IjhTVqPRYb7PuLI-ExSE_yCQYgCkzox_LAoTRXLcGbV4IhccvVkf8dhG5qU_YyMUFOCvX9rH6dPrjFKXV7lW0TBIisYVYJafhwve-9MtQChnlJXsf2CW6cKr7Q0j5JGHcdhZRIDT2lU8DfBCShXWzeugmsVxr4_n4G_DnBV4TnSHU0hZ1Z4dSWpS9-nkj2nKwZO8_sbgjgIvVsgStbfjqVO",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESzQEB6zswFQZND7UcFuD99GJwxtTkY_OZmXFI8vxB8hkg8Cb-OjOhbdgOL2KW3IjhTVqPRYb7PuLI-ExSE_yCQYgCkzox_LAoTRXLcGbV4IhccvVkf8dhG5qU_YyMUFOCvX9rH6dPrjFKXV7lW0TBIisYVYJafhwve-9MtQChnlJXsf2CW6cKr7Q0j5JGHcdhZRIDT2lU8DfBCShXWzeugmsVxr4_n4G_DnBV4TnSHU0hZ1Z4dSWpS9-nkj2nKwZO8_sbgjgIvVsgStbfjqVO"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESzQEB6zswFQZND7UcFuD99GJwxtTkY_OZmXFI8vxB8hkg8Cb-OjOhbdgOL2KW3IjhTVqPRYb7PuLI-ExSE_yCQYgCkzox_LAoTRXLcGbV4IhccvVkf8dhG5qU_YyMUFOCvX9rH6dPrjFKXV7lW0TBIisYVYJafhwve-9MtQChnlJXsf2CW6cKr7Q0j5JGHcdhZRIDT2lU8DfBCShXWzeugmsVxr4_n4G_DnBV4TnSHU0hZ1Z4dSWpS9-nkj2nKwZO8_sbgjgIvVsgStbfjqVO",
+              "status": 302,
+              "location": "https://www.facebook.com/jana.hickey.7/posts/has-anyone-use-la-house-movers-and-levelingthis-is-who-i-think-im-going-with-to/10166327009335087/"
+            }
+          ]
+        },
+        {
+          "rank": 29,
+          "original": "https://google.com/goto?url=CAESnwEB6zswFRGqZgoYt9reDqRCtlw_ZQMXie3MP9T1J0f0hZLE-gp7ndacHwqTcDEJYQ7o61HlI8QGdIQiK4LkdWELWkhTiOTl9P8lE767j62C6wE7jwFnATLXvyByKe7fDp2BrbDsHwHvPeu3PWNO6eXnY4BbeYOgpBQHJvBQ24KOFB6JVJASfeFZ_FDljsTFYQSkHoaMFz3M4xP2rH6esjg",
+          "url": "https://www.reddit.com/r/shenzhen/comments/wbmtg5/do_you_live_in_an_apartment_building_without_an/",
+          "domain": "reddit.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESnwEB6zswFRGqZgoYt9reDqRCtlw_ZQMXie3MP9T1J0f0hZLE-gp7ndacHwqTcDEJYQ7o61HlI8QGdIQiK4LkdWELWkhTiOTl9P8lE767j62C6wE7jwFnATLXvyByKe7fDp2BrbDsHwHvPeu3PWNO6eXnY4BbeYOgpBQHJvBQ24KOFB6JVJASfeFZ_FDljsTFYQSkHoaMFz3M4xP2rH6esjg",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESnwEB6zswFRGqZgoYt9reDqRCtlw_ZQMXie3MP9T1J0f0hZLE-gp7ndacHwqTcDEJYQ7o61HlI8QGdIQiK4LkdWELWkhTiOTl9P8lE767j62C6wE7jwFnATLXvyByKe7fDp2BrbDsHwHvPeu3PWNO6eXnY4BbeYOgpBQHJvBQ24KOFB6JVJASfeFZ_FDljsTFYQSkHoaMFz3M4xP2rH6esjg"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESnwEB6zswFRGqZgoYt9reDqRCtlw_ZQMXie3MP9T1J0f0hZLE-gp7ndacHwqTcDEJYQ7o61HlI8QGdIQiK4LkdWELWkhTiOTl9P8lE767j62C6wE7jwFnATLXvyByKe7fDp2BrbDsHwHvPeu3PWNO6eXnY4BbeYOgpBQHJvBQ24KOFB6JVJASfeFZ_FDljsTFYQSkHoaMFz3M4xP2rH6esjg",
+              "status": 302,
+              "location": "https://www.reddit.com/r/shenzhen/comments/wbmtg5/do_you_live_in_an_apartment_building_without_an/"
+            }
+          ]
+        },
+        {
+          "rank": 33,
+          "original": "https://google.com/goto?url=CAESbgHrOzAV_u4ak1fYtPhXOWrCkG3fA_T7bLnWkAuysX3awwskzVzUvdHa8_BOJQtdYGb8s6PGeJwbfpEXxAsSfj_F2qMa1nZ7UWPL0nmGqdFyz9Cz0kSnxPRYN2Q_08OglX1UKteYNW1XEW1u7wHI",
+          "url": "https://www.instagram.com/reel/DG4Q7IqhNc3/?hl=en",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESbgHrOzAV_u4ak1fYtPhXOWrCkG3fA_T7bLnWkAuysX3awwskzVzUvdHa8_BOJQtdYGb8s6PGeJwbfpEXxAsSfj_F2qMa1nZ7UWPL0nmGqdFyz9Cz0kSnxPRYN2Q_08OglX1UKteYNW1XEW1u7wHI",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESbgHrOzAV_u4ak1fYtPhXOWrCkG3fA_T7bLnWkAuysX3awwskzVzUvdHa8_BOJQtdYGb8s6PGeJwbfpEXxAsSfj_F2qMa1nZ7UWPL0nmGqdFyz9Cz0kSnxPRYN2Q_08OglX1UKteYNW1XEW1u7wHI"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESbgHrOzAV_u4ak1fYtPhXOWrCkG3fA_T7bLnWkAuysX3awwskzVzUvdHa8_BOJQtdYGb8s6PGeJwbfpEXxAsSfj_F2qMa1nZ7UWPL0nmGqdFyz9Cz0kSnxPRYN2Q_08OglX1UKteYNW1XEW1u7wHI",
+              "status": 302,
+              "location": "https://www.instagram.com/reel/DG4Q7IqhNc3/?hl=en"
+            }
+          ]
+        },
+        {
+          "rank": 35,
+          "original": "https://google.com/goto?url=CAEShwEB6zswFRnqz5ObXDfYp7YiMqWO0lz7kVXXeanHbAuUV5e6lT7kkwp0C3h4nko2depoMrltFQxeDJaoDKMydAc18EfW8Rhjs0lVXDOezo9Rrvu4_Vjbtr6SOdtiHwb4JYjzQW6oirooSD9NaUVwnrMY0oJjje97wVxu9jGit3SupvPjV4z1I78",
+          "url": "https://www.facebook.com/groups/MonCityScoopEvents/posts/4020743924806494/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShwEB6zswFRnqz5ObXDfYp7YiMqWO0lz7kVXXeanHbAuUV5e6lT7kkwp0C3h4nko2depoMrltFQxeDJaoDKMydAc18EfW8Rhjs0lVXDOezo9Rrvu4_Vjbtr6SOdtiHwb4JYjzQW6oirooSD9NaUVwnrMY0oJjje97wVxu9jGit3SupvPjV4z1I78",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShwEB6zswFRnqz5ObXDfYp7YiMqWO0lz7kVXXeanHbAuUV5e6lT7kkwp0C3h4nko2depoMrltFQxeDJaoDKMydAc18EfW8Rhjs0lVXDOezo9Rrvu4_Vjbtr6SOdtiHwb4JYjzQW6oirooSD9NaUVwnrMY0oJjje97wVxu9jGit3SupvPjV4z1I78"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShwEB6zswFRnqz5ObXDfYp7YiMqWO0lz7kVXXeanHbAuUV5e6lT7kkwp0C3h4nko2depoMrltFQxeDJaoDKMydAc18EfW8Rhjs0lVXDOezo9Rrvu4_Vjbtr6SOdtiHwb4JYjzQW6oirooSD9NaUVwnrMY0oJjje97wVxu9jGit3SupvPjV4z1I78",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/MonCityScoopEvents/posts/4020743924806494/"
+            }
+          ]
+        },
+        {
+          "rank": 36,
+          "original": "https://google.com/goto?url=CAESngEB6zswFZjREv2VKVBYftg2mNWR0fRULtjfsoyLnQoymfFgezN4KYXqj6IPRXRS5TArxJI03r8EkuPEG8ZRR_Hbo2hC7lFU3sVVK6Yhhz-0P4WF4Usjo7dOOfmlCExQdf0NVXnuC3IHWbnkr6P_TYUkGmG_PO8OMclYP-xboioMcSOu2UMzPDgMS0LypwrSH98I9cbdGNRttjs4r1JBCw",
+          "url": "https://www.reddit.com/r/Advice/comments/tu1hht/how_do_i_make_moving_easier_when_both_apartments/",
+          "domain": "reddit.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESngEB6zswFZjREv2VKVBYftg2mNWR0fRULtjfsoyLnQoymfFgezN4KYXqj6IPRXRS5TArxJI03r8EkuPEG8ZRR_Hbo2hC7lFU3sVVK6Yhhz-0P4WF4Usjo7dOOfmlCExQdf0NVXnuC3IHWbnkr6P_TYUkGmG_PO8OMclYP-xboioMcSOu2UMzPDgMS0LypwrSH98I9cbdGNRttjs4r1JBCw",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESngEB6zswFZjREv2VKVBYftg2mNWR0fRULtjfsoyLnQoymfFgezN4KYXqj6IPRXRS5TArxJI03r8EkuPEG8ZRR_Hbo2hC7lFU3sVVK6Yhhz-0P4WF4Usjo7dOOfmlCExQdf0NVXnuC3IHWbnkr6P_TYUkGmG_PO8OMclYP-xboioMcSOu2UMzPDgMS0LypwrSH98I9cbdGNRttjs4r1JBCw"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESngEB6zswFZjREv2VKVBYftg2mNWR0fRULtjfsoyLnQoymfFgezN4KYXqj6IPRXRS5TArxJI03r8EkuPEG8ZRR_Hbo2hC7lFU3sVVK6Yhhz-0P4WF4Usjo7dOOfmlCExQdf0NVXnuC3IHWbnkr6P_TYUkGmG_PO8OMclYP-xboioMcSOu2UMzPDgMS0LypwrSH98I9cbdGNRttjs4r1JBCw",
+              "status": 302,
+              "location": "https://www.reddit.com/r/Advice/comments/tu1hht/how_do_i_make_moving_easier_when_both_apartments/"
+            }
+          ]
+        },
+        {
+          "rank": 38,
+          "original": "https://google.com/goto?url=CAESfQHrOzAVZOIFlLp8xex6wmybQg55ArP3Y_lHmhN01YKEJ_otEBxzm47FSHQicFEdwI-ID2pftNMg4QZUULiFk9Cl1TnNfp3mxcV8On20e5AT9GRba0of5cT-MLpI7N9SmgZr6opfvq54sJ8K8Mf-5NGN3rzbVr0mIpdyyncu",
+          "url": "https://www.facebook.com/groups/rfm.fans/posts/3060830390927880/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESfQHrOzAVZOIFlLp8xex6wmybQg55ArP3Y_lHmhN01YKEJ_otEBxzm47FSHQicFEdwI-ID2pftNMg4QZUULiFk9Cl1TnNfp3mxcV8On20e5AT9GRba0of5cT-MLpI7N9SmgZr6opfvq54sJ8K8Mf-5NGN3rzbVr0mIpdyyncu",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESfQHrOzAVZOIFlLp8xex6wmybQg55ArP3Y_lHmhN01YKEJ_otEBxzm47FSHQicFEdwI-ID2pftNMg4QZUULiFk9Cl1TnNfp3mxcV8On20e5AT9GRba0of5cT-MLpI7N9SmgZr6opfvq54sJ8K8Mf-5NGN3rzbVr0mIpdyyncu"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESfQHrOzAVZOIFlLp8xex6wmybQg55ArP3Y_lHmhN01YKEJ_otEBxzm47FSHQicFEdwI-ID2pftNMg4QZUULiFk9Cl1TnNfp3mxcV8On20e5AT9GRba0of5cT-MLpI7N9SmgZr6opfvq54sJ8K8Mf-5NGN3rzbVr0mIpdyyncu",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/rfm.fans/posts/3060830390927880/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "walk up apartment movers los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-20-retry-1.json",
+      "organic_rows_examined": 49,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:16:31 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 4,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 7,
+          "original": "https://google.com/goto?url=CAESzQEBxCJF144BXSrARvVgW60AMugFVB7pzRoW8e93RZb-6fNrzjJwkD9dv5iMJ5rVX4mq9moNDRzWcQoung_s2ro7kZkMSntIiV7fBK3j-HniTOTdKEmhtz2AWs5zGjjoZj_19uNadAHzeCcMIHfj587uah4wIPm8HDXM4sUlMqPOX1pZvQ8fytI1Yv4ok_lhp7p6V-n5a7FrQ1-OGhIZlr3wjS9ncpkMEXZs9v85i0U_NvpfhXXM1g-278kDTW63sS6_GnGVRrKT7NIBLaqX",
+          "url": "https://www.facebook.com/jana.hickey.7/posts/has-anyone-use-la-house-movers-and-levelingthis-is-who-i-think-im-going-with-to/10166327009335087/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESzQEBxCJF144BXSrARvVgW60AMugFVB7pzRoW8e93RZb-6fNrzjJwkD9dv5iMJ5rVX4mq9moNDRzWcQoung_s2ro7kZkMSntIiV7fBK3j-HniTOTdKEmhtz2AWs5zGjjoZj_19uNadAHzeCcMIHfj587uah4wIPm8HDXM4sUlMqPOX1pZvQ8fytI1Yv4ok_lhp7p6V-n5a7FrQ1-OGhIZlr3wjS9ncpkMEXZs9v85i0U_NvpfhXXM1g-278kDTW63sS6_GnGVRrKT7NIBLaqX",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESzQEBxCJF144BXSrARvVgW60AMugFVB7pzRoW8e93RZb-6fNrzjJwkD9dv5iMJ5rVX4mq9moNDRzWcQoung_s2ro7kZkMSntIiV7fBK3j-HniTOTdKEmhtz2AWs5zGjjoZj_19uNadAHzeCcMIHfj587uah4wIPm8HDXM4sUlMqPOX1pZvQ8fytI1Yv4ok_lhp7p6V-n5a7FrQ1-OGhIZlr3wjS9ncpkMEXZs9v85i0U_NvpfhXXM1g-278kDTW63sS6_GnGVRrKT7NIBLaqX"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESzQEBxCJF144BXSrARvVgW60AMugFVB7pzRoW8e93RZb-6fNrzjJwkD9dv5iMJ5rVX4mq9moNDRzWcQoung_s2ro7kZkMSntIiV7fBK3j-HniTOTdKEmhtz2AWs5zGjjoZj_19uNadAHzeCcMIHfj587uah4wIPm8HDXM4sUlMqPOX1pZvQ8fytI1Yv4ok_lhp7p6V-n5a7FrQ1-OGhIZlr3wjS9ncpkMEXZs9v85i0U_NvpfhXXM1g-278kDTW63sS6_GnGVRrKT7NIBLaqX",
+              "status": 302,
+              "location": "https://www.facebook.com/jana.hickey.7/posts/has-anyone-use-la-house-movers-and-levelingthis-is-who-i-think-im-going-with-to/10166327009335087/"
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "original": "https://google.com/goto?url=CAESpwEBxCJF13M3IUkY9RSv4eKJ9QSHv-BzpaC7JSjkWvvIdsr3zSP2CjNM48KnCLW2-ZO5dLSA5L1fgMi7ooB4pyT0K8b-h8GY7lpXFr5BvFQd1-HOGKXiKksFj0BZTpZPTJS8-jqzt4RmIRB19pclWt7VtY_ets6oN-56fSmnu7XMGj0y8C1DLN4dUNRNfN4wORkDGzaV0eoft7DwGkFCKKNoOmWyA-4o-Q",
+          "url": "https://www.reddit.com/r/AskLosAngeles/comments/1oumjsr/recommendations_for_moving_company_with_apartment/",
+          "domain": "reddit.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESpwEBxCJF13M3IUkY9RSv4eKJ9QSHv-BzpaC7JSjkWvvIdsr3zSP2CjNM48KnCLW2-ZO5dLSA5L1fgMi7ooB4pyT0K8b-h8GY7lpXFr5BvFQd1-HOGKXiKksFj0BZTpZPTJS8-jqzt4RmIRB19pclWt7VtY_ets6oN-56fSmnu7XMGj0y8C1DLN4dUNRNfN4wORkDGzaV0eoft7DwGkFCKKNoOmWyA-4o-Q",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESpwEBxCJF13M3IUkY9RSv4eKJ9QSHv-BzpaC7JSjkWvvIdsr3zSP2CjNM48KnCLW2-ZO5dLSA5L1fgMi7ooB4pyT0K8b-h8GY7lpXFr5BvFQd1-HOGKXiKksFj0BZTpZPTJS8-jqzt4RmIRB19pclWt7VtY_ets6oN-56fSmnu7XMGj0y8C1DLN4dUNRNfN4wORkDGzaV0eoft7DwGkFCKKNoOmWyA-4o-Q"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESpwEBxCJF13M3IUkY9RSv4eKJ9QSHv-BzpaC7JSjkWvvIdsr3zSP2CjNM48KnCLW2-ZO5dLSA5L1fgMi7ooB4pyT0K8b-h8GY7lpXFr5BvFQd1-HOGKXiKksFj0BZTpZPTJS8-jqzt4RmIRB19pclWt7VtY_ets6oN-56fSmnu7XMGj0y8C1DLN4dUNRNfN4wORkDGzaV0eoft7DwGkFCKKNoOmWyA-4o-Q",
+              "status": 302,
+              "location": "https://www.reddit.com/r/AskLosAngeles/comments/1oumjsr/recommendations_for_moving_company_with_apartment/"
+            }
+          ]
+        },
+        {
+          "rank": 26,
+          "original": "https://google.com/goto?url=CAESbgHEIkXXvqQMoOkn0cdhQErCiuD3uakob1EdCE-iMhR6Y_cHg9-uKeII6hpaKRoec1P9ABSe-FFv7Fi8ra7rQkiVtkc-q5g22waknV-f7aphjxxBr7v4KOdOMaz7HzUNdk65k1_NSRU0OTxKbcgW",
+          "url": "https://www.instagram.com/reel/C8h9vNBP2ro/?hl=en",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESbgHEIkXXvqQMoOkn0cdhQErCiuD3uakob1EdCE-iMhR6Y_cHg9-uKeII6hpaKRoec1P9ABSe-FFv7Fi8ra7rQkiVtkc-q5g22waknV-f7aphjxxBr7v4KOdOMaz7HzUNdk65k1_NSRU0OTxKbcgW",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESbgHEIkXXvqQMoOkn0cdhQErCiuD3uakob1EdCE-iMhR6Y_cHg9-uKeII6hpaKRoec1P9ABSe-FFv7Fi8ra7rQkiVtkc-q5g22waknV-f7aphjxxBr7v4KOdOMaz7HzUNdk65k1_NSRU0OTxKbcgW"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESbgHEIkXXvqQMoOkn0cdhQErCiuD3uakob1EdCE-iMhR6Y_cHg9-uKeII6hpaKRoec1P9ABSe-FFv7Fi8ra7rQkiVtkc-q5g22waknV-f7aphjxxBr7v4KOdOMaz7HzUNdk65k1_NSRU0OTxKbcgW",
+              "status": 302,
+              "location": "https://www.instagram.com/reel/C8h9vNBP2ro/?hl=en"
+            }
+          ]
+        },
+        {
+          "rank": 48,
+          "original": "https://google.com/goto?url=CAESZQHEIkXXv6QqsI7fDfcgw4ViBIerFvNyJmfV1Nn3-MiHV_DQOUNsaVYF4xDLwOFhQuLrt-jo7cx85R4P65DJsv0U9w5Z70Vv483kfZTSr7SzwVizfMjFzbaVPtG1Qo965z2T_T1T",
+          "url": "https://www.instagram.com/p/DKi4gWWuVXR/",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESZQHEIkXXv6QqsI7fDfcgw4ViBIerFvNyJmfV1Nn3-MiHV_DQOUNsaVYF4xDLwOFhQuLrt-jo7cx85R4P65DJsv0U9w5Z70Vv483kfZTSr7SzwVizfMjFzbaVPtG1Qo965z2T_T1T",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESZQHEIkXXv6QqsI7fDfcgw4ViBIerFvNyJmfV1Nn3-MiHV_DQOUNsaVYF4xDLwOFhQuLrt-jo7cx85R4P65DJsv0U9w5Z70Vv483kfZTSr7SzwVizfMjFzbaVPtG1Qo965z2T_T1T"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESZQHEIkXXv6QqsI7fDfcgw4ViBIerFvNyJmfV1Nn3-MiHV_DQOUNsaVYF4xDLwOFhQuLrt-jo7cx85R4P65DJsv0U9w5Z70Vv483kfZTSr7SzwVizfMjFzbaVPtG1Qo965z2T_T1T",
+              "status": 302,
+              "location": "https://www.instagram.com/p/DKi4gWWuVXR/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "how to pack kitchen for apartment move",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-21.json",
+      "organic_rows_examined": 47,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:13:37 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 7,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 3,
+          "original": "https://google.com/goto?url=CAEShgEB6zswFcUNhAdolMYX0TXuVWwzMLqWkIlPWeL7Hao5-QlSJOKdMkW5XFcm5MUAgv9fFMbGngnidgA8BqAWTEYteVA3CE66L-b_SSokqHh7w7gGYoCw-ksDFaPQVlAy-fozPwDBmcqA0WMifSFMbie8zsjXRSEs_zxAbsFHYT9iMTO0CPp5bw",
+          "url": "https://www.facebook.com/groups/1666298360101509/posts/27529115306726460/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShgEB6zswFcUNhAdolMYX0TXuVWwzMLqWkIlPWeL7Hao5-QlSJOKdMkW5XFcm5MUAgv9fFMbGngnidgA8BqAWTEYteVA3CE66L-b_SSokqHh7w7gGYoCw-ksDFaPQVlAy-fozPwDBmcqA0WMifSFMbie8zsjXRSEs_zxAbsFHYT9iMTO0CPp5bw",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShgEB6zswFcUNhAdolMYX0TXuVWwzMLqWkIlPWeL7Hao5-QlSJOKdMkW5XFcm5MUAgv9fFMbGngnidgA8BqAWTEYteVA3CE66L-b_SSokqHh7w7gGYoCw-ksDFaPQVlAy-fozPwDBmcqA0WMifSFMbie8zsjXRSEs_zxAbsFHYT9iMTO0CPp5bw"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShgEB6zswFcUNhAdolMYX0TXuVWwzMLqWkIlPWeL7Hao5-QlSJOKdMkW5XFcm5MUAgv9fFMbGngnidgA8BqAWTEYteVA3CE66L-b_SSokqHh7w7gGYoCw-ksDFaPQVlAy-fozPwDBmcqA0WMifSFMbie8zsjXRSEs_zxAbsFHYT9iMTO0CPp5bw",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/1666298360101509/posts/27529115306726460/"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "original": "https://google.com/goto?url=CAEShwEB6zswFeb3SMDNBaeE2cB-4-3xybPpm6u56AnCDxxKafPlcIgz5j1e_N28LSkejU3qjgxPOSKpnkrpm71VWEp_nGf9e8yYbDnVZEFzk3GCbzfDHNns6VZkGmHlxLsLuFN4DIpmjdtdSTNQMgXgCw6fH8eJ_Yzs16LOyJLENXCEHST-60q7xQ4",
+          "url": "https://www.quora.com/How-do-I-pack-kitchen-stuff-for-moving?no_redirect=1",
+          "domain": "quora.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShwEB6zswFeb3SMDNBaeE2cB-4-3xybPpm6u56AnCDxxKafPlcIgz5j1e_N28LSkejU3qjgxPOSKpnkrpm71VWEp_nGf9e8yYbDnVZEFzk3GCbzfDHNns6VZkGmHlxLsLuFN4DIpmjdtdSTNQMgXgCw6fH8eJ_Yzs16LOyJLENXCEHST-60q7xQ4",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShwEB6zswFeb3SMDNBaeE2cB-4-3xybPpm6u56AnCDxxKafPlcIgz5j1e_N28LSkejU3qjgxPOSKpnkrpm71VWEp_nGf9e8yYbDnVZEFzk3GCbzfDHNns6VZkGmHlxLsLuFN4DIpmjdtdSTNQMgXgCw6fH8eJ_Yzs16LOyJLENXCEHST-60q7xQ4"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShwEB6zswFeb3SMDNBaeE2cB-4-3xybPpm6u56AnCDxxKafPlcIgz5j1e_N28LSkejU3qjgxPOSKpnkrpm71VWEp_nGf9e8yYbDnVZEFzk3GCbzfDHNns6VZkGmHlxLsLuFN4DIpmjdtdSTNQMgXgCw6fH8eJ_Yzs16LOyJLENXCEHST-60q7xQ4",
+              "status": 302,
+              "location": "https://www.quora.com/How-do-I-pack-kitchen-stuff-for-moving?no_redirect=1"
+            }
+          ]
+        },
+        {
+          "rank": 13,
+          "original": "https://google.com/goto?url=CAESjQEB6zswFfwR9BxFJhEUk3peN3311IoM3rUQUWJgOKo-vEA34Xfqu0emjc9perT0QdVYYVP4lab857rFVpQVv2nqsl86-0vq9VrOn5FIWfARpMwPLHc7QJ-1yjazDPlNF5vr71u7xitJqks-KwPHuNCtWNicq2pNr_sp9TBnBPz4poNL9DPbPE9-6Dz5E_M",
+          "url": "https://www.facebook.com/groups/christchurchnewsandviews/posts/1804104100828838/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESjQEB6zswFfwR9BxFJhEUk3peN3311IoM3rUQUWJgOKo-vEA34Xfqu0emjc9perT0QdVYYVP4lab857rFVpQVv2nqsl86-0vq9VrOn5FIWfARpMwPLHc7QJ-1yjazDPlNF5vr71u7xitJqks-KwPHuNCtWNicq2pNr_sp9TBnBPz4poNL9DPbPE9-6Dz5E_M",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESjQEB6zswFfwR9BxFJhEUk3peN3311IoM3rUQUWJgOKo-vEA34Xfqu0emjc9perT0QdVYYVP4lab857rFVpQVv2nqsl86-0vq9VrOn5FIWfARpMwPLHc7QJ-1yjazDPlNF5vr71u7xitJqks-KwPHuNCtWNicq2pNr_sp9TBnBPz4poNL9DPbPE9-6Dz5E_M"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESjQEB6zswFfwR9BxFJhEUk3peN3311IoM3rUQUWJgOKo-vEA34Xfqu0emjc9perT0QdVYYVP4lab857rFVpQVv2nqsl86-0vq9VrOn5FIWfARpMwPLHc7QJ-1yjazDPlNF5vr71u7xitJqks-KwPHuNCtWNicq2pNr_sp9TBnBPz4poNL9DPbPE9-6Dz5E_M",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/christchurchnewsandviews/posts/1804104100828838/"
+            }
+          ]
+        },
+        {
+          "rank": 14,
+          "original": "https://google.com/goto?url=CAESaAHrOzAVa-NkPMdUnwO38RKCWiVFMiwu-1ajfRBWyJe-OjubT9fl9t5IZL9-UCheB9WYzodNNowoIBt5U7InUbOUNtxXXIHZPzxLiVVnKYyCOKYMeu8A3fuc7-YjdgqOs0ap2a8VFsiR",
+          "url": "https://www.youtube.com/watch?v=ROYc7z1tEMY",
+          "domain": "youtube.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESaAHrOzAVa-NkPMdUnwO38RKCWiVFMiwu-1ajfRBWyJe-OjubT9fl9t5IZL9-UCheB9WYzodNNowoIBt5U7InUbOUNtxXXIHZPzxLiVVnKYyCOKYMeu8A3fuc7-YjdgqOs0ap2a8VFsiR",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESaAHrOzAVa-NkPMdUnwO38RKCWiVFMiwu-1ajfRBWyJe-OjubT9fl9t5IZL9-UCheB9WYzodNNowoIBt5U7InUbOUNtxXXIHZPzxLiVVnKYyCOKYMeu8A3fuc7-YjdgqOs0ap2a8VFsiR"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESaAHrOzAVa-NkPMdUnwO38RKCWiVFMiwu-1ajfRBWyJe-OjubT9fl9t5IZL9-UCheB9WYzodNNowoIBt5U7InUbOUNtxXXIHZPzxLiVVnKYyCOKYMeu8A3fuc7-YjdgqOs0ap2a8VFsiR",
+              "status": 302,
+              "location": "https://www.youtube.com/watch?v=ROYc7z1tEMY"
+            }
+          ]
+        },
+        {
+          "rank": 15,
+          "original": "https://google.com/goto?url=CAEShAEB6zswFT1IO6MhI-vi6Z2igd_iaQRo7gcWn147DJJNgj1xrrMdp_KFizlGt85Ay5NblTAShdpxMahQJDD-aPyoJl3yufwVI_t53laCW_g9ByAEemaVHnUpjvyqwsoAONdWl-vpJydSVYIBiNx8vsvobEEHD50SzyQ4TgIugwNlDzUyCpU",
+          "url": "https://www.facebook.com/groups/237941764384406/posts/1672128964299005/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShAEB6zswFT1IO6MhI-vi6Z2igd_iaQRo7gcWn147DJJNgj1xrrMdp_KFizlGt85Ay5NblTAShdpxMahQJDD-aPyoJl3yufwVI_t53laCW_g9ByAEemaVHnUpjvyqwsoAONdWl-vpJydSVYIBiNx8vsvobEEHD50SzyQ4TgIugwNlDzUyCpU",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShAEB6zswFT1IO6MhI-vi6Z2igd_iaQRo7gcWn147DJJNgj1xrrMdp_KFizlGt85Ay5NblTAShdpxMahQJDD-aPyoJl3yufwVI_t53laCW_g9ByAEemaVHnUpjvyqwsoAONdWl-vpJydSVYIBiNx8vsvobEEHD50SzyQ4TgIugwNlDzUyCpU"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShAEB6zswFT1IO6MhI-vi6Z2igd_iaQRo7gcWn147DJJNgj1xrrMdp_KFizlGt85Ay5NblTAShdpxMahQJDD-aPyoJl3yufwVI_t53laCW_g9ByAEemaVHnUpjvyqwsoAONdWl-vpJydSVYIBiNx8vsvobEEHD50SzyQ4TgIugwNlDzUyCpU",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/237941764384406/posts/1672128964299005/"
+            }
+          ]
+        },
+        {
+          "rank": 17,
+          "original": "https://google.com/goto?url=CAESrAEB6zswFVuv2K-KskX8pNal5i4OOAmw_8HWog2UbAl8Q6GeUTQeWfihIp0biIzHp57RH_aCCBo3I0DXmS-YssQQIkaM7Rz_DFWjm0JCrRUzF5_5MZ9JUX4tq-n_cUPaGY9LwQVqG1VwSSQLY-ga8AmL9uVv8lpc-MugSYnY8rtBE-WbvVAPfIBMOK8cNTMo1fQJ7J86AfzO5qrOo4mag1-4S9mMKPpy8V2KnXnq",
+          "url": "https://www.pinterest.com/pin/how-to-pack-kitchen-items-for-moving-without-breaking-dishes--128915608080299549/",
+          "domain": "pinterest.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESrAEB6zswFVuv2K-KskX8pNal5i4OOAmw_8HWog2UbAl8Q6GeUTQeWfihIp0biIzHp57RH_aCCBo3I0DXmS-YssQQIkaM7Rz_DFWjm0JCrRUzF5_5MZ9JUX4tq-n_cUPaGY9LwQVqG1VwSSQLY-ga8AmL9uVv8lpc-MugSYnY8rtBE-WbvVAPfIBMOK8cNTMo1fQJ7J86AfzO5qrOo4mag1-4S9mMKPpy8V2KnXnq",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESrAEB6zswFVuv2K-KskX8pNal5i4OOAmw_8HWog2UbAl8Q6GeUTQeWfihIp0biIzHp57RH_aCCBo3I0DXmS-YssQQIkaM7Rz_DFWjm0JCrRUzF5_5MZ9JUX4tq-n_cUPaGY9LwQVqG1VwSSQLY-ga8AmL9uVv8lpc-MugSYnY8rtBE-WbvVAPfIBMOK8cNTMo1fQJ7J86AfzO5qrOo4mag1-4S9mMKPpy8V2KnXnq"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESrAEB6zswFVuv2K-KskX8pNal5i4OOAmw_8HWog2UbAl8Q6GeUTQeWfihIp0biIzHp57RH_aCCBo3I0DXmS-YssQQIkaM7Rz_DFWjm0JCrRUzF5_5MZ9JUX4tq-n_cUPaGY9LwQVqG1VwSSQLY-ga8AmL9uVv8lpc-MugSYnY8rtBE-WbvVAPfIBMOK8cNTMo1fQJ7J86AfzO5qrOo4mag1-4S9mMKPpy8V2KnXnq",
+              "status": 302,
+              "location": "https://www.pinterest.com/pin/how-to-pack-kitchen-items-for-moving-without-breaking-dishes--128915608080299549/"
+            }
+          ]
+        },
+        {
+          "rank": 43,
+          "original": "https://google.com/goto?url=CAESpwEB6zswFa5T_0ipAJxTxginP6S00vjsAX1jHN2D7k89JhJupdDUpAbwAihi_WVACZi1TobL5OYvbOZPviYg41qQlRKlnDG2O0YIjR-5goBEi11mR5JnvozAS3TP6RP-xrGa6dnHn21oRwzEClSF4V2fp2ac5jFZflVC47nCq892rQNDM2ba_HiHwy1huRySCVRE22ru6NGSLknUsFnOc2FJkihB2Pt0Hw",
+          "url": "https://www.facebook.com/Make.It.Work.Official/posts/how-to-pack-your-kitchen-for-moving/3165550777019486/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESpwEB6zswFa5T_0ipAJxTxginP6S00vjsAX1jHN2D7k89JhJupdDUpAbwAihi_WVACZi1TobL5OYvbOZPviYg41qQlRKlnDG2O0YIjR-5goBEi11mR5JnvozAS3TP6RP-xrGa6dnHn21oRwzEClSF4V2fp2ac5jFZflVC47nCq892rQNDM2ba_HiHwy1huRySCVRE22ru6NGSLknUsFnOc2FJkihB2Pt0Hw",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESpwEB6zswFa5T_0ipAJxTxginP6S00vjsAX1jHN2D7k89JhJupdDUpAbwAihi_WVACZi1TobL5OYvbOZPviYg41qQlRKlnDG2O0YIjR-5goBEi11mR5JnvozAS3TP6RP-xrGa6dnHn21oRwzEClSF4V2fp2ac5jFZflVC47nCq892rQNDM2ba_HiHwy1huRySCVRE22ru6NGSLknUsFnOc2FJkihB2Pt0Hw"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESpwEB6zswFa5T_0ipAJxTxginP6S00vjsAX1jHN2D7k89JhJupdDUpAbwAihi_WVACZi1TobL5OYvbOZPviYg41qQlRKlnDG2O0YIjR-5goBEi11mR5JnvozAS3TP6RP-xrGa6dnHn21oRwzEClSF4V2fp2ac5jFZflVC47nCq892rQNDM2ba_HiHwy1huRySCVRE22ru6NGSLknUsFnOc2FJkihB2Pt0Hw",
+              "status": 302,
+              "location": "https://www.facebook.com/Make.It.Work.Official/posts/how-to-pack-your-kitchen-for-moving/3165550777019486/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "packing dishes and glasses for moving",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-22.json",
+      "organic_rows_examined": 44,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:13:51 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 5,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 9,
+          "original": "https://google.com/goto?url=CAEShAEBxCJF12keCE56pQ0YcZQZV1vOfzwW5vQFrRMtqDjtQIGuq5vyIbEcTyyFY-tkVqf9_hdsFwQ-Oh5_JZ_UrML1VtWzrqeSGrWxMsqv3oAFS84MVbv2WM_8mVLjjt_HmzP9KYUC6tB8UbNbRXa5BjCgyv2kabmcHvh5ICt4HAUTbwzec38",
+          "url": "https://www.facebook.com/groups/234141997365352/posts/1423715325074674/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShAEBxCJF12keCE56pQ0YcZQZV1vOfzwW5vQFrRMtqDjtQIGuq5vyIbEcTyyFY-tkVqf9_hdsFwQ-Oh5_JZ_UrML1VtWzrqeSGrWxMsqv3oAFS84MVbv2WM_8mVLjjt_HmzP9KYUC6tB8UbNbRXa5BjCgyv2kabmcHvh5ICt4HAUTbwzec38",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShAEBxCJF12keCE56pQ0YcZQZV1vOfzwW5vQFrRMtqDjtQIGuq5vyIbEcTyyFY-tkVqf9_hdsFwQ-Oh5_JZ_UrML1VtWzrqeSGrWxMsqv3oAFS84MVbv2WM_8mVLjjt_HmzP9KYUC6tB8UbNbRXa5BjCgyv2kabmcHvh5ICt4HAUTbwzec38"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShAEBxCJF12keCE56pQ0YcZQZV1vOfzwW5vQFrRMtqDjtQIGuq5vyIbEcTyyFY-tkVqf9_hdsFwQ-Oh5_JZ_UrML1VtWzrqeSGrWxMsqv3oAFS84MVbv2WM_8mVLjjt_HmzP9KYUC6tB8UbNbRXa5BjCgyv2kabmcHvh5ICt4HAUTbwzec38",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/234141997365352/posts/1423715325074674/"
+            }
+          ]
+        },
+        {
+          "rank": 23,
+          "original": "https://google.com/goto?url=CAESaAHEIkXXD30MOTuMrkQf7yPnMCM1SQiYJA568p4U0vMYjqWW7QyC3jznMmKXYD-sL8TijsxOdpyYx5wv5qQc3CK-jzf31ZbbMK_d1khKMNcTwiHEsxYpEWFm_yyU2b_bPe8Al41TcrjT",
+          "url": "https://www.youtube.com/watch?v=3mLa5lDt8qM",
+          "domain": "youtube.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESaAHEIkXXD30MOTuMrkQf7yPnMCM1SQiYJA568p4U0vMYjqWW7QyC3jznMmKXYD-sL8TijsxOdpyYx5wv5qQc3CK-jzf31ZbbMK_d1khKMNcTwiHEsxYpEWFm_yyU2b_bPe8Al41TcrjT",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESaAHEIkXXD30MOTuMrkQf7yPnMCM1SQiYJA568p4U0vMYjqWW7QyC3jznMmKXYD-sL8TijsxOdpyYx5wv5qQc3CK-jzf31ZbbMK_d1khKMNcTwiHEsxYpEWFm_yyU2b_bPe8Al41TcrjT"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESaAHEIkXXD30MOTuMrkQf7yPnMCM1SQiYJA568p4U0vMYjqWW7QyC3jznMmKXYD-sL8TijsxOdpyYx5wv5qQc3CK-jzf31ZbbMK_d1khKMNcTwiHEsxYpEWFm_yyU2b_bPe8Al41TcrjT",
+              "status": 302,
+              "location": "https://www.youtube.com/watch?v=3mLa5lDt8qM"
+            }
+          ]
+        },
+        {
+          "rank": 26,
+          "original": "https://google.com/goto?url=CAESzQEBxCJF198j0k_51XoOqjH37Cc6ifPBS4iQwdNkQFquIud2yzzTot0TD1UiNHKk4scZwH_UFpoSut3ytPUdSy9BY8gXS_hPHRJAMCJzKJo5f5EWkxs6cq562Eo4p0rP7vJyFe8CxebAj0z8EejEf2XJRy0RQRnhJlEqOmyp18EM0aqehrktSaJS08tbL67Dd5UaEd76GGb7PRxTJmwzjUALVxlNkG_udmo0qIwXvS2VGAFKGe_pSPCCXVUNCOHcbHslkOXVqT8d88pgyfGj",
+          "url": "https://www.facebook.com/marthastewart/posts/heres-how-to-pack-dishes-glasses-and-other-kitchen-items-like-a-pro-so-you-can-m/1655785699236669/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESzQEBxCJF198j0k_51XoOqjH37Cc6ifPBS4iQwdNkQFquIud2yzzTot0TD1UiNHKk4scZwH_UFpoSut3ytPUdSy9BY8gXS_hPHRJAMCJzKJo5f5EWkxs6cq562Eo4p0rP7vJyFe8CxebAj0z8EejEf2XJRy0RQRnhJlEqOmyp18EM0aqehrktSaJS08tbL67Dd5UaEd76GGb7PRxTJmwzjUALVxlNkG_udmo0qIwXvS2VGAFKGe_pSPCCXVUNCOHcbHslkOXVqT8d88pgyfGj",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESzQEBxCJF198j0k_51XoOqjH37Cc6ifPBS4iQwdNkQFquIud2yzzTot0TD1UiNHKk4scZwH_UFpoSut3ytPUdSy9BY8gXS_hPHRJAMCJzKJo5f5EWkxs6cq562Eo4p0rP7vJyFe8CxebAj0z8EejEf2XJRy0RQRnhJlEqOmyp18EM0aqehrktSaJS08tbL67Dd5UaEd76GGb7PRxTJmwzjUALVxlNkG_udmo0qIwXvS2VGAFKGe_pSPCCXVUNCOHcbHslkOXVqT8d88pgyfGj"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESzQEBxCJF198j0k_51XoOqjH37Cc6ifPBS4iQwdNkQFquIud2yzzTot0TD1UiNHKk4scZwH_UFpoSut3ytPUdSy9BY8gXS_hPHRJAMCJzKJo5f5EWkxs6cq562Eo4p0rP7vJyFe8CxebAj0z8EejEf2XJRy0RQRnhJlEqOmyp18EM0aqehrktSaJS08tbL67Dd5UaEd76GGb7PRxTJmwzjUALVxlNkG_udmo0qIwXvS2VGAFKGe_pSPCCXVUNCOHcbHslkOXVqT8d88pgyfGj",
+              "status": 302,
+              "location": "https://www.facebook.com/marthastewart/posts/heres-how-to-pack-dishes-glasses-and-other-kitchen-items-like-a-pro-so-you-can-m/1655785699236669/"
+            }
+          ]
+        },
+        {
+          "rank": 34,
+          "original": "https://google.com/goto?url=CAESaAHEIkXXoLvRPrhTYUkPij-qi699zQYB_qsefhAgYbvKwj0iQfQksmKfEJHoNu-bk7jJDJxMP3tzyo2ebtGXgdJJvkwzHXmRU6FOIhhKxrTk4nv8kx5w5qEK96MyAjJOl6z45AAmnhEi",
+          "url": "https://www.youtube.com/watch?v=Gw3ties4fHE",
+          "domain": "youtube.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESaAHEIkXXoLvRPrhTYUkPij-qi699zQYB_qsefhAgYbvKwj0iQfQksmKfEJHoNu-bk7jJDJxMP3tzyo2ebtGXgdJJvkwzHXmRU6FOIhhKxrTk4nv8kx5w5qEK96MyAjJOl6z45AAmnhEi",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESaAHEIkXXoLvRPrhTYUkPij-qi699zQYB_qsefhAgYbvKwj0iQfQksmKfEJHoNu-bk7jJDJxMP3tzyo2ebtGXgdJJvkwzHXmRU6FOIhhKxrTk4nv8kx5w5qEK96MyAjJOl6z45AAmnhEi"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESaAHEIkXXoLvRPrhTYUkPij-qi699zQYB_qsefhAgYbvKwj0iQfQksmKfEJHoNu-bk7jJDJxMP3tzyo2ebtGXgdJJvkwzHXmRU6FOIhhKxrTk4nv8kx5w5qEK96MyAjJOl6z45AAmnhEi",
+              "status": 302,
+              "location": "https://www.youtube.com/watch?v=Gw3ties4fHE"
+            }
+          ]
+        },
+        {
+          "rank": 36,
+          "original": "https://google.com/goto?url=CAEShwEBxCJF1_OLefF_MTJn0dWEkOre5VGG2eV48OySEq_xiPOX0LG-wwop18EyR1vjWn3CdSy_IDqcOxfhYZ3QvA1axFK4lFAOy68WETxsZKz6MYLKc5tsRRw7W5v7-C6lBSH3G3Gg1IipUxKp1qJp_VrjzUfhvokVRSY4NcKLqSKdShBuGhsFkuQ",
+          "url": "https://www.pinterest.com/ideas/packing-glassware-for-moving/919902005313/",
+          "domain": "pinterest.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShwEBxCJF1_OLefF_MTJn0dWEkOre5VGG2eV48OySEq_xiPOX0LG-wwop18EyR1vjWn3CdSy_IDqcOxfhYZ3QvA1axFK4lFAOy68WETxsZKz6MYLKc5tsRRw7W5v7-C6lBSH3G3Gg1IipUxKp1qJp_VrjzUfhvokVRSY4NcKLqSKdShBuGhsFkuQ",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShwEBxCJF1_OLefF_MTJn0dWEkOre5VGG2eV48OySEq_xiPOX0LG-wwop18EyR1vjWn3CdSy_IDqcOxfhYZ3QvA1axFK4lFAOy68WETxsZKz6MYLKc5tsRRw7W5v7-C6lBSH3G3Gg1IipUxKp1qJp_VrjzUfhvokVRSY4NcKLqSKdShBuGhsFkuQ"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShwEBxCJF1_OLefF_MTJn0dWEkOre5VGG2eV48OySEq_xiPOX0LG-wwop18EyR1vjWn3CdSy_IDqcOxfhYZ3QvA1axFK4lFAOy68WETxsZKz6MYLKc5tsRRw7W5v7-C6lBSH3G3Gg1IipUxKp1qJp_VrjzUfhvokVRSY4NcKLqSKdShBuGhsFkuQ",
+              "status": 302,
+              "location": "https://www.pinterest.com/ideas/packing-glassware-for-moving/919902005313/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "small office moving checklist los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-23.json",
+      "organic_rows_examined": 44,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:14:00 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 3,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 10,
+          "original": "https://google.com/goto?url=CAESZwHEIkXX6Tc0qZAN2r8-YCU2FuEQM4L57W5vQxgXiBofHn6yTlQqo67ho-zJY9oF1vKtt3KQ8WHz4_gF4ulo4SngNd1GMbJ9J1kFXx6k1drR5uxBU7qwmQmg4OESCGtaamCwhLyp8_c",
+          "url": "https://www.youtube.com/shorts/3A6Pg2vp3CQ",
+          "domain": "youtube.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESZwHEIkXX6Tc0qZAN2r8-YCU2FuEQM4L57W5vQxgXiBofHn6yTlQqo67ho-zJY9oF1vKtt3KQ8WHz4_gF4ulo4SngNd1GMbJ9J1kFXx6k1drR5uxBU7qwmQmg4OESCGtaamCwhLyp8_c",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESZwHEIkXX6Tc0qZAN2r8-YCU2FuEQM4L57W5vQxgXiBofHn6yTlQqo67ho-zJY9oF1vKtt3KQ8WHz4_gF4ulo4SngNd1GMbJ9J1kFXx6k1drR5uxBU7qwmQmg4OESCGtaamCwhLyp8_c"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESZwHEIkXX6Tc0qZAN2r8-YCU2FuEQM4L57W5vQxgXiBofHn6yTlQqo67ho-zJY9oF1vKtt3KQ8WHz4_gF4ulo4SngNd1GMbJ9J1kFXx6k1drR5uxBU7qwmQmg4OESCGtaamCwhLyp8_c",
+              "status": 302,
+              "location": "https://www.youtube.com/shorts/3A6Pg2vp3CQ"
+            }
+          ]
+        },
+        {
+          "rank": 17,
+          "original": "https://google.com/goto?url=CAES4QEBxCJF19yLw1eakogwyE_ydF40pleHknKJ3qIW9aNF11Cjlt_W1HMQ3QGwOKEw6SOa1s5ImQWNcdP8BDmYExJn3j9iZTDePRoTP5Wij8V9Cd3Ka938FCr-2nkHIXYJBK6hpbV_ZYlA6yBwsl660LDkfEAIT_0V5KX-LRCb0TYGQg53ceKIXHYB11u_6JhTl0NC00kqrRbYSSOIrlrV5ZeTwtQR4QNzd1q1y2zberwnp0eqStrkUSlUytvpzrR8CqxIJUUdNugh6uGmAz3QqGNkamPdpgkFJHEZcl_SqZf6-5o",
+          "url": "https://www.facebook.com/allaroundmovingservicescompanyinc/posts/new-office-move-heres-a-complete-checklist-of-everything-you-need-to-move-succes/1238164446347975/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAES4QEBxCJF19yLw1eakogwyE_ydF40pleHknKJ3qIW9aNF11Cjlt_W1HMQ3QGwOKEw6SOa1s5ImQWNcdP8BDmYExJn3j9iZTDePRoTP5Wij8V9Cd3Ka938FCr-2nkHIXYJBK6hpbV_ZYlA6yBwsl660LDkfEAIT_0V5KX-LRCb0TYGQg53ceKIXHYB11u_6JhTl0NC00kqrRbYSSOIrlrV5ZeTwtQR4QNzd1q1y2zberwnp0eqStrkUSlUytvpzrR8CqxIJUUdNugh6uGmAz3QqGNkamPdpgkFJHEZcl_SqZf6-5o",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAES4QEBxCJF19yLw1eakogwyE_ydF40pleHknKJ3qIW9aNF11Cjlt_W1HMQ3QGwOKEw6SOa1s5ImQWNcdP8BDmYExJn3j9iZTDePRoTP5Wij8V9Cd3Ka938FCr-2nkHIXYJBK6hpbV_ZYlA6yBwsl660LDkfEAIT_0V5KX-LRCb0TYGQg53ceKIXHYB11u_6JhTl0NC00kqrRbYSSOIrlrV5ZeTwtQR4QNzd1q1y2zberwnp0eqStrkUSlUytvpzrR8CqxIJUUdNugh6uGmAz3QqGNkamPdpgkFJHEZcl_SqZf6-5o"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAES4QEBxCJF19yLw1eakogwyE_ydF40pleHknKJ3qIW9aNF11Cjlt_W1HMQ3QGwOKEw6SOa1s5ImQWNcdP8BDmYExJn3j9iZTDePRoTP5Wij8V9Cd3Ka938FCr-2nkHIXYJBK6hpbV_ZYlA6yBwsl660LDkfEAIT_0V5KX-LRCb0TYGQg53ceKIXHYB11u_6JhTl0NC00kqrRbYSSOIrlrV5ZeTwtQR4QNzd1q1y2zberwnp0eqStrkUSlUytvpzrR8CqxIJUUdNugh6uGmAz3QqGNkamPdpgkFJHEZcl_SqZf6-5o",
+              "status": 302,
+              "location": "https://www.facebook.com/allaroundmovingservicescompanyinc/posts/new-office-move-heres-a-complete-checklist-of-everything-you-need-to-move-succes/1238164446347975/"
+            }
+          ]
+        },
+        {
+          "rank": 25,
+          "original": "https://google.com/goto?url=CAES0QEBxCJF10kNiZETEqFrbH4RBzrfd8yqHyFSUcnGt5_xV2AQbhXUutxtf_Cgdb7L6gviuxJJgjJhJEAqHmvR15RM5wsZ04LwhgND7Va5wnEbklGNExRQpvftZklH7kyJILz5ngObxuDp0lNEL3dlhfzP0XjTAJ-z9JXuFgri9UPmTzY4QLtvRTFIQ1nnjMtyjZWsT-15NUHQ3h6DzV5UhuVEsR-EskbI9Nor1-Ubm8x-EwV0QxBtxja6PoWwnwwiqdKS7Pu8RE4AtqVwyb4tg5hBIQ",
+          "url": "https://www.facebook.com/losangelesstorage/posts/set-yourself-up-for-moving-success-with-these-five-important-things-you-should-d/1208854578140767/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAES0QEBxCJF10kNiZETEqFrbH4RBzrfd8yqHyFSUcnGt5_xV2AQbhXUutxtf_Cgdb7L6gviuxJJgjJhJEAqHmvR15RM5wsZ04LwhgND7Va5wnEbklGNExRQpvftZklH7kyJILz5ngObxuDp0lNEL3dlhfzP0XjTAJ-z9JXuFgri9UPmTzY4QLtvRTFIQ1nnjMtyjZWsT-15NUHQ3h6DzV5UhuVEsR-EskbI9Nor1-Ubm8x-EwV0QxBtxja6PoWwnwwiqdKS7Pu8RE4AtqVwyb4tg5hBIQ",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAES0QEBxCJF10kNiZETEqFrbH4RBzrfd8yqHyFSUcnGt5_xV2AQbhXUutxtf_Cgdb7L6gviuxJJgjJhJEAqHmvR15RM5wsZ04LwhgND7Va5wnEbklGNExRQpvftZklH7kyJILz5ngObxuDp0lNEL3dlhfzP0XjTAJ-z9JXuFgri9UPmTzY4QLtvRTFIQ1nnjMtyjZWsT-15NUHQ3h6DzV5UhuVEsR-EskbI9Nor1-Ubm8x-EwV0QxBtxja6PoWwnwwiqdKS7Pu8RE4AtqVwyb4tg5hBIQ"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAES0QEBxCJF10kNiZETEqFrbH4RBzrfd8yqHyFSUcnGt5_xV2AQbhXUutxtf_Cgdb7L6gviuxJJgjJhJEAqHmvR15RM5wsZ04LwhgND7Va5wnEbklGNExRQpvftZklH7kyJILz5ngObxuDp0lNEL3dlhfzP0XjTAJ-z9JXuFgri9UPmTzY4QLtvRTFIQ1nnjMtyjZWsT-15NUHQ3h6DzV5UhuVEsR-EskbI9Nor1-Ubm8x-EwV0QxBtxja6PoWwnwwiqdKS7Pu8RE4AtqVwyb4tg5hBIQ",
+              "status": 302,
+              "location": "https://www.facebook.com/losangelesstorage/posts/set-yourself-up-for-moving-success-with-these-five-important-things-you-should-d/1208854578140767/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "office relocation planning los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-24-retry-1.json",
+      "organic_rows_examined": 49,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:16:57 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 3,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 6,
+          "original": "https://google.com/goto?url=CAESaAHrOzAVw2RwnyWY-zWFsmiZBgSL9--OlBeFAuAbjBTnVEipzmlha98gz065sv0n_UTgAfdmLG5Bsd-MEsiWUVEbVd-AAipV7yDwO51Smus-TZW5tjXiPdr55itx1hSvMkfjIes6j_-H",
+          "url": "https://www.instagram.com/reel/Dej7mQkRixL/",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESaAHrOzAVw2RwnyWY-zWFsmiZBgSL9--OlBeFAuAbjBTnVEipzmlha98gz065sv0n_UTgAfdmLG5Bsd-MEsiWUVEbVd-AAipV7yDwO51Smus-TZW5tjXiPdr55itx1hSvMkfjIes6j_-H",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESaAHrOzAVw2RwnyWY-zWFsmiZBgSL9--OlBeFAuAbjBTnVEipzmlha98gz065sv0n_UTgAfdmLG5Bsd-MEsiWUVEbVd-AAipV7yDwO51Smus-TZW5tjXiPdr55itx1hSvMkfjIes6j_-H"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESaAHrOzAVw2RwnyWY-zWFsmiZBgSL9--OlBeFAuAbjBTnVEipzmlha98gz065sv0n_UTgAfdmLG5Bsd-MEsiWUVEbVd-AAipV7yDwO51Smus-TZW5tjXiPdr55itx1hSvMkfjIes6j_-H",
+              "status": 302,
+              "location": "https://www.instagram.com/reel/Dej7mQkRixL/"
+            }
+          ]
+        },
+        {
+          "rank": 18,
+          "original": "https://google.com/goto?url=CAES0AEB6zswFXBdRdCCirrpeLn9B0B-v4HF08eb8OSc14wzrB1mAETjmR62fNcp3FjlwsLod31SS6axMserUff2WLSCcBvCgfR5mZZ3dA68e2mirYjQ5ZRjsI6pCLPhkWb1q_PdKEetM-rOtwbs-nZJ_CM1HaCxMqYsucTbJCwFpCU83Ep3LTngP4uDgPdpdLNbSn2-kSAFHwzrxTMwMrJlpXyiLRo34LSqnZ2JlWy59X3jKYuG3GTcP-0y-2O4PLmrSMbuC7wK2pAKN0wmpRDg3nbE",
+          "url": "https://www.facebook.com/61590724612798/posts/smarter-office-moves-in-california-careful-planning-secure-handling-and-minimal-/122140133751357487/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAES0AEB6zswFXBdRdCCirrpeLn9B0B-v4HF08eb8OSc14wzrB1mAETjmR62fNcp3FjlwsLod31SS6axMserUff2WLSCcBvCgfR5mZZ3dA68e2mirYjQ5ZRjsI6pCLPhkWb1q_PdKEetM-rOtwbs-nZJ_CM1HaCxMqYsucTbJCwFpCU83Ep3LTngP4uDgPdpdLNbSn2-kSAFHwzrxTMwMrJlpXyiLRo34LSqnZ2JlWy59X3jKYuG3GTcP-0y-2O4PLmrSMbuC7wK2pAKN0wmpRDg3nbE",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAES0AEB6zswFXBdRdCCirrpeLn9B0B-v4HF08eb8OSc14wzrB1mAETjmR62fNcp3FjlwsLod31SS6axMserUff2WLSCcBvCgfR5mZZ3dA68e2mirYjQ5ZRjsI6pCLPhkWb1q_PdKEetM-rOtwbs-nZJ_CM1HaCxMqYsucTbJCwFpCU83Ep3LTngP4uDgPdpdLNbSn2-kSAFHwzrxTMwMrJlpXyiLRo34LSqnZ2JlWy59X3jKYuG3GTcP-0y-2O4PLmrSMbuC7wK2pAKN0wmpRDg3nbE"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAES0AEB6zswFXBdRdCCirrpeLn9B0B-v4HF08eb8OSc14wzrB1mAETjmR62fNcp3FjlwsLod31SS6axMserUff2WLSCcBvCgfR5mZZ3dA68e2mirYjQ5ZRjsI6pCLPhkWb1q_PdKEetM-rOtwbs-nZJ_CM1HaCxMqYsucTbJCwFpCU83Ep3LTngP4uDgPdpdLNbSn2-kSAFHwzrxTMwMrJlpXyiLRo34LSqnZ2JlWy59X3jKYuG3GTcP-0y-2O4PLmrSMbuC7wK2pAKN0wmpRDg3nbE",
+              "status": 302,
+              "location": "https://www.facebook.com/61590724612798/posts/smarter-office-moves-in-california-careful-planning-secure-handling-and-minimal-/122140133751357487/"
+            }
+          ]
+        },
+        {
+          "rank": 26,
+          "original": "https://google.com/goto?url=CAESZQHrOzAVhnigsQSqMiBO6alrlDSsfDxSBY-ptTiclWdGYqBYrDySkqqorbHP4fsBjgmxLOQmETpf8dybbKwH8TOu0shCj_ZUoSVuVz9dVVfeDJQCiiUU0g8Jn4PI438k0iBzYJiQ",
+          "url": "https://www.instagram.com/p/DctnT7IFAZ9/",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESZQHrOzAVhnigsQSqMiBO6alrlDSsfDxSBY-ptTiclWdGYqBYrDySkqqorbHP4fsBjgmxLOQmETpf8dybbKwH8TOu0shCj_ZUoSVuVz9dVVfeDJQCiiUU0g8Jn4PI438k0iBzYJiQ",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESZQHrOzAVhnigsQSqMiBO6alrlDSsfDxSBY-ptTiclWdGYqBYrDySkqqorbHP4fsBjgmxLOQmETpf8dybbKwH8TOu0shCj_ZUoSVuVz9dVVfeDJQCiiUU0g8Jn4PI438k0iBzYJiQ"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESZQHrOzAVhnigsQSqMiBO6alrlDSsfDxSBY-ptTiclWdGYqBYrDySkqqorbHP4fsBjgmxLOQmETpf8dybbKwH8TOu0shCj_ZUoSVuVz9dVVfeDJQCiiUU0g8Jn4PI438k0iBzYJiQ",
+              "status": 302,
+              "location": "https://www.instagram.com/p/DctnT7IFAZ9/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "long distance moving inventory checklist",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-25.json",
+      "organic_rows_examined": 49,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:14:27 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 1,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 15,
+          "original": "https://google.com/goto?url=CAES0AEB6zswFVck-FnGVBEXhwcT1XqFkQwNa2RsGTkGOHpRLJZ5B8qn36d2tUd75JEirAmOm78OYTcSWveCRCyPHJ_X87WLD19vynSEY6lU2O_tymjPGHMBbyyVHW3I7AnKojF157GV9bGrMK4Y3U5EzJ4yTc2NHzbgAXZ8DlUiR6mPVmL7lJZWk1fsFy0PzYjR8VOrLMlCvzlpEnNshb999OEAQcprIbbnuuL0XUI6ENyWrnPkrWjLjG79V7S93DmWaMXQmM1S42udw3yRQ_ZG1933",
+          "url": "https://www.facebook.com/brothersmoverco/posts/when-planning-a-long-distance-move-coordinating-logistics-and-preparing-for-spec/122326714160197441/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAES0AEB6zswFVck-FnGVBEXhwcT1XqFkQwNa2RsGTkGOHpRLJZ5B8qn36d2tUd75JEirAmOm78OYTcSWveCRCyPHJ_X87WLD19vynSEY6lU2O_tymjPGHMBbyyVHW3I7AnKojF157GV9bGrMK4Y3U5EzJ4yTc2NHzbgAXZ8DlUiR6mPVmL7lJZWk1fsFy0PzYjR8VOrLMlCvzlpEnNshb999OEAQcprIbbnuuL0XUI6ENyWrnPkrWjLjG79V7S93DmWaMXQmM1S42udw3yRQ_ZG1933",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAES0AEB6zswFVck-FnGVBEXhwcT1XqFkQwNa2RsGTkGOHpRLJZ5B8qn36d2tUd75JEirAmOm78OYTcSWveCRCyPHJ_X87WLD19vynSEY6lU2O_tymjPGHMBbyyVHW3I7AnKojF157GV9bGrMK4Y3U5EzJ4yTc2NHzbgAXZ8DlUiR6mPVmL7lJZWk1fsFy0PzYjR8VOrLMlCvzlpEnNshb999OEAQcprIbbnuuL0XUI6ENyWrnPkrWjLjG79V7S93DmWaMXQmM1S42udw3yRQ_ZG1933"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAES0AEB6zswFVck-FnGVBEXhwcT1XqFkQwNa2RsGTkGOHpRLJZ5B8qn36d2tUd75JEirAmOm78OYTcSWveCRCyPHJ_X87WLD19vynSEY6lU2O_tymjPGHMBbyyVHW3I7AnKojF157GV9bGrMK4Y3U5EzJ4yTc2NHzbgAXZ8DlUiR6mPVmL7lJZWk1fsFy0PzYjR8VOrLMlCvzlpEnNshb999OEAQcprIbbnuuL0XUI6ENyWrnPkrWjLjG79V7S93DmWaMXQmM1S42udw3yRQ_ZG1933",
+              "status": 302,
+              "location": "https://www.facebook.com/brothersmoverco/posts/when-planning-a-long-distance-move-coordinating-logistics-and-preparing-for-spec/122326714160197441/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "photos for long distance moving quote",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-26.json",
+      "organic_rows_examined": 49,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:14:36 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 6,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 2,
+          "original": "https://google.com/goto?url=CAESngEBxCJF1w1THCkr50eFMeoWUer9Ok85AN23VbxUNKjYv578MK2Wu0cTKrgEnFLgutlDeRrsuCyOMDgkFo3uVAjzEy179KCQ6JKG94F5Xy4GgSCza-x7KhmtIhkpM0wO6M7vXxalqIjBRbq4Z8V7uvK3DnF98zAV4A73rsWfSuB-IAFwp6ABGwt9GhM9rfD3z8e58lZWW6ihlpdjRy8ntw&gsessionid=9nVstIdkmLO3ykqtg28K5sYczbzwZomfb6qZkvFuHBKGcK1_WtnYyQ",
+          "url": "https://www.reddit.com/r/moving/comments/10e66z0/moving_quotes_and_decisions_for_a_long_distance/",
+          "domain": "reddit.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESngEBxCJF1w1THCkr50eFMeoWUer9Ok85AN23VbxUNKjYv578MK2Wu0cTKrgEnFLgutlDeRrsuCyOMDgkFo3uVAjzEy179KCQ6JKG94F5Xy4GgSCza-x7KhmtIhkpM0wO6M7vXxalqIjBRbq4Z8V7uvK3DnF98zAV4A73rsWfSuB-IAFwp6ABGwt9GhM9rfD3z8e58lZWW6ihlpdjRy8ntw&gsessionid=9nVstIdkmLO3ykqtg28K5sYczbzwZomfb6qZkvFuHBKGcK1_WtnYyQ",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESngEBxCJF1w1THCkr50eFMeoWUer9Ok85AN23VbxUNKjYv578MK2Wu0cTKrgEnFLgutlDeRrsuCyOMDgkFo3uVAjzEy179KCQ6JKG94F5Xy4GgSCza-x7KhmtIhkpM0wO6M7vXxalqIjBRbq4Z8V7uvK3DnF98zAV4A73rsWfSuB-IAFwp6ABGwt9GhM9rfD3z8e58lZWW6ihlpdjRy8ntw&gsessionid=9nVstIdkmLO3ykqtg28K5sYczbzwZomfb6qZkvFuHBKGcK1_WtnYyQ"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESngEBxCJF1w1THCkr50eFMeoWUer9Ok85AN23VbxUNKjYv578MK2Wu0cTKrgEnFLgutlDeRrsuCyOMDgkFo3uVAjzEy179KCQ6JKG94F5Xy4GgSCza-x7KhmtIhkpM0wO6M7vXxalqIjBRbq4Z8V7uvK3DnF98zAV4A73rsWfSuB-IAFwp6ABGwt9GhM9rfD3z8e58lZWW6ihlpdjRy8ntw&gsessionid=9nVstIdkmLO3ykqtg28K5sYczbzwZomfb6qZkvFuHBKGcK1_WtnYyQ",
+              "status": 302,
+              "location": "https://www.reddit.com/r/moving/comments/10e66z0/moving_quotes_and_decisions_for_a_long_distance/"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "original": "https://google.com/goto?url=CAESZQHEIkXXVjqw_O9GwARDSdpqXhq0Kx04FuVN-1aYGe63nq-OrXN2FUBVbDctXZ8mZoWjMGQRVFZGc-Bzew0T7EWUZ8Xfhtxo8USxb4Yywf6zfmg_Fp7uH7u9qWrBL0n-bek_Su_y&gsessionid=9nVstIdkmLO3ykqtg28K5sYczbzwZomfb6qZkvFuHBKGcK1_WtnYyQ",
+          "url": "https://www.instagram.com/p/Dd1_1jLl8Kj/",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESZQHEIkXXVjqw_O9GwARDSdpqXhq0Kx04FuVN-1aYGe63nq-OrXN2FUBVbDctXZ8mZoWjMGQRVFZGc-Bzew0T7EWUZ8Xfhtxo8USxb4Yywf6zfmg_Fp7uH7u9qWrBL0n-bek_Su_y&gsessionid=9nVstIdkmLO3ykqtg28K5sYczbzwZomfb6qZkvFuHBKGcK1_WtnYyQ",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESZQHEIkXXVjqw_O9GwARDSdpqXhq0Kx04FuVN-1aYGe63nq-OrXN2FUBVbDctXZ8mZoWjMGQRVFZGc-Bzew0T7EWUZ8Xfhtxo8USxb4Yywf6zfmg_Fp7uH7u9qWrBL0n-bek_Su_y&gsessionid=9nVstIdkmLO3ykqtg28K5sYczbzwZomfb6qZkvFuHBKGcK1_WtnYyQ"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESZQHEIkXXVjqw_O9GwARDSdpqXhq0Kx04FuVN-1aYGe63nq-OrXN2FUBVbDctXZ8mZoWjMGQRVFZGc-Bzew0T7EWUZ8Xfhtxo8USxb4Yywf6zfmg_Fp7uH7u9qWrBL0n-bek_Su_y&gsessionid=9nVstIdkmLO3ykqtg28K5sYczbzwZomfb6qZkvFuHBKGcK1_WtnYyQ",
+              "status": 302,
+              "location": "https://www.instagram.com/p/Dd1_1jLl8Kj/"
+            }
+          ]
+        },
+        {
+          "rank": 16,
+          "original": "https://google.com/goto?url=CAESaAHEIkXXqjDQBR7f8mHpwhqn885XYFIebCinzuA2E8XX27L1OrfOoIPQc2booYOTfxpOHZd8VEM2DCbKwRJ6xCcR6jNIyAZnUQT1p7IHUzRvfXC2nbJhfriqEP0BifR6R7KUCVUb-afJ&gsessionid=QH8U3wi2velmJyWjE795HfVKv7MAGd8yJ0pucTYx4mk9tht5o3JU9g",
+          "url": "https://www.instagram.com/reel/DZk2tkKEoe8/",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESaAHEIkXXqjDQBR7f8mHpwhqn885XYFIebCinzuA2E8XX27L1OrfOoIPQc2booYOTfxpOHZd8VEM2DCbKwRJ6xCcR6jNIyAZnUQT1p7IHUzRvfXC2nbJhfriqEP0BifR6R7KUCVUb-afJ&gsessionid=QH8U3wi2velmJyWjE795HfVKv7MAGd8yJ0pucTYx4mk9tht5o3JU9g",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESaAHEIkXXqjDQBR7f8mHpwhqn885XYFIebCinzuA2E8XX27L1OrfOoIPQc2booYOTfxpOHZd8VEM2DCbKwRJ6xCcR6jNIyAZnUQT1p7IHUzRvfXC2nbJhfriqEP0BifR6R7KUCVUb-afJ&gsessionid=QH8U3wi2velmJyWjE795HfVKv7MAGd8yJ0pucTYx4mk9tht5o3JU9g"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESaAHEIkXXqjDQBR7f8mHpwhqn885XYFIebCinzuA2E8XX27L1OrfOoIPQc2booYOTfxpOHZd8VEM2DCbKwRJ6xCcR6jNIyAZnUQT1p7IHUzRvfXC2nbJhfriqEP0BifR6R7KUCVUb-afJ&gsessionid=QH8U3wi2velmJyWjE795HfVKv7MAGd8yJ0pucTYx4mk9tht5o3JU9g",
+              "status": 302,
+              "location": "https://www.instagram.com/reel/DZk2tkKEoe8/"
+            }
+          ]
+        },
+        {
+          "rank": 18,
+          "original": "https://google.com/goto?url=CAESngEBxCJF11jYU04XMKpGW-wAMYoxrrfzSinY4FKu2fSvCfUxJRTX3dZWst9oZkRWV3sCaeP0ScIxpIo9-7kiJnZoG645j30sDO4NwsurEgLEz2sMB0IgDsKPNGWPC2N89Zmtmz8fu2qic0MRPt4oBQdu2a-CQB6mtqwvose093nPNMXsxeYq7D3oPM0jxJAVkpFXokus3YVo7ZC82-VsHQ&gsessionid=QH8U3wi2velmJyWjE795HfVKv7MAGd8yJ0pucTYx4mk9tht5o3JU9g",
+          "url": "https://www.reddit.com/r/moving/comments/1dx4yq8/is_my_long_distance_moving_quote_decent_or_high/",
+          "domain": "reddit.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESngEBxCJF11jYU04XMKpGW-wAMYoxrrfzSinY4FKu2fSvCfUxJRTX3dZWst9oZkRWV3sCaeP0ScIxpIo9-7kiJnZoG645j30sDO4NwsurEgLEz2sMB0IgDsKPNGWPC2N89Zmtmz8fu2qic0MRPt4oBQdu2a-CQB6mtqwvose093nPNMXsxeYq7D3oPM0jxJAVkpFXokus3YVo7ZC82-VsHQ&gsessionid=QH8U3wi2velmJyWjE795HfVKv7MAGd8yJ0pucTYx4mk9tht5o3JU9g",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESngEBxCJF11jYU04XMKpGW-wAMYoxrrfzSinY4FKu2fSvCfUxJRTX3dZWst9oZkRWV3sCaeP0ScIxpIo9-7kiJnZoG645j30sDO4NwsurEgLEz2sMB0IgDsKPNGWPC2N89Zmtmz8fu2qic0MRPt4oBQdu2a-CQB6mtqwvose093nPNMXsxeYq7D3oPM0jxJAVkpFXokus3YVo7ZC82-VsHQ&gsessionid=QH8U3wi2velmJyWjE795HfVKv7MAGd8yJ0pucTYx4mk9tht5o3JU9g"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESngEBxCJF11jYU04XMKpGW-wAMYoxrrfzSinY4FKu2fSvCfUxJRTX3dZWst9oZkRWV3sCaeP0ScIxpIo9-7kiJnZoG645j30sDO4NwsurEgLEz2sMB0IgDsKPNGWPC2N89Zmtmz8fu2qic0MRPt4oBQdu2a-CQB6mtqwvose093nPNMXsxeYq7D3oPM0jxJAVkpFXokus3YVo7ZC82-VsHQ&gsessionid=QH8U3wi2velmJyWjE795HfVKv7MAGd8yJ0pucTYx4mk9tht5o3JU9g",
+              "status": 302,
+              "location": "https://www.reddit.com/r/moving/comments/1dx4yq8/is_my_long_distance_moving_quote_decent_or_high/"
+            }
+          ]
+        },
+        {
+          "rank": 29,
+          "original": "https://google.com/goto?url=CAESaAHEIkXXTS5F-FG1EWvh3bl8PynGZJJjEWBDo8rFcDOfOKv8kJ45t7xdpKIK0JOAEMil_Y3JThlCVqq4MBsHRkcyvbvKV4NceCtnwY2wHRrB_KtEw3wLKySdLWl1tT2_JBk7u_hf_tlG&gsessionid=d0jKgzLVaKnpsoJQ1cokgikU9evDiDsTtJn0CtNkVOe1nhXraux0Ag",
+          "url": "https://www.instagram.com/reel/DbdigyajAsK/",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESaAHEIkXXTS5F-FG1EWvh3bl8PynGZJJjEWBDo8rFcDOfOKv8kJ45t7xdpKIK0JOAEMil_Y3JThlCVqq4MBsHRkcyvbvKV4NceCtnwY2wHRrB_KtEw3wLKySdLWl1tT2_JBk7u_hf_tlG&gsessionid=d0jKgzLVaKnpsoJQ1cokgikU9evDiDsTtJn0CtNkVOe1nhXraux0Ag",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESaAHEIkXXTS5F-FG1EWvh3bl8PynGZJJjEWBDo8rFcDOfOKv8kJ45t7xdpKIK0JOAEMil_Y3JThlCVqq4MBsHRkcyvbvKV4NceCtnwY2wHRrB_KtEw3wLKySdLWl1tT2_JBk7u_hf_tlG&gsessionid=d0jKgzLVaKnpsoJQ1cokgikU9evDiDsTtJn0CtNkVOe1nhXraux0Ag"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESaAHEIkXXTS5F-FG1EWvh3bl8PynGZJJjEWBDo8rFcDOfOKv8kJ45t7xdpKIK0JOAEMil_Y3JThlCVqq4MBsHRkcyvbvKV4NceCtnwY2wHRrB_KtEw3wLKySdLWl1tT2_JBk7u_hf_tlG&gsessionid=d0jKgzLVaKnpsoJQ1cokgikU9evDiDsTtJn0CtNkVOe1nhXraux0Ag",
+              "status": 302,
+              "location": "https://www.instagram.com/reel/DbdigyajAsK/"
+            }
+          ]
+        },
+        {
+          "rank": 46,
+          "original": "https://google.com/goto?url=CAESaAHEIkXX9XMvJ1wFzOS2y6Upozy1_DROP_vN2ansANKSzFPL_bQ7KAMYnDNskGGQwfsK0BievBI8YhMJzS49AEzA1XPX_QUfomx6Jb_Hz-LCu_Va6Fvo6itKQIvM3Dufaxm5Ib1tY-RS&gsessionid=oAGcrU16HTkZ1apBz7BnRDMIyw91nlWzmgqoQhnaj8I4hAfmix5Lmg",
+          "url": "https://www.youtube.com/watch?v=45WXkhu_3qI",
+          "domain": "youtube.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESaAHEIkXX9XMvJ1wFzOS2y6Upozy1_DROP_vN2ansANKSzFPL_bQ7KAMYnDNskGGQwfsK0BievBI8YhMJzS49AEzA1XPX_QUfomx6Jb_Hz-LCu_Va6Fvo6itKQIvM3Dufaxm5Ib1tY-RS&gsessionid=oAGcrU16HTkZ1apBz7BnRDMIyw91nlWzmgqoQhnaj8I4hAfmix5Lmg",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESaAHEIkXX9XMvJ1wFzOS2y6Upozy1_DROP_vN2ansANKSzFPL_bQ7KAMYnDNskGGQwfsK0BievBI8YhMJzS49AEzA1XPX_QUfomx6Jb_Hz-LCu_Va6Fvo6itKQIvM3Dufaxm5Ib1tY-RS&gsessionid=oAGcrU16HTkZ1apBz7BnRDMIyw91nlWzmgqoQhnaj8I4hAfmix5Lmg"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESaAHEIkXX9XMvJ1wFzOS2y6Upozy1_DROP_vN2ansANKSzFPL_bQ7KAMYnDNskGGQwfsK0BievBI8YhMJzS49AEzA1XPX_QUfomx6Jb_Hz-LCu_Va6Fvo6itKQIvM3Dufaxm5Ib1tY-RS&gsessionid=oAGcrU16HTkZ1apBz7BnRDMIyw91nlWzmgqoQhnaj8I4hAfmix5Lmg",
+              "status": 302,
+              "location": "https://www.youtube.com/watch?v=45WXkhu_3qI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "moving truck parking los angeles apartment",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-27.json",
+      "organic_rows_examined": 48,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:14:53 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 4,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 1,
+          "original": "https://google.com/goto?url=CAESogEBxCJF11OyUT1yTcg-fAWlnGHh7RoguqZ6IrDgMxC5lNxR3S9RjsBmYS--12Rd0ns1LrDtFiYeokfTe9zeCbh-UaODRvb3cK3kmCB_9Hv53ttmU9g0xa8yARMxloYc2fn7DuEp7-3Z8LlrGgnrJyuO1vQEOweNhCUgZvjAjqV-gmRALlVCgyv1XCzJWDRX9jIR9Wp1KwPHmwKazvynXyocyVI",
+          "url": "https://www.reddit.com/r/AskLosAngeles/comments/1u14ftg/am_i_expected_to_secure_curbside_parking_for/",
+          "domain": "reddit.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESogEBxCJF11OyUT1yTcg-fAWlnGHh7RoguqZ6IrDgMxC5lNxR3S9RjsBmYS--12Rd0ns1LrDtFiYeokfTe9zeCbh-UaODRvb3cK3kmCB_9Hv53ttmU9g0xa8yARMxloYc2fn7DuEp7-3Z8LlrGgnrJyuO1vQEOweNhCUgZvjAjqV-gmRALlVCgyv1XCzJWDRX9jIR9Wp1KwPHmwKazvynXyocyVI",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESogEBxCJF11OyUT1yTcg-fAWlnGHh7RoguqZ6IrDgMxC5lNxR3S9RjsBmYS--12Rd0ns1LrDtFiYeokfTe9zeCbh-UaODRvb3cK3kmCB_9Hv53ttmU9g0xa8yARMxloYc2fn7DuEp7-3Z8LlrGgnrJyuO1vQEOweNhCUgZvjAjqV-gmRALlVCgyv1XCzJWDRX9jIR9Wp1KwPHmwKazvynXyocyVI"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESogEBxCJF11OyUT1yTcg-fAWlnGHh7RoguqZ6IrDgMxC5lNxR3S9RjsBmYS--12Rd0ns1LrDtFiYeokfTe9zeCbh-UaODRvb3cK3kmCB_9Hv53ttmU9g0xa8yARMxloYc2fn7DuEp7-3Z8LlrGgnrJyuO1vQEOweNhCUgZvjAjqV-gmRALlVCgyv1XCzJWDRX9jIR9Wp1KwPHmwKazvynXyocyVI",
+              "status": 302,
+              "location": "https://www.reddit.com/r/AskLosAngeles/comments/1u14ftg/am_i_expected_to_secure_curbside_parking_for/"
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "original": "https://google.com/goto?url=CAEShwEBxCJF13a5sL7t7V7iUsueIkAtldY-waZRGdA0jFUJwcQkwSKGA5Izy_7HwuefDeukGaS4w7TOqX6o62-Qo7YnGHEFotGz5nhk_HjwwxdR5Q0aCU36BDli5ZXcH7Xslq7sm13tg8vJ6Krsg5ynitOxvbzBxG17iBb-NPWQvZ9BfxmnNkPje9Q",
+          "url": "https://www.facebook.com/groups/fishtownisawesome/posts/25242589638751769/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShwEBxCJF13a5sL7t7V7iUsueIkAtldY-waZRGdA0jFUJwcQkwSKGA5Izy_7HwuefDeukGaS4w7TOqX6o62-Qo7YnGHEFotGz5nhk_HjwwxdR5Q0aCU36BDli5ZXcH7Xslq7sm13tg8vJ6Krsg5ynitOxvbzBxG17iBb-NPWQvZ9BfxmnNkPje9Q",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShwEBxCJF13a5sL7t7V7iUsueIkAtldY-waZRGdA0jFUJwcQkwSKGA5Izy_7HwuefDeukGaS4w7TOqX6o62-Qo7YnGHEFotGz5nhk_HjwwxdR5Q0aCU36BDli5ZXcH7Xslq7sm13tg8vJ6Krsg5ynitOxvbzBxG17iBb-NPWQvZ9BfxmnNkPje9Q"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShwEBxCJF13a5sL7t7V7iUsueIkAtldY-waZRGdA0jFUJwcQkwSKGA5Izy_7HwuefDeukGaS4w7TOqX6o62-Qo7YnGHEFotGz5nhk_HjwwxdR5Q0aCU36BDli5ZXcH7Xslq7sm13tg8vJ6Krsg5ynitOxvbzBxG17iBb-NPWQvZ9BfxmnNkPje9Q",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/fishtownisawesome/posts/25242589638751769/"
+            }
+          ]
+        },
+        {
+          "rank": 17,
+          "original": "https://google.com/goto?url=CAEShAEBxCJF1yN7va5M_-BDSKQGQa7MjBulvp7idtjbCzbBrUw6_31wysPCqspGI3ZnRg7INunYY0LFoT323y3c5HdkVz2D_JZhuyCyIYahBgNEEU4pMVsD5MYPHYUaxwpMVA011K985FeYT_t_wCuXNXhsfxU-Tb60fEcNkIMlmOpahKCa8RI",
+          "url": "https://www.facebook.com/groups/696613120446762/posts/5106937569414273/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShAEBxCJF1yN7va5M_-BDSKQGQa7MjBulvp7idtjbCzbBrUw6_31wysPCqspGI3ZnRg7INunYY0LFoT323y3c5HdkVz2D_JZhuyCyIYahBgNEEU4pMVsD5MYPHYUaxwpMVA011K985FeYT_t_wCuXNXhsfxU-Tb60fEcNkIMlmOpahKCa8RI",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShAEBxCJF1yN7va5M_-BDSKQGQa7MjBulvp7idtjbCzbBrUw6_31wysPCqspGI3ZnRg7INunYY0LFoT323y3c5HdkVz2D_JZhuyCyIYahBgNEEU4pMVsD5MYPHYUaxwpMVA011K985FeYT_t_wCuXNXhsfxU-Tb60fEcNkIMlmOpahKCa8RI"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShAEBxCJF1yN7va5M_-BDSKQGQa7MjBulvp7idtjbCzbBrUw6_31wysPCqspGI3ZnRg7INunYY0LFoT323y3c5HdkVz2D_JZhuyCyIYahBgNEEU4pMVsD5MYPHYUaxwpMVA011K985FeYT_t_wCuXNXhsfxU-Tb60fEcNkIMlmOpahKCa8RI",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/696613120446762/posts/5106937569414273/"
+            }
+          ]
+        },
+        {
+          "rank": 26,
+          "original": "https://google.com/goto?url=CAEShgEBxCJF171hvW3VssjujEuF4DHZTaApLOt0b46KFaF_eylpo7yoSLRxej5MHcVY9z4R_Yc4eR3JOyCzJ1SxcWHgBojttqEhmnMHM-zzoP4AEEx8-dnQXLDHhcSbx9SiiKzCNXw8GBP2eyUY-wwOtrPQCyLo898sjphmwvJ2SXFZVZgwIO9oKQ",
+          "url": "https://www.facebook.com/groups/3654614287963953/posts/25583584071306993/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAEShgEBxCJF171hvW3VssjujEuF4DHZTaApLOt0b46KFaF_eylpo7yoSLRxej5MHcVY9z4R_Yc4eR3JOyCzJ1SxcWHgBojttqEhmnMHM-zzoP4AEEx8-dnQXLDHhcSbx9SiiKzCNXw8GBP2eyUY-wwOtrPQCyLo898sjphmwvJ2SXFZVZgwIO9oKQ",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAEShgEBxCJF171hvW3VssjujEuF4DHZTaApLOt0b46KFaF_eylpo7yoSLRxej5MHcVY9z4R_Yc4eR3JOyCzJ1SxcWHgBojttqEhmnMHM-zzoP4AEEx8-dnQXLDHhcSbx9SiiKzCNXw8GBP2eyUY-wwOtrPQCyLo898sjphmwvJ2SXFZVZgwIO9oKQ"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAEShgEBxCJF171hvW3VssjujEuF4DHZTaApLOt0b46KFaF_eylpo7yoSLRxej5MHcVY9z4R_Yc4eR3JOyCzJ1SxcWHgBojttqEhmnMHM-zzoP4AEEx8-dnQXLDHhcSbx9SiiKzCNXw8GBP2eyUY-wwOtrPQCyLo898sjphmwvJ2SXFZVZgwIO9oKQ",
+              "status": 302,
+              "location": "https://www.facebook.com/groups/3654614287963953/posts/25583584071306993/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "moving day loading zone los angeles",
+      "domain": "splendidmoving.com",
+      "provider": "DataForSEO",
+      "location": "Los Angeles, California, US (1013962)",
+      "language": "en",
+      "device": "desktop",
+      "requested_depth": 50,
+      "evidence_file": "seo/evidence/2026-11-04-expanded/raw-28.json",
+      "organic_rows_examined": 48,
+      "unresolved_domains": 0,
+      "observed_rank": null,
+      "checked_at_utc": "2026-11-05 01:15:05 +00:00",
+      "provider_status_code": 20000,
+      "partial_results": false,
+      "raw_unresolved_domains": 3,
+      "unresolved_result_ranks": [],
+      "matched_results": [],
+      "domain_resolution": [
+        {
+          "rank": 4,
+          "original": "https://google.com/goto?url=CAESyAEBxCJF1127qmkh-O4Xgy9KtKHH4mGs-wZGl7MfHRLgIwHZa3LlUE7FfrITu1WHA9fhyVStP05UfScA8N_3yB57jrHFm1vP_g0uAPuSawlGC5_6AggdHreLlxHJpEPK_qtMEJym6FcpY1J832Q5YYW8v-QjI2sL1QkK50xPYwp61KUayOT9O7T2fUN3hjpYAy6vK08Ehbz_vVDdZUgGeKp9-BBLrLZLCS0Cv-8YOmcpa7fwjZm2yTlImHmyZbAbkdyW_TYgCpyhdA",
+          "url": "https://www.facebook.com/TheLAPost/posts/las-new-parking-rules-clarify-colored-curb-use-and-the-72-hour-street-parking-li/372698502542922/",
+          "domain": "facebook.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESyAEBxCJF1127qmkh-O4Xgy9KtKHH4mGs-wZGl7MfHRLgIwHZa3LlUE7FfrITu1WHA9fhyVStP05UfScA8N_3yB57jrHFm1vP_g0uAPuSawlGC5_6AggdHreLlxHJpEPK_qtMEJym6FcpY1J832Q5YYW8v-QjI2sL1QkK50xPYwp61KUayOT9O7T2fUN3hjpYAy6vK08Ehbz_vVDdZUgGeKp9-BBLrLZLCS0Cv-8YOmcpa7fwjZm2yTlImHmyZbAbkdyW_TYgCpyhdA",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESyAEBxCJF1127qmkh-O4Xgy9KtKHH4mGs-wZGl7MfHRLgIwHZa3LlUE7FfrITu1WHA9fhyVStP05UfScA8N_3yB57jrHFm1vP_g0uAPuSawlGC5_6AggdHreLlxHJpEPK_qtMEJym6FcpY1J832Q5YYW8v-QjI2sL1QkK50xPYwp61KUayOT9O7T2fUN3hjpYAy6vK08Ehbz_vVDdZUgGeKp9-BBLrLZLCS0Cv-8YOmcpa7fwjZm2yTlImHmyZbAbkdyW_TYgCpyhdA"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESyAEBxCJF1127qmkh-O4Xgy9KtKHH4mGs-wZGl7MfHRLgIwHZa3LlUE7FfrITu1WHA9fhyVStP05UfScA8N_3yB57jrHFm1vP_g0uAPuSawlGC5_6AggdHreLlxHJpEPK_qtMEJym6FcpY1J832Q5YYW8v-QjI2sL1QkK50xPYwp61KUayOT9O7T2fUN3hjpYAy6vK08Ehbz_vVDdZUgGeKp9-BBLrLZLCS0Cv-8YOmcpa7fwjZm2yTlImHmyZbAbkdyW_TYgCpyhdA",
+              "status": 302,
+              "location": "https://www.facebook.com/TheLAPost/posts/las-new-parking-rules-clarify-colored-curb-use-and-the-72-hour-street-parking-li/372698502542922/"
+            }
+          ]
+        },
+        {
+          "rank": 27,
+          "original": "https://google.com/goto?url=CAESZQHEIkXXnhMUBMiWwuGpwCV9TN1YAAJjrELnrjLiAYXTtJmhPD4vCLeXmBZubfgshKgL2qLgKwRtD2gCLxMc-58aN5FfayqQpwG3n0WwyeYH4oqcqBZmrXh8KDOe0g-VCzYX0ALA",
+          "url": "https://www.instagram.com/p/DP5iMZ6AGhB/",
+          "domain": "instagram.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESZQHEIkXXnhMUBMiWwuGpwCV9TN1YAAJjrELnrjLiAYXTtJmhPD4vCLeXmBZubfgshKgL2qLgKwRtD2gCLxMc-58aN5FfayqQpwG3n0WwyeYH4oqcqBZmrXh8KDOe0g-VCzYX0ALA",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESZQHEIkXXnhMUBMiWwuGpwCV9TN1YAAJjrELnrjLiAYXTtJmhPD4vCLeXmBZubfgshKgL2qLgKwRtD2gCLxMc-58aN5FfayqQpwG3n0WwyeYH4oqcqBZmrXh8KDOe0g-VCzYX0ALA"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESZQHEIkXXnhMUBMiWwuGpwCV9TN1YAAJjrELnrjLiAYXTtJmhPD4vCLeXmBZubfgshKgL2qLgKwRtD2gCLxMc-58aN5FfayqQpwG3n0WwyeYH4oqcqBZmrXh8KDOe0g-VCzYX0ALA",
+              "status": 302,
+              "location": "https://www.instagram.com/p/DP5iMZ6AGhB/"
+            }
+          ]
+        },
+        {
+          "rank": 41,
+          "original": "https://google.com/goto?url=CAESaAHEIkXXhQP2Xn-tL7ibE8UB_8ru7nsmN9qO1sHNcyqeNdCP-_Ndhf_aZy-EswSgIGKaYEGIyl1PvuniFSUZSr4fsc-wQfZmHbqwfEowjtPibrqWpZ_F8l6oRyoqzf6IXU11aRpcR_Um",
+          "url": "https://www.youtube.com/watch?v=lpkthaPSwBc",
+          "domain": "youtube.com",
+          "steps": [
+            {
+              "url": "https://google.com/goto?url=CAESaAHEIkXXhQP2Xn-tL7ibE8UB_8ru7nsmN9qO1sHNcyqeNdCP-_Ndhf_aZy-EswSgIGKaYEGIyl1PvuniFSUZSr4fsc-wQfZmHbqwfEowjtPibrqWpZ_F8l6oRyoqzf6IXU11aRpcR_Um",
+              "status": 301,
+              "location": "https://www.google.com/goto?url=CAESaAHEIkXXhQP2Xn-tL7ibE8UB_8ru7nsmN9qO1sHNcyqeNdCP-_Ndhf_aZy-EswSgIGKaYEGIyl1PvuniFSUZSr4fsc-wQfZmHbqwfEowjtPibrqWpZ_F8l6oRyoqzf6IXU11aRpcR_Um"
+            },
+            {
+              "url": "https://www.google.com/goto?url=CAESaAHEIkXXhQP2Xn-tL7ibE8UB_8ru7nsmN9qO1sHNcyqeNdCP-_Ndhf_aZy-EswSgIGKaYEGIyl1PvuniFSUZSr4fsc-wQfZmHbqwfEowjtPibrqWpZ_F8l6oRyoqzf6IXU11aRpcR_Um",
+              "status": 302,
+              "location": "https://www.youtube.com/watch?v=lpkthaPSwBc"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

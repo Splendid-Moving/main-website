@@ -38,6 +38,17 @@ test('unresolved search results cannot establish a newly absent ranking', () => 
     assert.equal(change.change, null);
 });
 
+test('partial provider results retain their measured rows but cannot establish ranking movement', () => {
+    const response = { result: { tasks: [{ status_code: 40106, status_message: 'Partial results', result: [{ items: [{ type: 'organic', rank_group: 4, url: 'https://example.com' }] }] }] } };
+    const parsed = parseOrganic(response, { ...base, domain: 'splendidmoving.com' });
+    assert.equal(parsed.partial_results, true);
+    assert.equal(parsed.organic_rows_examined, 1);
+    const [change] = compareRankings([base], [parsed]);
+    assert.equal(change.status, 'incomplete evidence');
+    const added = compareRankings([base], [{ ...parsed, query: 'new target query' }]);
+    assert.equal(added[1].status, 'incomplete evidence');
+});
+
 test('Google redirect wrappers use real breadcrumb domains and retain unresolved evidence', () => {
     assert.equal(resultDomain({ url: 'https://google.com/goto?url=opaque', domain: 'google.com', breadcrumb: 'https://splendidmoving.com › local-moving' }), 'splendidmoving.com');
     assert.equal(resultDomain({ url: 'https://google.com/goto?url=opaque', breadcrumb: '70+ followers' }), null);
