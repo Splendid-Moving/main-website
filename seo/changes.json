@@ -1,12 +1,39 @@
 {
   "description": "Public SEO release log; observed rankings remain in immutable baseline files.",
-  "releases": [{
-    "date": "2026-11-04",
-    "baseline": "seo/baselines/2026-11-04-rankings.json",
-    "content_catalog": "content/pages.json",
-    "changes": ["Four service landing pages and eight guides plus blog index", "Generated sitemap, RSS and internal links", "Business, service, article and breadcrumb structured data without self-serving review scores", "Four relevant legacy URL redirects", "Responsive WebP hero replacing 7,063,710-byte download", "Corrected distance and fee wording", "Budgeted ranking collector and private first-party exports"],
-    "new_keyword_status": "Target queries recorded in content catalog; new long-tail pages had no pre-publication ranking measurement.",
-    "additional_paid_spend_usd": 0,
-    "comparison_schedule": "Suggested weekly rank checks and complete 28-day first-party comparisons; no paid recurring job installed"
-  }]
+  "releases": [
+    {
+      "date": "2026-11-04",
+      "baseline": "seo/baselines/2026-11-04-rankings.json",
+      "content_catalog": "content/pages.json",
+      "changes": [
+        "Four service landing pages and eight guides plus blog index",
+        "Generated sitemap, RSS and internal links",
+        "Business, service, article and breadcrumb structured data without self-serving review scores",
+        "Four relevant legacy URL redirects",
+        "Responsive WebP hero replacing 7,063,710-byte download",
+        "Corrected distance and fee wording",
+        "Budgeted ranking collector and private first-party exports"
+      ],
+      "new_keyword_status": "Target queries recorded in content catalog; new long-tail pages had no pre-publication ranking measurement.",
+      "additional_paid_spend_usd": 0,
+      "comparison_schedule": "Suggested weekly rank checks and complete 28-day first-party comparisons; no paid recurring job installed"
+    },
+    {
+      "date": "2026-11-04",
+      "phase": "Illustrated guides and reading layout",
+      "source_commit_before": "d1978ab",
+      "articles_with_original_covers": 8,
+      "responsive_webp_assets": 16,
+      "inline_diagrams": 3,
+      "changes": [
+        "Illustrated blog gallery and desktop/mobile article headers",
+        "Article-specific image metadata and eight image-sitemap entries",
+        "Mobile contents disclosure and practical inline diagrams"
+      ],
+      "original_baselines_unchanged": true,
+      "additional_treg_spend_usd": 0,
+      "artwork_sources": "design/blog-illustrations/prompts.json",
+      "ranking_change": "Not measured for this visual release"
+    }
+  ]
 }

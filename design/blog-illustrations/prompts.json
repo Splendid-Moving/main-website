@@ -1,0 +1,87 @@
+{
+  "description": "Source artwork and prompts for Splendid Moving's eight editorial guide illustrations. Created with the built-in image_gen tool on November 4, 2026; the artwork is illustrative and does not document customer jobs.",
+  "generator": "Built-in image_gen",
+  "date": "2026-11-04",
+  "assets": [
+    {
+      "id": "apartment",
+      "name": "apartment-checklist",
+      "prompt": "Use case: illustration-story. Asset type: editorial cover illustration for a Los Angeles moving company's apartment-moving checklist guide. Generate one finished wide landscape 16:9 image, 1536 by 864 composition. A distinctive contemporary editorial paper-cut illustration: a complete apartment entrance with an open navy-blue door, carefully stacked kraft-cardboard moving cartons, a small blue armchair, a keyring and a simple clipboard bearing abstract blue check marks without words; a slender palm and subtle Los Angeles apartment architecture in the background. Crisp cut-paper shapes, restrained fine paper grain, believable clean geometric perspective, soft natural shadows, calm professional editorial composition. Palette grounded in deep navy #032449, vivid blue #188bf6, pale blue-gray #edf5fc, white and natural kraft brown. Scene fills the wide frame with clear focal hierarchy and a little breathing room. Keep every key object fully within the frame with generous safe margins, useful even when displayed at small thumbnail size. No people, no brand logos, no letters, no numerals, no readable text, no watermark, no photorealism, no fake photograph of a customer job, no 3D plastic, no gradients, no cartoon faces.",
+      "source": "source/apartment-checklist.png",
+      "web": [
+        "/assets/images/guides/apartment-checklist-640.webp",
+        "/assets/images/guides/apartment-checklist-1280.webp"
+      ]
+    },
+    {
+      "id": "costs",
+      "name": "moving-costs",
+      "prompt": "Use case: illustration-story. Asset type: premium editorial cover illustration for a Los Angeles moving guide. Create ONE finished landscape 16:9 illustration with a 1536 by 864 composition. Unified illustration series: tactile cut-paper collage, crisp cut-paper contours, restrained fine paper grain, believable simple geometric perspective, matte surfaces, soft natural shadows. Professional and useful rather than cute. Deep navy #032449, vivid blue #188bf6, white, pale blue-gray #edf5fc, natural kraft-cardboard brown; subtle natural plant green only where appropriate. Scene fills the frame, balanced visual hierarchy, all important objects complete and within generous 6 percent safe margins, readable as a small thumbnail. No readable text, letters or numerals, no watermark, no photorealism, no plastic 3D rendering, no cartoon faces, no gradients. Scene: A carefully arranged moving-budget still life on a white worktable: two kraft cardboard moving boxes, a navy calculator with blank display and simple unlabeled buttons, a few silver coins, a simple round clock, a blue pen and blank estimate sheets. A subtle cut-paper silhouette of Los Angeles apartments sits far behind. Keep a restrained editorial composition with believable sizes; no written prices, numbers, money symbols or text.",
+      "source": "source/moving-costs.png",
+      "web": [
+        "/assets/images/guides/moving-costs-640.webp",
+        "/assets/images/guides/moving-costs-1280.webp"
+      ]
+    },
+    {
+      "id": "building",
+      "name": "building-access",
+      "prompt": "Use case: illustration-story. Asset type: premium editorial cover illustration for a Los Angeles moving guide. Create ONE finished landscape 16:9 illustration with a 1536 by 864 composition. Unified illustration series: tactile cut-paper collage, crisp cut-paper contours, restrained fine paper grain, believable simple geometric perspective, matte surfaces, soft natural shadows. Professional and useful rather than cute. Deep navy #032449, vivid blue #188bf6, white, pale blue-gray #edf5fc, natural kraft-cardboard brown; subtle natural plant green only where appropriate. Scene fills the frame, balanced visual hierarchy, all important objects complete and within generous 6 percent safe margins, readable as a small thumbnail. No readable text, letters or numerals, no watermark, no photorealism, no plastic 3D rendering, no cartoon faces, no gradients. Scene: An elegant Los Angeles apartment lobby with a closed navy service-elevator door and simple unlabeled elevator buttons. In the foreground, a clipboard holding a blank insurance document with one abstract blue approval mark, and a blue calendar grid without dates. A small empty moving hand truck stands to the side. Clear building architecture and carefully cut paper materials; no people, no words, no actual insurance seal, no official-looking claims.",
+      "source": "source/building-access.png",
+      "web": [
+        "/assets/images/guides/building-access-640.webp",
+        "/assets/images/guides/building-access-1280.webp"
+      ]
+    },
+    {
+      "id": "stairs",
+      "name": "walkup-move",
+      "prompt": "Use case: illustration-story. Asset type: premium editorial cover illustration for a Los Angeles moving guide. Create ONE finished landscape 16:9 illustration with a 1536 by 864 composition. Unified illustration series: tactile cut-paper collage, crisp cut-paper contours, restrained fine paper grain, believable simple geometric perspective, matte surfaces, soft natural shadows. Professional and useful rather than cute. Deep navy #032449, vivid blue #188bf6, white, pale blue-gray #edf5fc, natural kraft-cardboard brown; subtle natural plant green only where appropriate. Scene fills the frame, balanced visual hierarchy, all important objects complete and within generous 6 percent safe margins, readable as a small thumbnail. No readable text, letters or numerals, no watermark, no photorealism, no plastic 3D rendering, no cartoon faces, no gradients. Scene: A handsome Los Angeles walk-up apartment stairwell, showing the complete geometry of a single L-shaped flight, a broad landing, dark blue handrails and white walls. Two closed kraft moving cartons and a compact navy hand truck rest on the floor beside the base of the stairs, leaving the carrying route clear. A small palm visible through a window. Quiet architectural cut-paper illustration; no people, no unsafe lifting or blocked stairway, no labels or text.",
+      "source": "source/walkup-move.png",
+      "web": [
+        "/assets/images/guides/walkup-move-640.webp",
+        "/assets/images/guides/walkup-move-1280.webp"
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "kitchen-packing",
+      "prompt": "Use case: illustration-story. Asset type: premium editorial cover illustration for a Los Angeles moving guide. Create ONE finished landscape 16:9 illustration with a 1536 by 864 composition. Unified illustration series: tactile cut-paper collage, crisp cut-paper contours, restrained fine paper grain, believable simple geometric perspective, matte surfaces, soft natural shadows. Professional and useful rather than cute. Deep navy #032449, vivid blue #188bf6, white, pale blue-gray #edf5fc, natural kraft-cardboard brown; subtle natural plant green only where appropriate. Scene fills the frame, balanced visual hierarchy, all important objects complete and within generous 6 percent safe margins, readable as a small thumbnail. No readable text, letters or numerals, no watermark, no photorealism, no plastic 3D rendering, no cartoon faces, no gradients. Scene: A close, wide editorial view of a kitchen packing station: one open kraft carton on a white table with upright ceramic plates wrapped and separated in pale packing paper, divided compartments protecting two drinking glasses, a roll of paper and blue tape dispenser beside it. Minimal navy cabinets in the background. Make the protection of fragile kitchenware clear. Complete carton and glass silhouettes inside safe frame margins. No people, no text, no labels.",
+      "source": "source/kitchen-packing.png",
+      "web": [
+        "/assets/images/guides/kitchen-packing-640.webp",
+        "/assets/images/guides/kitchen-packing-1280.webp"
+      ]
+    },
+    {
+      "id": "office",
+      "name": "office-move",
+      "prompt": "Use case: illustration-story. Asset type: premium editorial cover illustration for a Los Angeles moving guide. Create ONE finished landscape 16:9 illustration with a 1536 by 864 composition. Unified illustration series: tactile cut-paper collage, crisp cut-paper contours, restrained fine paper grain, believable simple geometric perspective, matte surfaces, soft natural shadows. Professional and useful rather than cute. Deep navy #032449, vivid blue #188bf6, white, pale blue-gray #edf5fc, natural kraft-cardboard brown; subtle natural plant green only where appropriate. Scene fills the frame, balanced visual hierarchy, all important objects complete and within generous 6 percent safe margins, readable as a small thumbnail. No readable text, letters or numerals, no watermark, no photorealism, no plastic 3D rendering, no cartoon faces, no gradients. Scene: A small office being prepared for a move: two simple navy office desks, a blue task chair, two kraft cartons with blank blue square labels, a powered-off monitor with neatly coiled disconnected cable, and a clipboard with a simple abstract room plan without text. A bright Los Angeles window and palm silhouette. Calm arranged paper-cut architectural scene with clean perspective. No people, no company logos, no legible information.",
+      "source": "source/office-move.png",
+      "web": [
+        "/assets/images/guides/office-move-640.webp",
+        "/assets/images/guides/office-move-1280.webp"
+      ]
+    },
+    {
+      "id": "inventory",
+      "name": "moving-inventory",
+      "prompt": "Use case: illustration-story. Asset type: premium editorial cover illustration for a Los Angeles moving guide. Create ONE finished landscape 16:9 illustration with a 1536 by 864 composition. Unified illustration series: tactile cut-paper collage, crisp cut-paper contours, restrained fine paper grain, believable simple geometric perspective, matte surfaces, soft natural shadows. Professional and useful rather than cute. Deep navy #032449, vivid blue #188bf6, white, pale blue-gray #edf5fc, natural kraft-cardboard brown; subtle natural plant green only where appropriate. Scene fills the frame, balanced visual hierarchy, all important objects complete and within generous 6 percent safe margins, readable as a small thumbnail. No readable text, letters or numerals, no watermark, no photorealism, no plastic 3D rendering, no cartoon faces, no gradients. Scene: A wide moving-inventory scene showing a blue sofa, a small wooden side table, standing lamp and a few kraft moving cartons arranged in a room. A large clipboard in the foreground uses small pictograms of those same objects with abstract blue check marks, and a navy phone displays a simplified framing outline around a sofa image, with no text or controls. Show the connection between household objects, an item list and inventory photos. Full object shapes, no people, no words.",
+      "source": "source/moving-inventory.png",
+      "web": [
+        "/assets/images/guides/moving-inventory-640.webp",
+        "/assets/images/guides/moving-inventory-1280.webp"
+      ]
+    },
+    {
+      "id": "parking",
+      "name": "truck-loading",
+      "prompt": "Use case: illustration-story. Asset type: premium editorial cover illustration for a Los Angeles moving guide. Create ONE finished landscape 16:9 illustration with a 1536 by 864 composition. Unified illustration series: tactile cut-paper collage, crisp cut-paper contours, restrained fine paper grain, believable simple geometric perspective, matte surfaces, soft natural shadows. Professional and useful rather than cute. Deep navy #032449, vivid blue #188bf6, white, pale blue-gray #edf5fc, natural kraft-cardboard brown; subtle natural plant green only where appropriate. Scene fills the frame, balanced visual hierarchy, all important objects complete and within generous 6 percent safe margins, readable as a small thumbnail. No readable text, letters or numerals, no watermark, no photorealism, no plastic 3D rendering, no cartoon faces, no gradients. Scene: An architectural editorial cut-paper illustration of a Los Angeles apartment loading area. A complete generic navy box moving truck with both visible wheels and its cab fully in frame, parked parallel beside the curb, with a clear carrying route toward a blue apartment entrance. A small hand truck and two kraft cartons are staged safely beside the entrance, not in traffic. Palm tree and restrained pale-blue city buildings. A plain unlettered curb sign gives context without implying any parking rule. No people, no brand logos, no text, no fake permit, no incorrect parking instructions.",
+      "source": "source/truck-loading.png",
+      "web": [
+        "/assets/images/guides/truck-loading-640.webp",
+        "/assets/images/guides/truck-loading-1280.webp"
+      ]
+    }
+  ]
+}

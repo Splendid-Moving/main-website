@@ -55,8 +55,11 @@
 .related-reads { padding-top: 44px; padding-bottom: 54px; }
 .related-reads > h2, .guide-index > h2 { color: #032449; font-size: clamp(1.65rem, 2.8vw, 2.3rem); line-height: 1.25; margin-bottom: 28px; letter-spacing: -.025em; }
 .reading-grid { display: grid; gap: 22px; }
-.reading-card { display: flex; flex-direction: column; padding: 26px; border: 1px solid #dce5ef; background: #fff; border-radius: 12px; text-decoration: none; color: #032449; transition: border-color .2s ease, box-shadow .2s ease; }
+.reading-card { display: flex; flex-direction: column; padding: 0; border: 1px solid #dce5ef; background: #fff; border-radius: 12px; text-decoration: none; color: #032449; transition: border-color .2s ease, box-shadow .2s ease; }
 .reading-card:hover { border-color: #83bdf5; box-shadow: 0 5px 18px rgb(3 36 73 / 5%); }
+.reading-card__content { display: flex; flex: 1; min-width: 0; flex-direction: column; padding: 26px; }
+.reading-card--illustrated { overflow: hidden; }
+.reading-card__image { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; flex-shrink: 0; background: #edf5fc; border-bottom: 1px solid #dce5ef; }
 .reading-card__category { color: #0065c9; font-size: .78rem; margin-bottom: 16px; font-weight: 600; }
 .reading-card h3 { font-size: 1.33rem; line-height: 1.35; color: #032449; margin: 0 0 14px; letter-spacing: -.02em; }
 .reading-card p { color: #64748b; font-size: .89rem; line-height: 1.75; margin: 0 0 25px; }
@@ -71,6 +74,38 @@
 .guide-index--services { padding-top: 64px; padding-bottom: 44px; }
 .content-hero--index { padding-bottom: 52px; }
 .index-intro { max-width: 890px; }
+.article-cover { margin: 0; min-width: 0; }
+.article-cover__image { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 12px; }
+.article-cover figcaption { margin-top: 13px; color: #52657d; font-size: .8rem; line-height: 1.65; }
+.content-hero--article .content-hero__grid { gap: 34px; }
+.content-hero--article h1 { font-size: clamp(2.15rem, 3.8vw, 3.35rem); }
+.article-outline { border-bottom: 1px solid #dce5ef; padding: 0 0 18px; color: #032449; }
+.article-outline summary:focus-visible { outline: 3px solid #188bf6; outline-offset: 4px; }
+.article-outline summary { cursor: pointer; font-weight: 600; font-size: .9rem; }
+.article-outline nav { margin-top: 20px; }
+.article-outline ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+.article-outline a { font-size: .86rem; line-height: 1.6; color: #0065c9; }
+.guide-diagram { margin: 34px 0; padding: 26px; background: #f3f7fc; border-radius: 10px; }
+.guide-diagram figcaption { margin-bottom: 24px; }
+.guide-diagram figcaption strong { display: block; color: #032449; font-family: var(--font-display); font-size: 1.13rem; line-height: 1.4; }
+.guide-diagram figcaption span { display: block; margin-top: 7px; color: #52657d; font-size: .82rem; line-height: 1.7; }
+.guide-diagram > p { font-size: .8rem; line-height: 1.75; margin: 22px 0 0; color: #52657d; }
+.quote-equation { display: grid; grid-template-columns: 1.5fr auto 1fr auto 1fr; gap: 12px; align-items: center; color: #032449; text-align: center; font-size: .88rem; line-height: 1.65; }
+.quote-equation > div { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 110px; padding: 14px 8px; border-top: 3px solid #188bf6; background: #fff; }
+.quote-equation strong { font-size: 1.2rem; }
+.quote-equation__plus { color: #188bf6; font-size: 1.5rem; }
+.label-example { display: grid; grid-template-columns: 140px auto minmax(0, 1fr); align-items: center; gap: 20px; }
+.moving-label { padding: 18px; color: #032449; background: #fff; border: 2px solid #d7b589; border-top: 9px solid #188bf6; }
+.moving-label span { display: block; font-size: .78rem; }
+.moving-label strong { display: block; font-size: 1.35rem; margin: 8px 0; }
+.label-example__arrow { color: #188bf6; font-size: 2rem; text-align: center; }
+.office-plan { display: grid; grid-template-columns: 1.15fr 1fr; grid-template-rows: 75px 65px; border: 3px solid #032449; color: #032449; background: #fff; font-size: .75rem; line-height: 1.6; }
+.office-plan > div { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 10px; }
+.office-plan__finance { grid-row: span 2; background: #deedff; border-right: 3px solid #032449; }
+.office-plan > div:last-child { border-top: 3px solid #032449; }
+.office-plan strong { color: #0065c9; font-size: 1.1rem; }
+.guide-diagram svg { display: block; width: 100%; height: auto; }
+.packing-legend { display: grid; grid-template-columns: 1.2fr 1fr; gap: 14px; color: #032449; text-align: center; font-size: .8rem; line-height: 1.6; }
 .content-footer { background: #032449; color: #c6d6e9; padding: 56px 0 28px; }
 .content-footer__grid { display: grid; gap: 32px; font-size: .88rem; line-height: 1.8; }
 .content-footer__name { color: #fff; font-size: 1.2rem; font-weight: 700; }
@@ -91,6 +126,9 @@
     .content-page { padding-bottom: 0; }
     .content-hero { padding-top: 160px; }
     .content-hero--service .content-hero__grid { grid-template-columns: minmax(0, 1.4fr) minmax(240px, .8fr); gap: 70px; }
+    .content-hero--article .content-hero__grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 54px; }
+    .content-hero--article h1 { font-size: clamp(2.7rem, 3.8vw, 3.35rem); }
+    .article-outline { display: none; }
     .article-layout { grid-template-columns: minmax(0, 760px) minmax(250px, 310px); gap: 70px; }
     .article-aside { position: sticky; top: 110px; }
     .article-toc { display: block; }
@@ -109,9 +147,16 @@
     .article-body th, .article-body td { padding: 11px 7px; overflow-wrap: anywhere; }
     .content-end { padding: 28px 22px; margin-top: 24px; margin-bottom: 45px; }
     .content-end .btn { width: 100%; }
-    .reading-card { padding: 24px; }
+    .reading-card__content { padding: 24px; }
     .related-reads { padding-top: 36px; padding-bottom: 28px; }
     .guide-index { padding-top: 38px; }
     .content-byline { font-size: .76rem; column-gap: 14px; }
+    .guide-diagram { padding: 22px 18px; }
+    .quote-equation { grid-template-columns: 1fr; gap: 6px; }
+    .quote-equation > div { min-height: auto; width: 100%; padding: 16px; }
+    .quote-equation__plus { font-size: 1.6rem; }
+    .label-example { grid-template-columns: 1fr; justify-items: center; gap: 12px; }
+    .label-example__arrow { transform: rotate(90deg); }
+    .office-plan { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) { .reading-card { transition: none; } }

@@ -1,0 +1,127 @@
+{
+  "description": "Source and optimized artwork fingerprints for the illustrated guide release. Only the sixteen WebP files are deployed.",
+  "created_local_date": "2026-11-04",
+  "timezone": "America/Los_Angeles",
+  "files": [
+    {
+      "file": "design/blog-illustrations/source/apartment-checklist.png",
+      "bytes": 2830151,
+      "sha256": "02a27f3b31ce6bfd3ba70f28ba7410742459c122328dd7256a5af28b7632562b"
+    },
+    {
+      "file": "./assets/images/guides/apartment-checklist-640.webp",
+      "bytes": 23926,
+      "sha256": "fa1c7925963904a4c5034cceb3ed24771df69a8d4ea1e91647e63fbf4fb500b8"
+    },
+    {
+      "file": "./assets/images/guides/apartment-checklist-1280.webp",
+      "bytes": 70060,
+      "sha256": "af8583b676d776901692c39ec6b6389613225d5dadefe11c0aa56ac9f55f454e"
+    },
+    {
+      "file": "design/blog-illustrations/source/moving-costs.png",
+      "bytes": 2859304,
+      "sha256": "0b31c0408f6310fe48790c09a494a4d6c5a8f2b02f736388031256768fc6c89e"
+    },
+    {
+      "file": "./assets/images/guides/moving-costs-640.webp",
+      "bytes": 20864,
+      "sha256": "d4ecc39d36eb61f7e7bdd467dafa12e3b197616372d3d4965c83647bb45bae52"
+    },
+    {
+      "file": "./assets/images/guides/moving-costs-1280.webp",
+      "bytes": 62768,
+      "sha256": "8b41730ae6e0e60671d0bb2712798aab78f9d07eb1979bf4d9a04ac3a10f32dd"
+    },
+    {
+      "file": "design/blog-illustrations/source/building-access.png",
+      "bytes": 2763149,
+      "sha256": "6305c2c1e571903ae86e5a031a4d0536597918db90bc50a4cab6ebf2a1da6464"
+    },
+    {
+      "file": "./assets/images/guides/building-access-640.webp",
+      "bytes": 23674,
+      "sha256": "d27be673d5d489871fb9463a5c3ecf8c3afafb7c47a10948d0e5f3de02b95983"
+    },
+    {
+      "file": "./assets/images/guides/building-access-1280.webp",
+      "bytes": 69494,
+      "sha256": "57547118436e64589a08b15d1e892293b7acce7b77727aa4dd8546a6635f09fa"
+    },
+    {
+      "file": "design/blog-illustrations/source/walkup-move.png",
+      "bytes": 2978341,
+      "sha256": "c0eedf0471299609d4abc6cf44505a712a326775c7a8670341635c7c088033f2"
+    },
+    {
+      "file": "./assets/images/guides/walkup-move-640.webp",
+      "bytes": 19624,
+      "sha256": "8dd065539062c9c3c9886634a46090222111ee854b1679ec71e002b9f0514ced"
+    },
+    {
+      "file": "./assets/images/guides/walkup-move-1280.webp",
+      "bytes": 67178,
+      "sha256": "045f3381d0d263a04185956fecbf04d6c6a0b291cc8325fe5f5b8023be6242da"
+    },
+    {
+      "file": "design/blog-illustrations/source/kitchen-packing.png",
+      "bytes": 2673858,
+      "sha256": "8ff12c8131d1dcbfbaa3b5ed64a9ccccfbfbdf04ca54a5f626328ba232da8527"
+    },
+    {
+      "file": "./assets/images/guides/kitchen-packing-640.webp",
+      "bytes": 19056,
+      "sha256": "bd8704c5fb25d97b059e44fdd44948efc036092c024354cb773cfd86af4def20"
+    },
+    {
+      "file": "./assets/images/guides/kitchen-packing-1280.webp",
+      "bytes": 55974,
+      "sha256": "63506fe5f36e50218797a4287873250d5a165d95cd21767416f146c98953176a"
+    },
+    {
+      "file": "design/blog-illustrations/source/office-move.png",
+      "bytes": 2740901,
+      "sha256": "0b818aade7b29a7cc4ddd347d3c9168e5b21a2c8a326249df1f7420f79d4ae62"
+    },
+    {
+      "file": "./assets/images/guides/office-move-640.webp",
+      "bytes": 23002,
+      "sha256": "f95b380f8829c55cc0eb7f5ba7434409d97ffbf493f0b745da6fce1fa4af04c8"
+    },
+    {
+      "file": "./assets/images/guides/office-move-1280.webp",
+      "bytes": 64764,
+      "sha256": "a184ef586f2cbd31eaeaf7ad322bb8b96aecca028fc3ecec989db7d23c8d3469"
+    },
+    {
+      "file": "design/blog-illustrations/source/moving-inventory.png",
+      "bytes": 2726117,
+      "sha256": "bc300a4d7967dad6dcfc9d28b8b677de43fee80e89a0b2c48b2f11a2d6a00507"
+    },
+    {
+      "file": "./assets/images/guides/moving-inventory-640.webp",
+      "bytes": 23754,
+      "sha256": "f18e70890bde46f33b8356f08487c0573b421314e42317dd3dde5b2ec9075d5c"
+    },
+    {
+      "file": "./assets/images/guides/moving-inventory-1280.webp",
+      "bytes": 63452,
+      "sha256": "7a62e891c6d802a2aff71ce0e199ab8e787a3a78c58ba4f2d56fa7ab453f59a8"
+    },
+    {
+      "file": "design/blog-illustrations/source/truck-loading.png",
+      "bytes": 2916437,
+      "sha256": "346035de67576347a08073797125d498f0b1bc7dd136f4aec7e04f2f53b27691"
+    },
+    {
+      "file": "./assets/images/guides/truck-loading-640.webp",
+      "bytes": 20512,
+      "sha256": "e34a3a6a4e4e4ca785daac613d2b5ace4a738cc0d60489f316b05290c155934c"
+    },
+    {
+      "file": "./assets/images/guides/truck-loading-1280.webp",
+      "bytes": 64458,
+      "sha256": "aca2aa638770010918b4b9c6e8cec4fe32d699e090f6cd74ddf5471e93db5ecd"
+    }
+  ]
+}

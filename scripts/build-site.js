@@ -69,7 +69,10 @@ for (const page of catalog.pages) {
 writePage('blog', renderBlogIndex(catalog.pages, catalog.published));
 
 const paths = [...existing.map(page => page.path), 'blog', ...catalog.pages.map(page => page.path)];
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${paths.map(path => `  <url><loc>${e(canonical(path))}</loc><lastmod>${published}</lastmod></url>`).join('\n')}\n</urlset>\n`;
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${paths.map(path => {
+    const image = catalog.pages.find(page => page.path === path)?.image;
+    return `  <url><loc>${e(canonical(path))}</loc><lastmod>${published}</lastmod>${image ? `<image:image><image:loc>${e(`${origin}${image.src}`)}</image:loc></image:image>` : ''}</url>`;
+}).join('\n')}\n</urlset>\n`;
 writeFileSync(join(output, 'sitemap.xml'), sitemap);
 writeFileSync(join(output, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`);
 const feed = `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Splendid Moving guides</title><link>${origin}/blog</link><description>Practical moving guides for Los Angeles.</description><language>en-us</language>${catalog.pages.filter(page => page.kind === 'article').map(page => `<item><title>${e(page.heading)}</title><link>${canonical(page.path)}</link><guid isPermaLink="true">${canonical(page.path)}</guid><description>${e(page.description)}</description><pubDate>${new Date(`${catalog.published}T00:00:00Z`).toUTCString()}</pubDate></item>`).join('')}</channel></rss>\n`;

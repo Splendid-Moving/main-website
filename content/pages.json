@@ -65,7 +65,15 @@
       "summary": "Book the elevator, check the loading route and get the right details into your quote.",
       "body": "blog/apartment-moving-checklist-los-angeles.md",
       "queries": ["apartment moving checklist los angeles"],
-      "related": ["apartment-movers-los-angeles", "blog/moving-building-coi-elevator-reservations", "blog/los-angeles-moving-parking-loading"]
+      "related": ["apartment-movers-los-angeles", "blog/moving-building-coi-elevator-reservations", "blog/los-angeles-moving-parking-loading"],
+      "image": {
+        "src": "/assets/images/guides/apartment-checklist-1280.webp",
+        "small": "/assets/images/guides/apartment-checklist-640.webp",
+        "width": 1280,
+        "height": 720,
+        "alt": "Paper-cut illustration of a blue apartment door, moving boxes, keys and a checklist.",
+        "caption": "Have the building's moving window and access instructions ready."
+      }
     },
     {
       "path": "blog/how-much-do-movers-cost-los-angeles",
@@ -77,7 +85,16 @@
       "summary": "Use the actual hourly rates, then account for the minimum, access and applicable fees.",
       "body": "blog/how-much-do-movers-cost-los-angeles.md",
       "queries": ["how much do movers cost los angeles", "two movers and a truck cost los angeles"],
-      "related": ["small-moves-los-angeles", "apartment-movers-los-angeles", "packing-services-los-angeles"]
+      "related": ["small-moves-los-angeles", "apartment-movers-los-angeles", "packing-services-los-angeles"],
+      "image": {
+        "src": "/assets/images/guides/moving-costs-1280.webp",
+        "small": "/assets/images/guides/moving-costs-640.webp",
+        "width": 1280,
+        "height": 720,
+        "alt": "Illustrated moving boxes, calculator, coins and clock for planning moving costs.",
+        "caption": "Start with the crew rate, then account for the minimum and route-based charges."
+      },
+      "diagram": "quote-components"
     },
     {
       "path": "blog/moving-building-coi-elevator-reservations",
@@ -89,7 +106,15 @@
       "summary": "A certificate, a reservation and the approved entrance are separate things to confirm.",
       "body": "blog/moving-building-coi-elevator-reservations.md",
       "queries": ["moving coi elevator reservation los angeles", "apartment moving certificate of insurance los angeles"],
-      "related": ["apartment-movers-los-angeles", "small-office-movers-los-angeles", "blog/apartment-moving-checklist-los-angeles"]
+      "related": ["apartment-movers-los-angeles", "small-office-movers-los-angeles", "blog/apartment-moving-checklist-los-angeles"],
+      "image": {
+        "src": "/assets/images/guides/building-access-1280.webp",
+        "small": "/assets/images/guides/building-access-640.webp",
+        "width": 1280,
+        "height": 720,
+        "alt": "Illustrated building paperwork and calendar beside an apartment service elevator.",
+        "caption": "Confirm the paperwork and elevator booking with both buildings."
+      }
     },
     {
       "path": "blog/moving-without-elevator-los-angeles",
@@ -101,7 +126,15 @@
       "summary": "Count the flights and measure the turns before the sofa reaches the stairwell.",
       "body": "blog/moving-without-elevator-los-angeles.md",
       "queries": ["moving apartment without elevator los angeles", "walk up apartment movers los angeles"],
-      "related": ["apartment-movers-los-angeles", "small-moves-los-angeles", "blog/how-much-do-movers-cost-los-angeles"]
+      "related": ["apartment-movers-los-angeles", "small-moves-los-angeles", "blog/how-much-do-movers-cost-los-angeles"],
+      "image": {
+        "src": "/assets/images/guides/walkup-move-1280.webp",
+        "small": "/assets/images/guides/walkup-move-640.webp",
+        "width": 1280,
+        "height": 720,
+        "alt": "Illustrated apartment stairs and landing with moving boxes and a hand truck at the base.",
+        "caption": "Measure narrow turns and count the flights at both addresses."
+      }
     },
     {
       "path": "blog/packing-kitchen-for-a-move",
@@ -113,7 +146,16 @@
       "summary": "Keep dishes protected and box weights sensible, then set aside what you need tonight.",
       "body": "blog/packing-kitchen-for-a-move.md",
       "queries": ["how to pack kitchen for apartment move", "packing dishes and glasses for moving"],
-      "related": ["packing-services-los-angeles", "blog/apartment-moving-checklist-los-angeles", "blog/long-distance-moving-inventory-checklist"]
+      "related": ["packing-services-los-angeles", "blog/apartment-moving-checklist-los-angeles", "blog/long-distance-moving-inventory-checklist"],
+      "image": {
+        "src": "/assets/images/guides/kitchen-packing-1280.webp",
+        "small": "/assets/images/guides/kitchen-packing-640.webp",
+        "width": 1280,
+        "height": 720,
+        "alt": "Illustration of upright plates and separated glasses protected inside a packing box.",
+        "caption": "Separate fragile pieces and cushion the gaps before closing the box."
+      },
+      "diagram": "fragile-packing"
     },
     {
       "path": "blog/office-moving-checklist-los-angeles",
@@ -125,7 +167,16 @@
       "summary": "Give every desk a destination and every piece of equipment a named owner.",
       "body": "blog/office-moving-checklist-los-angeles.md",
       "queries": ["small office moving checklist los angeles", "office relocation planning los angeles"],
-      "related": ["small-office-movers-los-angeles", "commercial-moving", "blog/moving-building-coi-elevator-reservations"]
+      "related": ["small-office-movers-los-angeles", "commercial-moving", "blog/moving-building-coi-elevator-reservations"],
+      "image": {
+        "src": "/assets/images/guides/office-move-1280.webp",
+        "small": "/assets/images/guides/office-move-640.webp",
+        "width": 1280,
+        "height": 720,
+        "alt": "Illustrated office desks, labeled boxes, a floor plan and a disconnected monitor.",
+        "caption": "Give furniture and boxes a destination on the new floor plan."
+      },
+      "diagram": "desk-labels"
     },
     {
       "path": "blog/long-distance-moving-inventory-checklist",
@@ -137,7 +188,15 @@
       "summary": "Show what is moving, what is staying and how the crew will reach it.",
       "body": "blog/long-distance-moving-inventory-checklist.md",
       "queries": ["long distance moving inventory checklist", "photos for long distance moving quote"],
-      "related": ["long-distance-moving", "packing-services-los-angeles", "blog/apartment-moving-checklist-los-angeles"]
+      "related": ["long-distance-moving", "packing-services-los-angeles", "blog/apartment-moving-checklist-los-angeles"],
+      "image": {
+        "src": "/assets/images/guides/moving-inventory-1280.webp",
+        "small": "/assets/images/guides/moving-inventory-640.webp",
+        "width": 1280,
+        "height": 720,
+        "alt": "Illustration matching a sofa, lamp and boxes to an inventory checklist and phone photo.",
+        "caption": "Match each photo to an item or room on your inventory."
+      }
     },
     {
       "path": "blog/los-angeles-moving-parking-loading",
@@ -149,7 +208,15 @@
       "summary": "An empty curb, a loading dock and a garage entrance each need a different check.",
       "body": "blog/los-angeles-moving-parking-loading.md",
       "queries": ["moving truck parking los angeles apartment", "moving day loading zone los angeles"],
-      "related": ["apartment-movers-los-angeles", "blog/moving-building-coi-elevator-reservations", "blog/apartment-moving-checklist-los-angeles"]
+      "related": ["apartment-movers-los-angeles", "blog/moving-building-coi-elevator-reservations", "blog/apartment-moving-checklist-los-angeles"],
+      "image": {
+        "src": "/assets/images/guides/truck-loading-1280.webp",
+        "small": "/assets/images/guides/truck-loading-640.webp",
+        "width": 1280,
+        "height": 720,
+        "alt": "Illustrated moving truck beside a Los Angeles apartment entrance with a clear loading route.",
+        "caption": "Check the curb, the loading entrance and the path to your door."
+      }
     }
   ]
 }
