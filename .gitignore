@@ -23,3 +23,7 @@ node_modules/
 # Local browser review artifacts
 .playwright-cli/
 output/playwright/
+
+# Generated public site and private measurement exports
+dist/
+seo/snapshots/

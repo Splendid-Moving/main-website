@@ -61,7 +61,7 @@ Native date fields and other controls are constrained to the card’s width. All
 
 ### Website analytics
 
-All five public pages load `scripts/analytics.js`, which connects production visits to Google Analytics property `433959940`, web stream `7782345323` (`G-SRG0H6LFG5`). This is the existing `splendidmoving.com` property accessible through Treg. Vercel Analytics remains enabled alongside Google Analytics.
+All 18 public pages load `scripts/analytics.js`, which connects production visits to Google Analytics property `433959940`, web stream `7782345323` (`G-SRG0H6LFG5`). This is the existing `splendidmoving.com` property accessible through Treg. Vercel Analytics remains enabled alongside Google Analytics.
 
 The shared tag runs only on `splendidmoving.com` and `www.splendidmoving.com`; localhost and Vercel preview domains do not send Google Analytics events. Google handles standard page-view measurement. This setup does not add custom quote-submission or completed-call conversion events.
 
@@ -71,9 +71,9 @@ To verify a deployment, open a production page and check that the Google tag loa
 
 - Install: `npm ci`.
 - App/API development: `npm run dev` using the Vercel CLI and the intended project/environment.
-- Static-only preview: `npm start`, then open `/quote.html`. Python's simple server does not provide `/quote` clean URLs or API routes.
-- Automated checks: `npm test` — 47 passing, mocked network, no real messages.
-- Build check: `npm run build` (static site; no frontend compilation).
+- Static-only preview: `npm run build && npm start`, then open `http://127.0.0.1:8000`. The preview supports clean URLs but does not run API functions.
+- Automated checks: `npm test` — quote behavior, static SEO output and ranking comparison; mocked network, no real messages.
+- Build and link checks: `npm run build && npm run seo:validate`. The build writes only public files to `dist/`; Vercel retains root `api/` functions.
 
 **Every test uses only phone `8185054576`.** Nikita deleted the previous test contact. The authorized new test contact is **Quote Form Test**, ID `7QEmujHBzyoV5LNCtfxw`. A real new-contact test delivered the three-mover quote with a $30 gas fee. Retrying the same request reused the original message ID with no second send. The live returning request updated that same contact to 4+ bedrooms and a flexible date, stored $30 gas, and delivered the four-mover quote. A production retry reused the same message ID. Exactly two quote messages exist for the two genuine requests; long-distance inventory submission created an assigned manual-pricing task with no hourly SMS.
 
@@ -88,3 +88,24 @@ Automated checks cover rates/rounding, long-distance/manual cases, Google outage
 - `assets/vendor/` — separately loaded HEIC decoder, license, and source reference.
 - `tests/` — meaningful business-rule and CRM contract checks.
 - `SPEC.md` — agreed behavior, limits, and current status.
+
+## SEO content and monitoring
+
+The November 4, 2026 release adds four service pages (apartments, small moves, packing with a move, and small offices), eight planning guides, and `/blog`. Edit metadata and related links in `content/pages.json`; edit bodies in `content/landing/` and `content/blog/`. Run the build to generate real HTML, an 18-URL sitemap and the eight-article RSS feed. Generated output is ignored by Git. Existing pages remain root HTML sources, with common metadata/schema and discovery links applied during the build.
+
+`SEO_PLAN.md` records scope and checks; `.agents/product-marketing.md` records supported claims and voice. New copy uses the shared `copywriting` skill. Keywords in the catalog are targeting hypotheses; search volume and ranking gains have not been invented. New content is in English, with English guides identified in translated navigation.
+
+The build removes self-serving aggregate review markup, adds MovingCompany/Service/BlogPosting/BreadcrumbList data, and creates relevant permanent redirects for four retired URLs. It serves responsive WebP hero images (about 210 KiB desktop and 79 KiB mobile). The original full-size image stays in source but is excluded from deployed output. Quote calculation and submission code are unchanged.
+
+### Repeatable measurements
+
+The original observations are preserved in `seo/baselines/2026-11-04-rankings.json`. The fixed organic panel uses Los Angeles, English, desktop and depth 50. A missing rank means absent from the examined rows; it is never assigned position 51. The baseline's brand crosscheck remains separate because its provider disagreed with DataForSEO. Maps was #13 of 20 non-sponsored results in the audit; this organic collector does not refresh Maps.
+
+- Preview rankings at no cost: `npm run seo:ranks`.
+- After fresh spending authorization, repeat the six-query panel: `npm run seo:ranks -- --live --budget 0.06`. This was the November 4 rate-card estimate; the per-call hard ceiling stops a higher reservation. Raw evidence is saved before parsing; failed/uncertain calls are not retried automatically.
+- Compare: `npm run seo:compare -- --baseline seo/baselines/2026-11-04-rankings.json --current seo/snapshots/RUN/rankings.json --output seo/snapshots/RUN/comparison.md`.
+- Preview first-party exports: `npm run seo:metrics`. Fetch connected Search Console and GA4 reports with `npm run seo:metrics -- --live`; this uses team tools, not paid catalog endpoints.
+
+All commands use the existing Treg CLI login in team `splendidmoving`; do not copy a token into this repository. Raw exports stay in ignored `seo/snapshots/` and are excluded from the web build. Do not publish those exports. Comparisons reject changed providers, location, language, device or depth and flag unresolved result domains. Brand and Maps require their separate audit settings if refreshed.
+
+Check the fixed rank panel weekly and compare first-party performance across complete 28-day periods. No recurring paid job is installed. Search Console's empty responses mean data is unavailable; they do not prove zero traffic. GA4's tag began on November 4, so earlier periods cannot establish a fair before/after comparison. Track organic clicks/impressions and quote outcomes alongside ranks; page views alone are not booked moves. `seo/changes.json` records the release for later attribution. No additional paid calls were made for this rollout.

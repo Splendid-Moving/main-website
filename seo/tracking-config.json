@@ -1,0 +1,12 @@
+{
+  "domain": "splendidmoving.com",
+  "provider": "DataForSEO",
+  "endpoint": "dataforseo.google.serp.organic",
+  "location": "Los Angeles, California, US (1013962)",
+  "location_code": 1013962,
+  "language": "en",
+  "device": "desktop",
+  "requested_depth": 50,
+  "estimated_usd_per_query": 0.01,
+  "queries": ["local movers los angeles", "movers los angeles", "long distance movers los angeles", "commercial movers los angeles", "office movers los angeles", "packing services los angeles"]
+}

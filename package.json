@@ -6,9 +6,13 @@
   "private": true,
   "scripts": {
     "dev": "vercel dev",
-    "build": "echo 'Static site - no build needed'",
-    "start": "python3 -m http.server 8000",
-    "test": "node --test tests/*.test.js"
+    "build": "node scripts/build-site.js",
+    "start": "node scripts/preview-site.js",
+    "test": "node --test tests/*.test.js",
+    "seo:validate": "node scripts/validate-site.js",
+    "seo:compare": "node scripts/seo/compare.js",
+    "seo:ranks": "node scripts/seo/collect-rankings.js",
+    "seo:metrics": "node scripts/seo/collect-metrics.js"
   },
   "dependencies": {
     "@sentry/node": "^11.8.0"
@@ -20,6 +24,8 @@
   "author": "Splendid Moving",
   "license": "UNLICENSED",
   "devDependencies": {
-    "heic-to": "1.6.6"
+    "cheerio": "1.2.0",
+    "heic-to": "1.6.6",
+    "marked": "18.1.3"
   }
 }

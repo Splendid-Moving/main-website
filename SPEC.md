@@ -139,6 +139,8 @@ For local quotes, the optional line is exactly `Gas fee: $<fee>`. On failure, re
 
 ## Status
 
+SEO increment authorized November 4, 2026: the separate [SEO rollout contract](SEO_PLAN.md) covers content publishing, technical repairs and ranking comparisons. It preserves this quote-automation contract and all customer-send boundaries below.
+
 _Updated: 2026-10-18_
 - Address-first `/quote`, gas calculation, and automatic GHL SMS are live from `main`; the photo/mobile increment is deployed from commit `c7f5565`. `AUTO_QUOTES_ENABLED=true` and the existing operations task assignee are configured in production. Redis dependency removed.
 - Core changes pass 47 checks: phone-first contact lookup/update, new-request re-quotes even with identical details, same-request retry receipts in GHL notes, no-Redis gas/SMS, failures/DND/manual branches. Blank new dates clear old dates.

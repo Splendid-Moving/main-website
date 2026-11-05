@@ -1,9 +1,40 @@
 {
-  "buildCommand": null,
-  "outputDirectory": ".",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.splendidmoving.com"
+        }
+      ],
+      "destination": "https://splendidmoving.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/our-services",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/contacts",
+      "destination": "/quote",
+      "permanent": true
+    },
+    {
+      "source": "/residental-moving",
+      "destination": "/local-moving",
+      "permanent": true
+    },
+    {
+      "source": "/about-company",
+      "destination": "/#about",
+      "permanent": true
+    },
     {
       "source": "/pages/:slug",
       "destination": "/:slug",

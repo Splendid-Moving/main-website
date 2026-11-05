@@ -569,7 +569,7 @@ h4 {
     content: '';
     position: absolute;
     inset: 0;
-    background: url('../assets/images/hero-bg.png') center/cover no-repeat;
+    background: url('../assets/images/hero-desktop.webp') center/cover no-repeat;
     opacity: 0.15;
     mix-blend-mode: luminosity;
 }
@@ -2976,4 +2976,9 @@ body {
         padding: 0.5rem 0;
         border-top: 1px solid var(--gray-100);
     }
+}
+
+/* Keep the original hero framing while downloading a smaller image on phones. */
+@media (max-width: 767px) {
+    .hero__gradient::before { background-image: url('../assets/images/hero-mobile.webp'); }
 }
