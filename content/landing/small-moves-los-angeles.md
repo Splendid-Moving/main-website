@@ -28,6 +28,6 @@ If your building has a reserved elevator window, confirm that the moving arrange
 
 Packing and unpacking labor can be included in the work you ask us to do. If you want help, identify the rooms or items in advance. A kitchen that is still in the cabinets is a different request from a kitchen already in labeled boxes.
 
-Our documented offer includes furniture blankets, wardrobe boxes for use during the move, tape and shrink wrap. Confirm the materials you need; boxes and bubble wrap may cost extra. See [packing help with your move](/packing-services-los-angeles) for a useful request checklist.
+Your crew brings furniture blankets, wardrobe boxes for use during the move, tape and shrink wrap. Confirm the materials you need; boxes and bubble wrap may cost extra. See [packing help with your move](/packing-services-los-angeles) for a useful request checklist.
 
 Send your addresses, preferred date and item list through the [quote form](/quote). If the minimum charge is the deciding factor for you, call [(323) 645-2636](tel:+13236452636) and discuss the scope before booking.

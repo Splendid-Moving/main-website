@@ -172,7 +172,7 @@
     "local.details.cost4": "<strong>Escaleras y Ascensores:</strong> Múltiples pisos pueden tomar más tiempo",
     "local.details.cost5": "<strong>Acceso:</strong> Acarreos largos o requisitos de permiso",
     "local.details.cost6": "<strong>Artículos Especiales:</strong> Pianos, cajas fuertes, antigüedades o muebles grandes",
-    "local.details.noHidden": "<strong>Revise el presupuesto completo.</strong> Confirme la tarifa por hora, el cargo mínimo, el combustible aplicable, las condiciones del tiempo de conducción y los materiales adicionales antes de reservar.",
+    "local.details.noHidden": "<strong>Se aplica un cargo de combustible según la ruta.</strong> Confírmelo junto con la tarifa por hora, el cargo mínimo, las condiciones del tiempo de conducción y los materiales adicionales antes de reservar.",
     "local.details.processH3": "Cómo Funciona",
     "local.details.step1Title": "Obtener Presupuesto",
     "local.details.step1Desc": "Llame o complete el formulario. Confirmaremos tamaño y detalles.",

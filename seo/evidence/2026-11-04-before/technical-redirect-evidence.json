@@ -1,0 +1,50 @@
+[
+  {
+    "url": "http://splendidmoving.com/",
+    "status": 308,
+    "location": "https://splendidmoving.com/",
+    "x_robots_tag": null
+  },
+  {
+    "url": "https://www.splendidmoving.com/",
+    "status": 307,
+    "location": "https://splendidmoving.com/",
+    "x_robots_tag": null
+  },
+  {
+    "url": "http://www.splendidmoving.com/",
+    "status": 308,
+    "location": "https://www.splendidmoving.com/",
+    "x_robots_tag": null
+  },
+  {
+    "url": "https://splendidmoving.com/local-moving/",
+    "status": 308,
+    "location": "/local-moving",
+    "x_robots_tag": null
+  },
+  {
+    "url": "https://splendidmoving.com/index.html",
+    "status": 308,
+    "location": "/",
+    "x_robots_tag": null
+  },
+  {
+    "url": "https://splendidmoving.com/local-moving.html",
+    "status": 308,
+    "location": "/local-moving",
+    "x_robots_tag": null
+  },
+  {
+    "url": "https://splendidmoving.com/quote.html",
+    "status": 308,
+    "location": "/quote",
+    "x_robots_tag": null
+  },
+  {
+    "url": "https://splendidmoving.com/our-services/",
+    "status": 308,
+    "location": "/our-services",
+    "x_robots_tag": null
+  }
+]

@@ -18,6 +18,12 @@ test('matching measured ranks yield the correct directional movement', () => {
     assert.equal(change.status, 'improved');
 });
 
+test('a newly tracked long-tail query has no invented prior position', () => {
+    const rows = compareRankings([base], [{ ...base, query: 'apartment movers los angeles', observed_rank: 24 }]);
+    assert.equal(rows[1].status, 'new measurement');
+    assert.equal(rows[1].change, null);
+});
+
 test('different provider or location is not treated as ranking movement', () => {
     for (const altered of [{ provider: 'Other provider' }, { location: 'United States' }, { device: 'mobile' }]) {
         const [change] = compareRankings([base], [{ ...base, ...altered, observed_rank: 1 }]);

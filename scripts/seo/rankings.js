@@ -2,7 +2,7 @@
 // Provider and search settings must match before movement can be reported.
 export function compareRankings(baseline, current) {
     const keys = ['provider', 'location', 'language', 'device', 'requested_depth'];
-    return baseline.map(before => {
+    const compared = baseline.map(before => {
         const after = current.find(row => row.query === before.query && (row.channel || 'organic') === (before.channel || 'organic'));
         const result = { query: before.query, channel: before.channel || 'organic', before: before.observed_rank, after: after?.observed_rank ?? null, change: null };
         if (!after) return { ...result, status: 'not measured' };
@@ -14,6 +14,8 @@ export function compareRankings(baseline, current) {
         const change = before.observed_rank - after.observed_rank;
         return { ...result, change, status: change > 0 ? 'improved' : change < 0 ? 'declined' : 'unchanged' };
     });
+    const added = current.filter(after => !baseline.some(before => before.query === after.query && (before.channel || 'organic') === (after.channel || 'organic')));
+    return [...compared, ...added.map(after => ({ query: after.query, channel: after.channel || 'organic', before: null, after: after.observed_rank, change: null, status: 'new measurement' }))];
 }
 
 function host(value) {

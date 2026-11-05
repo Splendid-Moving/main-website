@@ -1,0 +1,175 @@
+{
+  "description": "Unchanged public SEO evidence collected before release 2e91b9e. Hashes protect the portfolio baseline from accidental editing; private account reports and credentials are excluded.",
+  "capture_date": "2026-11-04",
+  "site_commit_before": "b509ed24fba11244acb9941da3b88e1b660e214a",
+  "files": [
+    {
+      "file": "technical-http-evidence.json",
+      "sha256": "62ab0b92e0b11a3becf6f7fee9c4726be67aafb68911423c000c6d51c7c0f0fc",
+      "bytes": 785527,
+      "source_audit": "Splendid Moving SEO audit"
+    },
+    {
+      "file": "technical-links-assets.json",
+      "sha256": "035d44fbb4f70b0293ec0bd33c085e3a98c0aa4972a378744f4e51d0d7da03c8",
+      "bytes": 13746,
+      "source_audit": "Splendid Moving SEO audit"
+    },
+    {
+      "file": "technical-redirect-evidence.json",
+      "sha256": "583e554af101c07a5a4680be2f535e387608740f6e7605d633ec5afdca740bca",
+      "bytes": 1122,
+      "source_audit": "Splendid Moving SEO audit"
+    },
+    {
+      "file": "content-live-summary.json",
+      "sha256": "a61a8ba53dba6a390053c57d5213bc09dcda571b4f3f08d6cc80a1b17238c4ad",
+      "bytes": 57351,
+      "source_audit": "Splendid Moving SEO audit"
+    },
+    {
+      "file": "content-live-home.html",
+      "sha256": "a6ff12d3c40c8f5b5561ed7550d0225098cfb07e7eaab783dc1198e5543b2a94",
+      "bytes": 91302,
+      "source_audit": "Splendid Moving SEO audit"
+    },
+    {
+      "file": "content-live-local-moving.html",
+      "sha256": "7309f6f7671026de317c04af09f3a23cf8eb7f5e261a04cb12f169e8cb960157",
+      "bytes": 32818,
+      "source_audit": "Splendid Moving SEO audit"
+    },
+    {
+      "file": "content-live-long-distance-moving.html",
+      "sha256": "9c271dab2beeeedd17cc44b830bf20166bac865387fb5eb0551f1b0411974528",
+      "bytes": 34076,
+      "source_audit": "Splendid Moving SEO audit"
+    },
+    {
+      "file": "content-live-commercial-moving.html",
+      "sha256": "05aa2521c1c39a4b3cb6f697ec81586c3f4a57e2ad1111a6f6b366018c586f44",
+      "bytes": 31424,
+      "source_audit": "Splendid Moving SEO audit"
+    },
+    {
+      "file": "content-live-quote.html",
+      "sha256": "f50499de39eeda663f1f740a4947bf032a1d948be2923d9f490ed2476a1753bf",
+      "bytes": 5279,
+      "source_audit": "Splendid Moving SEO audit"
+    },
+    {
+      "file": "technical-live-styles.css",
+      "sha256": "4e7bc763a76560dcf91fd3698178e9b7230752c9fb659f2a9ac2a541368f0f40",
+      "bytes": 58527,
+      "source_audit": "Splendid Moving SEO audit"
+    },
+    {
+      "file": "treg-backlinks-summary.json",
+      "sha256": "33189d11d65b77774f3acd32c9bdd4e65c19bb81800e29a12dd6a5c429ea615c",
+      "bytes": 3851,
+      "source_audit": "Splendid Moving SEO audit"
+    },
+    {
+      "file": "treg-ranked-keywords.json",
+      "sha256": "2924742141e465d9f03f3b2da3b48b2fa0d99a3efd7a2a2ee86c6f475bdffea9",
+      "bytes": 17445,
+      "source_audit": "Splendid Moving SEO audit"
+    },
+    {
+      "file": "ranking-matrix.json",
+      "sha256": "728879042620054d994ecc51cbd337ebc5d6a1e93048335aa46b323c5aedc384",
+      "bytes": 3390,
+      "source_audit": "Splendid Moving search visibility audit"
+    },
+    {
+      "file": "ranking-matrix.csv",
+      "sha256": "6cdd4212088374597fcc3001312e0044204c420c26cf482e6f88c34131b918e3",
+      "bytes": 1660,
+      "source_audit": "Splendid Moving search visibility audit"
+    },
+    {
+      "file": "rank-brand-advanced.json",
+      "sha256": "edca96fe7ab562b987388626541bddaabceb130ecf1c97a045dbf53b99ae5f9a",
+      "bytes": 28469,
+      "source_audit": "Splendid Moving search visibility audit"
+    },
+    {
+      "file": "rank-brand-cloro-crosscheck.json",
+      "sha256": "0b3dbd1d449220658ecf9a3673877dc46c8aaae389ba022a0fa837f0c12b91e4",
+      "bytes": 10781,
+      "source_audit": "Splendid Moving search visibility audit"
+    },
+    {
+      "file": "rank-local-cloro-crosscheck.json",
+      "sha256": "ce5a20153736de48413f5b769c655d2fa0ead0ca75f8555a30a9eef0d7b1f722",
+      "bytes": 12915,
+      "source_audit": "Splendid Moving search visibility audit"
+    },
+    {
+      "file": "rank-local-movers-los-angeles.json",
+      "sha256": "3ee7dfbd5060f53cdf25423f48f8bd4afa0956af56950b805300dd9fa6e1f4bb",
+      "bytes": 30172,
+      "source_audit": "Splendid Moving search visibility audit"
+    },
+    {
+      "file": "rank-movers-los-angeles.json",
+      "sha256": "a49090fd0e85860e5c9c2d3e0bf82ec20a4f8d1798b090bb856fd47e03c8c739",
+      "bytes": 29802,
+      "source_audit": "Splendid Moving search visibility audit"
+    },
+    {
+      "file": "rank-long-distance-movers-los-angeles.json",
+      "sha256": "16f09a1121e910a40594175da32a5ebe8ca49dc0f4e86f764d38b822f02495a1",
+      "bytes": 29068,
+      "source_audit": "Splendid Moving search visibility audit"
+    },
+    {
+      "file": "rank-commercial-movers-los-angeles.json",
+      "sha256": "3f5fffdfaf025fa872f20f0861fad8d4ef801de9685b0ef110d53658a76aaaa3",
+      "bytes": 30134,
+      "source_audit": "Splendid Moving search visibility audit"
+    },
+    {
+      "file": "rank-office-movers-los-angeles.json",
+      "sha256": "239b032c19b5001e68d26959e6afd4e211b899f8ba162faa7411f00f806f2375",
+      "bytes": 32280,
+      "source_audit": "Splendid Moving search visibility audit"
+    },
+    {
+      "file": "rank-packing-services-los-angeles.json",
+      "sha256": "152d15ff6b107e0c5b873adb05f9776b6181f4ad88d3a49e7bb0205fd5412de1",
+      "bytes": 28955,
+      "source_audit": "Splendid Moving search visibility audit"
+    },
+    {
+      "file": "rank-maps-movers-los-angeles.json",
+      "sha256": "e8196a02d8281d4027766670a3e96669218c98c4457a1c996bf5a39e71e61176",
+      "bytes": 18750,
+      "source_audit": "Splendid Moving search visibility audit"
+    },
+    {
+      "file": "organic-result-domain-resolution.json",
+      "sha256": "7b83ae4e1c89a569c6962ae8874b14e3e5654178756e4603de4afeba2292c492",
+      "bytes": 197554,
+      "source_audit": "Splendid Moving search visibility audit"
+    },
+    {
+      "file": "top10-recurring-company-domains.json",
+      "sha256": "bad285a326fc3c3254fd268ff81c3cccda4766398d15570aba3b00d6e9b9418f",
+      "bytes": 1003,
+      "source_audit": "Splendid Moving search visibility audit"
+    },
+    {
+      "file": "top-competitor-resolved-urls.json",
+      "sha256": "3388ac42880b7ea77caafcb42d3f386b83d007cbae446fe4dec175cc2f9d98f5",
+      "bytes": 4519,
+      "source_audit": "Splendid Moving search visibility audit"
+    },
+    {
+      "file": "gsc-homepage-inspection.json",
+      "sha256": "9c93d4dd384e498cdbd92ef1be500266ec296f74ac7e2748c296870721a41b3b",
+      "bytes": 1251,
+      "source_audit": "Splendid Moving search visibility audit"
+    }
+  ]
+}

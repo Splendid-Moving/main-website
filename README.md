@@ -91,7 +91,7 @@ Automated checks cover rates/rounding, long-distance/manual cases, Google outage
 
 ## SEO content and monitoring
 
-The November 4, 2026 release adds four service pages (apartments, small moves, packing with a move, and small offices), eight planning guides, and `/blog`. Edit metadata and related links in `content/pages.json`; edit bodies in `content/landing/` and `content/blog/`. Run the build to generate real HTML, an 18-URL sitemap and the eight-article RSS feed. Generated output is ignored by Git. Existing pages remain root HTML sources, with common metadata/schema and discovery links applied during the build.
+The November 4, 2026 release adds four service pages (apartments, small moves, packing with a move, and small offices), eight planning guides, and `/blog`. Edit metadata and related links in `content/pages.json`; edit bodies in `content/landing/` and `content/blog/`. Run the build to generate real HTML, an 18-URL sitemap and the eight-article RSS feed. Generated output is ignored by Git. `dist/sitemap.xml` and `dist/robots.txt` are generated; there are no separate root copies to maintain. Existing pages remain root HTML sources, with common metadata/schema and discovery links applied during the build.
 
 `SEO_PLAN.md` records scope and checks; `.agents/product-marketing.md` records supported claims and voice. New copy uses the shared `copywriting` skill. Keywords in the catalog are targeting hypotheses; search volume and ranking gains have not been invented. New content is in English, with English guides identified in translated navigation.
 
@@ -101,7 +101,7 @@ The build removes self-serving aggregate review markup, adds MovingCompany/Servi
 
 The original observations are preserved in `seo/baselines/2026-11-04-rankings.json`. The fixed organic panel uses Los Angeles, English, desktop and depth 50. A missing rank means absent from the examined rows; it is never assigned position 51. The baseline's brand crosscheck remains separate because its provider disagreed with DataForSEO. Maps was #13 of 20 non-sponsored results in the audit; this organic collector does not refresh Maps.
 
-- Preview rankings at no cost: `npm run seo:ranks`.
+- Preview rankings at no cost: `npm run seo:ranks`. Add `-- --include-long-tail` to preview all 28 distinct targets from the content catalog (currently estimated at $0.28); this also requires fresh spending authorization before live collection. The first observed long-tail ranks establish their own baseline, with no invented earlier positions.
 - After fresh spending authorization, repeat the six-query panel: `npm run seo:ranks -- --live --budget 0.06`. This was the November 4 rate-card estimate; the per-call hard ceiling stops a higher reservation. Raw evidence is saved before parsing; failed/uncertain calls are not retried automatically.
 - Compare: `npm run seo:compare -- --baseline seo/baselines/2026-11-04-rankings.json --current seo/snapshots/RUN/rankings.json --output seo/snapshots/RUN/comparison.md`.
 - Preview first-party exports: `npm run seo:metrics`. Fetch connected Search Console and GA4 reports with `npm run seo:metrics -- --live`; this uses team tools, not paid catalog endpoints.
@@ -109,3 +109,17 @@ The original observations are preserved in `seo/baselines/2026-11-04-rankings.js
 All commands use the existing Treg CLI login in team `splendidmoving`; do not copy a token into this repository. Raw exports stay in ignored `seo/snapshots/` and are excluded from the web build. Do not publish those exports. Comparisons reject changed providers, location, language, device or depth and flag unresolved result domains. Brand and Maps require their separate audit settings if refreshed.
 
 Check the fixed rank panel weekly and compare first-party performance across complete 28-day periods. No recurring paid job is installed. Search Console's empty responses mean data is unavailable; they do not prove zero traffic. GA4's tag began on November 4, so earlier periods cannot establish a fair before/after comparison. Track organic clicks/impressions and quote outcomes alongside ranks; page views alone are not booked moves. `seo/changes.json` records the release for later attribution. No additional paid calls were made for this rollout.
+
+### November 4 production verification
+
+Release `2e91b9e` deployed successfully through the Git integration. All 18 public URLs returned 200 with matching canonical URLs and parseable structured data. Desktop/mobile screenshots were reviewed for the homepage, blog index, service page, cost guide and quote form. The quote API returned its expected 405 to a GET probe; no lead was submitted. All 57 local checks pass after adding comparison support for newly measured long-tail queries.
+
+Google accepted the sitemap (204), then reported that it had downloaded all 18 submitted URLs with no warnings or errors. This confirms sitemap processing, not individual page indexing. The four legacy paths reach their intended replacements with permanent redirects. The domain-level `www` redirect still returns 307 before project routing; the Vercel connector and existing CLI credential both lack access to this team, so changing that domain setting remains outstanding. The apex canonical URLs are live and consistent.
+
+### Portfolio evidence
+
+`seo/BASELINE.md` is the readable before/after record. `seo/baselines/2026-11-04-baseline.json` freezes the original technical, ranking, Maps and link metrics. Its 28 source evidence files are archived under `seo/evidence/2026-11-04-before/` with SHA-256 hashes; keep them unchanged. They are development evidence and are excluded from the deployed site. Later technical releases go in `seo/milestones/`; later rank exports stay in dated private snapshot folders. Do not relabel today's technical implementation results as ranking, traffic or revenue gains.
+
+Fuel wording: the old local-page claim “No fuel surcharges” has been removed. The English, Spanish and Korean copy now states that a gas fee applies based on the route. The existing Gas Fee CRM field, calculation and quote handling are unchanged.
+
+The first live Lighthouse homepage runs, recorded after release `2e91b9e`, scored mobile/desktop performance 73/97, accessibility 89/89, best practices 100/100 and SEO checks 100/100. These are starting lab measurements, not pre-release improvement claims or field Core Web Vitals. Full JSON and HTML reports, settings, timestamps and hashes are stored under `seo/evidence/2026-11-04-after/`; a compact summary is `seo/milestones/2026-11-04-performance-start.json`.

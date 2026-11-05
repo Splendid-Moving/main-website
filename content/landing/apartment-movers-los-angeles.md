@@ -14,13 +14,13 @@ A bedroom count helps us begin. An item list helps us understand the actual move
 
 Measure a large piece against the narrowest doorway and stair turn. If you are unsure it fits, send the dimensions and photos before booking. Moving day is a poor time to discover that a sofa will not clear a landing.
 
-Tell us which furniture you want reassembled at the new address. Splendid Moving can dismount, wrap and transport a TV, but installation at the new property is not part of the offer. Make that separate arrangement if you need it.
+Tell us which furniture you want reassembled at the new address. Splendid Moving can dismount, wrap and transport a TV, but we do not remount it at the new property. Make that separate arrangement if you need it.
 
 ## Decide what you want packed
 
-Some customers pack every box themselves. Others ask for help with the kitchen or another room. Packing and unpacking labor are part of our service offer, and the time involved belongs in the moving plan. Tell us what you want help with so the quote reflects it.
+Some customers pack every box themselves. Others ask for help with the kitchen or another room. We can help pack and unpack. Tell us how much help you need so we can allow time for it. Include those rooms in your quote request.
 
-Furniture blankets and wardrobe boxes for use during the move are available. Tape and shrink wrap are included in the documented offer; boxes and bubble wrap can add to the cost. Confirm the materials for your move with the team. The [packing service page](/packing-services-los-angeles) explains what to put on your request.
+Furniture blankets and wardrobe boxes for use during the move are available. Tape and shrink wrap are included; boxes and bubble wrap can add to the cost. Confirm the materials for your move with the team. The [packing service page](/packing-services-los-angeles) explains what to put on your request.
 
 ## Get building paperwork settled early
 

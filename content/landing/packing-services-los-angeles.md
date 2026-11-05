@@ -12,7 +12,7 @@ Make a separate note for items you will carry yourself, such as medication, iden
 
 ## Confirm which materials your move needs
 
-The documented Splendid Moving offer includes tape and shrink wrap, furniture blankets and wardrobe boxes for use during the move. Boxes and bubble wrap may add to the charge. Confirm the materials and quantities with the team rather than assuming every room needs the same supplies.
+We bring tape and shrink wrap, furniture blankets and wardrobe boxes for use during the move. Boxes and bubble wrap may add to the charge. Confirm the materials and quantities with the team rather than assuming every room needs the same supplies.
 
 Packing labor takes time. For local residential work, the published two-mover rate is $115 per hour with cash or $125 with a card, with a three-hour minimum. That is the local moving service's hourly rate. The exact packing work needs its own scope in your moving quote. Ask for the packing scope to be reflected in your actual quote.
 

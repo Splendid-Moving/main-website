@@ -1,0 +1,464 @@
+{
+  "internal_links": [
+    {
+      "url": "https://splendidmoving.com/",
+      "final_url": "https://splendidmoving.com/",
+      "status": 200,
+      "bytes": 91302,
+      "type": "text/html; charset=utf-8",
+      "references": [
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "#"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "#services"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "#pricing"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "#process"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "#testimonials"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "#faq"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "#testimonials"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "#services"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "#pricing"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "#testimonials"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "#faq"
+        },
+        {
+          "from": "https://splendidmoving.com/quote",
+          "href": "/"
+        },
+        {
+          "from": "https://splendidmoving.com/quote",
+          "href": "/"
+        },
+        {
+          "from": "https://splendidmoving.com/local-moving",
+          "href": "/"
+        },
+        {
+          "from": "https://splendidmoving.com/local-moving",
+          "href": "/#services"
+        },
+        {
+          "from": "https://splendidmoving.com/local-moving",
+          "href": "/#pricing"
+        },
+        {
+          "from": "https://splendidmoving.com/local-moving",
+          "href": "/#process"
+        },
+        {
+          "from": "https://splendidmoving.com/local-moving",
+          "href": "/#testimonials"
+        },
+        {
+          "from": "https://splendidmoving.com/local-moving",
+          "href": "/#faq"
+        },
+        {
+          "from": "https://splendidmoving.com/local-moving",
+          "href": "/"
+        },
+        {
+          "from": "https://splendidmoving.com/long-distance-moving",
+          "href": "/"
+        },
+        {
+          "from": "https://splendidmoving.com/long-distance-moving",
+          "href": "/#services"
+        },
+        {
+          "from": "https://splendidmoving.com/long-distance-moving",
+          "href": "/#pricing"
+        },
+        {
+          "from": "https://splendidmoving.com/long-distance-moving",
+          "href": "/#process"
+        },
+        {
+          "from": "https://splendidmoving.com/long-distance-moving",
+          "href": "/#testimonials"
+        },
+        {
+          "from": "https://splendidmoving.com/long-distance-moving",
+          "href": "/#faq"
+        },
+        {
+          "from": "https://splendidmoving.com/long-distance-moving",
+          "href": "/"
+        },
+        {
+          "from": "https://splendidmoving.com/commercial-moving",
+          "href": "/"
+        },
+        {
+          "from": "https://splendidmoving.com/commercial-moving",
+          "href": "/#services"
+        },
+        {
+          "from": "https://splendidmoving.com/commercial-moving",
+          "href": "/#pricing"
+        },
+        {
+          "from": "https://splendidmoving.com/commercial-moving",
+          "href": "/#process"
+        },
+        {
+          "from": "https://splendidmoving.com/commercial-moving",
+          "href": "/#testimonials"
+        },
+        {
+          "from": "https://splendidmoving.com/commercial-moving",
+          "href": "/#faq"
+        },
+        {
+          "from": "https://splendidmoving.com/commercial-moving",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "url": "https://splendidmoving.com/quote",
+      "final_url": "https://splendidmoving.com/quote",
+      "status": 200,
+      "bytes": 5279,
+      "type": "text/html; charset=utf-8",
+      "references": [
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "/quote"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "/quote"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "/quote"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "/quote"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "/quote"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "/quote"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "/quote"
+        },
+        {
+          "from": "https://splendidmoving.com/quote",
+          "href": "#quote-form"
+        },
+        {
+          "from": "https://splendidmoving.com/local-moving",
+          "href": "/quote"
+        },
+        {
+          "from": "https://splendidmoving.com/local-moving",
+          "href": "/quote"
+        },
+        {
+          "from": "https://splendidmoving.com/local-moving",
+          "href": "/quote"
+        },
+        {
+          "from": "https://splendidmoving.com/long-distance-moving",
+          "href": "/quote"
+        },
+        {
+          "from": "https://splendidmoving.com/long-distance-moving",
+          "href": "/quote"
+        },
+        {
+          "from": "https://splendidmoving.com/long-distance-moving",
+          "href": "/quote"
+        },
+        {
+          "from": "https://splendidmoving.com/commercial-moving",
+          "href": "/quote"
+        },
+        {
+          "from": "https://splendidmoving.com/commercial-moving",
+          "href": "/quote"
+        },
+        {
+          "from": "https://splendidmoving.com/commercial-moving",
+          "href": "/quote"
+        }
+      ]
+    },
+    {
+      "url": "https://splendidmoving.com/local-moving",
+      "final_url": "https://splendidmoving.com/local-moving",
+      "status": 200,
+      "bytes": 32818,
+      "type": "text/html; charset=utf-8",
+      "references": [
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "/local-moving"
+        }
+      ]
+    },
+    {
+      "url": "https://splendidmoving.com/commercial-moving",
+      "final_url": "https://splendidmoving.com/commercial-moving",
+      "status": 200,
+      "bytes": 31424,
+      "type": "text/html; charset=utf-8",
+      "references": [
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "/commercial-moving"
+        }
+      ]
+    },
+    {
+      "url": "https://splendidmoving.com/long-distance-moving",
+      "final_url": "https://splendidmoving.com/long-distance-moving",
+      "status": 200,
+      "bytes": 34076,
+      "type": "text/html; charset=utf-8",
+      "references": [
+        {
+          "from": "https://splendidmoving.com/",
+          "href": "/long-distance-moving"
+        }
+      ]
+    },
+    {
+      "url": "https://splendidmoving.com/index.html",
+      "final_url": "https://splendidmoving.com/",
+      "status": 200,
+      "bytes": 91302,
+      "type": "text/html; charset=utf-8",
+      "references": [
+        {
+          "from": "https://splendidmoving.com/local-moving",
+          "href": "index.html#testimonials"
+        },
+        {
+          "from": "https://splendidmoving.com/long-distance-moving",
+          "href": "index.html#testimonials"
+        },
+        {
+          "from": "https://splendidmoving.com/commercial-moving",
+          "href": "index.html#testimonials"
+        }
+      ]
+    }
+  ],
+  "missing_same_page_fragments": [],
+  "image_assets": [
+    {
+      "url": "https://splendidmoving.com/assets/images/Brand Logo.png",
+      "final_url": "https://splendidmoving.com/assets/images/Brand%20Logo.png",
+      "status": 200,
+      "bytes": 36091,
+      "type": "image/png",
+      "references": [
+        {
+          "from": "https://splendidmoving.com/",
+          "src": "assets/images/Brand Logo.png",
+          "alt": "Splendid Moving",
+          "class": "nav__logo-img"
+        },
+        {
+          "from": "https://splendidmoving.com/",
+          "src": "assets/images/Brand Logo.png",
+          "alt": "Splendid Moving",
+          "class": "footer__logo"
+        },
+        {
+          "from": "https://splendidmoving.com/quote",
+          "src": "/assets/images/Brand Logo.png",
+          "alt": "Splendid Moving",
+          "class": "nav__logo-img"
+        },
+        {
+          "from": "https://splendidmoving.com/local-moving",
+          "src": "assets/images/Brand Logo.png",
+          "alt": "Splendid Moving",
+          "class": "nav__logo-img"
+        },
+        {
+          "from": "https://splendidmoving.com/long-distance-moving",
+          "src": "assets/images/Brand Logo.png",
+          "alt": "Splendid Moving",
+          "class": "nav__logo-img"
+        },
+        {
+          "from": "https://splendidmoving.com/commercial-moving",
+          "src": "assets/images/Brand Logo.png",
+          "alt": "Splendid Moving",
+          "class": "nav__logo-img"
+        }
+      ]
+    },
+    {
+      "url": "https://lh3.googleusercontent.com/a/ACg8ocIiOHsPvP8mUuKjZt6azaXrZFnEXcBXrLWEu39AWQGXHONZkA=s128-c0x00000000-cc-rp-mo",
+      "final_url": "https://lh3.googleusercontent.com/a/ACg8ocIiOHsPvP8mUuKjZt6azaXrZFnEXcBXrLWEu39AWQGXHONZkA=s128-c0x00000000-cc-rp-mo",
+      "status": 200,
+      "bytes": 4160,
+      "type": "image/png",
+      "references": [
+        {
+          "from": "https://splendidmoving.com/",
+          "src": "https://lh3.googleusercontent.com/a/ACg8ocIiOHsPvP8mUuKjZt6azaXrZFnEXcBXrLWEu39AWQGXHONZkA=s128-c0x00000000-cc-rp-mo",
+          "alt": "",
+          "loading": "lazy",
+          "referrerpolicy": "no-referrer",
+          "onerror": "this.remove()"
+        }
+      ]
+    },
+    {
+      "url": "https://lh3.googleusercontent.com/a-/ALV-UjV425JN4evKXtS-KIvulT58pZoayvZMSpSLjR7dDSy7hSHggf4=s128-c0x00000000-cc-rp-mo",
+      "final_url": "https://lh3.googleusercontent.com/a-/ALV-UjV425JN4evKXtS-KIvulT58pZoayvZMSpSLjR7dDSy7hSHggf4=s128-c0x00000000-cc-rp-mo",
+      "status": 200,
+      "bytes": 26476,
+      "type": "image/png",
+      "references": [
+        {
+          "from": "https://splendidmoving.com/",
+          "src": "https://lh3.googleusercontent.com/a-/ALV-UjV425JN4evKXtS-KIvulT58pZoayvZMSpSLjR7dDSy7hSHggf4=s128-c0x00000000-cc-rp-mo",
+          "alt": "",
+          "loading": "lazy",
+          "referrerpolicy": "no-referrer",
+          "onerror": "this.remove()"
+        }
+      ]
+    },
+    {
+      "url": "https://lh3.googleusercontent.com/a-/ALV-UjUiqJR7r7Dxv5TbKDHPEK3ZfT1fsRRzIkitbZBOdxBU195XFzXRsg=s128-c0x00000000-cc-rp-mo-ba2",
+      "final_url": "https://lh3.googleusercontent.com/a-/ALV-UjUiqJR7r7Dxv5TbKDHPEK3ZfT1fsRRzIkitbZBOdxBU195XFzXRsg=s128-c0x00000000-cc-rp-mo-ba2",
+      "status": 200,
+      "bytes": 19627,
+      "type": "image/png",
+      "references": [
+        {
+          "from": "https://splendidmoving.com/",
+          "src": "https://lh3.googleusercontent.com/a-/ALV-UjUiqJR7r7Dxv5TbKDHPEK3ZfT1fsRRzIkitbZBOdxBU195XFzXRsg=s128-c0x00000000-cc-rp-mo-ba2",
+          "alt": "",
+          "loading": "lazy",
+          "referrerpolicy": "no-referrer",
+          "onerror": "this.remove()"
+        }
+      ]
+    },
+    {
+      "url": "https://lh3.googleusercontent.com/a/ACg8ocLWgbajWHa0vjr7tUOCsg9GQBIC3AFJDMSmAVm5qNMnf3YOYME=s128-c0x00000000-cc-rp-mo",
+      "final_url": "https://lh3.googleusercontent.com/a/ACg8ocLWgbajWHa0vjr7tUOCsg9GQBIC3AFJDMSmAVm5qNMnf3YOYME=s128-c0x00000000-cc-rp-mo",
+      "status": 200,
+      "bytes": 4492,
+      "type": "image/png",
+      "references": [
+        {
+          "from": "https://splendidmoving.com/",
+          "src": "https://lh3.googleusercontent.com/a/ACg8ocLWgbajWHa0vjr7tUOCsg9GQBIC3AFJDMSmAVm5qNMnf3YOYME=s128-c0x00000000-cc-rp-mo",
+          "alt": "",
+          "loading": "lazy",
+          "referrerpolicy": "no-referrer",
+          "onerror": "this.remove()"
+        }
+      ]
+    },
+    {
+      "url": "https://lh3.googleusercontent.com/a-/ALV-UjVsfY3ws8-EVsveG03mab9bfHtbzofEKC1rslN0toaB_s0uTux4=s128-c0x00000000-cc-rp-mo",
+      "final_url": "https://lh3.googleusercontent.com/a-/ALV-UjVsfY3ws8-EVsveG03mab9bfHtbzofEKC1rslN0toaB_s0uTux4=s128-c0x00000000-cc-rp-mo",
+      "status": 200,
+      "bytes": 29427,
+      "type": "image/png",
+      "references": [
+        {
+          "from": "https://splendidmoving.com/",
+          "src": "https://lh3.googleusercontent.com/a-/ALV-UjVsfY3ws8-EVsveG03mab9bfHtbzofEKC1rslN0toaB_s0uTux4=s128-c0x00000000-cc-rp-mo",
+          "alt": "",
+          "loading": "lazy",
+          "referrerpolicy": "no-referrer",
+          "onerror": "this.remove()"
+        }
+      ]
+    },
+    {
+      "url": "https://splendidmoving.com/assets/images/hero-bg.png",
+      "final_url": "https://splendidmoving.com/assets/images/hero-bg.png",
+      "status": 200,
+      "bytes": 7063710,
+      "type": "image/png",
+      "references": [
+        {
+          "from": "styles.css"
+        },
+        {
+          "from": "styles.css"
+        },
+        {
+          "from": "styles.css"
+        },
+        {
+          "from": "styles.css"
+        },
+        {
+          "from": "styles.css"
+        }
+      ]
+    },
+    {
+      "url": "https://splendidmoving.com/styles/%23noise",
+      "status": 404,
+      "references": [
+        {
+          "from": "styles.css"
+        },
+        {
+          "from": "styles.css"
+        },
+        {
+          "from": "styles.css"
+        },
+        {
+          "from": "styles.css"
+        },
+        {
+          "from": "styles.css"
+        }
+      ]
+    }
+  ]
+}

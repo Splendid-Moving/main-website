@@ -1,0 +1,25 @@
+{
+  "description": "First live Lighthouse lab measurements after SEO release 2e91b9e. These are not pre-release scores or field Core Web Vitals.",
+  "files": [
+    {
+      "file": "lighthouse-current-mobile.report.json",
+      "sha256": "488b077eb605b57bc80e755fc595cc077c69e50691dabb8014566eb7338a1c34",
+      "bytes": 490809
+    },
+    {
+      "file": "lighthouse-current-mobile.report.html",
+      "sha256": "32fcd3432b04da8fff9923a97df29a033743ae40033cc78225b13592deda196f",
+      "bytes": 561899
+    },
+    {
+      "file": "lighthouse-current-desktop.report.json",
+      "sha256": "9cf4ab2321eed82eaf4f854cf6055872b8e135571a85cfce00546c3a7ad5223c",
+      "bytes": 704244
+    },
+    {
+      "file": "lighthouse-current-desktop.report.html",
+      "sha256": "6bb601531a8a33be1234c7ae24dfcd8979ec2175fd4e9df27d01a65ac8dc20af",
+      "bytes": 768981
+    }
+  ]
+}

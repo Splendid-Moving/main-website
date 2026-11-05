@@ -172,7 +172,7 @@
     "local.details.cost4": "<strong>계단 & 엘리베이터:</strong> 다층 이사는 더 오래 걸릴 수 있습니다",
     "local.details.cost5": "<strong>주차 & 접근성:</strong> 장거리 운반 또는 허가 요건",
     "local.details.cost6": "<strong>특수 물품:</strong> 피아노, 금고, 골동품, 또는 대형 가구",
-    "local.details.noHidden": "<strong>전체 견적을 확인해 주세요.</strong> 예약 전에 시간당 요금, 최소 요금, 적용되는 연료비, 운전 시간 청구 조건 및 추가 포장재 비용을 확인해 주세요.",
+    "local.details.noHidden": "<strong>이동 경로에 따라 연료비가 부과됩니다.</strong> 예약 전에 시간당 요금, 최소 요금, 운전 시간 청구 조건 및 추가 포장재 비용과 함께 연료비를 확인해 주세요.",
     "local.details.processH3": "이용 방법",
     "local.details.step1Title": "무료 견적 받기",
     "local.details.step1Desc": "전화하시거나 양식을 작성해 주세요. 이사 규모, 위치, 특수 물품에 대해 확인합니다.",
