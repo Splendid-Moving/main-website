@@ -34,6 +34,18 @@
       "additional_treg_spend_usd": 0,
       "artwork_sources": "design/blog-illustrations/prompts.json",
       "ranking_change": "Not measured for this visual release"
+    },
+    {
+      "date": "2026-11-06",
+      "phase": "Homepage introduction placement",
+      "changes": [
+        "Removed the separate company-summary section before Services",
+        "Shortened the introduction in the existing footer with English, Spanish and Korean copy",
+        "Preserved the about fragment for the legacy About redirect"
+      ],
+      "original_baselines_unchanged": true,
+      "additional_treg_spend_usd": 0,
+      "ranking_change": "Not measured for this copy/layout refinement"
     }
   ]
 }

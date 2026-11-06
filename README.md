@@ -144,3 +144,9 @@ Source PNGs and the full built-in image-generation prompts are in `design/blog-i
 Validation: 61 existing automated checks pass; all 18 public pages pass local link/metadata checks. All eight covers, gallery entries and image-sitemap entries are present. Browser checks covered the index and eight article routes at 320, 390, 768, 1024 and 1440 pixels, with desktop/mobile screenshots and inspection of the inline diagrams. Mobile lazy images were verified by scrolling through the gallery.
 
 Illustration release `250bf3d` was verified live on desktop and mobile. The eight covers and gallery images, all sixteen delivery files, and eight sitemap image entries passed production checks; Google accepted the sitemap with HTTP 204. Before/after index screenshots and verification evidence are saved in `design/blog-illustrations/review/`.
+
+### Homepage introduction, November 6
+
+The short company introduction now sits beneath the footer logo, beside existing contact details. The separate block before Services has been removed. English, Spanish and Korean have their own footer introduction; other pages keep their existing footer text. The `#about` anchor remains available for the legacy `/about-company` redirect. Desktop/mobile screenshots are saved under ignored `output/playwright/home-about-*` and `home-services-*`; all 61 tests and the 18-page build/link/schema validation pass.
+
+The next SEO priorities and measurement dates are recorded in `SEO_PLAN.md`. Published pages and valid markup are implementation results; ranking, traffic and lead improvements still need measured follow-up.

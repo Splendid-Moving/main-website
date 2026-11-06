@@ -44,7 +44,6 @@ for (const page of existing) {
     $('head').append('<link rel="stylesheet" href="/styles/content.css"><link rel="alternate" type="application/rss+xml" title="Splendid Moving guides" href="/feed.xml">');
     if (page.path === '/') {
         $('head').append('<link rel="preload" as="image" href="/assets/images/hero-mobile.webp" media="(max-width: 767px)"><link rel="preload" as="image" href="/assets/images/hero-desktop.webp" media="(min-width: 768px)">');
-        $('#services').before('<section class="about-summary container" id="about" lang="en"><h2>Moving from Los Angeles, with the details agreed in advance.</h2><p>Splendid Moving handles local residential, long-distance and commercial moves connected to the Los Angeles area. Send your addresses, item list and building access details so the team can discuss the crew and quote. You can reach us at <a href="tel:+13236452636">(323) 645-2636</a>, daily from 6AM to 11PM.</p></section>');
     }
     if (page.path !== 'quote') {
         $('#nav-menu').append('<li class="nav__item"><a href="/blog" class="nav__link" data-i18n="nav.guides">Moving guides</a></li>');
