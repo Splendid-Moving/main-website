@@ -476,6 +476,18 @@ function validate() {
 }
 async function complete(result) {
   state.complete = true;
+  if (result.success && result.contactId) {
+    try {
+      window.splendidAnalytics?.quoteSaved({
+        requestId: state.data.requestId,
+        quoteType: state.data.moveSize.startsWith("office-")
+          ? "office"
+          : state.route.classification === "long-distance"
+            ? "long_distance"
+            : state.route.classification === "local" ? "local" : "manual",
+      });
+    } catch {}
+  }
   for (const file of state.files) releasePreview(file);
   state.files = [];
   state.preparedPhotos = null;

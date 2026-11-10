@@ -4,7 +4,7 @@ If you only need a few things moved, send the item list before deciding whether 
 
 ## Work out the minimum before estimating the hours
 
-At the two-mover rate, three hours produces an hourly-charge subtotal of $345 with cash or $375 with a card. This is a rate illustration, not an estimate for a particular job or a promise about completion time. Applicable gas fees, driving-time rules, extra materials and the actual work can change the full quote.
+<guide-panel name="small-move-minimum"></guide-panel>
 
 A short drive does not describe the whole move. A third-floor walk-up and a long carry can take more work than a ground-floor apartment a few neighborhoods away. Tell us about those conditions when you [request a small-move quote](/quote).
 

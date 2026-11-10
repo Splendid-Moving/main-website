@@ -5,7 +5,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { marked } from 'marked';
 import { load } from 'cheerio';
-import { business, origin, published, canonical, breadcrumb, jsonLd, escapeHtml as e } from './site-data.js';
+import { business, origin, published, canonical, breadcrumb, jsonLd, fontLinks, escapeHtml as e } from './site-data.js';
 import { contentCard, renderContentPage, renderBlogIndex } from './site-template.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -33,6 +33,10 @@ function writePage(path, html) {
 
 for (const page of existing) {
     const $ = load(readFileSync(join(root, page.file), 'utf8'));
+    $('link[href*="fonts.googleapis.com"], link[href*="fonts.gstatic.com"]').remove();
+    $('head').prepend(fontLinks);
+    $('script[src*="js.sentry-cdn.com"]').attr('defer', '');
+    $('img[src="assets/images/Brand Logo.png"]').attr('src', '/assets/images/brand-logo-320.webp');
     $('script[type="application/ld+json"]').remove();
     const graph = [business, { '@type': 'WebPage', '@id': `${canonical(page.path)}#webpage`, url: canonical(page.path), name: page.name, isPartOf: { '@id': `${origin}/#website` } }];
     if (page.path === '/') graph.push({ '@type': 'WebSite', '@id': `${origin}/#website`, url: `${origin}/`, name: 'Splendid Moving', publisher: { '@id': business['@id'] } });
@@ -70,7 +74,8 @@ writePage('blog', renderBlogIndex(catalog.pages, catalog.published));
 const paths = [...existing.map(page => page.path), 'blog', ...catalog.pages.map(page => page.path)];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${paths.map(path => {
     const image = catalog.pages.find(page => page.path === path)?.image;
-    return `  <url><loc>${e(canonical(path))}</loc><lastmod>${published}</lastmod>${image ? `<image:image><image:loc>${e(`${origin}${image.src}`)}</image:loc></image:image>` : ''}</url>`;
+    const modified = catalog.pages.find(page => page.path === path)?.modified || published;
+    return `  <url><loc>${e(canonical(path))}</loc><lastmod>${modified}</lastmod>${image ? `<image:image><image:loc>${e(`${origin}${image.src}`)}</image:loc></image:image>` : ''}</url>`;
 }).join('\n')}\n</urlset>\n`;
 writeFileSync(join(output, 'sitemap.xml'), sitemap);
 writeFileSync(join(output, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`);

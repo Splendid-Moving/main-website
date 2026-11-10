@@ -37,11 +37,9 @@ Splendid's local quote terms also explain Double Drive Time when the driving dis
 
 Long-distance moves need an individual pricing conversation based on the route and shipment. Confirm which rates, documents, and terms apply before comparing a long-distance price with a local hourly calculation.
 
-## Read a worked example as arithmetic
+## See how the charges add up
 
-Suppose a two-person local move uses four billable hours at the current cash rate. The labor calculation is four times $115, or $460. If the confirmed gas fee is $30, that subtotal is $490.
-
-That is an illustration. It does not predict how long your apartment will take. It also leaves out any applicable additional materials, drive-time adjustment, or other agreed charges. A different route or access situation changes the inputs.
+<guide-panel name="cost-example"></guide-panel>
 
 For California household moves, BHGS advises customers to obtain the required written estimate after a visual inspection and review the moving agreement. An online hourly-rate illustration is not a substitute for that process. Read the [BHGS consumer guide](https://bhgs.dca.ca.gov/consumers/hhm.html) when comparing movers.
 

@@ -2,6 +2,8 @@ For a walk-up move, the stair route deserves the same attention as the furniture
 
 Give the moving team those details when you request the move. “Second floor” can mean one straight flight, several short sets of steps, or an outside staircase followed by a long hallway.
 
+<guide-panel name="stairs-measurements"></guide-panel>
+
 ## Describe the entire carrying route
 
 Start where the truck is expected to load. Follow the route to the apartment and note each change in level. Include the steps from the sidewalk, the entry stairs, and any stairs inside the unit.
@@ -28,9 +30,7 @@ If you are still packing the kitchen, the [kitchen packing guide](/blog/packing-
 
 ## Leave room for the crew to work
 
-Clear the stairway and the apartment's main walking route. Move shoes, plants, doormats, and small furniture out of the way. Keep pets in a secure room or with someone who can watch them.
-
-Tell neighbors or management when shared stairs will be in use, following your building's rules. A person who can open gates and hold access doors is useful; extra people standing on a landing make the route harder to use.
+<guide-panel name="stairs-checklist"></guide-panel>
 
 Identify anything that stays in the apartment. A clear note on the item is better than expecting everyone to remember which nearly identical chair belongs to a roommate.
 

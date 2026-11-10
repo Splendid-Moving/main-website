@@ -2,6 +2,8 @@ An office move needs a plan for the first working morning at the new address. Ch
 
 For a small Los Angeles office, one clear floor plan and a labeled inventory can prevent a lot of last-minute decisions. Keep responsibility for technology, building access, and physical moving work explicit.
 
+<guide-panel name="office-roles"></guide-panel>
+
 ## Name one person who can make decisions
 
 Pick a move lead who can answer questions for the business. Give that person authority to resolve furniture placement, access, and inventory questions. Identify a backup if the lead will be in meetings or traveling.
@@ -41,5 +43,7 @@ Confirm the arrival window before telling staff the office will be ready at a pa
 On moving day, have someone walk through the old office after loading. Check storage rooms, kitchen cupboards, meeting spaces, and furniture drawers. Account for keys, building passes, and any landlord handover requirements separately.
 
 At the new office, use the inventory to check arrival and placement. Report visible problems promptly and keep the relevant paperwork. Have the responsible staff test their equipment before restarting normal operations.
+
+<guide-panel name="office-checklist"></guide-panel>
 
 Splendid prepares office moves individually rather than sending the household hourly quote automatically. Review our [commercial moving service](/commercial-moving), then [request a custom quote](/quote) with the inventory, building windows, access details, and floor plan.

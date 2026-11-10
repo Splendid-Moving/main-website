@@ -2,6 +2,7 @@
 // The business record uses existing verified website details and never includes private account data.
 export const origin = 'https://splendidmoving.com';
 export const published = '2026-11-04';
+export const fontLinks = '<link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/styles/fonts.css">';
 export const business = {
     '@type': 'MovingCompany',
     '@id': `${origin}/#business`,

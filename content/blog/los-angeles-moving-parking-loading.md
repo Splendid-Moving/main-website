@@ -2,6 +2,8 @@ Check where the moving truck can load before you book a tight building window. T
 
 Plan pickup and delivery separately. Photograph the proposed loading locations so the moving team can see the access conditions you are describing.
 
+<guide-panel name="parking-comparison"></guide-panel>
+
 ## Establish who controls the space
 
 A building manager can explain private loading docks, garages, and driveways. Street parking is a different question. Identify whether the address is in the City of Los Angeles, another city, or an unincorporated part of the county before looking for parking instructions.
@@ -19,6 +21,8 @@ Look at the actual moving day and hours. A place that works when you visit in th
 If you are unsure about a restriction, ask the relevant parking authority before relying on the space. For City of Los Angeles contacts, start with [LADOT](https://ladot.lacity.gov/contact). Confirm the current procedure, any charges, and the timing of any temporary-sign request directly. Procedures and lead times can change.
 
 Do not treat cones, a handwritten note, or a neighbor's promise as confirmation that public curb space has been reserved for your truck.
+
+<guide-panel name="parking-route"></guide-panel>
 
 ## Send the mover useful access information
 

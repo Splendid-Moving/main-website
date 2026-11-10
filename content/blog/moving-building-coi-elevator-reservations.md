@@ -2,6 +2,8 @@ Send your building's moving requirements to the mover before choosing an arrival
 
 For an apartment or office move in Los Angeles, collect the requirements from both buildings. The manager at your new address may use different forms, access hours, or insurance wording from the manager at your current one.
 
+<guide-panel name="coi-comparison"></guide-panel>
+
 ## Get the building's instructions in writing
 
 Ask the leasing office, concierge, HOA, or property manager for its moving packet. If there is no packet, request a short email covering the access rules. The person who approves moving access should provide the instructions.
@@ -45,6 +47,6 @@ Keep personal belongings, deliveries, and rubbish clear of the planned carrying 
 
 ## Put the confirmations in one place
 
-Your final access note should have the approved time, entrances, building contacts, elevator instructions, and confirmation that required paperwork was accepted. Share it with everyone who needs to open a door or answer a question.
+<guide-panel name="coi-checklist"></guide-panel>
 
 [Request a quote](/quote) and include the building instructions with your inventory. If this is an office move, the [commercial moving page](/commercial-moving) explains the information the team uses for a custom plan.

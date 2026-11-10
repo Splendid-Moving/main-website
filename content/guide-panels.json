@@ -1,0 +1,179 @@
+{
+  "description": "Practical visual panels for the moving guides and focused service pages. Examples are labeled illustrations, not records of customer moves.",
+  "panels": {
+    "apartment-timeline": {
+      "type": "timeline",
+      "title": "Plan the move in three passes",
+      "items": [
+        { "title": "Before booking", "text": "Get both buildings’ access rules, moving windows and COI requirements." },
+        { "title": "While packing", "text": "Finish the item list, photograph awkward pieces and label boxes by room." },
+        { "title": "The day before", "text": "Walk the loading route, check the keys and confirm who opens each entrance." }
+      ]
+    },
+    "apartment-handoff": {
+      "type": "checklist",
+      "title": "Have these details ready for the crew",
+      "items": [
+        "The complete item list and any packing help you want.",
+        "Building windows and a contact who can open the loading entrance.",
+        "Parking or loading arrangements at both addresses.",
+        "A plan for where large furniture goes at the new address."
+      ]
+    },
+    "coi-comparison": {
+      "type": "cards",
+      "title": "Two separate confirmations",
+      "items": [
+        { "icon": "document", "title": "Insurance paperwork", "text": "Send the building’s exact requirements to the mover. Management reviews the COI and confirms acceptance.", "note": "Save the acceptance email." },
+        { "icon": "calendar", "title": "Elevator booking", "text": "Reserve the moving window with management. Confirm the entrance, access contact and elevator setup.", "note": "Save the reservation details." }
+      ],
+      "note": "An accepted COI does not reserve an elevator. An elevator booking does not confirm the insurance paperwork."
+    },
+    "coi-checklist": {
+      "type": "checklist",
+      "title": "Keep the access note together",
+      "items": [
+        "Approved moving hours at pickup and delivery.",
+        "The service entrance and loading location.",
+        "Confirmation that required paperwork was accepted.",
+        "Elevator padding, keys and the person opening access.",
+        "A building contact who will answer during the move."
+      ]
+    },
+    "stairs-measurements": {
+      "type": "stairs",
+      "title": "Measure the route, then the furniture",
+      "text": "Check both addresses. These are the points to photograph and measure before the crew arrives.",
+      "items": [
+        { "title": "Door opening", "text": "Measure the clear opening with the door open." },
+        { "title": "Stair width", "text": "Include handrails and any low ceiling." },
+        { "title": "Landing and turn", "text": "Show the space available to rotate a large piece." }
+      ],
+      "note": "A route sketch helps explain access; it cannot confirm that a particular piece will fit."
+    },
+    "stairs-checklist": {
+      "type": "checklist",
+      "title": "Before the stairway gets busy",
+      "items": [
+        "Move shoes, plants and loose objects out of the carrying route.",
+        "Keep pets secure and shared doors accessible.",
+        "Mark furniture and boxes that stay behind.",
+        "Keep your essentials bag separate from the load."
+      ]
+    },
+    "kitchen-sort": {
+      "type": "cards",
+      "title": "Split the kitchen before you start",
+      "items": [
+        { "icon": "cup", "title": "Keep in use", "text": "A few dishes, one pan, everyday utensils and your breakfast setup.", "note": "Pack these after the final meal." },
+        { "icon": "box", "title": "Pack first", "text": "Serving dishes, spare glasses, occasional appliances and the cupboards you rarely open.", "note": "Work through one cupboard at a time." }
+      ]
+    },
+    "kitchen-checklist": {
+      "type": "checklist",
+      "title": "Before sealing a fragile box",
+      "items": [
+        "The base is sound, taped and cushioned.",
+        "Each fragile piece is wrapped and separated.",
+        "Empty gaps are filled so pieces cannot knock together.",
+        "The box closes flat and can be carried safely.",
+        "The side is labeled with the room and contents."
+      ]
+    },
+    "office-roles": {
+      "type": "cards",
+      "title": "Give each part of the move an owner",
+      "items": [
+        { "icon": "plan", "title": "Your move lead", "text": "Owns the inventory, building contacts and placement decisions. Names a backup." },
+        { "icon": "monitor", "title": "Your IT provider", "text": "Handles backups, shutdown, reconnection and network testing as agreed." },
+        { "icon": "truck", "title": "The moving crew", "text": "Handles the physical move and furniture work within the agreed moving scope." }
+      ]
+    },
+    "office-checklist": {
+      "type": "checklist",
+      "title": "Ready for the first working morning",
+      "items": [
+        "The move lead and backup can be reached.",
+        "The floor plan and labels use the same room or desk names.",
+        "IT has confirmed the reconnection and testing plan.",
+        "The receiving person has the inventory and access instructions."
+      ]
+    },
+    "inventory-example": {
+      "type": "inventory",
+      "title": "Write an inventory someone else can use",
+      "text": "Example format. Replace these sample entries with your own items, counts and measurements.",
+      "items": [
+        { "room": "Living room", "item": "Sofa × 1", "detail": "Three-seat with chaise; add dimensions and note removable parts." },
+        { "room": "Bedroom", "item": "Bed frame × 1", "detail": "Add the bed size, storage drawers and disassembly needs." },
+        { "room": "Kitchen", "item": "Packed boxes", "detail": "Add a count or mark it approximate while packing continues." }
+      ]
+    },
+    "inventory-checklist": {
+      "type": "checklist",
+      "title": "Check the places a room list can miss",
+      "items": [
+        "Closets, balcony and outdoor furniture.",
+        "Garage, storage cage or off-site storage.",
+        "Wall-mounted items and appliance parts.",
+        "Items added or removed since the last version.",
+        "Uncertain box counts, dates or destination access."
+      ]
+    },
+    "parking-comparison": {
+      "type": "cards",
+      "title": "Start with the person who controls the space",
+      "items": [
+        { "icon": "building", "title": "Private loading space", "text": "Ask building management about the dock, driveway or garage. Confirm booking, clearance and shared use." },
+        { "icon": "route", "title": "Public curb space", "text": "Check with the authority responsible for the street. Confirm restrictions and any temporary-sign procedure directly." }
+      ],
+      "note": "A postal address in Los Angeles does not establish which city controls the street."
+    },
+    "parking-route": {
+      "type": "route",
+      "title": "Show the whole route from truck to door",
+      "items": [
+        { "icon": "truck", "title": "Loading point", "text": "Stopping position, approach and clearance." },
+        { "icon": "door", "title": "Entrance", "text": "Correct street, gate and access contact." },
+        { "icon": "building", "title": "Inside route", "text": "Lift, steps, corridors and tight turns." },
+        { "icon": "box", "title": "Your door", "text": "Carry distance and the final opening." }
+      ]
+    },
+    "cost-example": {
+      "type": "example",
+      "title": "A worked example, using the cash rate",
+      "items": [
+        { "title": "4 billable hours × $115", "value": "$460", "text": "Hourly charge" },
+        { "title": "Example route-based fee", "value": "$30", "text": "Gas fee" },
+        { "title": "Illustrative subtotal", "value": "$490", "text": "Before other applicable charges" }
+      ],
+      "note": "This is arithmetic, not a job estimate. It does not predict the hours your move needs or include additional materials, drive-time adjustments or other agreed charges."
+    },
+    "packing-scope": {
+      "type": "cards",
+      "title": "Decide how much help you need",
+      "items": [
+        { "icon": "box", "title": "A room or selected items", "text": "Photograph the cupboards, shelves or fragile pieces you want help with. Say which packing you will finish yourself." },
+        { "icon": "plan", "title": "Packing across the home", "text": "Make a room-by-room list. Include storage areas and agree how packing time fits into the moving arrangement." }
+      ],
+      "note": "Tell us which packing tasks you want included. The quote should cover the time and any extra materials."
+    },
+    "packing-materials": {
+      "type": "cards",
+      "title": "Agree the materials before moving day",
+      "items": [
+        { "icon": "truck", "title": "Included moving supplies", "text": "Furniture blankets, wardrobe boxes for use during the move, tape and shrink wrap." },
+        { "icon": "box", "title": "Confirm any extra charge", "text": "Boxes, bubble wrap and other additional materials. Ask which quantities your packing plan needs." }
+      ]
+    },
+    "small-move-minimum": {
+      "type": "minimum",
+      "title": "The two-mover minimum, before other charges",
+      "items": [
+        { "title": "Cash", "value": "$345", "text": "3 hours × $115 per hour" },
+        { "title": "Card", "value": "$375", "text": "3 hours × $125 per hour" }
+      ],
+      "note": "Hourly-charge illustrations for two movers and a truck. The full quote also considers the route-based gas fee, driving-time terms, extra materials and actual work."
+    }
+  }
+}

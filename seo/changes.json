@@ -46,6 +46,26 @@
       "original_baselines_unchanged": true,
       "additional_treg_spend_usd": 0,
       "ranking_change": "Not measured for this copy/layout refinement"
+    },
+    {
+      "date": "2026-11-09",
+      "phase": "Visual guide reading layouts, focused service copy and enquiry measurement",
+      "guides_updated": 8,
+      "service_pages_updated": [
+        "packing-services-los-angeles",
+        "small-moves-los-angeles"
+      ],
+      "changes": [
+        "Topic-specific comparisons, timelines, price cards, route sketches, inventory example and native checklists",
+        "Contents-first sidebar and illustrated related articles",
+        "Saved-quote and phone-link events with local duplicate suppression",
+        "Self-hosted licensed fonts, smaller logo delivery and deferred monitoring loader"
+      ],
+      "verification": "65 automated checks; desktop/mobile browser review and intercepted quote-response checks",
+      "ga4_key_event_status": "Not configured: existing Google token lacks write scope",
+      "original_baselines_unchanged": true,
+      "additional_treg_spend_usd": 0,
+      "ranking_change": "Not measured for this implementation round"
     }
   ]
 }

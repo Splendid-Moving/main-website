@@ -1,0 +1,221 @@
+{
+  "checks": [
+    {
+      "path": "apartment-moving-checklist-los-angeles",
+      "width": 320,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "how-much-do-movers-cost-los-angeles",
+      "width": 320,
+      "overflow": false,
+      "panels": 1
+    },
+    {
+      "path": "moving-building-coi-elevator-reservations",
+      "width": 320,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "moving-without-elevator-los-angeles",
+      "width": 320,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "packing-kitchen-for-a-move",
+      "width": 320,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "office-moving-checklist-los-angeles",
+      "width": 320,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "long-distance-moving-inventory-checklist",
+      "width": 320,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "los-angeles-moving-parking-loading",
+      "width": 320,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "apartment-moving-checklist-los-angeles",
+      "width": 390,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "how-much-do-movers-cost-los-angeles",
+      "width": 390,
+      "overflow": false,
+      "panels": 1
+    },
+    {
+      "path": "moving-building-coi-elevator-reservations",
+      "width": 390,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "moving-without-elevator-los-angeles",
+      "width": 390,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "packing-kitchen-for-a-move",
+      "width": 390,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "office-moving-checklist-los-angeles",
+      "width": 390,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "long-distance-moving-inventory-checklist",
+      "width": 390,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "los-angeles-moving-parking-loading",
+      "width": 390,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "apartment-moving-checklist-los-angeles",
+      "width": 768,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "how-much-do-movers-cost-los-angeles",
+      "width": 768,
+      "overflow": false,
+      "panels": 1
+    },
+    {
+      "path": "moving-building-coi-elevator-reservations",
+      "width": 768,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "moving-without-elevator-los-angeles",
+      "width": 768,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "packing-kitchen-for-a-move",
+      "width": 768,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "office-moving-checklist-los-angeles",
+      "width": 768,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "long-distance-moving-inventory-checklist",
+      "width": 768,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "los-angeles-moving-parking-loading",
+      "width": 768,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "apartment-moving-checklist-los-angeles",
+      "width": 1440,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "how-much-do-movers-cost-los-angeles",
+      "width": 1440,
+      "overflow": false,
+      "panels": 1
+    },
+    {
+      "path": "moving-building-coi-elevator-reservations",
+      "width": 1440,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "moving-without-elevator-los-angeles",
+      "width": 1440,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "packing-kitchen-for-a-move",
+      "width": 1440,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "office-moving-checklist-los-angeles",
+      "width": 1440,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "long-distance-moving-inventory-checklist",
+      "width": 1440,
+      "overflow": false,
+      "panels": 2,
+      "checklist": true
+    },
+    {
+      "path": "los-angeles-moving-parking-loading",
+      "width": 1440,
+      "overflow": false,
+      "panels": 2
+    }
+  ],
+  "scope": "Local final guide build at four widths; native checkbox interactions included."
+}

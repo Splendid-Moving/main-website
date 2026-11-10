@@ -24,6 +24,7 @@
       "description": "Moving a studio, one bedroom or a short furniture list in Los Angeles? See the crew, hourly rates and three-hour minimum before requesting your quote.",
       "summary": "Work out the minimum charge, your furniture list and access before booking a crew.",
       "body": "landing/small-moves-los-angeles.md",
+      "modified": "2026-11-09",
       "queries": ["small moves los angeles", "studio apartment movers los angeles"],
       "related": ["blog/how-much-do-movers-cost-los-angeles", "apartment-movers-los-angeles", "blog/moving-without-elevator-los-angeles"],
       "cta": "Get a quote for your small move"
@@ -37,6 +38,7 @@
       "description": "Add packing help to your Splendid Moving quote. Tell us which rooms need packing, what is fragile and what you will pack yourself. Materials are confirmed in your quote.",
       "summary": "Decide which rooms you want help with, then put the packing work into the moving quote.",
       "body": "landing/packing-services-los-angeles.md",
+      "modified": "2026-11-09",
       "queries": ["packing services los angeles", "packing help for apartment move los angeles"],
       "related": ["blog/packing-kitchen-for-a-move", "blog/long-distance-moving-inventory-checklist", "blog/apartment-moving-checklist-los-angeles"],
       "cta": "Include packing in my move quote"
@@ -64,6 +66,7 @@
       "description": "An LA apartment moving checklist covering elevator reservations, building paperwork, parking, packing and the details to send your movers before moving day.",
       "summary": "Book the elevator, check the loading route and get the right details into your quote.",
       "body": "blog/apartment-moving-checklist-los-angeles.md",
+      "modified": "2026-11-09",
       "queries": ["apartment moving checklist los angeles"],
       "related": ["apartment-movers-los-angeles", "blog/moving-building-coi-elevator-reservations", "blog/los-angeles-moving-parking-loading"],
       "image": {
@@ -84,6 +87,7 @@
       "description": "See Splendid Moving's two-, three- and four-mover rates, the three-hour minimum, and a clear way to separate a labor subtotal from your full moving quote.",
       "summary": "Use the actual hourly rates, then account for the minimum, access and applicable fees.",
       "body": "blog/how-much-do-movers-cost-los-angeles.md",
+      "modified": "2026-11-09",
       "queries": ["how much do movers cost los angeles", "two movers and a truck cost los angeles"],
       "related": ["small-moves-los-angeles", "apartment-movers-los-angeles", "packing-services-los-angeles"],
       "image": {
@@ -105,6 +109,7 @@
       "description": "Find out what to ask your LA building about a moving COI, elevator reservation, loading entrance and move-out rules before you confirm your moving arrangements.",
       "summary": "A certificate, a reservation and the approved entrance are separate things to confirm.",
       "body": "blog/moving-building-coi-elevator-reservations.md",
+      "modified": "2026-11-09",
       "queries": ["moving coi elevator reservation los angeles", "apartment moving certificate of insurance los angeles"],
       "related": ["apartment-movers-los-angeles", "small-office-movers-los-angeles", "blog/apartment-moving-checklist-los-angeles"],
       "image": {
@@ -125,6 +130,7 @@
       "description": "Prepare for a walk-up apartment move in Los Angeles. Measure stair turns, share furniture photos and describe the carry so your moving quote reflects the job.",
       "summary": "Count the flights and measure the turns before the sofa reaches the stairwell.",
       "body": "blog/moving-without-elevator-los-angeles.md",
+      "modified": "2026-11-09",
       "queries": ["moving apartment without elevator los angeles", "walk up apartment movers los angeles"],
       "related": ["apartment-movers-los-angeles", "small-moves-los-angeles", "blog/how-much-do-movers-cost-los-angeles"],
       "image": {
@@ -145,6 +151,7 @@
       "description": "Pack dishes, glasses, small appliances and pantry items for a move. Choose manageable box weights and keep a separate first-night kitchen kit.",
       "summary": "Keep dishes protected and box weights sensible, then set aside what you need tonight.",
       "body": "blog/packing-kitchen-for-a-move.md",
+      "modified": "2026-11-09",
       "queries": ["how to pack kitchen for apartment move", "packing dishes and glasses for moving"],
       "related": ["packing-services-los-angeles", "blog/apartment-moving-checklist-los-angeles", "blog/long-distance-moving-inventory-checklist"],
       "image": {
@@ -166,6 +173,8 @@
       "description": "Plan an LA office move with a desk map, furniture inventory, building approvals, staff tasks and a clear handoff for computers and business equipment.",
       "summary": "Give every desk a destination and every piece of equipment a named owner.",
       "body": "blog/office-moving-checklist-los-angeles.md",
+      "modified": "2026-11-09",
+      "rateNote": "Office moves are quoted individually. Send the inventory, floor plan, building windows and access details for a custom quote.",
       "queries": ["small office moving checklist los angeles", "office relocation planning los angeles"],
       "related": ["small-office-movers-los-angeles", "commercial-moving", "blog/moving-building-coi-elevator-reservations"],
       "image": {
@@ -187,6 +196,8 @@
       "description": "Prepare room-by-room photos and an item list for a long-distance moving quote. Record furniture sizes, access details, packing needs and items staying behind.",
       "summary": "Show what is moving, what is staying and how the crew will reach it.",
       "body": "blog/long-distance-moving-inventory-checklist.md",
+      "modified": "2026-11-09",
+      "rateNote": "Long-distance moves are quoted individually from the shipment and access details. Send your inventory, room photos and the dates you have confirmed.",
       "queries": ["long distance moving inventory checklist", "photos for long distance moving quote"],
       "related": ["long-distance-moving", "packing-services-los-angeles", "blog/apartment-moving-checklist-los-angeles"],
       "image": {
@@ -207,6 +218,7 @@
       "description": "Check loading entrances, curb signs, garage clearance and the carry to your door before an LA move. Confirm street restrictions with the correct local authority.",
       "summary": "An empty curb, a loading dock and a garage entrance each need a different check.",
       "body": "blog/los-angeles-moving-parking-loading.md",
+      "modified": "2026-11-09",
       "queries": ["moving truck parking los angeles apartment", "moving day loading zone los angeles"],
       "related": ["apartment-movers-los-angeles", "blog/moving-building-coi-elevator-reservations", "blog/apartment-moving-checklist-los-angeles"],
       "image": {

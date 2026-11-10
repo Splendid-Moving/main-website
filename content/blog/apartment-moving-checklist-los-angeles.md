@@ -2,6 +2,8 @@ An apartment move can stall before the first box reaches the truck. The elevator
 
 Use this checklist for both addresses. A straightforward pickup does not tell you much about the building at the other end.
 
+<guide-panel name="apartment-timeline"></guide-panel>
+
 ## Confirm building access first
 
 Ask each property manager for the moving rules in writing. Save the email somewhere you can open on your phone. Confirm the permitted moving days, the hours available, and whether the building uses a separate service entrance.
@@ -18,12 +20,7 @@ Photograph the furniture that looks difficult to get through a doorway. For a ti
 
 Send the floor number at each address, the number of stair flights, and whether the elevator will be available. A short walk on a map can still mean a long carry through a parking garage.
 
-Before the date is fixed, make sure the move plan accounts for:
-
-- The complete item list and any packing help you want.
-- Building access and a contact who can open the loading entrance.
-- Parking or loading arrangements at both addresses.
-- The order in which rooms or large pieces should be unloaded.
+<guide-panel name="apartment-handoff"></guide-panel>
 
 ## Pack around what you still need
 

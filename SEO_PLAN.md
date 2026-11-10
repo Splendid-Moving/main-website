@@ -68,3 +68,15 @@ The content/technical publishing phase is complete. Ranking improvement is unpro
 6. Resolve the outstanding Vercel domain-level `www` temporary redirect when the appropriate team access is available.
 
 Measurement plan: November 11 is the first suggested matching weekly rank/indexing follow-up, subject to fresh approval for paid rank collection. Begin a complete 28-day post-launch traffic window on November 5 (through December 2), allowing for Search Console reporting delay. GA4 has no pre-install baseline, so its first complete period establishes a traffic baseline rather than a before/after improvement. Compare later equivalent periods, retain unchanged/worse results, and keep Maps separate from organic ranks. No automatic job, new Treg spend or ranking refresh was performed for this homepage edit.
+
+## November 9 second round
+
+The matching rank refresh found 14 entries into the examined results, with 27 successful keyword responses and one unavailable query. All 18 URLs are now indexed. Evidence remains in private `seo/snapshots/2026-11-09-follow-up/`; this is separate from the layout release below.
+
+The second implementation round restructures every guide with practical visual components and improves the packing/small-move pages. It adds production-only saved-quote and phone-click events, using browser-local request deduplication without forwarding customer details. Fonts are served locally, the logo is reduced, and the Sentry loader is deferred. No quote API, rates, messaging or CRM behavior changes.
+
+Local checks: 65 tests, all 18 pages’ links/metadata/schema, responsive guide and service-page review, and mocked browser verification of failed/successful quote measurement. All eight guides were reviewed at 320/390/768/1440px; the narrow rate-card overflow was corrected. Native contents links and checklists remain usable without a new client-side library.
+
+Analytics configuration limitation: the connected Google token lacks the write scope needed for key events and custom dimensions. A key-event creation returned 403 and made no change. `generate_lead` will be recorded as an event; marking it as a key event and registering its custom report dimensions still require appropriate Google permission. No new paid Treg call or recurring collection was made for this implementation round.
+
+Production verification and equivalent mobile Lighthouse results are recorded with the release evidence after the Git deployment. New ranking impact remains unmeasured for this round.

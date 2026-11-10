@@ -2,6 +2,8 @@ Open a kitchen drawer and it is easy to find another packing task. Glasses need 
 
 Set out a small everyday kit. Keep enough dishes for the people in your home, one pan, basic utensils, and whatever you need for breakfast. Pack the rest by cupboard or drawer so the job has a clear stopping point.
 
+<guide-panel name="kitchen-sort"></guide-panel>
+
 ## Use smaller boxes for the heavy contents
 
 Dishes, cans, and jars get heavy quickly. Put them in boxes that can be lifted and carried safely. Save larger boxes for lighter plastic containers or other bulky items.
@@ -19,6 +21,8 @@ The Home Depot’s [dish-packing guide](https://www.homedepot.com/c/ah/how-to-pa
 Fill empty space so the contents cannot shift freely. The goal is a supported package, not a box squeezed shut over too many items. If you can hear pieces knocking together when the box is moved gently, open it and adjust the packing.
 
 Mark fragile boxes clearly and describe the contents. “Kitchen: wine glasses” tells you more than “fragile.” Write on a side as well as the top, and avoid putting something heavy on top while the boxes wait for pickup.
+
+<guide-panel name="kitchen-checklist"></guide-panel>
 
 ## Deal with food before moving day
 

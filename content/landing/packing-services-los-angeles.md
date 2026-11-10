@@ -2,6 +2,8 @@ Tell us which rooms you want packed and which ones you will handle yourself. Spl
 
 You can ask about help with the kitchen, a room full of books or the items you are unsure how to prepare. Send the list and photos through the [moving quote form](/quote). The team can then discuss the time, materials and moving arrangement with you.
 
+<guide-panel name="packing-scope"></guide-panel>
+
 ## List what needs packing in each room
 
 "One kitchen" could mean a few shelves of everyday dishes or cupboards of glassware and small appliances. Take photos with cabinet doors open. Show the pantry and the items on top of the cabinets if those are moving too.
@@ -12,7 +14,7 @@ Make a separate note for items you will carry yourself, such as medication, iden
 
 ## Confirm which materials your move needs
 
-We bring tape and shrink wrap, furniture blankets and wardrobe boxes for use during the move. Boxes and bubble wrap may add to the charge. Confirm the materials and quantities with the team rather than assuming every room needs the same supplies.
+<guide-panel name="packing-materials"></guide-panel>
 
 Packing labor takes time. For local residential work, the published two-mover rate is $115 per hour with cash or $125 with a card, with a three-hour minimum. That is the local moving service's hourly rate. The exact packing work needs its own scope in your moving quote. Ask for the packing scope to be reflected in your actual quote.
 

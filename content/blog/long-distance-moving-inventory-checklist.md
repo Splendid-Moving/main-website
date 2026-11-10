@@ -2,6 +2,8 @@ A long-distance moving inventory should let someone understand the shipment with
 
 Send the same inventory to each mover you compare. If one company is pricing a full garage and another has only seen the bedroom furniture, their numbers will not be measuring the same job.
 
+<guide-panel name="inventory-example"></guide-panel>
+
 ## Work through one room at a time
 
 Start a list for each room and keep the names consistent. Record the large pieces first, then estimate the packed boxes. Add a final section for the balcony, garage, storage cage, or off-site storage unit.
@@ -35,6 +37,8 @@ Keep identification, medication, keys, valuables, and the items needed during tr
 For an interstate move, FMCSA recommends checking registration, reviewing the moving documents, and taking part in the inventory review at pickup and delivery. Check the inventory against what is present and note questions about condition or missing items before signing. Its [moving checklist](https://www.fmcsa.dot.gov/protect-your-move/moving-checklist) is a useful companion to your own room list.
 
 California's [BHGS consumer guide](https://bhgs.dca.ca.gov/consumers/hhm.html) also explains the estimate and moving-agreement process. Ask which documents and rules apply to your route before comparing the prices and terms.
+
+<guide-panel name="inventory-checklist"></guide-panel>
 
 ## Update the list before the load changes
 
