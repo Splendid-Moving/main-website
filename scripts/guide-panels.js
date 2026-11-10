@@ -65,7 +65,7 @@ export function enhanceGuideMarkup(article, page) {
             const cells = article(row).find('td').map((_, cell) => article(cell).text()).get();
             return `<div class="crew-rate"><h3>${e(cells[0])}</h3><dl><div><dt>Cash</dt><dd>${e(cells[1].replace('/hour', ''))}<span>/hour</span></dd></div><div><dt>Card</dt><dd>${e(cells[2].replace('/hour', ''))}<span>/hour</span></dd></div></dl><p>Three-hour hourly subtotal<br><strong>${e(cells[3])}</strong> <span>cash / card</span></p></div>`;
         }).get().join('');
-        table.replaceWith(`<div class="crew-rates" aria-label="Local moving crew rates">${rates}</div>`);
+        table.replaceWith(`<section class="guide-panel guide-panel--rates" aria-labelledby="crew-rate-heading"><h2 id="crew-rate-heading">Local moving rates</h2><div class="crew-rates">${rates}</div></section>`);
     }
     if (page.kind === 'article') {
         article('h2').filter((_, h) => !article(h).closest('.guide-panel').length).each((_, heading) => {

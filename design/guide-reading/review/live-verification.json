@@ -1,0 +1,268 @@
+{
+  "commit": "36880db",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 0,
+      "canonical": "https://splendidmoving.com/"
+    },
+    {
+      "path": "local-moving",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 0,
+      "canonical": "https://splendidmoving.com/local-moving"
+    },
+    {
+      "path": "long-distance-moving",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 0,
+      "canonical": "https://splendidmoving.com/long-distance-moving"
+    },
+    {
+      "path": "commercial-moving",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 0,
+      "canonical": "https://splendidmoving.com/commercial-moving"
+    },
+    {
+      "path": "quote",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 0,
+      "canonical": "https://splendidmoving.com/quote"
+    },
+    {
+      "path": "blog",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 0,
+      "canonical": "https://splendidmoving.com/blog"
+    },
+    {
+      "path": "apartment-movers-los-angeles",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 0,
+      "canonical": "https://splendidmoving.com/apartment-movers-los-angeles"
+    },
+    {
+      "path": "small-moves-los-angeles",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 1,
+      "canonical": "https://splendidmoving.com/small-moves-los-angeles"
+    },
+    {
+      "path": "packing-services-los-angeles",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 2,
+      "canonical": "https://splendidmoving.com/packing-services-los-angeles"
+    },
+    {
+      "path": "small-office-movers-los-angeles",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 0,
+      "canonical": "https://splendidmoving.com/small-office-movers-los-angeles"
+    },
+    {
+      "path": "blog/apartment-moving-checklist-los-angeles",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 2,
+      "canonical": "https://splendidmoving.com/blog/apartment-moving-checklist-los-angeles"
+    },
+    {
+      "path": "blog/how-much-do-movers-cost-los-angeles",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 1,
+      "canonical": "https://splendidmoving.com/blog/how-much-do-movers-cost-los-angeles"
+    },
+    {
+      "path": "blog/moving-building-coi-elevator-reservations",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 2,
+      "canonical": "https://splendidmoving.com/blog/moving-building-coi-elevator-reservations"
+    },
+    {
+      "path": "blog/moving-without-elevator-los-angeles",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 2,
+      "canonical": "https://splendidmoving.com/blog/moving-without-elevator-los-angeles"
+    },
+    {
+      "path": "blog/packing-kitchen-for-a-move",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 2,
+      "canonical": "https://splendidmoving.com/blog/packing-kitchen-for-a-move"
+    },
+    {
+      "path": "blog/office-moving-checklist-los-angeles",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 2,
+      "canonical": "https://splendidmoving.com/blog/office-moving-checklist-los-angeles"
+    },
+    {
+      "path": "blog/long-distance-moving-inventory-checklist",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 2,
+      "canonical": "https://splendidmoving.com/blog/long-distance-moving-inventory-checklist"
+    },
+    {
+      "path": "blog/los-angeles-moving-parking-loading",
+      "status": 200,
+      "sourceMatches": true,
+      "panels": 2,
+      "canonical": "https://splendidmoving.com/blog/los-angeles-moving-parking-loading"
+    }
+  ],
+  "assets": [
+    {
+      "path": "styles/fonts.css",
+      "status": 200,
+      "bytes": 959
+    },
+    {
+      "path": "styles/guide-panels.css",
+      "status": 200,
+      "bytes": 10622
+    },
+    {
+      "path": "scripts/analytics.js",
+      "status": 200,
+      "bytes": 2723
+    },
+    {
+      "path": "scripts/quote-form.js",
+      "status": 200,
+      "bytes": 23067
+    },
+    {
+      "path": "assets/fonts/plus-jakarta-sans-latin.woff2",
+      "status": 200,
+      "bytes": 27348
+    },
+    {
+      "path": "assets/fonts/space-grotesk-latin.woff2",
+      "status": 200,
+      "bytes": 22288
+    },
+    {
+      "path": "assets/images/brand-logo-320.webp",
+      "status": 200,
+      "bytes": 10440
+    }
+  ],
+  "quote_api_get_status": 405,
+  "no_customer_submission": true,
+  "viewport_checks": [
+    {
+      "path": "apartment-moving-checklist-los-angeles",
+      "width": 390,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "how-much-do-movers-cost-los-angeles",
+      "width": 390,
+      "overflow": false,
+      "panels": 1
+    },
+    {
+      "path": "moving-building-coi-elevator-reservations",
+      "width": 390,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "moving-without-elevator-los-angeles",
+      "width": 390,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "packing-kitchen-for-a-move",
+      "width": 390,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "office-moving-checklist-los-angeles",
+      "width": 390,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "long-distance-moving-inventory-checklist",
+      "width": 390,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "los-angeles-moving-parking-loading",
+      "width": 390,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "apartment-moving-checklist-los-angeles",
+      "width": 1440,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "how-much-do-movers-cost-los-angeles",
+      "width": 1440,
+      "overflow": false,
+      "panels": 1
+    },
+    {
+      "path": "moving-building-coi-elevator-reservations",
+      "width": 1440,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "moving-without-elevator-los-angeles",
+      "width": 1440,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "packing-kitchen-for-a-move",
+      "width": 1440,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "office-moving-checklist-los-angeles",
+      "width": 1440,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "long-distance-moving-inventory-checklist",
+      "width": 1440,
+      "overflow": false,
+      "panels": 2
+    },
+    {
+      "path": "los-angeles-moving-parking-loading",
+      "width": 1440,
+      "overflow": false,
+      "panels": 2
+    }
+  ]
+}

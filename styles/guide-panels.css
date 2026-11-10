@@ -62,6 +62,7 @@
 .guide-amounts--minimum { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .guide-amounts--minimum h3 { min-height: 0; }
 .crew-rates { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 30px 0 24px; }
+.guide-panel--rates .crew-rates { margin-top: 0; }
 .crew-rate { min-width: 0; border: 1px solid #ccdaea; border-top: 4px solid #0065c9; border-radius: 10px; padding: 22px 18px; background: #fff; }
 .crew-rate h3 { font-size: .96rem; line-height: 1.5; margin: 0 0 22px; }
 .crew-rate dl { display: grid; gap: 14px; margin-bottom: 22px; }

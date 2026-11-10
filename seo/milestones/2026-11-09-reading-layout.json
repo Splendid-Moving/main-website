@@ -1,0 +1,105 @@
+{
+  "description": "Production lab evidence for the November 9 reading-layout and delivery update. These runs are not field Core Web Vitals or proof of ranking gains.",
+  "source_release_commit": "36880db",
+  "runs": [
+    {
+      "run": "before",
+      "url": "https://splendidmoving.com/",
+      "fetch_time": "2026-11-10T02:33:22.338Z",
+      "lighthouse_version": "13.6.0",
+      "scores": {
+        "performance": 93,
+        "accessibility": 92,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2996.933,
+      "fcp_ms": 1852.998,
+      "tbt_ms": 33,
+      "note": "Fresh pre-change production baseline."
+    },
+    {
+      "run": "after",
+      "url": "https://splendidmoving.com/",
+      "fetch_time": "2026-11-10T02:55:01.196Z",
+      "lighthouse_version": "13.6.0",
+      "scores": {
+        "performance": 53,
+        "accessibility": 92,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 5669.802,
+      "fcp_ms": 923.351,
+      "tbt_ms": 1463,
+      "note": "Ran concurrently with visual browser checks; 1553 ms unattributable main-thread task. Retained as an outlier, cause not established."
+    },
+    {
+      "run": "after-isolated",
+      "url": "https://splendidmoving.com/",
+      "fetch_time": "2026-11-10T02:56:20.022Z",
+      "lighthouse_version": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 92,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 1668.087,
+      "fcp_ms": 918.087,
+      "tbt_ms": 19.5,
+      "note": "Browser visual checks stopped for the isolated after runs."
+    },
+    {
+      "run": "after-repeat",
+      "url": "https://splendidmoving.com/",
+      "fetch_time": "2026-11-10T02:57:42.391Z",
+      "lighthouse_version": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 92,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 1672.089,
+      "fcp_ms": 922.0889999999999,
+      "tbt_ms": 30,
+      "note": "Browser visual checks stopped for the isolated after runs."
+    }
+  ],
+  "interpretation": "Fresh mobile before: 93 performance and LCP 3.0 seconds. Two isolated after runs: 100 performance and LCP 1.7 seconds; accessibility 92, best practices and SEO 100. The concurrent 53 run is retained; single-machine lab results vary.",
+  "files": [
+    {
+      "path": "seo/evidence/2026-11-09-reading-layout/seo-round-2-home-after-isolated.report.html",
+      "sha256": "755322182589e7da4df0215fa2f536a951a9a5497197d8e3aea1b5740077adf4"
+    },
+    {
+      "path": "seo/evidence/2026-11-09-reading-layout/seo-round-2-home-after-isolated.report.json",
+      "sha256": "6bbf97a08d8519b35980fb3e33b800ea21d1b7bbf617c15ce42b217cf8098b52"
+    },
+    {
+      "path": "seo/evidence/2026-11-09-reading-layout/seo-round-2-home-after-repeat.report.html",
+      "sha256": "e76444f94865229690aff98499c77ca0733b62313ca2232dcda2c71e5a9f2251"
+    },
+    {
+      "path": "seo/evidence/2026-11-09-reading-layout/seo-round-2-home-after-repeat.report.json",
+      "sha256": "bc1e46495fe2b1dda7f0b691a525348bb16f83b20c42a2bb46bb387bd530a2f1"
+    },
+    {
+      "path": "seo/evidence/2026-11-09-reading-layout/seo-round-2-home-after.report.html",
+      "sha256": "4b5631e13b2ea15e898df2e89cf416115772cd676a8d50c76e3a6c7b12288f9e"
+    },
+    {
+      "path": "seo/evidence/2026-11-09-reading-layout/seo-round-2-home-after.report.json",
+      "sha256": "bdecffe2577749cc68fc7ba844afbb3332f7680174511332f2235662794ccd7f"
+    },
+    {
+      "path": "seo/evidence/2026-11-09-reading-layout/seo-round-2-home-before.report.html",
+      "sha256": "6ed97becb08b23316d608cdf26c5adad3a27f0757a926dac76e4341dca86401f"
+    },
+    {
+      "path": "seo/evidence/2026-11-09-reading-layout/seo-round-2-home-before.report.json",
+      "sha256": "b79923b7281c7cae73fe044eaf98f0deca7f5249ca9f83dad2943092323f1be4"
+    }
+  ]
+}
