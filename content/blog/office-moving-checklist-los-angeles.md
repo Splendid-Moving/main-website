@@ -46,4 +46,4 @@ At the new office, use the inventory to check arrival and placement. Report visi
 
 <guide-panel name="office-checklist"></guide-panel>
 
-Splendid prepares office moves individually rather than sending the household hourly quote automatically. Review our [commercial moving service](/commercial-moving), then [request a custom quote](/quote) with the inventory, building windows, access details, and floor plan.
+Splendid prepares office moves individually rather than sending the household hourly quote automatically. Review our [small-office moving service](/small-office-movers-los-angeles), then [request a custom quote](/quote) with the inventory, building windows, access details, and floor plan.

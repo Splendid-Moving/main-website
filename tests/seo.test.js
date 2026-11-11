@@ -48,6 +48,13 @@ test('published internal links and anchors resolve to actual public pages', () =
     execFileSync(process.execPath, ['scripts/validate-site.js'], { stdio: 'pipe' });
 });
 
+test('guides expose their related parent services as navigation links', () => {
+    for (const [guide, parent] of [['office-moving-checklist-los-angeles', 'commercial-moving'], ['long-distance-moving-inventory-checklist', 'long-distance-moving']]) {
+        const $ = load(readFileSync(`dist/blog/${guide}.html`, 'utf8'));
+        assert.ok($(`.related-reads a[href="/${parent}"]`).length, `${guide} must expose its related ${parent} service`);
+    }
+});
+
 test('business markup has no self-serving review scores and hero payloads stay small', () => {
     const $ = load(readFileSync('dist/index.html', 'utf8'));
     const nodes = [];

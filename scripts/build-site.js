@@ -12,12 +12,23 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const output = join(root, 'dist');
 const catalog = JSON.parse(readFileSync(join(root, 'content/pages.json'), 'utf8'));
 const existing = [
-    { file: 'index.html', path: '/', name: 'Splendid Moving' },
-    { file: 'local-moving.html', path: 'local-moving', name: 'Local moving', service: 'Local moving services' },
+    { file: 'index.html', path: '/', name: 'Splendid Moving', modified: '2026-11-11' },
+    { file: 'local-moving.html', path: 'local-moving', name: 'Local moving', service: 'Local moving services', modified: '2026-11-11' },
     { file: 'long-distance-moving.html', path: 'long-distance-moving', name: 'Long-distance moving', service: 'Long-distance moving services' },
     { file: 'commercial-moving.html', path: 'commercial-moving', name: 'Commercial moving', service: 'Commercial moving services' },
     { file: 'quote.html', path: 'quote', name: 'Request a moving quote' },
 ];
+
+const relatedByPage = {
+    '/': ['apartment-movers-los-angeles', 'small-moves-los-angeles', 'packing-services-los-angeles', 'small-office-movers-los-angeles'],
+    'local-moving': ['apartment-movers-los-angeles', 'small-moves-los-angeles', 'packing-services-los-angeles'],
+    'commercial-moving': ['small-office-movers-los-angeles', 'blog/office-moving-checklist-los-angeles', 'blog/moving-building-coi-elevator-reservations'],
+    'long-distance-moving': ['blog/long-distance-moving-inventory-checklist', 'packing-services-los-angeles', 'blog/packing-kitchen-for-a-move'],
+};
+const discoveryCatalog = [...catalog.pages, ...existing.filter(page => page.service).map(page => {
+    const document = load(readFileSync(join(root, page.file), 'utf8'));
+    return { path: page.path, kind: 'service', category: page.name, heading: page.service, summary: document('meta[name="description"]').attr('content') };
+})];
 
 rmSync(output, { recursive: true, force: true });
 mkdirSync(output, { recursive: true });
@@ -37,6 +48,7 @@ for (const page of existing) {
     $('head').prepend(fontLinks);
     $('script[src*="js.sentry-cdn.com"]').attr('defer', '');
     $('img[src="assets/images/Brand Logo.png"]').attr('src', '/assets/images/brand-logo-320.webp');
+    $('.testimonial-card__source[aria-label]').attr('role', 'img');
     $('script[type="application/ld+json"]').remove();
     const graph = [business, { '@type': 'WebPage', '@id': `${canonical(page.path)}#webpage`, url: canonical(page.path), name: page.name, isPartOf: { '@id': `${origin}/#website` } }];
     if (page.path === '/') graph.push({ '@type': 'WebSite', '@id': `${origin}/#website`, url: `${origin}/`, name: 'Splendid Moving', publisher: { '@id': business['@id'] } });
@@ -48,13 +60,14 @@ for (const page of existing) {
     $('head').append('<link rel="stylesheet" href="/styles/content.css"><link rel="alternate" type="application/rss+xml" title="Splendid Moving guides" href="/feed.xml">');
     if (page.path === '/') {
         $('head').append('<link rel="preload" as="image" href="/assets/images/hero-mobile.webp" media="(max-width: 767px)"><link rel="preload" as="image" href="/assets/images/hero-desktop.webp" media="(min-width: 768px)">');
+        $('.pricing__note').after('<p class="pricing__guide"><a href="/blog/how-much-do-movers-cost-los-angeles" data-i18n="pricing.guide">How the minimum and other charges affect your moving quote</a></p>');
     }
     if (page.path !== 'quote') {
         $('#nav-menu').append('<li class="nav__item"><a href="/blog" class="nav__link" data-i18n="nav.guides">Moving guides</a></li>');
         $('.footer__column').first().find('ul').append('<li><a href="/blog" data-i18n="nav.guides">Moving guides</a></li>');
-        const related = page.path === 'commercial-moving' ? ['small-office-movers-los-angeles', 'blog/office-moving-checklist-los-angeles', 'blog/moving-building-coi-elevator-reservations'] : page.path === 'long-distance-moving' ? ['blog/long-distance-moving-inventory-checklist', 'packing-services-los-angeles', 'blog/packing-kitchen-for-a-move'] : ['apartment-movers-los-angeles', 'small-moves-los-angeles', 'blog/how-much-do-movers-cost-los-angeles'];
+        const related = relatedByPage[page.path] || relatedByPage['local-moving'];
         const cards = related.map(path => catalog.pages.find(item => item.path === path)).map(contentCard).join('');
-        $('main').append(`<section class="related-reads container" lang="en"><h2>Work out the details of your move</h2><div class="reading-grid">${cards}</div><p class="related-reads__all"><a href="/blog">Browse all moving guides</a></p></section>`);
+        $('main').append(`<section class="related-reads container" lang="en"><h2>${page.path === '/' ? 'Find the help your move needs' : 'Work out the details of your move'}</h2><div class="reading-grid${page.path === '/' ? ' reading-grid--services' : ''}">${cards}</div><p class="related-reads__all"><a href="/blog">Browse all moving guides</a></p></section>`);
     }
     writePage(page.file.replace('.html', ''), $.html());
 }
@@ -67,14 +80,14 @@ for (const page of catalog.pages) {
     if (/^#\s/m.test(markdown)) throw new Error(`Article body must not repeat the page H1: ${page.body}`);
     const html = marked.parse(markdown, { gfm: true });
     const wordCount = markdown.split(/\s+/).filter(Boolean).length;
-    writePage(page.path, renderContentPage(page, html, catalog.pages, catalog.published, wordCount));
+    writePage(page.path, renderContentPage(page, html, discoveryCatalog, catalog.published, wordCount));
 }
 writePage('blog', renderBlogIndex(catalog.pages, catalog.published));
 
 const paths = [...existing.map(page => page.path), 'blog', ...catalog.pages.map(page => page.path)];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${paths.map(path => {
     const image = catalog.pages.find(page => page.path === path)?.image;
-    const modified = catalog.pages.find(page => page.path === path)?.modified || published;
+    const modified = catalog.pages.find(page => page.path === path)?.modified || existing.find(page => page.path === path)?.modified || published;
     return `  <url><loc>${e(canonical(path))}</loc><lastmod>${modified}</lastmod>${image ? `<image:image><image:loc>${e(`${origin}${image.src}`)}</image:loc></image:image>` : ''}</url>`;
 }).join('\n')}\n</urlset>\n`;
 writeFileSync(join(output, 'sitemap.xml'), sitemap);

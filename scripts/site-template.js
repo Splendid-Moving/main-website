@@ -58,7 +58,11 @@ export function renderContentPage(page, body, catalog, date, wordCount) {
     enhanceGuideMarkup(article, page);
     body = article.html();
     const displayDate = new Intl.DateTimeFormat('en-US', { dateStyle: 'long', timeZone: 'America/Los_Angeles' }).format(new Date(`${date}T12:00:00-08:00`));
-    const related = page.related.map(path => catalog.find(item => item.path === path)).filter(Boolean);
+    const related = page.related.map(path => {
+        const item = catalog.find(candidate => candidate.path === path);
+        if (!item) throw new Error(`Unknown related page ${path} on ${page.path}`);
+        return item;
+    });
     const crumbs = `<a href="/">Home</a><span aria-hidden="true">/</span>${isArticle ? '<a href="/blog">Moving guides</a><span aria-hidden="true">/</span>' : ''}<span>${e(page.category)}</span>`;
     const aside = `<aside class="article-aside" aria-label="Plan your move"><nav class="article-toc" aria-label="On this page"><h2>${isArticle ? 'In this guide' : 'On this page'}</h2><ol>${outline.join('')}</ol></nav><div class="quote-note"><p class="quote-note__label">Your move, priced from the details</p><h2>Send the addresses and the item list.</h2><p>${e(page.rateNote || 'Local residential rates start at $115 per hour with cash for two movers and a truck. A three-hour minimum applies; your full quote includes the route and applicable fees.')}</p><a href="/quote" class="btn btn--primary">${e(page.cta || 'Get a moving quote')}</a><a class="quote-note__phone" href="tel:+13236452636">(323) 645-2636</a></div></aside>`;
     const relatedHtml = related.length ? `<section class="related-reads container" aria-labelledby="related-heading"><h2 id="related-heading">Keep planning your move</h2><div class="reading-grid">${related.map(item => renderCard(item, isArticle)).join('')}</div></section>` : '';

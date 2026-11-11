@@ -1,6 +1,74 @@
 {
   "description": "Practical visual panels for the moving guides and focused service pages. Examples are labeled illustrations, not records of customer moves.",
   "panels": {
+    "apartment-questions": {
+      "type": "questions",
+      "title": "Questions about your apartment move",
+      "items": [
+        {
+          "question": "How do stairs affect my quote?",
+          "answer": "Count the flights at both addresses and photograph tight landings or turns. Stairs can change carrying time and the crew plan. Send those details with your item list and ask how they are reflected in your written moving terms.",
+          "link": {
+            "href": "/blog/moving-without-elevator-los-angeles",
+            "label": "Check the stair route before moving day"
+          }
+        },
+        {
+          "question": "What is the minimum for a studio or one-bedroom move?",
+          "answer": "The two-mover local package has a three-hour minimum: $345 with cash or $375 with a card for the hourly-charge subtotal. The full quote also considers the route-based gas fee, driving-time terms, extra materials and the actual work. These figures are calculations, not a total estimate for your move.",
+          "link": {
+            "href": "/small-moves-los-angeles",
+            "label": "Review the small-move minimum"
+          }
+        },
+        {
+          "question": "Can you provide the COI my building asks for?",
+          "answer": "Splendid Moving can provide a certificate of insurance on request. Send the building’s written requirements, move address and contact email. Management reviews and accepts the paperwork; confirm the elevator reservation separately.",
+          "link": {
+            "href": "/blog/moving-building-coi-elevator-reservations",
+            "label": "Collect the building’s access requirements"
+          }
+        },
+        {
+          "question": "Can I ask for help packing only part of the apartment?",
+          "answer": "Tell us which rooms, cupboards or items you want help with and which packing you will finish yourself. Include photos so the team can discuss the time and materials in your moving quote.",
+          "link": {
+            "href": "/packing-services-los-angeles",
+            "label": "Choose the packing help you need"
+          }
+        }
+      ]
+    },
+    "office-questions": {
+      "type": "questions",
+      "title": "Questions about a small office move",
+      "items": [
+        {
+          "question": "How is an office move priced?",
+          "answer": "Office moves are quoted individually from the furniture, boxes, building access and timing. Send the inventory and floor plan with both addresses. List disassembly, packing and any unusual equipment so the quote covers the work you are asking for.",
+          "link": {
+            "href": "/quote",
+            "label": "Send your office inventory for a quote"
+          }
+        },
+        {
+          "question": "Who handles computer shutdown and reconnection?",
+          "answer": "Arrange backups, shutdown, reconnection and network testing with your own IT provider. Tell the moving team which prepared devices need transport and agree the physical moving scope before the move.",
+          "link": {
+            "href": "/blog/office-moving-checklist-los-angeles",
+            "label": "Plan the office and IT handovers"
+          }
+        },
+        {
+          "question": "Can the plan account for our building’s moving window?",
+          "answer": "Send the approved loading and elevator windows for both buildings before agreeing on the schedule. Include the access contacts, loading entrance and COI requirements. Confirm the arrangement with the moving team and building management before telling staff when work can resume.",
+          "link": {
+            "href": "/blog/moving-building-coi-elevator-reservations",
+            "label": "Coordinate the building confirmations"
+          }
+        }
+      ]
+    },
     "apartment-timeline": {
       "type": "timeline",
       "title": "Plan the move in three passes",

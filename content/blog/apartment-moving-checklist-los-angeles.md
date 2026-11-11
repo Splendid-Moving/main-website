@@ -40,4 +40,4 @@ At the destination, decide where the largest furniture will go. A quick room ske
 
 On moving morning, point out fragile pieces and anything that stays behind. Keep pets out of the carrying route. Before leaving, check cupboards, the balcony, storage lockers, and any parking-level storage space.
 
-For a move-specific plan, [request a quote](/quote) with your addresses, floor numbers, furniture list, and building windows. Those details help the team plan the work before the truck arrives.
+For crew and rate details, see our [apartment moving service](/apartment-movers-los-angeles). For a move-specific plan, [request a quote](/quote) with your addresses, floor numbers, furniture list, and building windows. Those details help the team plan the work before the truck arrives.

@@ -66,6 +66,20 @@
       "original_baselines_unchanged": true,
       "additional_treg_spend_usd": 0,
       "ranking_change": "Not measured for this implementation round"
+    },
+    {
+      "date": "2026-11-11",
+      "phase": "Service discovery, related-parent links and customer questions",
+      "changes": [
+        "Expose four focused services from the existing homepage section and retain the cost-guide link in the pricing context",
+        "Add contextual guide links and factual apartment/office question disclosures",
+        "Restore related cards for existing parent-service pages; reject unknown related routes",
+        "Improve text contrast and review-source accessibility semantics"
+      ],
+      "verification": "66 tests; 18-page validation; 16 responsive affected-page checks and 6 restored-link cases",
+      "original_baselines_unchanged": true,
+      "additional_treg_spend_usd": 0,
+      "ranking_change": "Not measured for this implementation round"
     }
   ]
 }

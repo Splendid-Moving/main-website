@@ -1,6 +1,16 @@
 /* Reading aids for Splendid's guides: practical comparisons, route sketches and checklists.
    Native controls work without JavaScript; the desktop layouts stack into a single reading column on phones. */
 .guide-panel { margin: 34px 0; color: #032449; }
+.service-questions { border-top: 1px solid #d9e5f1; }
+.service-questions details { border-bottom: 1px solid #d9e5f1; }
+.service-questions summary { padding: 22px 34px 22px 0; position: relative; cursor: pointer; list-style: none; color: #032449; font-weight: 600; font-size: 1rem; line-height: 1.6; }
+.service-questions summary::-webkit-details-marker { display: none; }
+.service-questions summary::after { content: '+'; position: absolute; right: 4px; top: 22px; color: #0065c9; font-size: 1.35rem; line-height: 1.2; }
+.service-questions details[open] summary::after { content: '−'; }
+.service-questions summary:focus-visible { outline: 3px solid #188bf6; outline-offset: 3px; }
+.service-questions details > div { padding: 0 26px 24px 0; font-size: .94rem; line-height: 1.85; }
+.service-questions details p { margin-bottom: 12px; }
+.service-questions details a { font-weight: 600; font-size: .86rem; }
 .article-body ul:not(.guide-checklist) { list-style: disc; }
 .article-body ol:not(.guide-timeline):not(.guide-route) { list-style: decimal; }
 .guide-panel > h2 { font-size: clamp(1.25rem, 2vw, 1.5rem); line-height: 1.35; margin: 0 0 20px; letter-spacing: -.02em; }

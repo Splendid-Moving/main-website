@@ -46,4 +46,4 @@ Pack a clearly labeled first-use box with a few plates, cups, utensils, dish soa
 
 At the new address, check boxes for visible damage as they arrive. Unpack onto a clear surface. Flatten wrapping as you go so a small lid or attachment is not thrown away inside it.
 
-Splendid Moving offers packing and unpacking labor as part of its [local moving service](/local-moving). Tape and shrink wrap are included, while extra boxes and some other materials carry a charge. If you want help with the kitchen, include cupboard photos and the packing scope when you [request a quote](/quote). Tell the team which dishes and appliances you plan to keep in use until the final morning.
+Splendid Moving offers [packing and unpacking help with your move](/packing-services-los-angeles). Tape and shrink wrap are included, while extra boxes and some other materials carry a charge. If you want help with the kitchen, include cupboard photos and the packing scope when you [request a quote](/quote). Tell the team which dishes and appliances you plan to keep in use until the final morning.

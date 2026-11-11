@@ -30,4 +30,8 @@ Name one person who can answer furniture questions while loading and one who can
 
 If you want packing help, identify the cupboards, shared equipment and individual work areas that need it. Boxes of files, full bookshelves and kitchen contents need to appear in the inventory. Packing time and extra materials belong in the quote.
 
+## Questions about a small office move
+
+<guide-panel name="office-questions"></guide-panel>
+
 For a broader preparation list, use our [small office moving checklist](/blog/office-moving-checklist-los-angeles). When the inventory is ready, [request your office quote](/quote) or call [(323) 645-2636](tel:+13236452636) to discuss the building restrictions. General service information is on the [commercial moving page](/commercial-moving).

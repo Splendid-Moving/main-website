@@ -1,0 +1,106 @@
+[
+  {
+    "path": "/",
+    "width": 320,
+    "overflow": false,
+    "serviceLinks": 4
+  },
+  {
+    "path": "/local-moving",
+    "width": 320,
+    "overflow": false,
+    "serviceLinks": 3
+  },
+  {
+    "path": "/apartment-movers-los-angeles",
+    "width": 320,
+    "overflow": false,
+    "questions": 4,
+    "keyboardOpened": true
+  },
+  {
+    "path": "/small-office-movers-los-angeles",
+    "width": 320,
+    "overflow": false,
+    "questions": 3,
+    "keyboardOpened": true
+  },
+  {
+    "path": "/",
+    "width": 390,
+    "overflow": false,
+    "serviceLinks": 4
+  },
+  {
+    "path": "/local-moving",
+    "width": 390,
+    "overflow": false,
+    "serviceLinks": 3
+  },
+  {
+    "path": "/apartment-movers-los-angeles",
+    "width": 390,
+    "overflow": false,
+    "questions": 4,
+    "keyboardOpened": true
+  },
+  {
+    "path": "/small-office-movers-los-angeles",
+    "width": 390,
+    "overflow": false,
+    "questions": 3,
+    "keyboardOpened": true
+  },
+  {
+    "path": "/",
+    "width": 768,
+    "overflow": false,
+    "serviceLinks": 4
+  },
+  {
+    "path": "/local-moving",
+    "width": 768,
+    "overflow": false,
+    "serviceLinks": 3
+  },
+  {
+    "path": "/apartment-movers-los-angeles",
+    "width": 768,
+    "overflow": false,
+    "questions": 4,
+    "keyboardOpened": true
+  },
+  {
+    "path": "/small-office-movers-los-angeles",
+    "width": 768,
+    "overflow": false,
+    "questions": 3,
+    "keyboardOpened": true
+  },
+  {
+    "path": "/",
+    "width": 1440,
+    "overflow": false,
+    "serviceLinks": 4
+  },
+  {
+    "path": "/local-moving",
+    "width": 1440,
+    "overflow": false,
+    "serviceLinks": 3
+  },
+  {
+    "path": "/apartment-movers-los-angeles",
+    "width": 1440,
+    "overflow": false,
+    "questions": 4,
+    "keyboardOpened": true
+  },
+  {
+    "path": "/small-office-movers-los-angeles",
+    "width": 1440,
+    "overflow": false,
+    "questions": 3,
+    "keyboardOpened": true
+  }
+]

@@ -38,4 +38,4 @@ Identify anything that stays in the apartment. A clear note on the item is bette
 
 Stairs can add carrying time and change the crew plan. The effect depends on the inventory, distance from the truck, and route at both buildings. Ask how those details are reflected in your written moving terms rather than assuming a standard amount per floor.
 
-Splendid's current local hourly options start with two movers and a truck, and every hourly package has a three-hour minimum. Review the [local moving service](/local-moving) and send the access photos with your item list when you [request a quote](/quote). The team can then discuss the actual route instead of discovering it at the stairwell.
+Splendid's current local hourly options start with two movers and a truck, and every hourly package has a three-hour minimum. Review the [apartment moving service](/apartment-movers-los-angeles) and send the access photos with your item list when you [request a quote](/quote). The team can then discuss the actual route instead of discovering it at the stairwell.

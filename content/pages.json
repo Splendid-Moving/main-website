@@ -11,6 +11,7 @@
       "description": "Plan an LA apartment move around stairs, elevators, parking and your item list. See Splendid Moving's local rates and request a quote for your addresses.",
       "summary": "Elevator slots, walk-ups and the distance from the truck to your door all belong in the plan.",
       "body": "landing/apartment-movers-los-angeles.md",
+      "modified": "2026-11-11",
       "queries": ["apartment movers los angeles", "apartment movers los angeles with stairs"],
       "related": ["blog/moving-building-coi-elevator-reservations", "blog/apartment-moving-checklist-los-angeles", "small-moves-los-angeles"],
       "cta": "Get an apartment moving quote"
@@ -52,6 +53,7 @@
       "description": "Plan a small office move in Los Angeles with a clear furniture list, building access and desk labels. Get a Splendid Moving quote for your office inventory.",
       "summary": "Keep furniture, boxes, building access and staff responsibilities in one workable plan.",
       "body": "landing/small-office-movers-los-angeles.md",
+      "modified": "2026-11-11",
       "queries": ["small office movers los angeles", "small office relocation los angeles checklist"],
       "related": ["blog/office-moving-checklist-los-angeles", "commercial-moving", "blog/moving-building-coi-elevator-reservations"],
       "cta": "Get an office moving quote",

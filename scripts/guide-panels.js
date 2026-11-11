@@ -22,6 +22,10 @@ function cards(panel) {
     return `<div class="guide-cards guide-cards--${panel.items.length}">${panel.items.map(item => `<div class="guide-card">${icon(item.icon)}<h3>${e(item.title)}</h3><p>${e(item.text)}</p>${item.note ? `<span class="guide-card__note">${e(item.note)}</span>` : ''}</div>`).join('')}</div>`;
 }
 
+function questions(panel) {
+    return `<div class="service-questions">${panel.items.map(item => `<details><summary>${e(item.question)}</summary><div><p>${e(item.answer)}</p>${item.link ? `<a href="${e(item.link.href)}">${e(item.link.label)}</a>` : ''}</div></details>`).join('')}</div>`;
+}
+
 function checklist(panel, key) {
     return `<ul class="guide-checklist">${panel.items.map((item, index) => `<li><label for="${key}-${index}"><input type="checkbox" id="${key}-${index}"><span>${e(item)}</span></label></li>`).join('')}</ul>`;
 }
@@ -49,7 +53,7 @@ function amounts(panel) {
 export function renderGuidePanel(key) {
     const panel = panels[key];
     if (!panel) throw new Error(`Unknown guide panel: ${key}`);
-    const render = { cards, checklist, timeline, inventory, stairs, route, example: amounts, minimum: amounts }[panel.type];
+    const render = { cards, checklist, timeline, inventory, stairs, route, questions, example: amounts, minimum: amounts }[panel.type];
     if (!render) throw new Error(`Unknown guide panel type: ${panel.type}`);
     return `<section class="guide-panel guide-panel--${panel.type}" aria-labelledby="${key}-title"><h2 id="${key}-title">${e(panel.title)}</h2>${panel.text ? `<p class="guide-panel__intro">${e(panel.text)}</p>` : ''}${render(panel, key)}${panel.note ? `<p class="guide-panel__note">${e(panel.note)}</p>` : ''}</section>`;
 }

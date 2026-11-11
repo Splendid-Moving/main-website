@@ -52,6 +52,8 @@
 .article-toc li { margin: 0 0 13px; }
 .article-toc a { display: block; color: #64748b; font-size: .82rem; line-height: 1.6; }
 .article-toc a:hover { color: #0065c9; }
+.pricing__guide { text-align: center; margin: 18px auto 0; max-width: 680px; font-size: .88rem; line-height: 1.8; }
+.pricing__guide a { color: #0065c9; text-decoration: underline; text-underline-offset: 3px; }
 .related-reads { padding-top: 44px; padding-bottom: 54px; }
 .related-reads > h2, .guide-index > h2 { color: #032449; font-size: clamp(1.65rem, 2.8vw, 2.3rem); line-height: 1.25; margin-bottom: 28px; letter-spacing: -.025em; }
 .reading-grid { display: grid; gap: 22px; }
@@ -129,6 +131,7 @@
     .article-aside { position: sticky; top: 110px; }
     .article-toc { display: block; }
     .reading-grid:not(.reading-grid--index) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .reading-grid.reading-grid--services { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 699px) {
     .content-hero { padding-top: 120px; padding-bottom: 38px; }

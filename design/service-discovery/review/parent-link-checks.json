@@ -1,0 +1,44 @@
+[
+  {
+    "path": "/blog/office-moving-checklist-los-angeles",
+    "target": "/commercial-moving",
+    "size": "mobile",
+    "visible": true,
+    "overflow": false
+  },
+  {
+    "path": "/blog/long-distance-moving-inventory-checklist",
+    "target": "/long-distance-moving",
+    "size": "mobile",
+    "visible": true,
+    "overflow": false
+  },
+  {
+    "path": "/small-office-movers-los-angeles",
+    "target": "/commercial-moving",
+    "size": "mobile",
+    "visible": true,
+    "overflow": false
+  },
+  {
+    "path": "/blog/office-moving-checklist-los-angeles",
+    "target": "/commercial-moving",
+    "size": "desktop",
+    "visible": true,
+    "overflow": false
+  },
+  {
+    "path": "/blog/long-distance-moving-inventory-checklist",
+    "target": "/long-distance-moving",
+    "size": "desktop",
+    "visible": true,
+    "overflow": false
+  },
+  {
+    "path": "/small-office-movers-los-angeles",
+    "target": "/commercial-moving",
+    "size": "desktop",
+    "visible": true,
+    "overflow": false
+  }
+]
