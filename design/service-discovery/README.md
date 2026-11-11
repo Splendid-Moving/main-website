@@ -11,3 +11,5 @@ A related-page lookup previously searched only the new content catalog, silently
 The navy/blue palette and existing typography remain. Small blue labels and links on light backgrounds have stronger contrast; the footer copyright is lighter on navy; labeled review-source icons have the appropriate image role. The local homepage accessibility and SEO audits both score 100. Those audit scores are not search positions.
 
 `review/` contains desktop/mobile comparisons, 16 page/viewport checks including native disclosure interactions, six restored-link checks, and the local audit. Production verification is recorded after the Git deployment. Ranking evidence and private first-party exports remain separate under `seo/`.
+
+Live review caught repeated FAQ headings caused by a Markdown paragraph around the new custom tags. The two new tags now use standalone HTML blocks, allowing the shared renderer to keep one heading and its accessible label. A regression test reproduced the duplicate before the correction.

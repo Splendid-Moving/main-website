@@ -85,3 +85,17 @@ test('legacy page redirects retain relevant replacements', () => {
         assert.ok(config.redirects.some(rule => rule.source === source && rule.destination === destination && rule.permanent), source);
     }
 });
+
+
+test('service question panels have one visible heading and a valid section label', () => {
+    for (const slug of ['apartment-movers-los-angeles', 'small-office-movers-los-angeles']) {
+        const $ = load(readFileSync(`dist/${slug}.html`, 'utf8'));
+        const panel = $('.guide-panel--questions');
+        const label = panel.attr('aria-labelledby');
+        assert.equal(panel.length, 1);
+        assert.ok(label && $(`[id="${label}"]`).length === 1, `${slug} needs a unique question heading`);
+        const title = $(`[id="${label}"]`).text();
+        assert.equal($('h2').filter((_, heading) => $(heading).text() === title).length, 1, `${slug} repeats its question heading`);
+        assert.ok(!panel.children('h2').length, `${slug} must use the existing section heading`);
+    }
+});

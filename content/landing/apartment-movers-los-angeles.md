@@ -30,6 +30,7 @@ Keep both approvals with your moving details. Include any limits on moving hours
 
 ## Questions about your apartment move
 
-<guide-panel name="apartment-questions"></guide-panel>
+<guide-panel name="apartment-questions">
+</guide-panel>
 
 For your quote, send the two addresses, your preferred date, apartment size, item list and access notes. You can [request an apartment moving quote](/quote) online or call [(323) 645-2636](tel:+13236452636) to discuss an awkward item or building requirement.

@@ -76,7 +76,7 @@
         "Restore related cards for existing parent-service pages; reject unknown related routes",
         "Improve text contrast and review-source accessibility semantics"
       ],
-      "verification": "66 tests; 18-page validation; 16 responsive affected-page checks and 6 restored-link cases",
+      "verification": "67 tests; 18-page validation; 16 responsive affected-page checks and 6 restored-link cases",
       "original_baselines_unchanged": true,
       "additional_treg_spend_usd": 0,
       "ranking_change": "Not measured for this implementation round"
