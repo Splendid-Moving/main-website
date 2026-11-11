@@ -79,7 +79,9 @@
       "verification": "67 tests; 18-page validation; 16 responsive affected-page checks and 6 restored-link cases",
       "original_baselines_unchanged": true,
       "additional_treg_spend_usd": 0,
-      "ranking_change": "Not measured for this implementation round"
+      "ranking_change": "Not measured for this implementation round",
+      "source_commit": "a2c117b",
+      "production_verification": "18-page/6-asset parity; 8 live desktop/mobile checks; homepage accessibility 100 and SEO 100; GET quote API 405"
     }
   ]
 }

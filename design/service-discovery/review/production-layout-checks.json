@@ -1,0 +1,82 @@
+[
+  {
+    "path": "/",
+    "width": 390,
+    "overflow": false,
+    "faqCount": 0,
+    "headingCount": null,
+    "open": null,
+    "serviceCards": 4,
+    "relatedParent": 0
+  },
+  {
+    "path": "/apartment-movers-los-angeles",
+    "width": 390,
+    "overflow": false,
+    "faqCount": 4,
+    "headingCount": 1,
+    "open": true,
+    "serviceCards": 3,
+    "relatedParent": 0
+  },
+  {
+    "path": "/small-office-movers-los-angeles",
+    "width": 390,
+    "overflow": false,
+    "faqCount": 3,
+    "headingCount": 1,
+    "open": true,
+    "serviceCards": 3,
+    "relatedParent": 1
+  },
+  {
+    "path": "/blog/office-moving-checklist-los-angeles",
+    "width": 390,
+    "overflow": false,
+    "faqCount": 0,
+    "headingCount": null,
+    "open": null,
+    "serviceCards": 3,
+    "relatedParent": 1
+  },
+  {
+    "path": "/",
+    "width": 1440,
+    "overflow": false,
+    "faqCount": 0,
+    "headingCount": null,
+    "open": null,
+    "serviceCards": 4,
+    "relatedParent": 0
+  },
+  {
+    "path": "/apartment-movers-los-angeles",
+    "width": 1440,
+    "overflow": false,
+    "faqCount": 4,
+    "headingCount": 1,
+    "open": true,
+    "serviceCards": 3,
+    "relatedParent": 0
+  },
+  {
+    "path": "/small-office-movers-los-angeles",
+    "width": 1440,
+    "overflow": false,
+    "faqCount": 3,
+    "headingCount": 1,
+    "open": true,
+    "serviceCards": 3,
+    "relatedParent": 1
+  },
+  {
+    "path": "/blog/office-moving-checklist-los-angeles",
+    "width": 1440,
+    "overflow": false,
+    "faqCount": 0,
+    "headingCount": null,
+    "open": null,
+    "serviceCards": 3,
+    "relatedParent": 1
+  }
+]
