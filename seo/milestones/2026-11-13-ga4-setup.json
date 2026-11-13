@@ -1,0 +1,55 @@
+{
+  "description": "Verified completion of the existing Splendid Moving GA4 reporting configuration. This record contains settings and verification, not customer events or ranking results.",
+  "date": "2026-11-13",
+  "property": "433959940",
+  "measurement_id": "G-SRG0H6LFG5",
+  "configured_via": "Signed-in Google Analytics Admin UI",
+  "key_event": {
+    "name": "properties/433959940/keyEvents/16337014461",
+    "eventName": "generate_lead",
+    "createTime": "2026-11-13T17:36:33.692565Z",
+    "deletable": true,
+    "custom": true,
+    "countingMethod": "ONCE_PER_EVENT"
+  },
+  "custom_dimensions": [
+    {
+      "name": "properties/433959940/customDimensions/16334929802",
+      "parameterName": "source_page",
+      "displayName": "Source page",
+      "description": "Website page path recorded when a visitor follows a link to the quote form; excludes query strings.",
+      "scope": "EVENT"
+    },
+    {
+      "name": "properties/433959940/customDimensions/16336868532",
+      "parameterName": "link_location",
+      "displayName": "Link location",
+      "description": "Website section of a phone-link click: header, mobile_bar, footer, or content. A click does not confirm a call.",
+      "scope": "EVENT"
+    },
+    {
+      "name": "properties/433959940/customDimensions/16336895979",
+      "parameterName": "quote_type",
+      "displayName": "Quote type",
+      "description": "Move category on a saved website quote: local, long_distance, office, or manual.",
+      "scope": "EVENT"
+    }
+  ],
+  "verification": {
+    "admin_api_get_readback": true,
+    "data_api_custom_dimensions_listed": [
+      "customEvent:link_location",
+      "customEvent:quote_type",
+      "customEvent:source_page"
+    ],
+    "ui_key_event_star_enabled": true,
+    "ui_custom_dimensions_count": 3,
+    "parameter_and_scope_assertions_passed": true
+  },
+  "treg_edit_scope": "Still unavailable; direct browser setup completed; read access remains available",
+  "new_dimension_reporting_delay": "Allow 24–48 hours for report values; no future customer delivery test performed",
+  "website_code_changed": false,
+  "customer_test_quotes_submitted": 0,
+  "additional_treg_spend_usd": 0,
+  "private_evidence_directory": "seo/snapshots/2026-11-13-ga4-setup"
+}
