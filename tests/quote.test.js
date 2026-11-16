@@ -1,5 +1,5 @@
 // These tests exercise the business rules before contacting any real services.
-// All customer fixtures use the one phone number authorized by Nikita.
+// All customer fixtures use the one phone number authorized by the user.
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
@@ -14,7 +14,7 @@ import { processQuote } from "../lib/quote/automation.js";
 const phone = "8185054576";
 const input = {
   requestId: "12345678-1234-4234-8234-123456789012",
-  firstName: "Nikita",
+  firstName: "Alex",
   lastName: "Test",
   phone,
   email: "test@example.com",
@@ -44,7 +44,7 @@ function setup(overrides = {}) {
       records.set(requestId, value),
     saveContact: async (data) => {
       calls.push(["save", data]);
-      return { id: "authorized-test-contact", firstName: "Nikita", dnd: false };
+      return { id: "authorized-test-contact", firstName: "Alex", dnd: false };
     },
     notify: async (id, reason) => calls.push(["notify", reason]),
     sendSms: async (id, message) => {
@@ -95,8 +95,8 @@ test("raw total over 250 is long-distance even if rounding gives 250", () => {
     assert.equal(priceDistance(bad).classification, "unknown");
 });
 test("quote preserves rates, minimum, inclusion text and omits the entire gas line on failure", () => {
-  const text = formatQuote("Nikita", crewFor("studio"), 30);
-  assert.match(text, /Hi Nikita!/);
+  const text = formatQuote("Alex", crewFor("studio"), 30);
+  assert.match(text, /Hi Alex!/);
   assert.match(text, /Cash: \$115 per hour/);
   assert.match(text, /Card: \$125 per hour/);
   assert.match(text, /Minimum charge: 3 hours/);
@@ -104,7 +104,7 @@ test("quote preserves rates, minimum, inclusion text and omits the entire gas li
   assert.match(text, /\$0.60 per pound per article/);
   assert.match(text, /Double Drive Time:/);
   assert.ok(
-    !formatQuote("Nikita", crewFor("studio"), null).includes("Gas fee"),
+    !formatQuote("Alex", crewFor("studio"), null).includes("Gas fee"),
   );
   assert.equal(GAS_FIELD_ID, "2nEnIoqxsJhlJQx74RJm");
 });

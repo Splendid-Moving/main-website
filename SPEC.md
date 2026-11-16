@@ -19,7 +19,7 @@ CONSTRAINTS:
 - Long-distance moves never receive this hourly quote. Require photos or a written inventory for in-form submission; recommend photos more strongly because they help produce a more accurate price. Photos must be attached directly in the quote form. Deliver long-distance requests to `info@splendidmoving.com` through the existing Resend account; do not require a separate customer email.
 - Mileage lookup failure → send the hourly SMS without the whole gas-fee line and notify the team, explicitly confirmed by the user even though distance classification is unavailable. Record classification as unknown rather than inventing mileage or labelling it local.
 - Respect the contact's messaging restrictions and record messaging failures for manual follow-up. A provider rejection cannot be treated as delivery.
-- Nikita explicitly requested finishing and activating the automation on 2026-10-18. No Redis requirement. A returning customer’s fresh submission updates the matching phone contact and sends a new eligible quote immediately, even if details match an earlier request.
+- The user explicitly requested finishing and activating the automation on 2026-10-18. No Redis requirement. A returning customer’s fresh submission updates the matching phone contact and sends a new eligible quote immediately, even if details match an earlier request.
 
 FORMAT:
 - A standalone, directly shareable `https://splendidmoving.com/quote` page using the same submission logic as the existing site form; accessible without opening a modal or visiting the homepage first.

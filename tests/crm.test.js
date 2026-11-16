@@ -13,7 +13,7 @@ import { validateQuote } from "../lib/quote/http.js";
 import { validatePhotos } from "../lib/quote/photos.js";
 const input = {
   requestId: "12345678-1234-4234-8234-123456789012",
-  firstName: "Nikita",
+  firstName: "Alex",
   lastName: "Test",
   phone: "8185054576",
   email: "test@example.com",

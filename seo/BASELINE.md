@@ -92,6 +92,6 @@ CHROME_PATH='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' npx -
 
 ## Expanded snapshot now captured
 
-Nikita approved a separate $0.28 budget for the broader panel. The [November 4 expanded snapshot](2026-11-04-expanded-snapshot.md) records all 28 target queries after the first release. It examined 1,327 organic rows with no unresolved publisher domains. The site was absent from the examined rows; 27 provider responses were complete and one was partial (29 rows). This does not establish an exact rank below 50 or a ranking change from before publication.
+The user approved a separate $0.28 budget for the broader panel. The [November 4 expanded snapshot](2026-11-04-expanded-snapshot.md) records all 28 target queries after the first release. It examined 1,327 organic rows with no unresolved publisher domains. The site was absent from the examined rows; 27 provider responses were complete and one was partial (29 rows). This does not establish an exact rank below 50 or a ranking change from before publication.
 
 Actual cost was **$0.276**. The original baseline and its evidence were preserved unchanged. The [expanded JSON baseline](baselines/2026-11-04-expanded-post-release.json) is ready for later matching comparisons; keep its one partial query flagged until a complete measurement exists. Read-only [indexation checks](milestones/2026-11-04-indexing-start.json) additionally recorded five indexed URLs, eleven discovered/not indexed and two unknown to Google. No recurring paid job was installed.

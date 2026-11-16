@@ -17,7 +17,7 @@ Phone article:  [title] [illustration] [contents] [reading column]
 Blog index:     [image + guide] [image + guide]
 ```
 
-The illustrations were generated with the built-in `image_gen` tool after Nikita chose the editorial illustration direction. They are illustrative scenes, not documentary photographs of Splendid jobs. The final prompts and filenames are in [prompts.json](prompts.json); original artwork is in `source/`.
+The illustrations were generated with the built-in `image_gen` tool after the user chose the editorial illustration direction. They are illustrative scenes, not documentary photographs of Splendid jobs. The final prompts and filenames are in [prompts.json](prompts.json); original artwork is in `source/`.
 
 ## Delivery
 
