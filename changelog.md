@@ -2,6 +2,11 @@
 
 This file records meaningful changes and the checks actually performed. Earlier release history remains in the README, SEO plan and milestone records.
 
+## 2026-11-16 — Refresh SEO measurements and prioritize next work
+- Collected all 28 matched LA desktop rankings, complete after bounded retries and free redirect resolution. Preserved earlier snapshots; verified their saved hashes and reconciled $0.282 in charges under the announced $0.35 ceiling.
+- Verified: all 18 live pages match the saved build; status, canonical, metadata and JSON-LD checks pass. All 18 Google URL inspections report indexed. Connected Analytics reports return the registered fields; complete Search Console data ends November 14. Detailed traffic/enquiry evidence remains private.
+- Next: request recrawls for revised priority pages, add verified job evidence to existing opportunities, audit local presence separately, and compare matching weekly windows. These actions remain recommended. No application code/customer action/recurring job changed; application tests were not rerun for this audit/documentation update.
+
 ## 2026-11-13 — Complete Google Analytics reporting setup
 - Enabled `generate_lead` as a key event and registered event-scoped quote type, source page and link location in the existing Splendid Moving property.
 - Verified: signed-in Google Admin UI, independent Treg Admin API readback, Data API metadata, and exact parameter/scope checks. Private before/after evidence and screenshots are saved; the milestone contains the completion record.

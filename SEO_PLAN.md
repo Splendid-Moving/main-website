@@ -96,3 +96,9 @@ Production source release `a2c117b` is live through the main-branch Git deployme
 ## November 13 GA4 reporting completion
 
 Marked `generate_lead` as a key event (`ONCE_PER_EVENT`) and registered event-scoped `quote_type`, `source_page`, and `link_location` directly in the signed-in Google Analytics property. Admin API readback and Data API metadata independently confirm all four settings. Treg still lacks edit OAuth scope, but read access works; GA4 reporting configuration is no longer pending. Dimension values may take 24–48 hours to populate. No website code change, customer test submission or paid data call was made. See `seo/milestones/2026-11-13-ga4-setup.json`.
+
+## November 16 follow-up and next work
+
+The full same-settings 28-query refresh is saved, with eight observed domain ranks and no unresolved or unavailable current tasks. All 18 individual Google inspections report indexed and matching canonicals; the website matches the saved build. Reporting configuration works and fresh GA4 custom fields return values. The private report includes traffic/enquiry totals and qualifications; the public milestone covers technical and public-search facts.
+
+Priorities: (1) request a recrawl for the four revised priority URLs listed in the milestone, as Google still reports November 5–6 crawl dates for the new pages; (2) strengthen packing/apartment/cost content with verified job evidence and review page selection against actual queries; (3) audit Business Profile/citation consistency and establish Maps separately; (4) repeat the same panel weekly and compare completed reporting windows. Search Console November 15 remains incomplete. No recrawl request, page rewrite, Business Profile change, new schedule or customer action was made during these checks. Actual Treg charge: $0.282.

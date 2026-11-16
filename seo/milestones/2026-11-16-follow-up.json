@@ -1,0 +1,322 @@
+{
+  "description": "Technical and public-search checkpoint for the November 16 audit. Traffic and enquiry measurements remain in the private snapshot directory.",
+  "date": "2026-11-16",
+  "website_source_commit": "4441b8f",
+  "website_code_changed": false,
+  "rankings": {
+    "provider": "DataForSEO",
+    "location": "Los Angeles, California, US (1013962)",
+    "language": "en",
+    "device": "desktop",
+    "requested_depth": 50,
+    "queries": 28,
+    "complete_responses_with_resolved_domains": 28,
+    "queries_with_observed_rank": 8,
+    "comparison_counts": {
+      "nov09": {
+        "absent from both examined sets": 10,
+        "left examined results": 9,
+        "improved": 4,
+        "declined": 1,
+        "entered examined results": 3,
+        "new measurement": 1
+      },
+      "nov11": {
+        "absent from both examined sets": 10,
+        "left examined results": 4,
+        "declined": 2,
+        "entered examined results": 1,
+        "incomplete evidence": 3,
+        "improved": 1,
+        "new measurement": 7
+      }
+    },
+    "positions": [
+      {
+        "query": "local movers los angeles",
+        "observed_rank": null,
+        "organic_rows_examined": 48,
+        "matched_results": []
+      },
+      {
+        "query": "movers los angeles",
+        "observed_rank": null,
+        "organic_rows_examined": 48,
+        "matched_results": []
+      },
+      {
+        "query": "long distance movers los angeles",
+        "observed_rank": null,
+        "organic_rows_examined": 49,
+        "matched_results": []
+      },
+      {
+        "query": "commercial movers los angeles",
+        "observed_rank": null,
+        "organic_rows_examined": 50,
+        "matched_results": []
+      },
+      {
+        "query": "office movers los angeles",
+        "observed_rank": null,
+        "organic_rows_examined": 49,
+        "matched_results": []
+      },
+      {
+        "query": "packing services los angeles",
+        "observed_rank": null,
+        "organic_rows_examined": 49,
+        "matched_results": []
+      },
+      {
+        "query": "apartment movers los angeles",
+        "observed_rank": 23,
+        "organic_rows_examined": 49,
+        "matched_results": [
+          {
+            "rank": 23,
+            "domain": "splendidmoving.com",
+            "url": "https://splendidmoving.com/apartment-movers-los-angeles"
+          }
+        ]
+      },
+      {
+        "query": "apartment movers los angeles with stairs",
+        "observed_rank": 27,
+        "organic_rows_examined": 48,
+        "matched_results": [
+          {
+            "rank": 27,
+            "domain": "splendidmoving.com",
+            "url": "https://splendidmoving.com/small-moves-los-angeles"
+          },
+          {
+            "rank": 41,
+            "domain": "splendidmoving.com",
+            "url": "https://splendidmoving.com/blog/moving-without-elevator-los-angeles"
+          }
+        ]
+      },
+      {
+        "query": "small moves los angeles",
+        "observed_rank": null,
+        "organic_rows_examined": 50,
+        "matched_results": []
+      },
+      {
+        "query": "studio apartment movers los angeles",
+        "observed_rank": null,
+        "organic_rows_examined": 49,
+        "matched_results": []
+      },
+      {
+        "query": "packing help for apartment move los angeles",
+        "observed_rank": null,
+        "organic_rows_examined": 48,
+        "matched_results": []
+      },
+      {
+        "query": "small office movers los angeles",
+        "observed_rank": null,
+        "organic_rows_examined": 50,
+        "matched_results": []
+      },
+      {
+        "query": "small office relocation los angeles checklist",
+        "observed_rank": null,
+        "organic_rows_examined": 48,
+        "matched_results": []
+      },
+      {
+        "query": "apartment moving checklist los angeles",
+        "observed_rank": null,
+        "organic_rows_examined": 48,
+        "matched_results": []
+      },
+      {
+        "query": "how much do movers cost los angeles",
+        "observed_rank": null,
+        "organic_rows_examined": 48,
+        "matched_results": []
+      },
+      {
+        "query": "two movers and a truck cost los angeles",
+        "observed_rank": null,
+        "organic_rows_examined": 48,
+        "matched_results": []
+      },
+      {
+        "query": "moving coi elevator reservation los angeles",
+        "observed_rank": 1,
+        "organic_rows_examined": 50,
+        "matched_results": [
+          {
+            "rank": 1,
+            "domain": "splendidmoving.com",
+            "url": "https://splendidmoving.com/blog/apartment-moving-checklist-los-angeles"
+          },
+          {
+            "rank": 41,
+            "domain": "splendidmoving.com",
+            "url": "https://splendidmoving.com/small-office-movers-los-angeles"
+          }
+        ]
+      },
+      {
+        "query": "apartment moving certificate of insurance los angeles",
+        "observed_rank": 12,
+        "organic_rows_examined": 49,
+        "matched_results": [
+          {
+            "rank": 12,
+            "domain": "splendidmoving.com",
+            "url": "https://splendidmoving.com/blog/apartment-moving-checklist-los-angeles"
+          },
+          {
+            "rank": 45,
+            "domain": "splendidmoving.com",
+            "url": "https://splendidmoving.com/blog/moving-building-coi-elevator-reservations"
+          }
+        ]
+      },
+      {
+        "query": "moving apartment without elevator los angeles",
+        "observed_rank": 12,
+        "organic_rows_examined": 49,
+        "matched_results": [
+          {
+            "rank": 12,
+            "domain": "splendidmoving.com",
+            "url": "https://splendidmoving.com/blog/apartment-moving-checklist-los-angeles"
+          },
+          {
+            "rank": 35,
+            "domain": "splendidmoving.com",
+            "url": "https://splendidmoving.com/blog/moving-without-elevator-los-angeles"
+          }
+        ]
+      },
+      {
+        "query": "walk up apartment movers los angeles",
+        "observed_rank": 5,
+        "organic_rows_examined": 48,
+        "matched_results": [
+          {
+            "rank": 5,
+            "domain": "splendidmoving.com",
+            "url": "https://splendidmoving.com/apartment-movers-los-angeles"
+          }
+        ]
+      },
+      {
+        "query": "how to pack kitchen for apartment move",
+        "observed_rank": null,
+        "organic_rows_examined": 47,
+        "matched_results": []
+      },
+      {
+        "query": "packing dishes and glasses for moving",
+        "observed_rank": null,
+        "organic_rows_examined": 44,
+        "matched_results": []
+      },
+      {
+        "query": "small office moving checklist los angeles",
+        "observed_rank": null,
+        "organic_rows_examined": 45,
+        "matched_results": []
+      },
+      {
+        "query": "office relocation planning los angeles",
+        "observed_rank": null,
+        "organic_rows_examined": 49,
+        "matched_results": []
+      },
+      {
+        "query": "long distance moving inventory checklist",
+        "observed_rank": null,
+        "organic_rows_examined": 44,
+        "matched_results": []
+      },
+      {
+        "query": "photos for long distance moving quote",
+        "observed_rank": null,
+        "organic_rows_examined": 46,
+        "matched_results": []
+      },
+      {
+        "query": "moving truck parking los angeles apartment",
+        "observed_rank": 19,
+        "organic_rows_examined": 48,
+        "matched_results": [
+          {
+            "rank": 19,
+            "domain": "splendidmoving.com",
+            "url": "https://splendidmoving.com/blog/apartment-moving-checklist-los-angeles"
+          }
+        ]
+      },
+      {
+        "query": "moving day loading zone los angeles",
+        "observed_rank": 49,
+        "organic_rows_examined": 50,
+        "matched_results": [
+          {
+            "rank": 49,
+            "domain": "splendidmoving.com",
+            "url": "https://splendidmoving.com/blog/los-angeles-moving-parking-loading"
+          }
+        ]
+      }
+    ]
+  },
+  "technical": {
+    "live_pages_ok": 18,
+    "local_build_parity_pages": 18,
+    "url_inspections_indexed": 18,
+    "google_canonicals_match": true,
+    "new_page_reported_crawl_dates": "2026-11-05 through 2026-11-06",
+    "sitemap_errors": 0,
+    "sitemap_warnings": 0,
+    "www_redirect": 307,
+    "quote_api_get": 405
+  },
+  "measurement": {
+    "ga4_lead_key_event_configured": true,
+    "three_registered_dimensions_return_values": true,
+    "latest_complete_search_console_day": "2026-11-14",
+    "nov15_search_console_incomplete": true
+  },
+  "treg_cost": {
+    "initial_rank_pass_estimate_usd": 0.28,
+    "announced_operational_ceiling_usd": 0.35,
+    "actual_charge_usd": 0.282,
+    "initial_calls": 28,
+    "retry_calls": 5
+  },
+  "next_actions": [
+    {
+      "action": "Request recrawl of four revised priority URLs through the Search Console UI",
+      "status": "Recommended; not submitted in this audit",
+      "paths": [
+        "/packing-services-los-angeles",
+        "/apartment-movers-los-angeles",
+        "/small-moves-los-angeles",
+        "/blog/how-much-do-movers-cost-los-angeles"
+      ]
+    },
+    {
+      "action": "Review packing, apartment and cost pages using verified job examples, original photos and actual search intent",
+      "status": "Recommended; no page edits in this audit"
+    },
+    {
+      "action": "Audit Google Business Profile and citations; establish Maps measurement separately",
+      "status": "Recommended; Business Profile not connected to the current Treg team tools"
+    },
+    {
+      "action": "Repeat the same ranking panel weekly and compare complete traffic windows",
+      "status": "Recommended; no recurring job created"
+    }
+  ],
+  "private_evidence": "seo/snapshots/2026-11-16-follow-up/REPORT.md"
+}
