@@ -79,6 +79,12 @@ To verify a deployment, open a production page and check that the Google tag loa
 
 Automated checks cover rates/rounding, long-distance/manual cases, Google outages, no-Redis routing/SMS, existing-contact updates, fresh repeat requests, same-request retries, uncertain sends, and CRM-note receipts. Current browser checks include photo previews/add/remove, HEIC conversion, language changes, a failed-send retry preserving the exact photo payload, and ten-photo payload sizing. The production mobile WebKit form submitted a JPEG and an iPhone HEIC photo; Resend accepted both attachments to `info@splendidmoving.com` and the GHL receipt recorded the email ID. Replaying that submission returned the same email ID without sending again. The contact still has exactly the original two hourly quote texts, both delivered; neither long-distance photo test sent an hourly SMS. Inbox delivery was not independently checked. Production date/photo screenshots were visually reviewed, including the date field at 320px.
 
+## Service photos
+
+The three homepage service cards use faded job photos in place of their former icons. The three main service pages open with image-only photo banners above their existing introductions. Local and commercial images come from Splendid Moving's Yelp listing; the long-distance highway image was generated with the built-in image tool. Attribution, original sources and the full generation prompt are in `design/service-photos/README.md`.
+
+Only six optimized delivery images in `assets/images/services/` are published (about 30–156 KiB each). Phones receive 640px versions and preserve the full frame; desktop banners use larger sources and deliberate crops. Edit banner layout and card fades in `styles/styles.css`, and markup in `index.html` plus the three root service HTML files. The service pages also use their corresponding photos for social previews.
+
 ## Files
 
 - `quote.html`, `styles/quote-page.css` — centered standalone form shell and design.

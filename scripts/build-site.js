@@ -12,10 +12,10 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const output = join(root, 'dist');
 const catalog = JSON.parse(readFileSync(join(root, 'content/pages.json'), 'utf8'));
 const existing = [
-    { file: 'index.html', path: '/', name: 'Splendid Moving', modified: '2026-11-11' },
-    { file: 'local-moving.html', path: 'local-moving', name: 'Local moving', service: 'Local moving services', modified: '2026-11-11' },
-    { file: 'long-distance-moving.html', path: 'long-distance-moving', name: 'Long-distance moving', service: 'Long-distance moving services' },
-    { file: 'commercial-moving.html', path: 'commercial-moving', name: 'Commercial moving', service: 'Commercial moving services' },
+    { file: 'index.html', path: '/', name: 'Splendid Moving', modified: '2026-11-18' },
+    { file: 'local-moving.html', path: 'local-moving', name: 'Local moving', service: 'Local moving services', modified: '2026-11-18' },
+    { file: 'long-distance-moving.html', path: 'long-distance-moving', name: 'Long-distance moving', service: 'Long-distance moving services', modified: '2026-11-18' },
+    { file: 'commercial-moving.html', path: 'commercial-moving', name: 'Commercial moving', service: 'Commercial moving services', modified: '2026-11-18' },
     { file: 'quote.html', path: 'quote', name: 'Request a moving quote' },
 ];
 

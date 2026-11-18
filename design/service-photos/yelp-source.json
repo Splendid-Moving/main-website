@@ -1,0 +1,135 @@
+{
+  "call_id": "3f1745c6af6a4694989397bc0fb73b8c",
+  "status": 200,
+  "retry_after": null,
+  "endpoint_id": "brightdata.x.yelp-businesses",
+  "replayed": null,
+  "body": [
+    {
+      "business_id": "splendid-moving-los-angeles-3",
+      "yelp_biz_id": "YTSvQXm0ibPcKn6A2YdsdA",
+      "name": "Splendid Moving",
+      "overall_rating": 4.9,
+      "reviews_count": 412,
+      "is_claimed": true,
+      "categories": [
+        "Movers",
+        "Packing Services"
+      ],
+      "website": "http://splendidmoving.com",
+      "phone_number": "(213) 724-0394",
+      "opening_hours": {
+        "Fri": "6:00 AM - 11:00 PM",
+        "Mon": "6:00 AM - 11:00 PM",
+        "Sat": "6:00 AM - 11:00 PM",
+        "Sun": "7:00 AM - 11:00 PM",
+        "Thu": "6:00 AM - 11:00 PM",
+        "Tue": "6:00 AM - 11:00 PM",
+        "Wed": "6:00 AM - 11:00 PM"
+      },
+      "address": {
+        "City": "Los Angeles",
+        "Country": "US",
+        "State": "CA",
+        "zip_code": "90012"
+      },
+      "address:zip_code": "90012",
+      "full_address": "Los Angeles, CA 90012",
+      "amenities": [
+        {
+          "name": "ASL proficient",
+          "available": false
+        },
+        {
+          "name": "Accepts cash",
+          "available": true
+        },
+        {
+          "name": "Accepts credit cards",
+          "available": true
+        },
+        {
+          "name": "Accepts Zelle",
+          "available": true
+        },
+        {
+          "name": "Accepts Venmo",
+          "available": false
+        },
+        {
+          "name": "Accepts PayPal",
+          "available": false
+        },
+        {
+          "name": "Accepts Cash App",
+          "available": false
+        },
+        {
+          "name": "Accepts cryptocurrency",
+          "available": false
+        },
+        {
+          "name": "Open to All",
+          "available": true
+        }
+      ],
+      "about_the_business": "\"Give us a call today for a free estimate. We bring over 5 years of experience, and are committed to providing the highest quality service. Call us today for your free estimate!\"",
+      "services_offered": [
+        "In-state moving",
+        "Packing",
+        "Packing supply sales",
+        "Unpacking"
+      ],
+      "url": "https://www.yelp.com/biz/splendid-moving-los-angeles-3",
+      "service_area": "Los Angeles",
+      "city": "Los Angeles",
+      "state": "CA",
+      "country": "US",
+      "zip_code": "90012",
+      "images_videos_urls": [
+        "https://s3-media0.fl.yelpcdn.com/bphoto/MYL3MmJWsOQ7JzP9qGBC0A/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/qz7O0rEzkg2EZdLl-dk_Vw/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/ZmXQWVLDOadhwSN7m1hmjw/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/Zl0HC1aqoLs-6fFf45CBtA/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/SjaYjTq9Mr5AdHSroTZi1A/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/puLyrc5hwIkKON4kPWOrSA/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/dOlNkfQV4uHXa0Wihr04oA/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/3uyoNrhd_i_yTZxJQofj_g/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/r6CmjpyK0BGNE28P-GhWqQ/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/wa61l8HZZa4NFw3YKfClGw/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/SsXWNRQMNFMh3unGoacr4g/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/PU2MEIC1Zt1j7LjgnO9rNg/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/KM6Fs0W3HsbPSkB_kslb_g/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/QGh1e3JXAPuunZYbPt3TWA/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/vS8d0FcU-yIaj5dvzaAzvg/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/ZpLO3ya_CqQQrV5hllNqGA/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/Kiz9NKBQumZlEh_Sf3xCcA/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/e-KYINaZtfRCbhz1YvIqhQ/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/Ih9AmP-tOln0sNH1OLg1gw/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/bdhIXvB9gVCHuZ1dxptlVA/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/fu1r6uty-yffbSPVYRBZKw/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/1AaAahUeqh-nvYR_Uo1ICA/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/KJ2VJkufjMWdzndi-e5NLg/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/QRETIKLkzdV-Lr-3cwGXRw/l.jpg",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/RX76aaxfabXVwfKuhc3O8g/l.jpg"
+      ],
+      "is_closed": false,
+      "owner_name": "Demezhan R.",
+      "from_the_business": "Specialties \"Give us a call today for a free estimate. We bring over 5 years of experience, and are committed to providing the highest quality service. Call us today for your free estimate!\"\nMeet the Business Owner Hello! My name is Demezhan. Since 2015 I have worked for many different moving companies in Los Angeles. During my work experience I’ve learned how to complete moving jobs efficiently and fast. Eventually I opened Splendid Moving in 2022. We are still a small business with only a selected number of employees.",
+      "timestamp": "2026-11-18T18:23:28.068Z",
+      "input": {
+        "url": "https://www.yelp.com/biz/splendid-moving-los-angeles-3"
+      }
+    }
+  ],
+  "cost_usd": 0.0015,
+  "served_via": null,
+  "whose_error": null,
+  "hint": null,
+  "did_you_mean": null,
+  "routed_tool": null,
+  "suggestion": null,
+  "upstream_failed": null,
+  "error": null,
+  "detail": null
+}

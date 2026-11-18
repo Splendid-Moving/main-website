@@ -2,6 +2,11 @@
 
 This file records meaningful changes and the checks actually performed. Earlier release history remains in the README, SEO plan and milestone records.
 
+## 2026-11-18 — Add service photography
+- Added faded photo headers to all three homepage service cards and image-only banners to the three main service pages, keeping their existing introductions and quote links. Used two real Yelp job photos and a generated desert-highway truck photo; saved sources, attribution and the generation prompt outside the public build.
+- Verified locally: all 67 tests pass; the 18-page build, local-link, metadata and JSON-LD checks pass. Browser screenshots reviewed at desktop and phone widths, with image loading and no horizontal overflow checked at 320, 390, 768 and 1440px. Delivery images are about 30–156 KiB each.
+- Release: local implementation verified; production verification pending. The generated highway image is illustrative, not a documented company trip.
+
 ## 2026-11-16 — Refresh SEO measurements and prioritize next work
 - Collected all 28 matched LA desktop rankings, complete after bounded retries and free redirect resolution. Preserved earlier snapshots; verified their saved hashes and reconciled $0.282 in charges under the announced $0.35 ceiling.
 - Verified: all 18 live pages match the saved build; status, canonical, metadata and JSON-LD checks pass. All 18 Google URL inspections report indexed. Connected Analytics reports return the registered fields; complete Search Console data ends November 14. Detailed traffic/enquiry evidence remains private.
