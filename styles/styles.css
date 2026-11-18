@@ -2451,6 +2451,11 @@ h4 {
     gap: var(--space-3xl);
 }
 
+.service-details__grid > * {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
 .service-details__content h2 {
     margin-bottom: var(--space-lg);
 }
