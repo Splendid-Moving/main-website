@@ -2381,8 +2381,12 @@ h4 {
     object-position: center 65%;
 }
 
+.service-photo-hero--local img {
+    object-position: center 46%;
+}
+
 .service-photo-hero--commercial img {
-    object-position: center 35%;
+    object-position: center 40%;
 }
 
 .service-photo-hero + .page-hero {

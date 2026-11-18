@@ -81,11 +81,11 @@ Automated checks cover rates/rounding, long-distance/manual cases, Google outage
 
 ## Service photos
 
-The three homepage service cards use faded job photos in place of their former icons. The three main service pages open with image-only photo banners above their existing introductions. Local and commercial images come from Splendid Moving's Yelp listing; the long-distance highway image was generated with the built-in image tool. Attribution, original sources and the full generation prompt are in `design/service-photos/README.md`.
+The three homepage service cards use faded job photos in place of their former icons. The three main service pages open with image-only photo banners above their existing introductions. The revised local photo shows three crew members in matching navy Splendid shirts from Yelp. The commercial photo is a company-posted Google Maps image of wrapped furniture with no people. The long-distance highway photo was generated with the built-in image tool and shows a clean road through green mountain foothills. Attribution, original sources and the full generation prompt are in `design/service-photos/README.md`.
 
-Only six optimized delivery images in `assets/images/services/` are published (about 30–156 KiB each). Phones receive 640px versions and preserve the full frame; desktop banners use larger sources and deliberate crops. Edit banner layout and card fades in `styles/styles.css`, and markup in `index.html` plus the three root service HTML files. The service pages also use their corresponding photos for social previews.
+Only six optimized delivery images in `assets/images/services/` are published (about 54–329 KiB each). Phones receive 640px versions; desktop banners use larger sources. Both use deliberate crops that keep the crew's faces and shirt logos visible. Edit banner layout and card fades in `styles/styles.css`, and markup in `index.html` plus the three root service HTML files. The service pages also use their corresponding photos for social previews.
 
-Photography release `3f654e8` was verified live after Vercel reported success. All 18 public HTML pages, the shared stylesheet and six photo assets match the tested local build. Desktop/mobile screenshots and the production comparison report are saved under ignored `output/playwright/service-photos/`; the 67 automated tests and 18-page site validation pass.
+The original photography release `3f654e8` was verified live after Vercel reported success. The replacement images are being checked separately; current sources are described above. Desktop/mobile screenshots are saved under ignored `output/playwright/service-photos/revision/`.
 
 ## Files
 

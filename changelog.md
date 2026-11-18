@@ -2,6 +2,11 @@
 
 This file records meaningful changes and the checks actually performed. Earlier release history remains in the README, SEO plan and milestone records.
 
+## 2026-11-18 — Replace photos with branded crew and a scenic highway
+- Replaced the two earlier job photos with a Yelp team portrait showing all three movers in matching navy Splendid shirts and a company-posted Google Maps photo of wrapped furniture with no people. Searched both platforms; Google exposed ten public photos before requiring sign-in. Saved exact source details and replaced the desert truck image with a generated green-foothill highway scene.
+- Verified locally: all 67 tests and 18-page build/link/metadata checks pass. Reviewed desktop and phone screenshots of all four affected pages and the three mobile cards; confirmed loaded images and no horizontal overflow at 320, 390, 768 and 1440px. Delivery images are about 54–329 KiB each. No additional paid data calls.
+- Release: implementation verified locally; production verification pending.
+
 ## 2026-11-18 — Add service photography
 - Added faded photo headers to all three homepage service cards and image-only banners to the three main service pages, keeping their existing introductions and quote links. Used two real Yelp job photos and a generated desert-highway truck photo; saved sources, attribution and the generation prompt outside the public build.
 - Verified locally: all 67 tests pass; the 18-page build, local-link, metadata and JSON-LD checks pass. Browser screenshots reviewed at desktop and phone widths; all 36 combinations of three service pages, EN/ES/KO and 320/390/768/1440px have loaded images and no horizontal overflow. Adjusted closed mobile navigation and long translated text for the service-page layout. Delivery images are about 30–156 KiB each.

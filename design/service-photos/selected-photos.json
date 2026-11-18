@@ -1,0 +1,25 @@
+{
+  "accessed": "2026-11-18",
+  "local": {
+    "platform": "Yelp",
+    "source_file": "source/local-crew.jpg",
+    "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/puLyrc5hwIkKON4kPWOrSA/o.jpg",
+    "photo_page": "https://www.yelp.com/biz_photos/splendid-moving-los-angeles-3?select=puLyrc5hwIkKON4kPWOrSA",
+    "description": "Three crew members in matching navy Splendid Moving logo shirts"
+  },
+  "commercial": {
+    "platform": "Google Maps",
+    "source_file": "source/commercial-packed-furniture.jpg",
+    "image_url": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QyHn4cB7lyDeu1xCyqTHNX4hlacpjGlpnx9EqcxHZCuilFO7a9EjRYqsqsOsqWGEkhdVlqXHTIIhsEBR-LehSxmPddHeV_nRGYdrAWYv5Q0uyzov-3clDyB0YzZ0BBJDpuhGS-Aw=w1400",
+    "photo_id": "CIHM0ogKEICAgICesMbQqwE",
+    "uploader": "Splendid Moving",
+    "posted": "2022-09",
+    "image_capture": "2022-06",
+    "listing_url": "https://www.google.com/maps/search/?api=1&query=Splendid%20Moving&query_place_id=ChIJszdgy_arLS0RnB55FLHPxEI",
+    "description": "Wrapped furniture and equipment in a storage space with no movers visible"
+  },
+  "search_scope": {
+    "yelp": "Reviewed the 25 listing photos retrieved earlier on the same date, including original-resolution uniformed crew photos.",
+    "google": "Reviewed all 10 publicly available gallery photos. Additional photos required Google sign-in. No login was performed."
+  }
+}
