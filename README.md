@@ -85,7 +85,7 @@ The three homepage service cards use faded job photos in place of their former i
 
 Only six optimized delivery images in `assets/images/services/` are published (about 54–329 KiB each). Phones receive 640px versions; desktop banners use larger sources. Both use deliberate crops that keep the crew's faces and shirt logos visible. Edit banner layout and card fades in `styles/styles.css`, and markup in `index.html` plus the three root service HTML files. The service pages also use their corresponding photos for social previews.
 
-The original photography release `3f654e8` was verified live after Vercel reported success. The replacement images are being checked separately; current sources are described above. Desktop/mobile screenshots are saved under ignored `output/playwright/service-photos/revision/`.
+Replacement photography release `e3cc7fb` was verified live after Vercel reported success. All 18 public HTML pages, the stylesheet and six photo files match the tested build byte for byte. Eight live desktop/mobile browser checks passed with loaded replacement images and no horizontal overflow. The 67 automated tests and 18-page site validation also pass. Screenshots and the production comparison report are saved under ignored `output/playwright/service-photos/revision/`.
 
 ## Files
 
