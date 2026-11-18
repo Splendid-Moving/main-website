@@ -2389,6 +2389,12 @@ h4 {
     padding-top: var(--space-2xl);
 }
 
+@media (max-width: 1023px) {
+    .service-page .nav__menu:not(.active) {
+        display: none;
+    }
+}
+
 @media (max-width: 767px) {
     .service-photo-hero {
         height: auto;
