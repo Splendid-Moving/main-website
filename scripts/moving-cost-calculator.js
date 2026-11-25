@@ -1,7 +1,7 @@
 // Compares the hourly portion of a local move using rates supplied by the build.
 // It never predicts duration, adds route charges, or sends a quote request.
 export function calculateHourlySubtotal(rate, hours) {
-    if (typeof rate !== 'number' || !Number.isFinite(rate) || rate <= 0 || typeof hours !== 'number' || !Number.isFinite(hours) || hours < 0) return null;
+    if (!Number.isFinite(rate) || rate <= 0 || !Number.isFinite(hours) || hours < 0) return null;
     const subtotal = Math.round(rate * Math.max(3, hours) * 100) / 100;
     return Number.isFinite(subtotal) ? subtotal : null;
 }
