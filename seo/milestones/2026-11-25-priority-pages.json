@@ -1,0 +1,53 @@
+{
+  "description": "Records the November 25 priority-page release and observed checks. Search ranking and business outcomes must be measured separately after release.",
+  "date": "2026-11-25",
+  "before_commit": "d24d715",
+  "status": "locally_verified_awaiting_deployment",
+  "paths": [
+    "/apartment-movers-los-angeles",
+    "/small-moves-los-angeles",
+    "/packing-services-los-angeles",
+    "/blog/how-much-do-movers-cost-los-angeles"
+  ],
+  "changes": [
+    "Direct service headings, scope, published rate/minimum and contextual links",
+    "Previously approved company photography with source attribution on three priority service pages",
+    "Packing service FAQs",
+    "Interactive hourly subtotal calculator using existing quote-pricing rates; gas, extra materials and driving-time adjustments excluded"
+  ],
+  "local_checks": {
+    "automated_tests_passed": 70,
+    "validated_public_pages": 18,
+    "browser_viewports": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "page_viewport_checks": 16,
+    "calculator": "All six crew/payment combinations, fractional hours, minimum, invalid inputs and no-JavaScript fallback verified",
+    "lighthouse": {
+      "version": "13.6.0",
+      "scope": "accessibility and SEO categories only, local Chrome",
+      "cost_guide": {
+        "accessibility": 100,
+        "seo": 100
+      },
+      "packing_page": {
+        "accessibility": 100,
+        "seo": 100
+      }
+    }
+  },
+  "evidence": {
+    "private_directory": "seo/snapshots/2026-11-25-page-improvements",
+    "sha256_manifest": "seo/snapshots/2026-11-25-page-improvements/hashes.json",
+    "first_party_before": "Search Console daily Nov 17-24 (including preliminary), page report Nov 17-23 final; GA4 event counts Nov 17-23. Raw provider metadata retained privately.",
+    "ranking_baseline": "Latest saved matched keyword snapshot remains November 16; no November 25 keyword ranking refresh purchased."
+  },
+  "measurement_limits": [
+    "No ranking, traffic, conversion or revenue improvement established by this implementation.",
+    "Google manual recrawl not submitted: Search Console requires sign-in. Sitemap discovery remains available."
+  ],
+  "additional_paid_treg_calls": 0
+}

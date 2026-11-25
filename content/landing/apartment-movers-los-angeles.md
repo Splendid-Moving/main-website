@@ -1,6 +1,8 @@
-An apartment move can spend more time between the curb and the front door than on the road. Tell us about the stairs, elevator and loading entrance when you send your addresses. That gives us a better starting point for your crew and quote.
+Splendid Moving handles studio, one-bedroom and larger apartment moves in Los Angeles. Your local moving service includes a crew and truck, furniture blankets, wardrobe boxes for use during the move, and furniture disassembly and reassembly.
 
-Splendid Moving handles local apartment moves in Los Angeles with a moving truck, furniture protection and disassembly and reassembly for suitable furniture. For a studio or one-bedroom move, our two-mover rate is $115 per hour with cash or $125 with a card. The minimum charge is three hours. Your full quote also needs the route, access and any applicable fees.
+For a studio or one-bedroom move, two movers start at $115 per hour with cash or $125 with a card. The three-hour hourly minimum is $345 cash or $375 card, before the route-based gas fee and other applicable charges. Our [small-move service](/small-moves-los-angeles) explains the minimum; the [moving cost guide](/blog/how-much-do-movers-cost-los-angeles) has the full rate and fee breakdown.
+
+Stairs, elevator windows and the walk from the truck to your door affect the time and crew plan. Include the access details at both addresses when you request your quote. If you want us to pack the kitchen or another room, add [packing help](/packing-services-los-angeles) to the request.
 
 ## Start with the route through your building
 

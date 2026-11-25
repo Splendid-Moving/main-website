@@ -34,7 +34,7 @@ rmSync(output, { recursive: true, force: true });
 mkdirSync(output, { recursive: true });
 for (const folder of ['assets', 'styles']) cpSync(join(root, folder), join(output, folder), { recursive: true, filter: source => !source.endsWith('hero-bg.png') });
 mkdirSync(join(output, 'scripts'), { recursive: true });
-for (const file of ['script.js', 'i18n.js', 'analytics.js', 'quote-copy.js', 'quote-photos.js', 'quote-places.js', 'quote-response.js', 'quote-form.js']) cpSync(join(root, 'scripts', file), join(output, 'scripts', file));
+for (const file of ['script.js', 'i18n.js', 'analytics.js', 'moving-cost-calculator.js', 'quote-copy.js', 'quote-photos.js', 'quote-places.js', 'quote-response.js', 'quote-form.js']) cpSync(join(root, 'scripts', file), join(output, 'scripts', file));
 
 function writePage(path, html) {
     const target = join(output, `${path}.html`);

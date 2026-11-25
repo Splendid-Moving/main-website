@@ -1,6 +1,13 @@
-The useful starting number is an hourly rate for the right crew. The final bill also depends on how much work the move involves, the access at each building, and the charges set out in your moving agreement.
+Splendid Moving’s local Los Angeles rates start at $115 per hour with cash or $125 with a card for two movers and a truck. A three-hour minimum makes the starting hourly subtotal $345 cash or $375 card. Gas fees, additional materials and applicable driving-time charges are separate parts of your quote.
 
-Splendid Moving's current local rates are below. Every hourly package has a three-hour minimum.
+## Calculate an hourly moving subtotal
+
+<moving-cost-calculator>
+</moving-cost-calculator>
+
+## Current local moving rates
+
+Choose the crew for the furniture, boxes and access involved. The rates below are for local residential moving; office and long-distance moves are quoted individually.
 
 | Crew | Cash rate | Card rate | Three-hour hourly subtotal, cash / card |
 | --- | --- | --- | --- |
@@ -39,7 +46,8 @@ Long-distance moves need an individual pricing conversation based on the route a
 
 ## See how the charges add up
 
-<guide-panel name="cost-example"></guide-panel>
+<guide-panel name="cost-example">
+</guide-panel>
 
 For California household moves, BHGS advises customers to obtain the required written estimate after a visual inspection and review the moving agreement. An online hourly-rate illustration is not a substitute for that process. Read the [BHGS consumer guide](https://bhgs.dca.ca.gov/consumers/hhm.html) when comparing movers.
 

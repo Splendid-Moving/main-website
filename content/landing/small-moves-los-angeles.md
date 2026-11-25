@@ -1,10 +1,13 @@
-A studio move, a one-bedroom move or a short furniture list can still involve a full crew and truck. The useful starting point is the minimum charge and the work at both addresses. Splendid Moving's two-mover local rate is $115 per hour with cash or $125 with a card, with a three-hour minimum.
+Splendid Moving handles studio apartments, one-bedroom moves and short furniture lists in Los Angeles. Two movers and a truck start at $115 per hour with cash or $125 with a card. Every local hourly package has a three-hour minimum.
 
-If you only need a few things moved, send the item list before deciding whether that arrangement suits your budget. Check that the three-hour minimum suits the work you need before booking.
+For that two-mover crew, the minimum hourly subtotal is $345 cash or $375 card. Your quote also needs the gas fee, driving-time terms and any extra materials. Use the [moving cost calculator](/blog/how-much-do-movers-cost-los-angeles) to compare hourly subtotals for different crews and durations.
+
+Send the furniture list and an approximate box count for a quote. Mention stairs, a long carry, or a piece that needs taking apart. Those details help the team discuss the crew and work before you book.
 
 ## Work out the minimum before estimating the hours
 
-<guide-panel name="small-move-minimum"></guide-panel>
+<guide-panel name="small-move-minimum">
+</guide-panel>
 
 A short drive does not describe the whole move. A third-floor walk-up and a long carry can take more work than a ground-floor apartment a few neighborhoods away. Tell us about those conditions when you [request a small-move quote](/quote).
 

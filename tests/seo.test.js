@@ -88,7 +88,7 @@ test('legacy page redirects retain relevant replacements', () => {
 
 
 test('service question panels have one visible heading and a valid section label', () => {
-    for (const slug of ['apartment-movers-los-angeles', 'small-office-movers-los-angeles']) {
+    for (const slug of ['apartment-movers-los-angeles', 'small-office-movers-los-angeles', 'packing-services-los-angeles']) {
         const $ = load(readFileSync(`dist/${slug}.html`, 'utf8'));
         const panel = $('.guide-panel--questions');
         const label = panel.attr('aria-labelledby');

@@ -7,42 +7,93 @@
       "kind": "service",
       "category": "Apartment moves",
       "title": "Apartment Movers in Los Angeles | Splendid Moving",
-      "heading": "Apartment movers who plan around your building",
-      "description": "Plan an LA apartment move around stairs, elevators, parking and your item list. See Splendid Moving's local rates and request a quote for your addresses.",
-      "summary": "Elevator slots, walk-ups and the distance from the truck to your door all belong in the plan.",
+      "heading": "Apartment movers in Los Angeles",
+      "description": "Los Angeles apartment movers for studios, walk-ups and larger homes. Two movers and a truck from $115/hour cash; three-hour minimum. COIs available on request.",
+      "summary": "A crew and truck for your apartment move, with furniture protection and packing help. Local rates start at $115/hour cash for two movers, with a three-hour minimum.",
       "body": "landing/apartment-movers-los-angeles.md",
-      "modified": "2026-11-11",
-      "queries": ["apartment movers los angeles", "apartment movers los angeles with stairs"],
-      "related": ["blog/moving-building-coi-elevator-reservations", "blog/apartment-moving-checklist-los-angeles", "small-moves-los-angeles"],
-      "cta": "Get an apartment moving quote"
+      "modified": "2026-11-25",
+      "queries": [
+        "apartment movers los angeles",
+        "apartment movers los angeles with stairs"
+      ],
+      "related": [
+        "blog/moving-building-coi-elevator-reservations",
+        "blog/apartment-moving-checklist-los-angeles",
+        "small-moves-los-angeles"
+      ],
+      "cta": "Get an apartment moving quote",
+      "heroPhoto": {
+        "src": "/assets/images/services/local-moving-large.webp",
+        "small": "/assets/images/services/local-moving-640.webp",
+        "width": 750,
+        "height": 1000,
+        "alt": "Three Splendid Moving crew members in matching navy company shirts beside a loaded moving truck.",
+        "caption": "The Splendid Moving crew.",
+        "sourceUrl": "https://www.yelp.com/biz_photos/splendid-moving-los-angeles-3?select=puLyrc5hwIkKON4kPWOrSA",
+        "sourceLabel": "Photo from Yelp"
+      }
     },
     {
       "path": "small-moves-los-angeles",
       "kind": "service",
       "category": "Small moves",
-      "title": "Small Moves in Los Angeles | Splendid Moving",
-      "heading": "A small LA move still needs the right plan",
-      "description": "Moving a studio, one bedroom or a short furniture list in Los Angeles? See the crew, hourly rates and three-hour minimum before requesting your quote.",
-      "summary": "Work out the minimum charge, your furniture list and access before booking a crew.",
+      "title": "Small & Studio Moves in Los Angeles | Splendid Moving",
+      "heading": "Small moves and studio movers in Los Angeles",
+      "description": "Book a small or studio move in Los Angeles. Two movers and a truck from $115/hour cash, with a three-hour minimum. Send your furniture list for a quote.",
+      "summary": "Studio, one-bedroom and small furniture moves with two movers and a truck. From $115/hour cash, with a three-hour minimum.",
       "body": "landing/small-moves-los-angeles.md",
-      "modified": "2026-11-09",
-      "queries": ["small moves los angeles", "studio apartment movers los angeles"],
-      "related": ["blog/how-much-do-movers-cost-los-angeles", "apartment-movers-los-angeles", "blog/moving-without-elevator-los-angeles"],
-      "cta": "Get a quote for your small move"
+      "modified": "2026-11-25",
+      "queries": [
+        "small moves los angeles",
+        "studio apartment movers los angeles"
+      ],
+      "related": [
+        "blog/how-much-do-movers-cost-los-angeles",
+        "apartment-movers-los-angeles",
+        "blog/moving-without-elevator-los-angeles"
+      ],
+      "cta": "Get a quote for your small move",
+      "heroPhoto": {
+        "src": "/assets/images/services/local-moving-large.webp",
+        "small": "/assets/images/services/local-moving-640.webp",
+        "width": 750,
+        "height": 1000,
+        "alt": "Three Splendid Moving crew members in matching navy company shirts beside a loaded moving truck.",
+        "caption": "The Splendid Moving crew.",
+        "sourceUrl": "https://www.yelp.com/biz_photos/splendid-moving-los-angeles-3?select=puLyrc5hwIkKON4kPWOrSA",
+        "sourceLabel": "Photo from Yelp"
+      }
     },
     {
       "path": "packing-services-los-angeles",
       "kind": "service",
       "category": "Packing with your move",
-      "title": "Packing Services for Your LA Move | Splendid Moving",
-      "heading": "Book packing help with your Los Angeles move",
-      "description": "Add packing help to your Splendid Moving quote. Tell us which rooms need packing, what is fragile and what you will pack yourself. Materials are confirmed in your quote.",
-      "summary": "Decide which rooms you want help with, then put the packing work into the moving quote.",
+      "title": "Packing Services Los Angeles | Splendid Moving",
+      "heading": "Packing services for your Los Angeles move",
+      "description": "Packing and unpacking services with your Los Angeles move. Get help with a kitchen, fragile items or a full home. Tape and shrink wrap included; boxes can cost extra.",
+      "summary": "Get help packing a kitchen, fragile items or your whole home as part of your move. Tape and shrink wrap are included; confirm boxes and other materials in your quote.",
       "body": "landing/packing-services-los-angeles.md",
-      "modified": "2026-11-09",
-      "queries": ["packing services los angeles", "packing help for apartment move los angeles"],
-      "related": ["blog/packing-kitchen-for-a-move", "blog/long-distance-moving-inventory-checklist", "blog/apartment-moving-checklist-los-angeles"],
-      "cta": "Include packing in my move quote"
+      "modified": "2026-11-25",
+      "queries": [
+        "packing services los angeles",
+        "packing help for apartment move los angeles"
+      ],
+      "related": [
+        "blog/packing-kitchen-for-a-move",
+        "blog/long-distance-moving-inventory-checklist",
+        "blog/apartment-moving-checklist-los-angeles"
+      ],
+      "cta": "Get a moving and packing quote",
+      "heroPhoto": {
+        "src": "/assets/images/services/commercial-moving-large.webp",
+        "small": "/assets/images/services/commercial-moving-640.webp",
+        "width": 1200,
+        "height": 2133,
+        "alt": "Furniture and equipment wrapped for protection in a company-posted Splendid Moving photo.",
+        "caption": "Wrapped furniture, shared by Splendid Moving.",
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Splendid%20Moving&query_place_id=ChIJszdgy_arLS0RnB55FLHPxEI",
+        "sourceLabel": "Photo from Google Maps"
+      }
     },
     {
       "path": "small-office-movers-los-angeles",
@@ -84,14 +135,21 @@
       "path": "blog/how-much-do-movers-cost-los-angeles",
       "kind": "article",
       "category": "Moving costs",
-      "title": "How Much Do LA Movers Cost? Rates & Examples | Splendid",
+      "title": "Los Angeles Moving Costs & Hourly Calculator | Splendid",
       "heading": "How much do movers cost in Los Angeles?",
-      "description": "See Splendid Moving's two-, three- and four-mover rates, the three-hour minimum, and a clear way to separate a labor subtotal from your full moving quote.",
-      "summary": "Use the actual hourly rates, then account for the minimum, access and applicable fees.",
+      "description": "See local moving rates from $115/hour cash, compare crew sizes and calculate an hourly subtotal. Three-hour minimum; gas, materials and drive-time terms explained.",
+      "summary": "Compare local crew rates, use the hourly subtotal calculator, and see how gas fees, materials and driving-time terms affect your quote.",
       "body": "blog/how-much-do-movers-cost-los-angeles.md",
-      "modified": "2026-11-09",
-      "queries": ["how much do movers cost los angeles", "two movers and a truck cost los angeles"],
-      "related": ["small-moves-los-angeles", "apartment-movers-los-angeles", "packing-services-los-angeles"],
+      "modified": "2026-11-25",
+      "queries": [
+        "how much do movers cost los angeles",
+        "two movers and a truck cost los angeles"
+      ],
+      "related": [
+        "small-moves-los-angeles",
+        "apartment-movers-los-angeles",
+        "packing-services-los-angeles"
+      ],
       "image": {
         "src": "/assets/images/guides/moving-costs-1280.webp",
         "small": "/assets/images/guides/moving-costs-640.webp",

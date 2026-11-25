@@ -105,6 +105,16 @@ The November 4, 2026 release adds four service pages (apartments, small moves, p
 
 The build removes self-serving aggregate review markup, adds MovingCompany/Service/BlogPosting/BreadcrumbList data, and creates relevant permanent redirects for four retired URLs. It serves responsive WebP hero images (about 210 KiB desktop and 79 KiB mobile). The original full-size image stays in source but is excluded from deployed output. Quote calculation and submission code are unchanged.
 
+### November 25 priority-page improvements
+
+The apartment, small-move and packing pages now lead with their actual service scope, published rates and the three-hour minimum. They reuse the approved company photos documented in `design/service-photos/README.md`, with honest captions and source links; these photos are not presented as new customer case studies. Packing has three native expandable FAQs. Metadata, related links and sitemap modification dates reflect the four revised pages, preserving original publication dates.
+
+The moving-cost guide includes an hourly subtotal calculator. `scripts/site-template.js` reads the existing `crewFor` rates in `lib/quote/pricing.js` at build time; `scripts/moving-cost-calculator.js` handles only the browser comparison. Rebuild after changing published rates. It applies the three-hour minimum to hours the visitor enters, without predicting duration or including gas, additional materials or driving-time adjustments. Controls appear only when JavaScript is available; the rate table and labeled example remain readable without it. The module loads only on this guide.
+
+Local verification: 70 tests, all 18 public pages, sixteen page/viewport combinations at 320/390/768/1440px, all six crew/payment combinations, fractional/minimum/invalid hours, keyboard FAQ operation and the no-JavaScript fallback passed. Local Lighthouse 13.6.0 scored 100 accessibility and 100 SEO on the cost and packing pages; these are technical checks, not ranking gains. Before/after screenshots, raw first-party reports and check logs are private under `seo/snapshots/2026-11-25-page-improvements/`. The release record is `seo/milestones/2026-11-25-priority-pages.json`.
+
+Google's manual recrawl has not been requested because Search Console needs sign-in. Treg's URL Inspection endpoint reports indexed-version status but does not submit ordinary pages for a fresh crawl. The existing submitted sitemap provides discovery. This does not block publishing or guarantee crawl timing. No additional paid Treg call was made for this release.
+
 ### Repeatable measurements
 
 The original observations are preserved in `seo/baselines/2026-11-04-rankings.json`. The fixed organic panel uses Los Angeles, English, desktop and depth 50. A missing rank means absent from the examined rows; it is never assigned position 51. The baseline's brand crosscheck remains separate because its provider disagreed with DataForSEO. Maps was #13 of 20 non-sponsored results in the audit; this organic collector does not refresh Maps.

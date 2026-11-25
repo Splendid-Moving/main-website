@@ -242,6 +242,36 @@
         { "title": "Card", "value": "$375", "text": "3 hours × $125 per hour" }
       ],
       "note": "Hourly-charge illustrations for two movers and a truck. The full quote also considers the route-based gas fee, driving-time terms, extra materials and actual work."
+    },
+    "packing-questions": {
+      "type": "questions",
+      "title": "Questions about packing services",
+      "items": [
+        {
+          "question": "Can I get help packing just the kitchen?",
+          "answer": "You can ask for a kitchen, selected items or a full-home packing plan with your move. List what you will pack yourself and send photos of the cupboards and fragile pieces you want the crew to handle.",
+          "link": {
+            "href": "/blog/packing-kitchen-for-a-move",
+            "label": "Prepare the kitchen for packing"
+          }
+        },
+        {
+          "question": "Are packing boxes included?",
+          "answer": "Tape and shrink wrap are included in the documented local moving service. Furniture blankets and wardrobe boxes are available for use during the move. Boxes, bubble wrap and other additional materials can cost extra; confirm the supplies in your quote.",
+          "link": {
+            "href": "/quote",
+            "label": "Ask about supplies for your move"
+          }
+        },
+        {
+          "question": "How does packing affect the moving price?",
+          "answer": "Packing and unpacking labor are part of the documented local moving service, and the work takes billable time. Discuss how much packing you need before choosing a crew. Review the hourly minimum, materials, route-based gas fee and driving-time terms together.",
+          "link": {
+            "href": "/blog/how-much-do-movers-cost-los-angeles",
+            "label": "Compare hourly rates and the other charges"
+          }
+        }
+      ]
     }
   }
 }
