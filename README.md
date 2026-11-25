@@ -113,6 +113,8 @@ The moving-cost guide includes an hourly subtotal calculator. `scripts/site-temp
 
 Local verification: 70 tests, all 18 public pages, sixteen page/viewport combinations at 320/390/768/1440px, all six crew/payment combinations, fractional/minimum/invalid hours, keyboard FAQ operation and the no-JavaScript fallback passed. Local Lighthouse 13.6.0 scored 100 accessibility and 100 SEO on the cost and packing pages; these are technical checks, not ranking gains. Before/after screenshots, raw first-party reports and check logs are private under `seo/snapshots/2026-11-25-page-improvements/`. The release record is `seo/milestones/2026-11-25-priority-pages.json`.
 
+Production release `cead714` received a successful Vercel Git status. All 18 HTML pages, the content stylesheet, calculator module, sitemap and feed match the tested build. Eight live desktop/mobile checks, six calculator rate/payment cases, minimum/invalid input and keyboard FAQ operation passed. All 12 selected arithmetic/validation mutations were detected by isolated offline tests. The quote API returned its expected 405 to GET; no lead was submitted.
+
 Google's manual recrawl has not been requested because Search Console needs sign-in. Treg's URL Inspection endpoint reports indexed-version status but does not submit ordinary pages for a fresh crawl. The existing submitted sitemap provides discovery. This does not block publishing or guarantee crawl timing. No additional paid Treg call was made for this release.
 
 ### Repeatable measurements

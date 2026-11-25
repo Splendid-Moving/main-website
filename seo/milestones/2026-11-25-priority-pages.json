@@ -2,7 +2,7 @@
   "description": "Records the November 25 priority-page release and observed checks. Search ranking and business outcomes must be measured separately after release.",
   "date": "2026-11-25",
   "before_commit": "d24d715",
-  "status": "locally_verified_awaiting_deployment",
+  "status": "deployed_and_verified",
   "paths": [
     "/apartment-movers-los-angeles",
     "/small-moves-los-angeles",
@@ -37,7 +37,8 @@
         "accessibility": 100,
         "seo": 100
       }
-    }
+    },
+    "mutation_check": "All 12 selected arithmetic and validation mutations detected by offline calculator tests; isolated no-secrets copy."
   },
   "evidence": {
     "private_directory": "seo/snapshots/2026-11-25-page-improvements",
@@ -49,5 +50,29 @@
     "No ranking, traffic, conversion or revenue improvement established by this implementation.",
     "Google manual recrawl not submitted: Search Console requires sign-in. Sitemap discovery remains available."
   ],
-  "additional_paid_treg_calls": 0
+  "additional_paid_treg_calls": 0,
+  "implementation_commit": "2b602a7",
+  "verified_release_commit": "cead714",
+  "production_checks": {
+    "verified_at": "2026-11-25T18:29:28.499544+00:00",
+    "vercel_git_status": "success",
+    "public_html_matching_build": 18,
+    "additional_files_matching_build": [
+      "styles/content.css",
+      "scripts/moving-cost-calculator.js",
+      "sitemap.xml",
+      "feed.xml"
+    ],
+    "browser_page_viewport_checks": 8,
+    "viewports": [
+      390,
+      1440
+    ],
+    "loaded_images": true,
+    "horizontal_overflow": false,
+    "calculator": "Six crew/payment cases, three-hour minimum and invalid input passed live",
+    "packing_faq_keyboard": "passed",
+    "quote_api_get_status": 405,
+    "customer_submissions": 0
+  }
 }
